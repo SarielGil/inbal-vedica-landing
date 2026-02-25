@@ -22,10 +22,10 @@
   "services": [
     {
       "id": "clinic",
-      "title": "ייעוץ אישי בקליניקה בתל אביב",
-      "description": "אבחון דופק, תזונה וודית וליווי לאורח חיים מאוזן.",
+      "title": "ליווי אישי לבריאות ופריון",
+      "description": "תמיכה בתהליכי פריון (IVF/שימור), שיפור איכות הביציות והזרע, וטיפול בבעיות עיכול וספיגה.",
       "link": "clinic.html",
-      "image": "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=600"
+      "image": "https://i.ibb.co/6R8mP9P0/inbal-work.jpg"
     },
     {
       "id": "workshops",
