@@ -64,6 +64,47 @@
         </div>
     </section>
 
+    <!-- Instagram Section -->
+    <section class="bg-white py-16 border-t border-emerald-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-4 text-emerald-900">עקבו אחרי באינסטגרם</h3>
+            <p class="text-slate-600 mb-10">טיפים יומיים, מתכונים וחוכמה וודית ישירות מהפיד</p>
+            
+            <!-- Instagram Placeholder/Widget Container -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="instagram-feed">
+                <!-- We will use a script or placeholders initially -->
+                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden group relative">
+                    <img src="https://images.unsplash.com/photo-1545208935-21e7a5139b08?q=80&w=400" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="text-white font-bold">צפו בפוסט</span>
+                    </div>
+                </div>
+                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden group relative">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=400" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="text-white font-bold">צפו בפוסט</span>
+                    </div>
+                </div>
+                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden group relative">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=400" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="text-white font-bold">צפו בפוסט</span>
+                    </div>
+                </div>
+                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden group relative">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=400" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="text-white font-bold">צפו בפוסט</span>
+                    </div>
+                </div>
+            </div>
+
+            <a id="instagram-follow-btn" href="#" target="_blank" class="mt-10 inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-full font-bold hover:shadow-lg transition">
+                <span>לעמוד האינסטגרם המלא</span>
+            </a>
+        </div>
+    </section>
+
     <footer class="bg-emerald-900 text-white py-12 text-center">
         <p class="mb-2 font-bold">Vedica - ענבל חננאל | תל אביב</p>
         <p class="opacity-60">© 2026 כל הזכויות שמורות</p>
@@ -88,6 +129,9 @@
                 document.getElementById('podcast-description').innerText = data.podcast.description;
                 document.getElementById('podcast-image').src = data.podcast.image;
                 document.getElementById('podcast-link').href = data.podcast.link;
+
+                // Instagram
+                document.getElementById('instagram-follow-btn').href = data.site.instagram;
 
                 const servicesGrid = document.getElementById('services-grid');
                 data.services.forEach(service => {
