@@ -28,10 +28,10 @@
 - **Internal Links**: About, Clinic, Workshops, Tours, Blog, Contact
 
 ### 2. **about.html** (About)
-- **Meta Title**: אודות ננבל הנסב - מטפלת איורוודה בתל אביב
+- **Meta Title**: אודות ענבל הנסב - מטפלת איורוודה בתל אביב
 - **Meta Description**: מטפלת איורוודה מוסמכת (PranaVeda), לשעבר עורכת דין ודיפלומטית. סיפורה של ענבל הנסב - מעולם הדין לעולם הריפוי.
 - **H1**: מעו״ד בוושינגטון לרופאה איורוודית בתל אביב
-- **Keywords**: ננבל הנסב, מטפלת איורוודה, דיפלומטית, עורכת דין
+- **Keywords**: ענבל הנסב, מטפלת איורוודה, דיפלומטית, עורכת דין
 - **Internal Links**: Clinic, Workshops, Index (CTA)
 
 ### 3. **clinic.html** (Clinic)
@@ -43,14 +43,14 @@
 
 ### 4. **workshops.html** (Workshops)
 - **Meta Title**: סדנאות בישול ודיתני - VEDICA
-- **Meta Description**: סדנאות בישול בריא, תזונה וודית וסגנון חיים בתל אביב. למתחילים וילדים, בהדרכת ננבל הנסב.
+- **Meta Description**: סדנאות בישול בריא, תזונה וודית וסגנון חיים בתל אביב. למתחילים וילדים, בהדרכת ענבל הנסב.
 - **H1**: סדנאות בישול ואורח חיים וודי
 - **Keywords**: סדנאות בישול, תזונה וודית, רפואה איורוודית
 - **Internal Links**: Clinic, About, Contact, Blog (recipes)
 
 ### 5. **tours.html** (Tours)
 - **Meta Title**: סיורי צמחי מרפא בתל אביב - VEDICA
-- **Meta Description**: סיורים חווייתיים בצמחי מרפא בתל אביב. חיבור לטבע ולידע עתיק עם ננבל הנסב.
+- **Meta Description**: סיורים חווייתיים בצמחי מרפא בתל אביב. חיבור לטבע ולידע עתיק עם ענבל הנסב.
 - **H1**: סיורי צמחי מרפא - חיבור לטבע
 - **Keywords**: צמחי מרפא, סיורים בתל אביב, רקיחה טבעית
 - **Internal Links**: Clinic, Workshops, About, Blog
@@ -64,13 +64,13 @@
 
 ### 7. **podcast.html** (Podcast)
 - **Meta Title**: פודקאסט - רפואה בצלחת | VEDICA
-- **Meta Description**: פודקאסט על תזונת ילדים, איורוודה וריפוי. שיחות עם ננבל הנסב על בריאות משפחתית.
+- **Meta Description**: פודקאסט על תזונת ילדים, איורוודה וריפוי. שיחות עם ענבל הנסב על בריאות משפחתית.
 - **H1**: פודקאסט: רפואה בצלחת
 - **Keywords**: תזונת ילדים, בריאות משפחתית, איורוודה לילדים
 - **Internal Links**: Blog, Clinic, Workshops
 
 ### 8. **contact.html** (Contact)
-- **Meta Title**: צור קשר עם ננבל הנסב - VEDICA קליניקה
+- **Meta Title**: צור קשר עם ענבל הנסב - VEDICA קליניקה
 - **Meta Description**: צור קשר עם VEDICA: WhatsApp, טלפון, או טופס הכרות. קובעים פגישה בקליניקת ״מרחבים״, תל אביב.
 - **H1**: בואו נדבר
 - **Keywords**: קביעת פגישה, טיפול איורוודי, צור קשר
@@ -115,7 +115,7 @@ Home > Blog > [Category] > [Post]
   "url": "https://vedica-ayurveda.co.il",
   "founder": {
     "@type": "Person",
-    "name": "ננבל הנסב"
+    "name": "ענבל הנסב"
   },
   "sameAs": [
     "https://www.facebook.com/inbal.hanasab",
@@ -128,7 +128,7 @@ Home > Blog > [Category] > [Post]
 ```json
 {
   "@type": "Person",
-  "name": "ננבל הנסב",
+  "name": "ענבל הנסב",
   "jobTitle": "מטפלת איורוודה",
   "description": "מטפלת איורוודה מוסמכת (PranaVeda), לשעבר עורכת דין",
   "url": "https://vedica-ayurveda.co.il/about.html"

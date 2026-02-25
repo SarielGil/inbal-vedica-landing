@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="פודקאסט על תזונת ילדים, איורוודה וריפוי. שיחות עם ננבל הנסב על בריאות משפחתית.">
+    <meta name="description" content="פודקאסט על תזונת ילדים, איורוודה וריפוי. שיחות עם ענבל הנסב על בריאות משפחתית.">
     <meta name="keywords" content="תזונת ילדים, בריאות משפחתית, איורוודה לילדים">
     <title>פודקאסט - רפואה בצלחת | VEDICA</title>
     <!-- Open Graph Tags -->
@@ -15,6 +15,16 @@
     <style>
         body { font-family: 'Assistant', sans-serif; background-color: #fdfbf7; }
     </style>
+    <link rel="icon" href="assets/logo-transparent.png" type="image/png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="text-slate-800">
     <!-- Fixed Navigation Bar -->
@@ -24,7 +34,7 @@
                 <img id="site-logo" src="assets/logo-transparent.png" alt="Logo" class="h-16 w-auto">
                 <h1 class="text-2xl font-bold text-emerald-800 hidden md:block">VEDICA</h1>
             </a>
-            <div class="space-x-reverse space-x-6 flex font-medium">
+            <div class="space-x-reverse space-x-6 flex font-medium overflow-x-auto whitespace-nowrap pb-2 md:pb-0 items-center" style="scrollbar-width: none;">
                 <a href="index.html" class="hover:text-emerald-600">בית</a>
                 <a href="about.html" class="hover:text-emerald-600">אודות</a>
                 <a href="podcast.html" class="text-emerald-600 font-bold">פודקאסט</a>

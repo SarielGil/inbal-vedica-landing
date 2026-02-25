@@ -26,6 +26,16 @@
     <style>
         body { font-family: 'Assistant', sans-serif; background-color: #fdfbf7; }
     </style>
+    <link rel="icon" href="assets/logo-transparent.png" type="image/png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="text-slate-800">
     <!-- Fixed Navigation Bar -->
@@ -35,7 +45,7 @@
                 <img id="site-logo" src="assets/logo-transparent.png" alt="Logo" class="h-10 w-auto">
                 <h1 class="text-2xl font-bold text-emerald-800 hidden md:block">VEDICA</h1>
             </a>
-            <div class="space-x-reverse space-x-6 flex font-medium">
+            <div class="space-x-reverse space-x-6 flex font-medium overflow-x-auto whitespace-nowrap pb-2 md:pb-0 items-center" style="scrollbar-width: none;">
                 <a href="index.html" class="hover:text-emerald-600">בית</a>
                 <a href="about.html" class="hover:text-emerald-600">אודות</a>
                 <a href="blog.html" class="hover:text-emerald-600">בלוג</a>
@@ -194,7 +204,7 @@
                         <strong>רחוב ארלוזורוב 82</strong><br>
                         תל אביב, ישראל
                     </p>
-                    <a href="https://www.google.com/maps/search/ארלוזורוב+82+תל+אביב" target="_blank" class="inline-block bg-emerald-700 text-white px-8 py-3 rounded-full font-bold hover:bg-emerald-800 transition">
+                    <a href="https://www.google.com/maps/search/ארלוזורוב+82+תל+אביב" target="_blank" class="inline-block bg-emerald-700 text-white px-8 py-3 rounded-full font-bold hover:bg-emerald-800 transition inline-flex items-center justify-center">
                         פתח במפות Google
                     </a>
                 </div>
