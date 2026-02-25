@@ -21,6 +21,7 @@
             </div>
             <div class="space-x-reverse space-x-6 hidden md:flex font-medium">
                 <a href="index.html" class="hover:text-emerald-600">בית</a>
+                <a href="about.html" class="hover:text-emerald-600">אודות</a>
                 <a href="clinic.html" class="hover:text-emerald-600">קליניקה</a>
                 <a href="workshops.html" class="hover:text-emerald-600">סדנאות</a>
                 <a href="tours.html" class="hover:text-emerald-600">סיורים</a>
@@ -33,7 +34,7 @@
     <section id="hero" class="relative h-[80vh] flex items-center justify-center text-white hero-bg">
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative z-10 text-center px-4 max-w-4xl">
-            <h2 id="hero-title" class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg"></h2>
+            <h2 id="hero-title" class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg leading-tight"></h2>
             <p id="hero-subtitle" class="text-xl md:text-2xl mb-8 opacity-90"></p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
                 <a href="contact.html" class="bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-emerald-700 transition shadow-xl">קביעת תור לקליניקה</a>
@@ -46,14 +47,14 @@
 
     <!-- Podcast Section -->
     <section class="bg-emerald-50 py-16">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:row items-center gap-12">
             <div class="md:w-1/2">
                 <img id="podcast-image" src="" alt="Podcast" class="rounded-2xl shadow-2xl w-full h-80 object-cover">
             </div>
             <div class="md:w-1/2">
                 <span class="text-emerald-700 font-bold tracking-widest uppercase text-sm">חדש באוויר</span>
                 <h3 id="podcast-title" class="text-3xl font-bold mt-2 mb-4 text-emerald-900"></h3>
-                <p id="podcast-description" class="text-lg text-slate-700 mb-8"></p>
+                <p id="podcast-description" class="text-lg text-slate-700 mb-8 leading-relaxed"></p>
                 <a id="podcast-link" href="#" class="inline-block bg-emerald-800 text-white px-6 py-3 rounded-lg font-bold hover:bg-emerald-900 transition">להאזנה לפרק ←</a>
             </div>
         </div>
@@ -61,9 +62,8 @@
 
     <!-- Services Grid -->
     <section class="max-w-7xl mx-auto px-4 py-20">
-        <h3 class="text-3xl font-bold text-center mb-12 text-emerald-900">השירותים שלנו</h3>
+        <h3 class="text-3xl font-bold text-center mb-12 text-emerald-900 font-assistant">השירותים שלנו</h3>
         <div id="services-grid" class="grid md:grid-cols-3 gap-8">
-            <!-- Services will be injected here -->
         </div>
     </section>
 
@@ -72,55 +72,26 @@
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h3 class="text-3xl font-bold mb-4 text-emerald-900">עקבו אחרי באינסטגרם</h3>
             <p class="text-slate-600 mb-10">טיפים יומיים, מתכונים וחוכמה וודית ישירות מהפיד</p>
-            
-            <!-- Instagram Placeholder/Widget Container -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="instagram-feed">
-                <!-- We will use a script or placeholders initially -->
-                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden group relative">
-                    <img src="https://images.unsplash.com/photo-1545208935-21e7a5139b08?q=80&w=400" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                        <span class="text-white font-bold">צפו בפוסט</span>
-                    </div>
-                </div>
-                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden group relative">
-                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=400" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                        <span class="text-white font-bold">צפו בפוסט</span>
-                    </div>
-                </div>
-                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden group relative">
-                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=400" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                        <span class="text-white font-bold">צפו בפוסט</span>
-                    </div>
-                </div>
-                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden group relative">
-                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=400" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                        <span class="text-white font-bold">צפו בפוסט</span>
-                    </div>
-                </div>
             </div>
-
             <a id="instagram-follow-btn" href="#" target="_blank" class="mt-10 inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-full font-bold hover:shadow-lg transition">
-                <span>לעמוד האינסטגרם המלא</span>
+                <span> לעמוד האינסטגרם המלא </span>
             </a>
         </div>
     </section>
 
     <footer class="bg-emerald-900 text-white py-12 text-center">
-        <p class="mb-2 font-bold">Vedica - ענבל חננאל | תל אביב</p>
-        <p class="opacity-60">© 2026 כל הזכויות שמורות</p>
+        <p id="footer-name" class="mb-2 font-bold"></p>
+        <p class="opacity-60 text-sm">© 2026 כל הזכויות שמורות</p>
     </footer>
 
     <script>
-        // Load content from content.json
         fetch('content.json')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('site-name').innerText = data.site.name;
+                document.getElementById('footer-name').innerText = data.site.name + ' | ' + data.site.location;
                 
-                // Logo handling
                 const logoImg = document.getElementById('site-logo');
                 if (data.site.logo) {
                     logoImg.src = data.site.logo;
@@ -132,17 +103,14 @@
                 document.getElementById('hero-subtitle').innerText = data.hero.subtitle;
                 document.getElementById('hero').style.backgroundImage = `url('${data.hero.image}')`;
 
-                // WhatsApp
                 const waLink = document.getElementById('whatsapp-link');
                 waLink.href = `https://wa.me/${data.site.whatsapp}?text=${encodeURIComponent('היי ענבל, הגעתי מהאתר ואשמח לשמוע עוד פרטים')}`;
 
-                // Podcast
                 document.getElementById('podcast-title').innerText = data.podcast.title;
                 document.getElementById('podcast-description').innerText = data.podcast.description;
                 document.getElementById('podcast-image').src = data.podcast.image;
                 document.getElementById('podcast-link').href = data.podcast.link;
 
-                // Instagram
                 document.getElementById('instagram-follow-btn').href = data.site.instagram;
 
                 const servicesGrid = document.getElementById('services-grid');
@@ -159,6 +127,18 @@
                     `;
                     servicesGrid.innerHTML += card;
                 });
+
+                const igFeed = document.getElementById('instagram-feed');
+                if (data.instagram_gallery) {
+                    data.instagram_gallery.forEach(imgUrl => {
+                        const item = `
+                            <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden group relative">
+                                <img src="${imgUrl}" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+                            </div>
+                        `;
+                        igFeed.innerHTML += item;
+                    });
+                }
             });
     </script>
 </body>
