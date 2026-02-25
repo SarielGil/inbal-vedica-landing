@@ -11,16 +11,27 @@
     </style>
 </head>
 <body class="text-slate-800">
-    <nav class="bg-white shadow-sm p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-emerald-800">Vedica</a>
-            <a href="index.html" class="text-emerald-600 font-bold">← חזרה לבית</a>
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img id="site-logo" src="assets/logo-dark.jpg" alt="Logo" class="h-10 w-auto">
+                <h1 class="text-2xl font-bold text-emerald-800 hidden md:block">Vedica</h1>
+            </a>
+            <div class="space-x-reverse space-x-6 flex font-medium">
+                <a href="index.html" class="hover:text-emerald-600">בית</a>
+                <a href="about.html" class="hover:text-emerald-600">אודות</a>
+                <a href="clinic.html" class="hover:text-emerald-600">קליניקה</a>
+                <a href="workshops.html" class="hover:text-emerald-600">סדנאות</a>
+                <a href="tours.html" class="text-emerald-600 font-bold">סיורים</a>
+                <a href="contact.html" class="bg-emerald-700 text-white px-4 py-2 rounded-full hover:bg-emerald-800 transition text-sm">צור קשר</a>
+            </div>
         </div>
     </nav>
 
     <main class="max-w-4xl mx-auto px-4 py-16">
-        <div class="rounded-3xl overflow-hidden h-64 mb-8 shadow-xl">
-             <img src="https://images.unsplash.com/photo-1501004899824-04743c75a92d?q=80&w=1200" class="w-full h-full object-cover">
+        <div class="rounded-3xl overflow-hidden h-96 mb-8 shadow-xl">
+             <img src="assets/spices-market.jpg" class="w-full h-full object-cover">
         </div>
         <h1 class="text-4xl font-bold text-emerald-900 mb-6">סיורי צמחי מרפא וליקוט</h1>
         <div class="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 leading-relaxed">
@@ -28,19 +39,20 @@
                 הצטרפו אליי למסע בטבע, ממש כאן במרכז. בסיורים שלנו נלמד לזהות את צמחי המרפא הגדלים סביבנו, נבין את הסגולות הרפואיות שלהם לפי האיורוודה ונלמד כיצד לשלב אותם במטבח הביתי.
             </p>
             <div class="grid md:grid-cols-2 gap-4 mb-8 text-slate-700">
-                <div class="bg-emerald-50 p-4 rounded-lg border border-emerald-100">
-                    <strong>מה בסיור?</strong><br>זיהוי צמחים, טעימות בשטח, וסיפורים מהמסורת הוודית.
+                <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-100">
+                    <strong class="text-emerald-900 text-lg">מה בסיור?</strong><br>זיהוי צמחים, טעימות בשטח, וסיפורים מהמסורת הוודית.
                 </div>
-                <div class="bg-emerald-50 p-4 rounded-lg border border-emerald-100">
-                    <strong>משך הסיור:</strong><br>כשעתיים וחצי של הליכה נינוחה בטבע.
+                <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-100">
+                    <strong class="text-emerald-900 text-lg">משך הסיור:</strong><br>כשעתיים וחצי של הליכה נינוחה בטבע.
                 </div>
             </div>
             <a href="https://forms.gle/98kVxasBnLb2rxbcA" target="_blank" class="block text-center bg-emerald-700 text-white px-8 py-4 rounded-xl text-xl font-bold hover:bg-emerald-800 transition shadow-lg">להרשמה לסיור הקרוב</a>
         </div>
     </main>
 
-    <footer class="bg-emerald-900 text-white py-8 text-center mt-20">
-        <p>© 2026 Vedica - ענבל הנסב</p>
+    <footer class="bg-emerald-900 text-white py-12 text-center mt-20">
+        <p class="font-bold mb-2">Vedica - ענבל הנסב | תל אביב</p>
+        <p class="opacity-60 text-sm">© 2026 כל הזכויות שמורות</p>
     </footer>
 </body>
 </html>

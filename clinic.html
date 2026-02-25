@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>קליניקה לאיורוודה בתל אביב | Vedica</title>
+    <title>ליווי אישי לבריאות ופריון | Vedica</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -11,34 +11,46 @@
     </style>
 </head>
 <body class="text-slate-800">
-    <nav class="bg-white shadow-sm p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-emerald-800">Vedica</a>
-            <a href="index.html" class="text-emerald-600 font-bold">← חזרה לבית</a>
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img id="site-logo" src="assets/logo-dark.jpg" alt="Logo" class="h-10 w-auto">
+                <h1 class="text-2xl font-bold text-emerald-800 hidden md:block">Vedica</h1>
+            </a>
+            <div class="space-x-reverse space-x-6 flex font-medium">
+                <a href="index.html" class="hover:text-emerald-600">בית</a>
+                <a href="about.html" class="hover:text-emerald-600">אודות</a>
+                <a href="clinic.html" class="text-emerald-600 font-bold">קליניקה</a>
+                <a href="workshops.html" class="hover:text-emerald-600">סדנאות</a>
+                <a href="tours.html" class="hover:text-emerald-600">סיורים</a>
+                <a href="contact.html" class="bg-emerald-700 text-white px-4 py-2 rounded-full hover:bg-emerald-800 transition text-sm">צור קשר</a>
+            </div>
         </div>
     </nav>
 
     <main class="max-w-4xl mx-auto px-4 py-16">
         <h1 class="text-4xl font-bold text-emerald-900 mb-6">ליווי אישי לבריאות, עיכול ופריון</h1>
         <div class="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100">
+            <img src="assets/inbal-clinic.jpg" class="w-full h-80 object-cover rounded-2xl mb-8">
             <p class="text-lg leading-relaxed mb-6">
                 בקליניקה שלי בתל אביב, אני מלווה נשים וגברים בתהליכי שינוי עמוקים המבוססים על חוכמת האיורוודה. הגישה שלי משלבת אבחון דופק מסורתי עם כלים פרקטיים לשיפור איכות החיים והבריאות.
             </p>
             
             <h2 class="text-2xl font-bold text-emerald-800 mb-4">תחומי התמחות מרכזיים:</h2>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
-                <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-100">
-                    <h3 class="font-bold text-emerald-900 mb-2">פריון ובריאות האישה והגבר</h3>
-                    <ul class="text-sm space-y-1 text-slate-700">
+                <div class=\"bg-emerald-50 p-6 rounded-xl border border-emerald-100\">
+                    <h3 class=\"font-bold text-emerald-900 mb-2\">פריון ובריאות האישה והגבר</h3>
+                    <ul class=\"text-sm space-y-1 text-slate-700\">
                         <li>• שיפור איכות הביציות והזרע</li>
                         <li>• תמיכה בטיפולי פריון (IVF, IUI)</li>
                         <li>• ליווי בתהליכי שימור פריון</li>
                         <li>• איזון הורמונלי וחיזוק המערכת</li>
                     </ul>
                 </div>
-                <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-100">
-                    <h3 class="font-bold text-emerald-900 mb-2">מערכת העיכול והחיסון</h3>
-                    <ul class="text-sm space-y-1 text-slate-700">
+                <div class=\"bg-emerald-50 p-6 rounded-xl border border-emerald-100\">
+                    <h3 class=\"font-bold text-emerald-900 mb-2\">מערכת העיכול והחיסון</h3>
+                    <ul class=\"text-sm space-y-1 text-slate-700\">
                         <li>• פתרון לבעיות עיכול וספיגה</li>
                         <li>• טיפול בנפיחות וחוסר נוחות</li>
                         <li>• חיזוק מערכת החיסון</li>
@@ -51,8 +63,9 @@
         </div>
     </main>
 
-    <footer class="bg-emerald-900 text-white py-8 text-center mt-20">
-        <p>© 2026 Vedica - ענבל הנסב</p>
+    <footer class="bg-emerald-900 text-white py-12 text-center mt-20">
+        <p class="font-bold mb-2">Vedica - ענבל הנסב | תל אביב</p>
+        <p class="opacity-60 text-sm">© 2026 כל הזכויות שמורות</p>
     </footer>
 </body>
 </html>

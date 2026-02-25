@@ -11,10 +11,21 @@
     </style>
 </head>
 <body class="text-slate-800">
-    <nav class="bg-white shadow-sm p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-emerald-800">Vedica</a>
-            <a href="index.html" class="text-emerald-600 font-bold">← חזרה לבית</a>
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img id="site-logo" src="assets/logo-dark.jpg" alt="Logo" class="h-10 w-auto">
+                <h1 class="text-2xl font-bold text-emerald-800 hidden md:block">Vedica</h1>
+            </a>
+            <div class="space-x-reverse space-x-6 flex font-medium">
+                <a href="index.html" class="hover:text-emerald-600">בית</a>
+                <a href="about.html" class="hover:text-emerald-600">אודות</a>
+                <a href="clinic.html" class="hover:text-emerald-600">קליניקה</a>
+                <a href="workshops.html" class="hover:text-emerald-600">סדנאות</a>
+                <a href="tours.html" class="hover:text-emerald-600">סיורים</a>
+                <a href="contact.html" class="text-emerald-600 font-bold">צור קשר</a>
+            </div>
         </div>
     </nav>
 
@@ -33,20 +44,27 @@
                 <div>
                     <label class="block text-sm font-bold mb-2">במה תרצו להתמקד?</label>
                     <select class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none">
-                        <option>ייעוץ אישי בקליניקה</option>
+                        <option>ייעוץ אישי בקליניקה (פריון ועיכול)</option>
                         <option>סדנאות בישול</option>
                         <option>סיורי צמחי מרפא</option>
                         <option>אחר</option>
                     </select>
                 </div>
-                <button type="submit" class="w-full bg-emerald-700 text-white py-4 rounded-xl text-xl font-bold hover:bg-emerald-800 transition">שליחת פנייה</button>
+                <button type="submit" class="w-full bg-emerald-700 text-white py-4 rounded-xl text-xl font-bold hover:bg-emerald-800 transition shadow-lg">שליחת פנייה</button>
             </form>
             <div class="mt-8 pt-8 border-t text-center">
                 <p class="text-slate-500 mb-4">או פשוט שלחו לי הודעה ישירה:</p>
-                <a id="wa-contact" href="#" class="text-green-600 font-bold text-lg">WhatsApp ←</a>
+                <a id="wa-contact" href="#" target="_blank" class="bg-green-500 text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition inline-flex items-center gap-2">
+                    <span>WhatsApp</span>
+                </a>
             </div>
         </div>
     </main>
+
+    <footer class="bg-emerald-900 text-white py-12 text-center mt-20">
+        <p class="font-bold mb-2">Vedica - ענבל הנסב | תל אביב</p>
+        <p class="opacity-60 text-sm">© 2026 כל הזכויות שמורות</p>
+    </footer>
 
     <script>
         fetch('content.json')
