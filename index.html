@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedica - איורוודה בתל אביב</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Assistant', sans-serif; background-color: #fdfbf7; }
+        .hero-bg { background-size: cover; background-position: center; transition: background-image 0.5s ease-in-out; }
+    </style>
+</head>
+<body class="text-slate-800">
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 id="site-name" class="text-2xl font-bold text-emerald-800">Vedica</h1>
+            <div class="space-x-reverse space-x-6 hidden md:flex font-medium">
+                <a href="index.html" class="hover:text-emerald-600">בית</a>
+                <a href="clinic.html" class="hover:text-emerald-600">קליניקה</a>
+                <a href="workshops.html" class="hover:text-emerald-600">סדנאות</a>
+                <a href="tours.html" class="hover:text-emerald-600">סיורים</a>
+                <a href="contact.html" class="bg-emerald-700 text-white px-4 py-2 rounded-full hover:bg-emerald-800 transition">צור קשר</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-[80vh] flex items-center justify-center text-white hero-bg">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h2 id="hero-title" class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg"></h2>
+            <p id="hero-subtitle" class="text-xl md:text-2xl mb-8 opacity-90"></p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-emerald-700 transition shadow-xl">קביעת תור לקליניקה</a>
+                <a id="whatsapp-link" href="#" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-green-600 transition shadow-xl flex items-center justify-center gap-2">
+                    <span>דברו איתי בוואטסאפ</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podcast Section -->
+    <section class="bg-emerald-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img id="podcast-image" src="" alt="Podcast" class="rounded-2xl shadow-2xl w-full h-80 object-cover">
+            </div>
+            <div class="md:w-1/2">
+                <span class="text-emerald-700 font-bold tracking-widest uppercase text-sm">חדש באוויר</span>
+                <h3 id="podcast-title" class="text-3xl font-bold mt-2 mb-4 text-emerald-900"></h3>
+                <p id="podcast-description" class="text-lg text-slate-700 mb-8"></p>
+                <a id="podcast-link" href="#" class="inline-block bg-emerald-800 text-white px-6 py-3 rounded-lg font-bold hover:bg-emerald-900 transition">להאזנה לפרק ←</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="max-w-7xl mx-auto px-4 py-20">
+        <h3 class="text-3xl font-bold text-center mb-12 text-emerald-900">השירותים שלנו</h3>
+        <div id="services-grid" class="grid md:grid-cols-3 gap-8">
+            <!-- Services will be injected here -->
+        </div>
+    </section>
+
+    <footer class="bg-emerald-900 text-white py-12 text-center">
+        <p class="mb-2 font-bold">Vedica - ענבל חננאל | תל אביב</p>
+        <p class="opacity-60">© 2026 כל הזכויות שמורות</p>
+    </footer>
+
+    <script>
+        // Load content from content.json
+        fetch('content.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('site-name').innerText = data.site.name;
+                document.getElementById('hero-title').innerText = data.hero.title;
+                document.getElementById('hero-subtitle').innerText = data.hero.subtitle;
+                document.getElementById('hero').style.backgroundImage = `url('${data.hero.image}')`;
+
+                // WhatsApp
+                const waLink = document.getElementById('whatsapp-link');
+                waLink.href = `https://wa.me/${data.site.whatsapp}?text=${encodeURIComponent('היי ענבל, הגעתי מהאתר ואשמח לשמוע עוד פרטים')}`;
+
+                // Podcast
+                document.getElementById('podcast-title').innerText = data.podcast.title;
+                document.getElementById('podcast-description').innerText = data.podcast.description;
+                document.getElementById('podcast-image').src = data.podcast.image;
+                document.getElementById('podcast-link').href = data.podcast.link;
+
+                const servicesGrid = document.getElementById('services-grid');
+                data.services.forEach(service => {
+                    const card = `
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                            <img src="${service.image}" alt="${service.title}" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-bold mb-2 text-emerald-800">${service.title}</h4>
+                                <p class="text-slate-600 mb-4">${service.description}</p>
+                                <a href="${service.link}" class="text-emerald-600 font-bold hover:underline">לפרטים נוספים ←</a>
+                            </div>
+                        </div>
+                    `;
+                    servicesGrid.innerHTML += card;
+                });
+            });
+    </script>
+</body>
+</html>
