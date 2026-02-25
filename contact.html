@@ -32,25 +32,28 @@
     <main class="max-w-2xl mx-auto px-4 py-16">
         <h1 class="text-4xl font-bold text-emerald-900 mb-8 text-center">בואו נדבר</h1>
         <div class="bg-white p-8 rounded-3xl shadow-xl border border-emerald-100">
-            <form action="#" class="space-y-6">
+            <form id="contactForm" class="space-y-6">
                 <div>
                     <label class="block text-sm font-bold mb-2">שם מלא</label>
-                    <input type="text" placeholder="איך קוראים לך?" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none">
+                    <input type="text" name="name" placeholder="איך קוראים לך?" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
                     <label class="block text-sm font-bold mb-2">טלפון</label>
-                    <input type="tel" placeholder="050-0000000" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none">
+                    <input type="tel" name="phone" placeholder="050-0000000" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
                     <label class="block text-sm font-bold mb-2">במה תרצו להתמקד?</label>
-                    <select class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none">
-                        <option>ייעוץ אישי בקליניקה (פריון ועיכול)</option>
-                        <option>סדנאות בישול</option>
-                        <option>סיורי צמחי מרפא</option>
-                        <option>אחר</option>
+                    <select name="service" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
+                        <option value="">בחרו אפשרות</option>
+                        <option value="consultation">ייעוץ אישי בקליניקה (פריון ועיכול)</option>
+                        <option value="cooking_class">סדנאות בישול</option>
+                        <option value="herb_tours">סיורי צמחי מרפא</option>
+                        <option value="other">אחר</option>
                     </select>
                 </div>
+                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
                 <button type="submit" class="w-full bg-emerald-700 text-white py-4 rounded-xl text-xl font-bold hover:bg-emerald-800 transition shadow-lg">שליחת פנייה</button>
+                <div id="formMessage" class="text-center text-sm hidden"></div>
             </form>
             <div class="mt-8 pt-8 border-t">
                 <h3 class="font-bold text-emerald-800 mb-2 text-center">איך מגיעים?</h3>
