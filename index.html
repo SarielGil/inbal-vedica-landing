@@ -15,7 +15,10 @@
     <!-- Navigation -->
     <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 id="site-name" class="text-2xl font-bold text-emerald-800">Vedica</h1>
+            <div class="flex items-center gap-3">
+                <img id="site-logo" src="" alt="Logo" class="h-10 w-auto hidden">
+                <h1 id="site-name" class="text-2xl font-bold text-emerald-800">Vedica</h1>
+            </div>
             <div class="space-x-reverse space-x-6 hidden md:flex font-medium">
                 <a href="index.html" class="hover:text-emerald-600">בית</a>
                 <a href="clinic.html" class="hover:text-emerald-600">קליניקה</a>
@@ -116,6 +119,15 @@
             .then(response => response.json())
             .then(data => {
                 document.getElementById('site-name').innerText = data.site.name;
+                
+                // Logo handling
+                const logoImg = document.getElementById('site-logo');
+                if (data.site.logo) {
+                    logoImg.src = data.site.logo;
+                    logoImg.classList.remove('hidden');
+                    document.getElementById('site-name').classList.add('hidden', 'md:block');
+                }
+
                 document.getElementById('hero-title').innerText = data.hero.title;
                 document.getElementById('hero-subtitle').innerText = data.hero.subtitle;
                 document.getElementById('hero').style.backgroundImage = `url('${data.hero.image}')`;
