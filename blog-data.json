@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": "coming-soon",
+      "title": "בקרוב...",
+      "excerpt": "תוכן חדש בקרוב",
+      "date": "2026-02-25",
+      "category": "תזונה",
+      "slug": "coming-soon",
+      "featured": false
+    }
+  ],
+  "categories": [
+    "תזונה",
+    "צמחי מרפא",
+    "מתכונים",
+    "ילדים",
+    "סיורים",
+    "מדיטציה"
+  ]
+}

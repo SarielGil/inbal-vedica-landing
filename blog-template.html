@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} | VEDICA בלוג</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Assistant', sans-serif; background-color: #fdfbf7; }
+        article p { line-height: 1.8; margin-bottom: 1.5rem; }
+        article h2 { font-size: 1.875rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; }
+    </style>
+</head>
+<body class="text-slate-800">
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/logo-transparent.png" alt="Logo" class="h-10 w-auto">
+                <h1 class="text-2xl font-bold text-emerald-800 hidden md:block">VEDICA</h1>
+            </a>
+            <div class="space-x-reverse space-x-6 flex font-medium">
+                <a href="index.html" class="hover:text-emerald-600">בית</a>
+                <a href="about.html" class="hover:text-emerald-600">אודות</a>
+                <a href="blog.html" class="text-emerald-600 font-bold">בלוג</a>
+                <a href="clinic.html" class="hover:text-emerald-600">קליניקה</a>
+                <a href="contact.html" class="bg-emerald-700 text-white px-4 py-2 rounded-full hover:bg-emerald-800 transition text-sm">צור קשר</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 py-16">
+        <!-- Post Header -->
+        <div class="mb-12">
+            <div class="flex items-center gap-4 mb-4">
+                <span class="bg-emerald-100 text-emerald-800 px-4 py-1 rounded-full text-sm font-bold">{{CATEGORY}}</span>
+                <span class="text-slate-500 text-sm">{{DATE}}</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-emerald-900 mb-4">{{TITLE}}</h1>
+            <p class="text-xl text-slate-600 leading-relaxed">{{SUBTITLE}}</p>
+        </div>
+
+        <!-- Featured Image (optional) -->
+        {{#IF_IMAGE}}
+        <img src="{{IMAGE_URL}}" alt="{{TITLE}}" class="w-full rounded-2xl shadow-lg mb-12 object-cover h-96">
+        {{/IF_IMAGE}}
+
+        <!-- Post Content -->
+        <article class="prose prose-lg max-w-none">
+            {{CONTENT}}
+        </article>
+
+        <!-- Post Footer -->
+        <div class="mt-20 pt-8 border-t border-slate-200">
+            <div class="bg-emerald-50 p-8 rounded-2xl">
+                <h3 class="text-2xl font-bold text-emerald-900 mb-4">רוצים ייעוץ אישי?</h3>
+                <p class="text-slate-700 mb-6">
+                    כל אדם הוא ייחודי. הנושאים בבלוג הם הנחיות כלליות בלבד. אם רוצים טיפול מותאם אישית לסיפור שלכם - בואו נדבר.
+                </p>
+                <a href="contact.html" class="inline-block bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-emerald-800 transition">
+                    קביעת ייעוץ בטלפון או בקליניקה
+                </a>
+            </div>
+        </div>
+
+        <!-- Related Posts (optional) -->
+        <div class="mt-20">
+            <h3 class="text-3xl font-bold text-emerald-900 mb-8">פוסטים קשורים</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Related posts will load here -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-emerald-900 text-white py-12 text-center mt-20">
+        <p class="font-bold mb-2">VEDICA - ענבל הנסב | תל אביב</p>
+        <p class="opacity-60 text-sm">© 2026 כל הזכויות שמורות</p>
+    </footer>
+
+    <script>
+        // Load post data from blog-data.json
+        // Replace {{PLACEHOLDERS}} with actual content
+    </script>
+</body>
+</html>

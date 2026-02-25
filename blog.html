@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מגזין VEDICA - חוכמת האיורוודה והתזונה | VEDICA</title>
+    <title>בלוג | VEDICA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -30,29 +30,40 @@
     </nav>
 
     <header class="bg-emerald-900 text-white py-20 px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">המגזין של VEDICA</h1>
-        <p class="text-xl opacity-90 max-w-2xl mx-auto">מאמרים, טיפים וחוכמה עתיקה לאורח חיים מאוזן ובריא בעולם המודרני.</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">בלוג VEDICA</h1>
+        <p class="text-xl opacity-90 max-w-2xl mx-auto">חוכמה, מתכונים וסיפורים מעולם הריפוי</p>
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-16">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <!-- Article 1 -->
-            <article class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
-                <img src="assets/dates-hands.jpg" class="w-full h-56 object-cover">
-                <div class="p-8">
-                    <div class="text-emerald-600 text-sm font-bold mb-2">תזונה ועיכול</div>
-                    <h2 class="text-2xl font-bold text-emerald-900 mb-4 leading-tight">לחם חליטה, מחמצת וקמבוצ'ה: המהפכה הפרוביוטיקה בראי האיורוודה</h2>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">איך שילוב של מסורות עתיקות ומדע מודרני יוצר את המזון המושלם למערכת העיכול שלך...</p>
-                    <a href="blog-bread.html" class="inline-block border-2 border-emerald-700 text-emerald-700 px-6 py-2 rounded-full font-bold hover:bg-emerald-700 hover:text-white transition">קראו עוד</a>
-                </div>
-            </article>
+        <!-- Category Filter -->
+        <div class="flex flex-wrap gap-3 mb-12 justify-center">
+            <button class="category-filter px-4 py-2 rounded-full font-bold transition bg-emerald-700 text-white" data-category="all">
+                הכל
+            </button>
+            <button class="category-filter px-4 py-2 rounded-full font-bold transition bg-slate-200 text-slate-800" data-category="תזונה">
+                תזונה
+            </button>
+            <button class="category-filter px-4 py-2 rounded-full font-bold transition bg-slate-200 text-slate-800" data-category="צמחי מרפא">
+                צמחי מרפא
+            </button>
+            <button class="category-filter px-4 py-2 rounded-full font-bold transition bg-slate-200 text-slate-800" data-category="מתכונים">
+                מתכונים
+            </button>
+            <button class="category-filter px-4 py-2 rounded-full font-bold transition bg-slate-200 text-slate-800" data-category="ילדים">
+                ילדים
+            </button>
+        </div>
 
-            <!-- Placeholder for future articles -->
-            <div class="bg-emerald-50 rounded-3xl p-8 flex flex-col items-center justify-center text-center border-2 border-dashed border-emerald-200">
-                <div class="text-4xl mb-4">✍️</div>
-                <h3 class="text-xl font-bold text-emerald-800 mb-2">מאמרים חדשים בדרך</h3>
-                <p class="text-slate-500 text-sm">אנחנו עובדים על תכנים חדשים בנושאי פוריות, תזונת ילדים וצמחי מרפא. הישארו מעודכנים!</p>
-            </div>
+        <!-- Blog Posts Grid -->
+        <div id="posts-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Posts will load here from blog-data.json -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="text-center py-20">
+            <p class="text-4xl mb-4">🌱</p>
+            <p class="text-2xl text-slate-600">תוכן חדש בדרך</p>
+            <p class="text-slate-500 mt-2">אנחנו עובדים על מאמרים מרתקים בנושאי תזונה, צמחי מרפא וקליניקה</p>
         </div>
     </main>
 
@@ -60,5 +71,76 @@
         <p class="font-bold mb-2">VEDICA - ענבל הנסב | קליניקת ״מרחבים״, תל אביב</p>
         <p class="opacity-60 text-sm">© 2026 כל הזכויות שמורות</p>
     </footer>
+
+    <script>
+        let allPosts = [];
+        let currentFilter = 'all';
+
+        // Load blog posts from JSON
+        fetch('blog-data.json')
+            .then(res => res.json())
+            .then(data => {
+                allPosts = data.posts;
+                renderPosts();
+            })
+            .catch(err => console.error('Error loading blog data:', err));
+
+        // Render posts
+        function renderPosts() {
+            const container = document.getElementById('posts-container');
+            const emptyState = document.getElementById('empty-state');
+            
+            const filtered = currentFilter === 'all' 
+                ? allPosts 
+                : allPosts.filter(post => post.category === currentFilter);
+            
+            if (filtered.length === 0) {
+                container.innerHTML = '';
+                emptyState.style.display = 'block';
+                return;
+            }
+            
+            emptyState.style.display = 'none';
+            container.innerHTML = filtered.map(post => `
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition border border-emerald-50">
+                    <div class="p-8">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-bold">
+                                ${post.category}
+                            </span>
+                            <span class="text-slate-500 text-sm">${post.date}</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-emerald-900 mb-3">
+                            <a href="post-${post.slug}.html" class="hover:text-emerald-700 transition">
+                                ${post.title}
+                            </a>
+                        </h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            ${post.excerpt}
+                        </p>
+                        <a href="post-${post.slug}.html" class="text-emerald-700 font-bold hover:text-emerald-900 transition">
+                            קרא עוד →
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Category filter
+        document.querySelectorAll('.category-filter').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.category-filter').forEach(b => {
+                    b.classList.remove('bg-emerald-700', 'text-white');
+                    b.classList.add('bg-slate-200', 'text-slate-800');
+                });
+                
+                this.classList.add('bg-emerald-700', 'text-white');
+                this.classList.remove('bg-slate-200', 'text-slate-800');
+                
+                currentFilter = this.dataset.category;
+                renderPosts();
+            });
+        });
+    </script>
 </body>
 </html>
