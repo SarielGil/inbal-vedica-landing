@@ -23,12 +23,20 @@
     </script>
 </head>
 <body class="text-slate-800">
-    <nav class="bg-white shadow-sm p-4 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-emerald-800">Vedica</a>
-            <div class="space-x-reverse space-x-4">
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img id="site-logo" src="assets/logo-transparent.png" alt="Logo" class="h-16 w-auto">
+                <h1 class="text-2xl font-bold text-emerald-800 hidden md:block">Vedica</h1>
+            </a>
+            <div class="space-x-reverse space-x-6 flex font-medium">
                 <a href="index.html" class="hover:text-emerald-600">בית</a>
-                <a href="contact.html" class="text-emerald-600 font-bold">צור קשר</a>
+                <a href="about.html" class="text-emerald-600 font-bold">אודות</a>
+                <a href="clinic.html" class="hover:text-emerald-600">קליניקה</a>
+                <a href="workshops.html" class="hover:text-emerald-600">סדנאות</a>
+                <a href="tours.html" class="hover:text-emerald-600">סיורים</a>
+                <a href="contact.html" class="bg-emerald-700 text-white px-4 py-2 rounded-full hover:bg-emerald-800 transition text-sm">צור קשר</a>
             </div>
         </div>
     </nav>
@@ -36,7 +44,7 @@
     <main class="max-w-4xl mx-auto px-4 py-16">
         <div class="flex flex-col md:flex-row gap-12 items-center mb-16">
             <div class="md:w-1/2">
-                <img src="https://i.ibb.co/6R8mP9P0/inbal-smile.jpg" alt="ענבל הנסב" class="rounded-full w-80 h-80 object-cover shadow-2xl border-8 border-white">
+                <img src="assets/inbal-hero.jpg" alt="ענבל הנסב" class="rounded-full w-80 h-80 object-cover shadow-2xl border-8 border-white">
             </div>
             <div class="md:w-1/2">
                 <h1 class="text-4xl font-bold text-emerald-900 mb-4">ענבל הנסב</h1>

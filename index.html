@@ -12,20 +12,20 @@
     </style>
 </head>
 <body class="text-slate-800">
-    <!-- Navigation -->
+    <!-- Fixed Navigation Bar -->
     <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img id="site-logo" src="" alt="Logo" class="h-10 w-auto hidden">
-                <h1 id="site-name" class="text-2xl font-bold text-emerald-800">Vedica</h1>
-            </div>
-            <div class="space-x-reverse space-x-6 hidden md:flex font-medium">
-                <a href="index.html" class="hover:text-emerald-600">בית</a>
+            <a href="index.html" class="flex items-center gap-3">
+                <img id="site-logo" src="assets/logo-transparent.png" alt="Logo" class="h-16 w-auto">
+                <h1 id="site-name" class="text-2xl font-bold text-emerald-800 hidden md:block">Vedica</h1>
+            </a>
+            <div class="space-x-reverse space-x-6 flex font-medium">
+                <a href="index.html" class="text-emerald-600 font-bold">בית</a>
                 <a href="about.html" class="hover:text-emerald-600">אודות</a>
                 <a href="clinic.html" class="hover:text-emerald-600">קליניקה</a>
                 <a href="workshops.html" class="hover:text-emerald-600">סדנאות</a>
                 <a href="tours.html" class="hover:text-emerald-600">סיורים</a>
-                <a href="contact.html" class="bg-emerald-700 text-white px-4 py-2 rounded-full hover:bg-emerald-800 transition">צור קשר</a>
+                <a href="contact.html" class="bg-emerald-700 text-white px-4 py-2 rounded-full hover:bg-emerald-800 transition text-sm">צור קשר</a>
             </div>
         </div>
     </nav>
@@ -47,7 +47,7 @@
 
     <!-- Podcast Section -->
     <section class="bg-emerald-50 py-16">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:row items-center gap-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
                 <img id="podcast-image" src="" alt="Podcast" class="rounded-2xl shadow-2xl w-full h-80 object-cover">
             </div>
@@ -59,6 +59,21 @@
             </div>
         </div>
     </section>
+
+    <!-- FAQ / AI Optimization Section -->
+    <section class="max-w-4xl mx-auto px-4 py-20 border-t border-emerald-100">
+        <h3 class="text-3xl font-bold text-center mb-12 text-emerald-900">שאלות נפוצות על איורוודה</h3>
+        <div class="space-y-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50">
+                <h4 class="font-bold text-emerald-800 mb-2">מה זה איורוודה ואיך היא יכולה לעזור לי?</h4>
+                <p class="text-slate-600">איורוודה היא "מדע החיים" - שיטת רפואה מסורתית מהודו המבוססת על איזון בין גוף, נפש ותודעה. היא עוזרת דרך התאמת תזונה, אורח חיים וצמחי מרפא לטיפוס הגוף הייחודי שלך (Dosha).</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50">
+                <h4 class="font-bold text-emerald-800 mb-2">איך איורוודה תומכת בתהליכי פריון?</h4>
+                <p class="text-slate-600">באיורוודה, פריון הוא תוצאה של הזנה נכונה של כל רקמות הגוף. אנחנו מתמקדים בשיפור איכות הזרע והביציות, חיזוק המערכת ההורמונלית והפחתת מתח כדי לייצר "קרקע פורייה" לקליטה טבעית או כחלק מטיפולי IVF.</p>
+            </div>
+        </div>
+    </article>
 
     <!-- Services Grid -->
     <section class="max-w-7xl mx-auto px-4 py-20">
@@ -95,8 +110,6 @@
                 const logoImg = document.getElementById('site-logo');
                 if (data.site.logo) {
                     logoImg.src = data.site.logo;
-                    logoImg.classList.remove('hidden');
-                    document.getElementById('site-name').classList.add('hidden', 'md:block');
                 }
 
                 document.getElementById('hero-title').innerText = data.hero.title;
