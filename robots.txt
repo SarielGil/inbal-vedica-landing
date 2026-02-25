@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://vedica-ayurveda.co.il/sitemap.xml
+
+# Google Search Console
+User-agent: Googlebot
+Allow: /
