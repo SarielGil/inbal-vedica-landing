@@ -10,7 +10,7 @@
   },
   "hero": {
     "title": "איורוודה בתל אביב: איזון גוף ונפש עם ענבל הנסב",
-    "subtitle": "מטפלת איורוודה מוסמכת, סדנאות בישול וסיורי צמחי מרפא בלב תל אביב",
+    "subtitle": "מטפלת איורוודה מוסמכת, סדנאות בישול ואורח חיים וודי - איורוודי וסיורי צמחי מרפא בלב תל אביב",
     "image": "assets/inbal-hero.jpg"
   },
   "podcast": {
@@ -25,11 +25,11 @@
       "title": "ליווי אישי לבריאות ופריון",
       "description": "תמיכה בתהליכי פוריות (IVF, IUI, שימור פוריות), טיוב איכות הביציות והזרע, תמיכה ברירית הרחם וטיפול במערכת העיכול.",
       "link": "clinic.html",
-      "image": "assets/inbal-clinic.jpg"
+      "image": "assets/fertility.png"
     },
     {
       "id": "workshops",
-      "title": "סדנאות בישול וסגנון חיים",
+      "title": "סדנאות בישול ואורח חיים וודי - איורוודי וסגנון חיים",
       "description": "סדנאות חווייתיות ללימוד בישול וודי בריא, טעים, מחזק ומחסן המותאם גם לילדים.",
       "link": "workshops.html",
       "image": "assets/spices-mishmish.jpg"
@@ -39,7 +39,7 @@
       "title": "סיורי צמחי מרפא",
       "description": "חיבור לטבע ולידע עתיק בסיורי ליקוט חווייתיים.",
       "link": "https://forms.gle/98kVxasBnLb2rxbcA",
-      "image": "assets/spices-market.jpg"
+      "image": "assets/tours-nature.png"
     }
   ],
   "instagram_gallery": [
