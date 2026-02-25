@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר | Vedica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Assistant', sans-serif; background-color: #fdfbf7; }
+    </style>
+</head>
+<body class="text-slate-800">
+    <nav class="bg-white shadow-sm p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-emerald-800">Vedica</a>
+            <a href="index.html" class="text-emerald-600 font-bold">← חזרה לבית</a>
+        </div>
+    </nav>
+
+    <main class="max-w-2xl mx-auto px-4 py-16">
+        <h1 class="text-4xl font-bold text-emerald-900 mb-8 text-center">בואו נדבר</h1>
+        <div class="bg-white p-8 rounded-3xl shadow-xl border border-emerald-100">
+            <form action="#" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-bold mb-2">שם מלא</label>
+                    <input type="text" placeholder="איך קוראים לך?" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">טלפון</label>
+                    <input type="tel" placeholder="050-0000000" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">במה תרצו להתמקד?</label>
+                    <select class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none">
+                        <option>ייעוץ אישי בקליניקה</option>
+                        <option>סדנאות בישול</option>
+                        <option>סיורי צמחי מרפא</option>
+                        <option>אחר</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-emerald-700 text-white py-4 rounded-xl text-xl font-bold hover:bg-emerald-800 transition">שליחת פנייה</button>
+            </form>
+            <div class="mt-8 pt-8 border-t text-center">
+                <p class="text-slate-500 mb-4">או פשוט שלחו לי הודעה ישירה:</p>
+                <a id="wa-contact" href="#" class="text-green-600 font-bold text-lg">WhatsApp ←</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        fetch('content.json')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('wa-contact').href = "https://wa.me/" + data.site.whatsapp;
+            });
+    </script>
+</body>
+</html>
