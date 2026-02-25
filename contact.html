@@ -81,7 +81,12 @@
                 </div>
                 <div>
                     <label class="block text-sm font-bold mb-2">טלפון</label>
-                    <input type="tel" name="phone" placeholder="050-0000000"
+                    <input type="tel" name="phone" placeholder="050-0000000" pattern="[0-9]*"
+                        class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">דואר אלקטרוני</label>
+                    <input type="email" name="email" placeholder="va@gmail.com"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
@@ -136,6 +141,53 @@
             .then(data => {
                 document.getElementById('wa-contact').href = "https://wa.me/" + data.site.whatsapp;
             });
+
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', async function (event) {
+            event.preventDefault(); // מניעת מעבר לעמוד של Formspree
+
+            // שינוי הכפתור בזמן טעינה
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerText;
+            submitBtn.innerText = 'שולח...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // מעבר מוצלח לעמוד התודה מבלי להציג את עמוד הביניים של Formspree
+                    window.location.href = contactForm.querySelector('input[name="_next"]').value;
+                } else {
+                    const data = await response.json();
+                    if (Object.hasOwn(data, 'errors')) {
+                        formMessage.innerText = data["errors"].map(error => error["message"]).join(", ");
+                    } else {
+                        formMessage.innerText = "אופס! הייתה בעיה בשליחת הטופס.";
+                    }
+                    formMessage.classList.remove('hidden');
+                    formMessage.classList.add('text-red-500');
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                formMessage.innerText = "אופס! הייתה תקלה נסה שוב מאוחר יותר.";
+                formMessage.classList.remove('hidden');
+                formMessage.classList.add('text-red-500');
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
     </script>
 </body>
 
