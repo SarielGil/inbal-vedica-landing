@@ -1,51 +1,51 @@
 {
-  "site": {
-    "name": "VEDICA - ענבל הנסב",
-    "logo": "assets/logo-transparent.png",
-    "location": "תל אביב",
-    "email": "inbal.ph@gmail.com",
-    "whatsapp": "972545774407",
-    "facebook": "https://www.facebook.com/inbal.hanasab",
-    "instagram": "https://www.instagram.com/inbal_hanasab_vedica"
+ "site": {
+  "name": "VEDICA - ענבל הנסב",
+  "logo": "assets/logo-transparent.png",
+  "location": "תל אביב",
+  "email": "inbal.ph@gmail.com",
+  "whatsapp": "972545774407",
+  "facebook": "https://www.facebook.com/inbal.hanasab",
+  "instagram": "https://www.instagram.com/inbal_hanasab_vedica"
+ },
+ "hero": {
+  "title": "איורוודה בתל אביב: עם ענבל הנסב",
+  "subtitle": "מטפלת איורוודה מוסמכת, סדנאות תזונה וצמחי מרפא וסיורים חווייתיים בלב תל אביב",
+  "image": "assets/inbal-hero.jpg"
+ },
+ "podcast": {
+  "title": "פודקאסט: רפואה בצלחת - עם ענבל הנסב",
+  "description": "תזונה ובריאות טבעית בגישה המשלבת מדע ורפואה מסורתית. טיפים מעשיים וכלים מעולם האיורוודה לאיזון ובריאות ביום-יום.",
+  "link": "podcast.html",
+  "image": "assets/dates-hands.jpg"
+ },
+ "services": [
+  {
+   "id": "clinic",
+   "title": "ליווי אישי לבריאות ופריון",
+   "description": "תמיכה בתהליכי פוריות (IVF, IUI, שימור פוריות), טיוב איכות הביציות והזרע, תמיכה ברירית הרחם וטיפול במערכת העיכול.",
+   "link": "clinic.html",
+   "image": "assets/fertility.png"
   },
-  "hero": {
-    "title": "איורוודה בתל אביב: איזון גוף ונפש עם ענבל הנסב",
-    "subtitle": "מטפלת איורוודה מוסמכת, סדנאות בישול ואורח חיים וודי - איורוודי וסיורי צמחי מרפא בלב תל אביב",
-    "image": "assets/inbal-hero.jpg"
+  {
+   "id": "workshops",
+   "title": "סדנאות צמחי מרפא ותזונה",
+   "description": "סדנת צמחי מרפא ב-9/3: 'צמחים זה החיים!' – ללמוד להשתמש בתבלינים כתרופה טבעית ביום-יום.",
+   "link": "workshops.html",
+   "image": "assets/spices-market.jpg"
   },
-  "podcast": {
-    "title": "פודקאסט: רפואה בצלחת - על תזונה וילדים, עם ענבל הנסב",
-    "description": "תזונת ילדים בגישה המשלבת מדע ורפואה מסורתית. טיפים מעשיים וכלים מעולם הוידיקה להורים שמחפשים איזון ובריאות בצלחת של הילדים.",
-    "link": "#",
-    "image": "assets/dates-hands.jpg"
-  },
-  "services": [
-    {
-      "id": "clinic",
-      "title": "ליווי אישי לבריאות ופריון",
-      "description": "תמיכה בתהליכי פוריות (IVF, IUI, שימור פוריות), טיוב איכות הביציות והזרע, תמיכה ברירית הרחם וטיפול במערכת העיכול.",
-      "link": "clinic.html",
-      "image": "assets/fertility.png"
-    },
-    {
-      "id": "workshops",
-      "title": "סדנאות בישול ואורח חיים וודי - איורוודי וסגנון חיים",
-      "description": "סדנאות חווייתיות ללימוד בישול וודי בריא, טעים, מחזק ומחסן המותאם גם לילדים.",
-      "link": "workshops.html",
-      "image": "assets/spices-mishmish.jpg"
-    },
-    {
-      "id": "tours",
-      "title": "סיורי צמחי מרפא",
-      "description": "חיבור לטבע ולידע עתיק בסיורי ליקוט חווייתיים.",
-      "link": "https://forms.gle/98kVxasBnLb2rxbcA",
-      "image": "assets/tours-nature.png"
-    }
-  ],
-  "instagram_gallery": [
-    "assets/dates-hands.jpg",
-    "assets/inbal-hero.jpg",
-    "assets/spices-mishmish.jpg",
-    "assets/roses.jpg"
-  ]
+  {
+   "id": "tours",
+   "title": "סיור בשוק לוינסקי",
+   "description": "גלו את הסודות של דוכני התבלינים וצמחי המרפא בסיור חווייתי בשוק לוינסקי.",
+   "link": "tours.html",
+   "image": "assets/spices-market.jpg"
+  }
+ ],
+ "instagram_gallery": [
+  "assets/dates-hands.jpg",
+  "assets/inbal-hero.jpg",
+  "assets/spices-mishmish.jpg",
+  "assets/roses.jpg"
+ ]
 }
