@@ -3,7 +3,7 @@
 ## 🎯 Target Keywords (Hebrew)
 
 ### Primary Keywords
-- אירוודה תל אביב
+- איורוודה תל אביב
 - טיפול איורוודי
 - פוריות איורוודה
 - אורח חיים בריא
@@ -21,10 +21,10 @@
 ## 📄 Meta Descriptions & Page Structure
 
 ### 1. **index.html** (Home)
-- **Meta Title**: אירוודה בתל אביב - VEDICA | ענבל הנסב
+- **Meta Title**: איורוודה בתל אביב - VEDICA | ענבל הנסב
 - **Meta Description**: טיפול איורוודי מותאם אישית, סדנאות בישול, וסיורי צמחי מרפא בתל אביב עם ענבל הנסב, מטפלת מוסמכת.
 - **H1**: בואו נתחיל את המסע שלכם לעולם האיזון
-- **Keywords**: אירוודה תל אביב, טיפול איורוודי, אורח חיים בריא
+- **Keywords**: איורוודה תל אביב, טיפול איורוודי, אורח חיים בריא
 - **Internal Links**: About, Clinic, Workshops, Tours, Blog, Contact
 
 ### 2. **about.html** (About)
