@@ -1,12 +1,12 @@
 # VEDICA - Ayurveda and Holistic Wellness in Tel Aviv
 
-> Personalized Ayurvedic treatments, cooking workshops, and herbal medicine tours in Tel Aviv led by Inbal Hanasab.
+> Personalized Ayurvedic treatments, healing sessions, cooking workshops, and herbal medicine tours in Tel Aviv led by Inbal Hanasab.
 
-VEDICA offers a holistic approach to health, focusing on fertility support, digestive health, stress management, and longevity through traditional Ayurvedic wisdom. The clinic is located at Arlozorov 82, Tel Aviv.
+VEDICA offers a holistic approach to health, focusing on fertility support, digestive health, stress management, and longevity through traditional Ayurvedic healing wisdom. The clinic is led by Inbal Hanasab, a certified Ayurveda Healer and practitioner.
 
 ## Services
 
-- [Clinic](https://vedica-ayurveda.co.il/clinic.html): Personal consultations, pulse diagnosis, and tailored treatment plans for fertility, digestion, and stress.
+- [Clinic](https://vedica-ayurveda.co.il/clinic.html): Personal consultations, pulse diagnosis, and tailored healing plans for fertility, digestion, and stress.
 - [Workshops](https://vedica-ayurveda.co.il/workshops.html): Vedic cooking and lifestyle workshops for adults and children.
 - [Tours](https://vedica-ayurveda.co.il/tours.html): Experiential herbal medicine tours in Levinsky Market, exploring ancient medicine and natural remedies.
 - [Treatment Process](https://vedica-ayurveda.co.il/process.html): Overview of the diagnostic and therapeutic journey at VEDICA.
@@ -15,7 +15,7 @@ VEDICA offers a holistic approach to health, focusing on fertility support, dige
 
 - [Blog](https://vedica-ayurveda.co.il/blog.html): Articles on Vedic nutrition, medicinal herbs, healthy recipes, and balanced living.
 - [Podcast](https://vedica-ayurveda.co.il/podcast.html): "Refua BeTzalachat" (Medicine on a Plate) – discussions on child nutrition, Ayurveda, and family health.
-- [About](https://vedica-ayurveda.co.il/about.html): Inbal Hanasab's journey from diplomat and lawyer to certified Ayurvedic practitioner.
+- [About](https://vedica-ayurveda.co.il/about.html): Inbal Hanasab's journey from diplomat and lawyer to certified Ayurveda Healer and practitioner.
 
 ## Contact
 
@@ -27,6 +27,7 @@ VEDICA offers a holistic approach to health, focusing on fertility support, dige
 ## Targeted Treatments & Locations
 
 - [מטפלת איורוודה מומלצת בתל אביב](https://vedica-ayurveda.co.il/about.html): Expert Ayurvedic care in central Tel Aviv.
+- [מרפאה באיורוודה (Ayurveda Healer)](https://vedica-ayurveda.co.il/index.html): Traditional Ayurvedic healing and medicine.
 - [פתרונות איורוודיים לסטרס וחרדה](https://vedica-ayurveda.co.il/clinic.html): Specialized treatments for stress and anxiety.
 - [IVF איורוודה לטיפולי פוריות](https://vedica-ayurveda.co.il/clinic.html): Supporting fertility and IVF processes with traditional medicine.
 - [אבחון דושות איורוודה תל אביב](https://vedica-ayurveda.co.il/clinic.html): Personalized Dosha diagnosis and constitution analysis.
