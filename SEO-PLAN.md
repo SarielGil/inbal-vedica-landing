@@ -167,20 +167,25 @@ Home > Blog > [Category] > [Post]
 - [x] Internal links (3-5 per page)
 - [x] Mobile responsive
 - [ ] Page speed optimization
-- [ ] Schema markup implementation
+- [x] Schema markup implementation (LocalBusiness, Person, MedicalBusiness, FAQPage, BreadcrumbList)
 
 ### Technical
 - [x] Sitemap.xml
 - [x] Robots.txt
-- [ ] Google Search Console verification
-- [ ] Google Analytics
-- [ ] Open Graph tags (social sharing)
+- [x] Google Search Console verification
+- [x] Google Analytics (GA4 + GTM)
+- [x] Open Graph tags (all pages)
+- [x] og:type and og:locale (all pages)
+- [x] Canonical tags (deduplicated)
+- [x] LLM discovery link (llms.txt)
 
 ### Content
 - [ ] Blog posts (min 5)
 - [ ] Customer testimonials
-- [ ] FAQ section
+- [x] FAQ section (expanded to 10 questions)
 - [ ] Local SEO (Google My Business)
+- [x] Google Maps embed (clinic page)
+- [x] Entity clarity paragraph (index page)
 
 ---
 
