@@ -8,7 +8,7 @@
         content="מרפאה ומטפלת איורוודית מוסמכת (Ayurveda Healer). טיפול איורוודי מותאם אישית, תזונה ובריאות, וסיורי צמחי מרפא בתל אביב עם ענבל הנסב.">
     <meta name="keywords" content="איורוודה תל אביב, מרפאה באיורוודה, מטפלת איורוודית, healing, אבחון דושות, תזונה איורוודית">
     <title>מרפאה באיורוודה בתל אביב - VEDICA | ענבל הנסב</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
     <meta name="google-site-verification" content="2_zcRcTMURfU34s0u6d7L0WHijJwXhOBD-g80rTRl0g">
     <link rel="canonical" href="https://vedica-ayurveda.co.il/">
@@ -30,7 +30,7 @@
     <meta property="og:description" content="טיפול איורוודי מותאם אישית עם ענבל הנסב">
     <meta property="og:url" content="https://vedica-ayurveda.co.il">
     <meta property="og:site_name" content="VEDICA - ענבל הנסב">
-    <meta property="og:image" content="https://vedica-ayurveda.co.il/assets/inbal-hero.jpg">
+    <meta property="og:image" content="https://vedica-ayurveda.co.il/assets/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/inbal-hero.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="he_IL">
@@ -40,8 +40,8 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "VEDICA",
-      "image": "https://vedica-ayurveda.co.il/assets/inbal-hero.jpg",
-      "logo": "https://vedica-ayurveda.co.il/assets/logo.jpg",
+      "image": "https://vedica-ayurveda.co.il/assets/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/inbal-hero.jpg",
+      "logo": "https://vedica-ayurveda.co.il/assets/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/logo.jpg",
       "description": "קליניקה לטיפול איורוודי בתל אביב - מומחית בפוריות, עיכול ואיזון הורמונלי",
       "address": {
         "@type": "PostalAddress",
@@ -100,7 +100,7 @@
       ]
     }
     </script>
-    <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+    <link rel="icon" href="assets/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/logo.jpg" type="image/jpeg">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXKKRFNL56"></script>
     <script>
@@ -131,7 +131,7 @@
     <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
-                <img id="site-logo" src="assets/logo-transparent.png" alt="VEDICA - קליניקת איורוודה בתל אביב" class="h-16 w-auto">
+                <img id="site-logo" src="assets/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/logo-transparent.png" alt="VEDICA - קליניקת איורוודה בתל אביב" class="h-16 w-auto" loading="lazy">
                 <h1 id="site-name" class="text-2xl font-bold text-emerald-800 hidden md:block">VEDICA</h1>
             </a>
             <div class="space-x-reverse space-x-6 flex font-medium overflow-x-auto whitespace-nowrap pb-2 md:pb-0 items-center"
@@ -182,7 +182,7 @@
     <section class="bg-emerald-50 py-16">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
-                <img id="podcast-image" src="" alt="פודקאסט רפואה בצלחת - ענבל הנסב VEDICA" class="rounded-2xl shadow-2xl w-full h-80 object-cover">
+                <img id="podcast-image" src="" alt="פודקאסט רפואה בצלחת - ענבל הנסב VEDICA" class="rounded-2xl shadow-2xl w-full h-80 object-cover" loading="lazy">
             </div>
             <div class="md:w-1/2">
                 <span class="text-emerald-700 font-bold tracking-widest uppercase text-sm">חדש באוויר: תזונת ילדים
@@ -400,7 +400,7 @@
                 data.services.forEach(service => {
                     const card = `
                         <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
-                            <img src="${service.image}" alt="${service.title}" class="w-full h-48 object-cover">
+                            <img src="${service.image}" alt="${service.title}" class="w-full h-48 object-cover" loading="lazy">
                             <div class="p-6">
                                 <h4 class="text-xl font-bold mb-2 text-emerald-800">${service.title}</h4>
                                 <p class="text-slate-600 mb-4">${service.description}</p>
@@ -416,7 +416,7 @@
                     data.instagram_gallery.forEach(imgUrl => {
                         const item = `
                             <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden group relative">
-                                <img src="${imgUrl}" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+                                <img src="${imgUrl}" class="w-full h-full object-cover transition duration-300 group-hover:scale-110" loading="lazy">
                             </div>
                         `;
                         igFeed.innerHTML += item;

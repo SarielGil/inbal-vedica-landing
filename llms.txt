@@ -13,7 +13,10 @@ VEDICA offers a holistic approach to health, focusing on fertility support, dige
 
 ## Content
 
-- [Blog](https://vedica-ayurveda.co.il/blog.html): Articles on Vedic nutrition, medicinal herbs, healthy recipes, and balanced living.
+- [Blog](https://vedica-ayurveda.co.il/blog.html): Articles on Vedic nutrition, medicinal herbs, and balanced living.
+    - [Ceylon vs. Cassia Cinnamon](https://vedica-ayurveda.co.il/blog-cinnamon.html): Ayurvedic perspective on cinnamon types.
+    - [Sourdough & Digestion](https://vedica-ayurveda.co.il/blog-sourdough.html): Benefits of fermented grains.
+    - [Himalayan Basmati Rice](https://vedica-ayurveda.co.il/blog-basmati.html): Satvic properties and glycemic index.
 - [Podcast](https://vedica-ayurveda.co.il/podcast.html): "Refua BeTzalachat" (Medicine on a Plate) – discussions on child nutrition, Ayurveda, and family health.
 - [About](https://vedica-ayurveda.co.il/about.html): Inbal Hanasab's journey from diplomat and lawyer to certified Ayurveda Healer and practitioner.
 

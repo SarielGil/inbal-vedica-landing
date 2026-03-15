@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{TITLE}} | VEDICA בלוג</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -25,7 +25,7 @@
             margin-bottom: 1rem;
         }
     </style>
-    <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+    <link rel="icon" href="assets/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/logo.jpg" type="image/jpeg">
     <link rel="canonical" href="https://vedica-ayurveda.co.il/blog-template.html">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXKKRFNL56"></script>
@@ -57,7 +57,7 @@
     <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
-                <img id="site-logo" src="assets/logo-transparent.png" alt="Logo" class="h-16 w-auto">
+                <img id="site-logo" src="assets/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/REPLACE_ME_ASSETS/logo-transparent.png" alt="Logo" class="h-16 w-auto" loading="lazy">
                 <h1 class="text-2xl font-bold text-emerald-800 hidden md:block">VEDICA</h1>
             </a>
             <div class="space-x-reverse space-x-6 flex font-medium overflow-x-auto whitespace-nowrap pb-2 md:pb-0 items-center"
@@ -90,7 +90,7 @@
 
         <!-- Featured Image (optional) -->
         {{#IF_IMAGE}}
-        <img src="{{IMAGE_URL}}" alt="{{TITLE}}" class="w-full rounded-2xl shadow-lg mb-12 object-cover h-96">
+        <img src="{{IMAGE_URL}}" alt="{{TITLE}}" class="w-full rounded-2xl shadow-lg mb-12 object-cover h-96" loading="lazy">
         {{/IF_IMAGE}}
 
         <!-- Post Content -->
