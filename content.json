@@ -1,7 +1,7 @@
 {
  "site": {
   "name": "VEDICA - ענבל הנסב",
-  "logo": "assets/logo-transparent.png",
+  "logo": "assets/logo-transparent.webp",
   "location": "תל אביב",
   "email": "inbal.ph@gmail.com",
   "whatsapp": "972545774407",
@@ -11,13 +11,13 @@
  "hero": {
   "title": "איורוודה בתל אביב: עם ענבל הנסב",
   "subtitle": "מרפאה ומטפלת איורוודה מוסמכת (Ayurveda Healer), סדנאות תזונה וצמחי מרפא וסיורים חווייתיים בלב תל אביב",
-  "image": "assets/inbal-hero.jpg"
+  "image": "assets/inbal-hero.webp"
  },
  "podcast": {
   "title": "פודקאסט: רפואה בצלחת - עם ענבל הנסב",
   "description": "תזונה ובריאות טבעית בגישה המשלבת מדע ורפואה מסורתית. טיפים מעשיים וכלים מעולם האיורוודה לאיזון ובריאות ביום-יום.",
   "link": "podcast.html",
-  "image": "assets/dates-hands.jpg"
+  "image": "assets/dates-hands.webp"
  },
  "services": [
   {
@@ -25,27 +25,27 @@
    "title": "ליווי אישי לבריאות ופריון",
    "description": "תמיכה בתהליכי פוריות (IVF, IUI, שימור פוריות), טיוב איכות הביציות והזרע, תמיכה ברירית הרחם וטיפול במערכת העיכול.",
    "link": "clinic.html",
-   "image": "assets/fertility.png"
+   "image": "assets/fertility.webp"
   },
   {
    "id": "workshops",
    "title": "סדנאות צמחי מרפא ותזונה",
    "description": "סדנת צמחי מרפא ב-9/3: 'צמחים זה החיים!' – ללמוד להשתמש בתבלינים כתרופה טבעית ביום-יום.",
    "link": "workshops.html",
-   "image": "assets/spices-market.jpg"
+   "image": "assets/spices-market.webp"
   },
   {
    "id": "tours",
    "title": "סיור בשוק לוינסקי",
    "description": "גלו את הסודות של דוכני התבלינים וצמחי המרפא בסיור חווייתי בשוק לוינסקי.",
    "link": "tours.html",
-   "image": "assets/spices-market.jpg"
+   "image": "assets/spices-market.webp"
   }
  ],
  "instagram_gallery": [
-  "assets/dates-hands.jpg",
-  "assets/inbal-hero.jpg",
-  "assets/spices-mishmish.jpg",
-  "assets/roses.jpg"
+  "assets/dates-hands.webp",
+  "assets/inbal-hero.webp",
+  "assets/spices-mishmish.webp",
+  "assets/roses.webp"
  ]
 }
