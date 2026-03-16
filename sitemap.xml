@@ -7,7 +7,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>https://vedica-ayurveda.co.il/</loc>
-        <lastmod>2026-03-15</lastmod>
+        <lastmod>2026-03-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -37,9 +37,45 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog.html</loc>
-        <lastmod>2026-03-15</lastmod>
+        <lastmod>2026-03-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.82</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.84</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.86</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.83</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/blog-ivf-fertility.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.87</priority>
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/podcast.html</loc>
@@ -76,5 +112,11 @@
         <lastmod>2026-03-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/blog-bread.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.78</priority>
     </url>
 </urlset>

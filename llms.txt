@@ -2,7 +2,7 @@
 
 > Personalized Ayurvedic treatments, healing sessions, cooking workshops, and herbal medicine tours in Tel Aviv led by Inbal Hanasab.
 
-VEDICA offers a holistic approach to health, focusing on fertility support, digestive health, stress management, and longevity through traditional Ayurvedic healing wisdom. The clinic is led by Inbal Hanasab, a certified Ayurveda Healer and practitioner.
+VEDICA offers a holistic approach to health, focusing on fertility support, digestive health, stress management, sleep balance, dosha diagnosis, and Ayurvedic nutrition through traditional healing wisdom. The clinic is led by Inbal Hanasab, a certified Ayurveda practitioner in Tel Aviv.
 
 ## Services
 
@@ -13,7 +13,13 @@ VEDICA offers a holistic approach to health, focusing on fertility support, dige
 
 ## Content
 
-- [Blog](https://vedica-ayurveda.co.il/blog.html): Articles on Vedic nutrition, medicinal herbs, and balanced living.
+- [Blog](https://vedica-ayurveda.co.il/blog.html): Articles and guides on Ayurveda, fertility, stress, sleep, dosha diagnosis, medicinal herbs, and balanced living.
+    - [What Is Ayurveda and How Does It Work?](https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html): Foundational guide to Ayurveda, doshas, diagnosis, and lifestyle.
+    - [Ayurvedic Solutions for Stress, Anxiety, and Sleep](https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html): Practical support around nervous system overload and evening routines.
+    - [Dosha Diagnosis in Tel Aviv](https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html): Explains pulse diagnosis and how a first consultation works.
+    - [Ayurvedic Nutrition Consultation in Tel Aviv](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html): What tailored nutrition looks like in the clinic.
+    - [Ayurveda vs. Chinese Medicine](https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html): Clear comparison for people choosing between holistic approaches.
+    - [IVF & Fertility Preservation in Ayurveda](https://vedica-ayurveda.co.il/blog-ivf-fertility.html): Supportive care alongside fertility treatment.
     - [Ceylon vs. Cassia Cinnamon](https://vedica-ayurveda.co.il/blog-cinnamon.html): Ayurvedic perspective on cinnamon types.
     - [Sourdough & Digestion](https://vedica-ayurveda.co.il/blog-sourdough.html): Benefits of fermented grains.
     - [Himalayan Basmati Rice](https://vedica-ayurveda.co.il/blog-basmati.html): Satvic properties and glycemic index.
@@ -34,6 +40,9 @@ VEDICA offers a holistic approach to health, focusing on fertility support, dige
 - [פתרונות איורוודיים לסטרס וחרדה](https://vedica-ayurveda.co.il/clinic.html): Specialized treatments for stress and anxiety.
 - [IVF איורוודה לטיפולי פוריות](https://vedica-ayurveda.co.il/clinic.html): Supporting fertility and IVF processes with traditional medicine.
 - [אבחון דושות איורוודה תל אביב](https://vedica-ayurveda.co.il/clinic.html): Personalized Dosha diagnosis and constitution analysis.
+- [מה זה איורוודה ואיך זה עובד](https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html): Introductory guide for general queries.
+- [ייעוץ תזונה איורוודית תל אביב](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html): Local intent page for Ayurvedic nutrition support.
+- [השוואת טיפולי איורוודה ורפואה סינית](https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html): Comparison page for treatment selection queries.
 
 ## Optional
 
