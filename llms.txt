@@ -7,8 +7,8 @@ VEDICA offers a holistic approach to health, focusing on fertility support, dige
 ## Services
 
 - [Clinic](https://vedica-ayurveda.co.il/clinic.html): Personal consultations, pulse diagnosis, and tailored healing plans for fertility, digestion, and stress.
-- [Workshops](https://vedica-ayurveda.co.il/workshops.html): Vedic cooking and lifestyle workshops for adults and children.
-- [Tours](https://vedica-ayurveda.co.il/tours.html): Experiential herbal medicine tours in Levinsky Market, exploring ancient medicine and natural remedies.
+- [Workshops](https://vedica-ayurveda.co.il/workshops.html): Ayurvedic and herbal workshops in Tel Aviv, including `סדנת צמחי מרפא` and spice-based health workshops.
+- [Tours](https://vedica-ayurveda.co.il/tours.html): `סיור צמחי מרפא` and `סיורי חקר צמחי מרפא` in Levinsky Market, exploring ancient medicine, spices, and natural remedies.
 - [Treatment Process](https://vedica-ayurveda.co.il/process.html): Overview of the diagnostic and therapeutic journey at VEDICA.
 
 ## Content
@@ -23,7 +23,7 @@ VEDICA offers a holistic approach to health, focusing on fertility support, dige
     - [Ceylon vs. Cassia Cinnamon](https://vedica-ayurveda.co.il/blog-cinnamon.html): Ayurvedic perspective on cinnamon types.
     - [Sourdough & Digestion](https://vedica-ayurveda.co.il/blog-sourdough.html): Benefits of fermented grains.
     - [Himalayan Basmati Rice](https://vedica-ayurveda.co.il/blog-basmati.html): Satvic properties and glycemic index.
-- [Podcast](https://vedica-ayurveda.co.il/podcast.html): "Refua BeTzalachat" (Medicine on a Plate) – discussions on child nutrition, Ayurveda, and family health.
+- [Podcast](https://vedica-ayurveda.co.il/podcast.html): `פודקאסט בריאות` - "Refua BeTzalachat" (Medicine on a Plate) with discussions on child nutrition, Ayurveda, herbs, and family health.
 - [About](https://vedica-ayurveda.co.il/about.html): Inbal Hanasab's journey from diplomat and lawyer to certified Ayurveda Healer and practitioner.
 
 ## Contact
@@ -40,6 +40,9 @@ VEDICA offers a holistic approach to health, focusing on fertility support, dige
 - [פתרונות איורוודיים לסטרס וחרדה](https://vedica-ayurveda.co.il/clinic.html): Specialized treatments for stress and anxiety.
 - [IVF איורוודה לטיפולי פוריות](https://vedica-ayurveda.co.il/clinic.html): Supporting fertility and IVF processes with traditional medicine.
 - [אבחון דושות איורוודה תל אביב](https://vedica-ayurveda.co.il/clinic.html): Personalized Dosha diagnosis and constitution analysis.
+- [סיור צמחי מרפא](https://vedica-ayurveda.co.il/tours.html): Herbal medicine tour in Tel Aviv's Levinsky Market.
+- [סדנת צמחי מרפא](https://vedica-ayurveda.co.il/workshops.html): Herbal workshop and practical spice learning in Tel Aviv.
+- [פודקאסט בריאות](https://vedica-ayurveda.co.il/podcast.html): Health podcast on Ayurveda, herbs, and natural living.
 - [מה זה איורוודה ואיך זה עובד](https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html): Introductory guide for general queries.
 - [ייעוץ תזונה איורוודית תל אביב](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html): Local intent page for Ayurvedic nutrition support.
 - [השוואת טיפולי איורוודה ורפואה סינית](https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html): Comparison page for treatment selection queries.
