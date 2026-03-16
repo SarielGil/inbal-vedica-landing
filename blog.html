@@ -24,6 +24,10 @@
             font-family: 'Assistant', sans-serif;
             background-color: #fdfbf7;
         }
+
+        #category-filters::-webkit-scrollbar {
+            display: none;
+        }
     </style>
     <link rel="icon" href="assets/logo.webp" type="image/jpeg">
     <!-- Google tag (gtag.js) -->
@@ -81,19 +85,7 @@
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-16">
-        <div id="category-filters" class="flex flex-wrap gap-3 mb-12 justify-center"></div>
-
-        <div class="mb-12">
-            <div class="flex items-center justify-center gap-3 mb-4">
-                <span class="text-sm font-bold text-emerald-800 tracking-wide">סינון לפי תגיות</span>
-            </div>
-            <div id="tag-filters" class="flex flex-wrap gap-3 justify-center">
-                <button class="tag-filter px-4 py-2 rounded-full font-bold transition bg-emerald-700 text-white"
-                    data-tag="all">
-                    כל התגיות
-                </button>
-            </div>
-        </div>
+        <div id="category-filters" class="flex gap-3 mb-12 overflow-x-auto justify-start md:justify-center whitespace-nowrap pb-2" style="scrollbar-width: none; -ms-overflow-style: none;"></div>
 
         <!-- Blog Posts Grid -->
         <div id="posts-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -104,7 +96,7 @@
         <div id="empty-state" class="text-center py-20">
             <p class="text-4xl mb-4"></p>
             <p class="text-2xl text-slate-600">תוכן חדש בדרך</p>
-            <p class="text-slate-500 mt-2">אפשר לנסות קטגוריה אחרת, תגית אחרת, או לפנות אליי לייעוץ מותאם אישית.</p>
+            <p class="text-slate-500 mt-2">אפשר לנסות קטגוריה אחרת, או לפנות אליי לייעוץ מותאם אישית.</p>
         </div>
     </main>
 
@@ -163,32 +155,15 @@
     <script>
         let allPosts = [];
         let currentCategory = 'all';
-        let currentTag = 'all';
 
         fetch('blog-data.json')
             .then(res => res.json())
             .then(data => {
                 allPosts = data.posts;
                 renderCategoryFilters([...new Set((data.posts || []).map(post => post.category))]);
-                renderTagFilters(getVisibleTags(allPosts));
                 renderPosts();
             })
             .catch(err => console.error('Error loading blog data:', err));
-
-        function getVisibleTags(posts) {
-            const counts = {};
-            posts.forEach(post => {
-                (post.tags || []).forEach(tag => {
-                    counts[tag] = (counts[tag] || 0) + 1;
-                });
-            });
-
-            return Object.entries(counts)
-                .filter(([, count]) => count > 1)
-                .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'he'))
-                .map(([tag]) => tag)
-                .slice(0, 8);
-        }
 
         function renderCategoryFilters(categories) {
             const container = document.getElementById('category-filters');
@@ -223,47 +198,13 @@
             });
         }
 
-        function renderTagFilters(tags) {
-            const container = document.getElementById('tag-filters');
-            const buttons = tags.map(tag => `
-                <button class="tag-filter px-4 py-2 rounded-full font-bold transition bg-slate-200 text-slate-800"
-                    data-tag="${tag}">
-                    ${tag}
-                </button>
-            `).join('');
-
-            container.innerHTML = `
-                <button class="tag-filter px-4 py-2 rounded-full font-bold transition ${currentTag === 'all' ? 'bg-emerald-700 text-white' : 'bg-slate-200 text-slate-800'}"
-                    data-tag="all">
-                    כל התגיות
-                </button>
-                ${buttons}
-            `;
-
-            document.querySelectorAll('.tag-filter').forEach(btn => {
-                btn.addEventListener('click', function () {
-                    document.querySelectorAll('.tag-filter').forEach(b => {
-                        b.classList.remove('bg-emerald-700', 'text-white');
-                        b.classList.add('bg-slate-200', 'text-slate-800');
-                    });
-
-                    this.classList.add('bg-emerald-700', 'text-white');
-                    this.classList.remove('bg-slate-200', 'text-slate-800');
-
-                    currentTag = this.dataset.tag;
-                    renderPosts();
-                });
-            });
-        }
-
         function renderPosts() {
             const container = document.getElementById('posts-container');
             const emptyState = document.getElementById('empty-state');
 
             const filtered = allPosts.filter(post => {
                 const categoryMatch = currentCategory === 'all' || post.category === currentCategory;
-                const tagMatch = currentTag === 'all' || (post.tags || []).includes(currentTag);
-                return categoryMatch && tagMatch;
+                return categoryMatch;
             }).sort((a, b) => {
                 const featuredDelta = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
                 if (featuredDelta !== 0) {
@@ -295,11 +236,6 @@
                         <p class="text-slate-600 mb-6 leading-relaxed">
                             ${post.excerpt}
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            ${(post.tags || []).slice(0, 3).map(tag => `
-                                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-bold">${tag}</span>
-                            `).join('')}
-                        </div>
                         <a href="${post.slug}.html" class="text-emerald-700 font-bold hover:text-emerald-900 transition">
                             קרא עוד →
                         </a>
