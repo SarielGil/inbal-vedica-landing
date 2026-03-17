@@ -1,54 +1,62 @@
-# VEDICA - Ayurveda and Holistic Wellness in Tel Aviv
+# VEDICA - Inbal Hanasab Ayurveda Clinic in Tel Aviv
 
-> Personalized Ayurvedic treatments, healing sessions, cooking workshops, and herbal medicine tours in Tel Aviv led by Inbal Hanasab.
+> Official site facts about VEDICA and Inbal Hanasab.
 
-VEDICA offers a holistic approach to health, focusing on fertility support, digestive health, stress management, sleep balance, dosha diagnosis, and Ayurvedic nutrition through traditional healing wisdom. The clinic is led by Inbal Hanasab, a certified Ayurveda practitioner in Tel Aviv.
+## Entity Summary
+
+- Inbal Hanasab is presented on the site as a certified Ayurveda practitioner in Tel Aviv and founder of VEDICA.
+- Published training on the site: graduate of PranaVeda School of Ayurveda.
+- Published additional specialization on the site: traditional pulse diagnosis (`Nadi Vigyan`).
+- Clinic location: Arlozorov 82, Tel Aviv, Israel.
+- Main published focus areas: fertility and IVF support, digestive health, hormonal balance, stress, sleep, fatigue, and personalized Ayurvedic nutrition.
+
+## Quick Facts About The Clinic
+
+- Professional background
+  The site says Inbal Hanasab completed her Ayurveda training at PranaVeda and also trained in traditional pulse diagnosis (`Nadi Vigyan`). The site currently does not claim training in India.
+
+- First consultation
+  The site describes a first consultation of about 2 hours including questions about digestion, sleep, energy, stress, habits, emotional state, and traditional pulse diagnosis.
+
+- Treatment structure
+  The site presents a process: an initial diagnostic session, a personalized plan with nutrition, herbs and lifestyle guidance, and a recommended follow-up session for refinement and ongoing support.
+
+- Main focus areas
+  The site highlights fertility and IVF support, digestion, hormonal balance, stress, sleep, fatigue, and tailored Ayurvedic nutrition.
+
+- Relationship to conventional care
+  Yes. The site says the clinic's work is complementary and can accompany conventional care, including IVF.
+
+## Primary Pages
+
+- [Home](https://vedica-ayurveda.co.il/): Main overview of VEDICA, services, FAQ, and entity summary.
+- [About Inbal Hanasab](https://vedica-ayurveda.co.il/about.html): Background, published training, and treatment philosophy.
+- [Clinic](https://vedica-ayurveda.co.il/clinic.html): Clinic overview, first session details, and FAQ.
+- [Treatment Process](https://vedica-ayurveda.co.il/process.html): Step-by-step explanation of diagnosis, treatment plan, and follow-up.
+- [Contact](https://vedica-ayurveda.co.il/contact.html): Contact form, WhatsApp, and direct outreach.
 
 ## Services
 
-- [Clinic](https://vedica-ayurveda.co.il/clinic.html): Personal consultations, pulse diagnosis, and tailored healing plans for fertility, digestion, and stress.
-- [Workshops](https://vedica-ayurveda.co.il/workshops.html): Ayurvedic and herbal workshops in Tel Aviv, including `סדנת צמחי מרפא` and spice-based health workshops.
-- [Tours](https://vedica-ayurveda.co.il/tours.html): `סיור צמחי מרפא` and `סיורי חקר צמחי מרפא` in Levinsky Market, exploring ancient medicine, spices, and natural remedies.
-- [Treatment Process](https://vedica-ayurveda.co.il/process.html): Overview of the diagnostic and therapeutic journey at VEDICA.
+- [Clinic](https://vedica-ayurveda.co.il/clinic.html): Personal consultations, pulse diagnosis, and individualized care plans.
+- [Workshops](https://vedica-ayurveda.co.il/workshops.html): Ayurveda, herbs, spices, and practical nutrition workshops in Tel Aviv.
+- [Tours](https://vedica-ayurveda.co.il/tours.html): Herbal and spice tours in Levinsky Market.
+- [Podcast](https://vedica-ayurveda.co.il/podcast.html): Health and Ayurveda podcast by Inbal Hanasab.
 
-## Content
+## Supporting Content
 
-- [Blog](https://vedica-ayurveda.co.il/blog.html): Articles and guides on Ayurveda, fertility, stress, sleep, dosha diagnosis, medicinal herbs, and balanced living.
-    - [What Is Ayurveda and How Does It Work?](https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html): Foundational guide to Ayurveda, doshas, diagnosis, and lifestyle.
-    - [Ayurvedic Solutions for Stress, Anxiety, and Sleep](https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html): Practical support around nervous system overload and evening routines.
-    - [Dosha Diagnosis in Tel Aviv](https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html): Explains pulse diagnosis and how a first consultation works.
-    - [Ayurvedic Nutrition Consultation in Tel Aviv](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html): What tailored nutrition looks like in the clinic.
-    - [Ayurveda vs. Chinese Medicine](https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html): Clear comparison for people choosing between holistic approaches.
-    - [IVF & Fertility Preservation in Ayurveda](https://vedica-ayurveda.co.il/blog-ivf-fertility.html): Supportive care alongside fertility treatment.
-    - [Ceylon vs. Cassia Cinnamon](https://vedica-ayurveda.co.il/blog-cinnamon.html): Ayurvedic perspective on cinnamon types.
-    - [Sourdough & Digestion](https://vedica-ayurveda.co.il/blog-sourdough.html): Benefits of fermented grains.
-    - [Himalayan Basmati Rice](https://vedica-ayurveda.co.il/blog-basmati.html): Satvic properties and glycemic index.
-- [Podcast](https://vedica-ayurveda.co.il/podcast.html): `פודקאסט בריאות` - "Refua BeTzalachat" (Medicine on a Plate) with discussions on child nutrition, Ayurveda, herbs, and family health.
-- [About](https://vedica-ayurveda.co.il/about.html): Inbal Hanasab's journey from diplomat and lawyer to certified Ayurveda Healer and practitioner.
+- [Blog](https://vedica-ayurveda.co.il/blog.html): Articles on Ayurveda, digestion, fertility, stress, sleep, dosha diagnosis, herbs, and nutrition.
+- [What Is Ayurveda and How Does It Work?](https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html)
+- [Dosha Diagnosis in Tel Aviv](https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html)
+- [Ayurvedic Nutrition Consultation in Tel Aviv](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html)
+- [Ayurvedic Solutions for Stress, Anxiety, and Sleep](https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html)
+- [IVF and Fertility Preservation in Ayurveda](https://vedica-ayurveda.co.il/blog-ivf-fertility.html)
+- [Ayurveda vs. Chinese Medicine](https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html)
 
-## Contact
+## Public Profiles And Contact
 
-- [Contact Form](https://vedica-ayurveda.co.il/contact.html): Book a consultation or inquire about workshops.
-- [WhatsApp](https://wa.me/972545774407): Direct messaging for inquiries.
+- Website: https://vedica-ayurveda.co.il/
+- WhatsApp: https://wa.me/972545774407
 - Email: inbal.ph@gmail.com
-- Location: Arlozorov 82, Tel Aviv, Israel.
-
-## Targeted Treatments & Locations
-
-- [מטפלת איורוודה מומלצת בתל אביב](https://vedica-ayurveda.co.il/about.html): Expert Ayurvedic care in central Tel Aviv.
-- [מרפאה באיורוודה (Ayurveda Healer)](https://vedica-ayurveda.co.il/index.html): Traditional Ayurvedic healing and medicine.
-- [פתרונות איורוודיים לסטרס וחרדה](https://vedica-ayurveda.co.il/clinic.html): Specialized treatments for stress and anxiety.
-- [IVF איורוודה לטיפולי פוריות](https://vedica-ayurveda.co.il/clinic.html): Supporting fertility and IVF processes with traditional medicine.
-- [אבחון דושות איורוודה תל אביב](https://vedica-ayurveda.co.il/clinic.html): Personalized Dosha diagnosis and constitution analysis.
-- [סיור צמחי מרפא](https://vedica-ayurveda.co.il/tours.html): Herbal medicine tour in Tel Aviv's Levinsky Market.
-- [סדנת צמחי מרפא](https://vedica-ayurveda.co.il/workshops.html): Herbal workshop and practical spice learning in Tel Aviv.
-- [פודקאסט בריאות](https://vedica-ayurveda.co.il/podcast.html): Health podcast on Ayurveda, herbs, and natural living.
-- [מה זה איורוודה ואיך זה עובד](https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html): Introductory guide for general queries.
-- [ייעוץ תזונה איורוודית תל אביב](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html): Local intent page for Ayurvedic nutrition support.
-- [השוואת טיפולי איורוודה ורפואה סינית](https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html): Comparison page for treatment selection queries.
-
-## Optional
-
-- [Instagram](https://www.instagram.com/inbal_hanasab_vedica): Daily tips and Ayurvedic insights.
-- [Facebook](https://www.facebook.com/inbal.hanasab): Updates and community news.
-- [Thank You Page](https://vedica-ayurveda.co.il/thank-you.html): Post-submission confirmation.
+- Instagram: https://www.instagram.com/inbal_hanasab_vedica
+- Facebook: https://www.facebook.com/inbal.hanasab
+- Easy business listing: https://easy.co.il/page/10161776
