@@ -58,7 +58,7 @@
         <div class="site-nav__inner">
             <a href="index.html" class="site-nav__brand">
                 <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA - קליניקת איורוודה בתל אביב" class="site-nav__logo" loading="lazy">
-                <h1 class="site-nav__name">VEDICA</h1>
+                <span class="site-nav__name">VEDICA</span>
             </a>
             <div class="site-nav__menu"
                 style="scrollbar-width: none;">
@@ -87,23 +87,23 @@
                 <input type="hidden" name="_subject" value="פנייה חדשה מאתר VEDICA">
 
                 <div>
-                    <label class="block text-sm font-bold mb-2">שם מלא</label>
-                    <input type="text" name="name" placeholder="איך קוראים לך?"
+                    <label for="contact-name" class="block text-sm font-bold mb-2">שם מלא</label>
+                    <input id="contact-name" type="text" name="name" placeholder="איך קוראים לך?" autocomplete="name"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
-                    <label class="block text-sm font-bold mb-2">טלפון</label>
-                    <input type="tel" name="phone" placeholder="050-0000000" pattern="[0-9]*"
+                    <label for="contact-phone" class="block text-sm font-bold mb-2">טלפון</label>
+                    <input id="contact-phone" type="tel" name="phone" placeholder="050-0000000" inputmode="tel" autocomplete="tel" pattern="^[0-9+()\\s-]{7,20}$"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
-                    <label class="block text-sm font-bold mb-2">דואר אלקטרוני</label>
-                    <input type="email" name="email" placeholder="va@gmail.com"
+                    <label for="contact-email" class="block text-sm font-bold mb-2">דואר אלקטרוני</label>
+                    <input id="contact-email" type="email" name="email" placeholder="va@gmail.com" autocomplete="email"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
-                    <label class="block text-sm font-bold mb-2">במה תרצו להתמקד?</label>
-                    <select name="service"
+                    <label for="contact-service" class="block text-sm font-bold mb-2">במה תרצו להתמקד?</label>
+                    <select id="contact-service" name="service"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                         <option value="">בחרו אפשרות</option>
                         <option value="consultation">ייעוץ אישי בקליניקה (פריון ועיכול)</option>
@@ -115,8 +115,8 @@
                     </select>
                 </div>
                 <div>
-                    <label class="block text-sm font-bold mb-2">הודעה חופשית קצרה (אופציונלי)</label>
-                    <textarea name="message" rows="4" placeholder="כאן אפשר לכתוב קצת רקע או כל דבר אחר..."
+                    <label for="contact-message" class="block text-sm font-bold mb-2">הודעה חופשית קצרה (אופציונלי)</label>
+                    <textarea id="contact-message" name="message" rows="4" placeholder="כאן אפשר לכתוב קצת רקע או כל דבר אחר..."
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none resize-none"></textarea>
                 </div>
                 <button type="submit"
@@ -125,23 +125,23 @@
                 <div id="formMessage" class="text-center text-sm hidden"></div>
             </form>
             <div class="mt-8 pt-8 border-t">
-                <h3 class="font-bold text-emerald-800 mb-2 text-center">איך מגיעים?</h3>
+                <h2 class="font-bold text-emerald-800 mb-2 text-center">איך מגיעים?</h2>
                 <p class="text-slate-600 text-center text-sm mb-4">
                     הפגישות מתקיימות ב<strong>קליניקת ״מרחבים״</strong>,
-                    <a href="https://www.google.com/maps/search/?api=1&query=ארלוזורוב+82+תל+אביב" target="_blank"
-                        class="text-emerald-700 hover:underline">ארלוזורוב 82, תל אביב</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=ארלוזורוב+82+תל+אביב" target="_blank" rel="noopener noreferrer"
+                        class="text-emerald-800 underline underline-offset-2 decoration-emerald-700 hover:text-emerald-900">ארלוזורוב 82, תל אביב</a>
                     <br>
                     <strong>חניונים קרובים לקליניקה:</strong>
-                    <a href="https://www.google.com/maps/search/?api=1&query=חניון+גן+העיר+תל+אביב" target="_blank"
-                        class="text-emerald-600 hover:underline">חניון גן העיר</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=חניון+גן+העיר+תל+אביב" target="_blank" rel="noopener noreferrer"
+                        class="text-emerald-800 underline underline-offset-2 decoration-emerald-700 hover:text-emerald-900">חניון גן העיר</a>
                     או
-                    <a href="https://www.google.com/maps/search/?api=1&query=חניון+מגדל+המאה+תל+אביב" target="_blank"
-                        class="text-emerald-600 hover:underline">חניון מגדל המאה</a>.
+                    <a href="https://www.google.com/maps/search/?api=1&query=חניון+מגדל+המאה+תל+אביב" target="_blank" rel="noopener noreferrer"
+                        class="text-emerald-800 underline underline-offset-2 decoration-emerald-700 hover:text-emerald-900">חניון מגדל המאה</a>.
                 </p>
                 <div class="text-center">
                     <p class="text-slate-500 mb-4">או פשוט שלחו לי הודעה ישירה:</p>
-                    <a id="wa-contact" href="#" target="_blank"
-                        class="bg-green-500 text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition inline-flex items-center gap-2">
+                    <a id="wa-contact" href="#" target="_blank" rel="noopener noreferrer"
+                        class="bg-green-600 text-white px-8 py-3 rounded-full font-bold hover:bg-green-700 transition inline-flex items-center gap-2">
                         <span>WhatsApp</span>
                     </a>
                 </div>
@@ -154,7 +154,7 @@
             <div class="grid md:grid-cols-3 gap-12 mb-12 text-center">
                 <!-- Column 1: Services -->
                 <div class="flex flex-col items-center">
-                    <h4 class="text-lg font-bold mb-4 text-emerald-300">שירותים</h4>
+                    <h3 class="text-lg font-bold mb-4 text-emerald-300">שירותים</h3>
                     <ul class="space-y-3 text-emerald-100">
                         <li><a href="clinic.html" class="hover:text-white transition">קליניקת VEDICA</a></li>
                         <li><a href="workshops.html" class="hover:text-white transition">סדנאות תזונה ואורח חיים
@@ -165,7 +165,7 @@
                 </div>
                 <!-- Column 2: Content -->
                 <div class="flex flex-col items-center">
-                    <h4 class="text-lg font-bold mb-4 text-emerald-300">תוכן</h4>
+                    <h3 class="text-lg font-bold mb-4 text-emerald-300">תוכן</h3>
                     <ul class="space-y-3 text-emerald-100">
                         <li><a href="blog.html" class="hover:text-white transition">בלוג</a></li>
                         <li><a href="podcast.html" class="hover:text-white transition">פודקאסט - רפואה בצלחת</a></li>
@@ -174,16 +174,16 @@
                 </div>
                 <!-- Column 3: Contact -->
                 <div class="flex flex-col items-center">
-                    <h4 class="text-lg font-bold mb-4 text-emerald-300">יצירת קשר</h4>
+                    <h3 class="text-lg font-bold mb-4 text-emerald-300">יצירת קשר</h3>
                     <ul class="space-y-3 text-emerald-100">
                         <li>קליניקת ״מרחבים״, ארלוזורוב 82, תל אביב</li>
-                        <li><a href="https://wa.me/972545774407" target="_blank" class="hover:text-white transition"> WhatsApp</a></li>
+                        <li><a href="https://wa.me/972545774407" target="_blank" rel="noopener noreferrer" class="hover:text-white transition"> WhatsApp</a></li>
                         <li><a href="mailto:inbal.ph@gmail.com" class="hover:text-white transition"> inbal.ph@gmail.com</a></li>
                         <li><a href="contact.html" class="hover:text-white transition"> טופס יצירת קשר</a></li>
                     </ul>
                     <div class="flex gap-4 mt-6 justify-center">
-                        <a href="https://www.instagram.com/inbal_hanasab_vedica" target="_blank" class="bg-emerald-800 hover:bg-emerald-700 transition w-10 h-10 rounded-full flex items-center justify-center text-sm" aria-label="Instagram">IG</a>
-                        <a href="https://www.facebook.com/inbal.hanasab" target="_blank" class="bg-emerald-800 hover:bg-emerald-700 transition w-10 h-10 rounded-full flex items-center justify-center text-sm" aria-label="Facebook">FB</a>
+                        <a href="https://www.instagram.com/inbal_hanasab_vedica" target="_blank" rel="noopener noreferrer" class="bg-emerald-800 hover:bg-emerald-700 transition px-3 h-10 rounded-full inline-flex items-center justify-center text-xs font-semibold" aria-label="Instagram">Instagram</a>
+                        <a href="https://www.facebook.com/inbal.hanasab" target="_blank" rel="noopener noreferrer" class="bg-emerald-800 hover:bg-emerald-700 transition px-3 h-10 rounded-full inline-flex items-center justify-center text-xs font-semibold" aria-label="Facebook">Facebook</a>
                     </div>
                 </div>
             </div>
@@ -196,6 +196,17 @@
     </footer>
 
     <script>
+        function trackEvent(eventName, params = {}) {
+            if (typeof gtag === 'function') {
+                gtag('event', eventName, params);
+            }
+        }
+
+        trackEvent('contact_page_view', {
+            event_category: 'engagement',
+            event_label: 'contact_page'
+        });
+
         fetch('content.json')
             .then(res => res.json())
             .then(data => {
@@ -204,9 +215,21 @@
 
         const contactForm = document.getElementById('contactForm');
         const formMessage = document.getElementById('formMessage');
+        const waContact = document.getElementById('wa-contact');
+
+        waContact.addEventListener('click', function () {
+            trackEvent('whatsapp_click', {
+                event_category: 'engagement',
+                event_label: 'contact_wa_button'
+            });
+        });
 
         contactForm.addEventListener('submit', async function (event) {
             event.preventDefault(); // מניעת מעבר לעמוד של Formspree
+            trackEvent('form_submit_attempt', {
+                event_category: 'lead',
+                event_label: 'contact_form'
+            });
 
             // שינוי הכפתור בזמן טעינה
             const submitBtn = contactForm.querySelector('button[type="submit"]');
@@ -226,9 +249,17 @@
                 });
 
                 if (response.ok) {
+                    trackEvent('form_submit_success', {
+                        event_category: 'lead',
+                        event_label: 'contact_form'
+                    });
                     // מעבר מוצלח לעמוד התודה מבלי להציג את עמוד הביניים של Formspree
                     window.location.href = contactForm.querySelector('input[name="_next"]').value;
                 } else {
+                    trackEvent('form_submit_error', {
+                        event_category: 'lead',
+                        event_label: 'contact_form_http_error'
+                    });
                     const data = await response.json();
                     if (Object.hasOwn(data, 'errors')) {
                         formMessage.innerText = data["errors"].map(error => error["message"]).join(", ");
@@ -241,6 +272,10 @@
                     submitBtn.disabled = false;
                 }
             } catch (error) {
+                trackEvent('form_submit_error', {
+                    event_category: 'lead',
+                    event_label: 'contact_form_network_error'
+                });
                 formMessage.innerText = "אופס! הייתה תקלה נסה שוב מאוחר יותר.";
                 formMessage.classList.remove('hidden');
                 formMessage.classList.add('text-red-500');
