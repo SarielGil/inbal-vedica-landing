@@ -116,46 +116,27 @@
  </script>
 
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/modern-shared.css">
+
   <style>
-    body {
-      font-family: 'Assistant', sans-serif;
-      background-color: #fdfbf7;
+    .clinic-hero {
+      --hero-image: url('assets/inbal-clinic.webp');
     }
   </style>
   <link rel="icon" href="assets/logo.webp" type="image/jpeg">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXKKRFNL56"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-MXKKRFNL56');
-  </script>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WZKF36P7');</script>
+  <script defer src="assets/analytics-loader.js"></script>
 </head>
 
 <body class="text-slate-800">
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZKF36P7" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
 
-  <nav class="site-nav sticky top-0 z-50">
+  <nav class="site-nav">
     <div class="site-nav__inner">
       <a href="index.html" class="site-nav__brand">
-        <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA - קליניקת איורוודה בתל אביב" class="site-nav__logo" loading="lazy">
+        <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA - קליניקת איורוודה בתל אביב" class="site-nav__logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logo-transparent.png';">
         <span class="site-nav__name">VEDICA</span>
       </a>
-      <div
-        class="site-nav__menu">
+      <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
+      <div id="site-nav-menu" class="site-nav__menu">
         <a href="index.html" class="site-nav__link">בית</a>
         <a href="about.html" class="site-nav__link">אודות</a>
         <a href="blog.html" class="site-nav__link">בלוג</a>
@@ -169,10 +150,37 @@
     </div>
   </nav>
 
-  <main class="max-w-4xl mx-auto px-4 py-16">
+  <main class="page-main max-w-4xl mx-auto px-4 py-16">
+    <section class="page-hero clinic-hero">
+      <div class="page-hero__content">
+        <p class="page-hero__eyebrow">CLINIC EXPERIENCE</p>
+        <h1>קליניקת VEDICA</h1>
+        <p>
+          אבחון דושות וטיפול איורוודה מותאם אישית בתל אביב. תהליך שמחבר בין אבחון יסודי, תוכנית פרקטית ומעקב מדויק לאורך הדרך.
+        </p>
+        <div class="page-hero__actions">
+          <a href="contact.html" class="page-hero__button">בדיקת התאמה קצרה</a>
+          <a href="https://wa.me/972545774407" class="page-hero__button--ghost" target="_blank" rel="noopener noreferrer">וואטסאפ ישיר</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-meta-grid mb-16">
+      <article class="page-meta-card">
+        <p class="page-meta-card__label">אבחון</p>
+        <p>פגישה ראשונה מקיפה של כ-2 שעות עם תשאול מעמיק ואבחון דופק מסורתי.</p>
+      </article>
+      <article class="page-meta-card">
+        <p class="page-meta-card__label">תוכנית אישית</p>
+        <p>בניית תוכנית תזונה, צמחי מרפא והרגלים יומיומיים שמתאימים לקצב החיים שלך.</p>
+      </article>
+      <article class="page-meta-card">
+        <p class="page-meta-card__label">מעקב וליווי</p>
+        <p>ליווי המשכי, דיוק של התוכנית ומענה לשאלות גם בין הפגישות.</p>
+      </article>
+    </div>
+
     <div class="mb-16">
-      <h1 class="text-5xl font-bold text-emerald-900 mb-6">קליניקת VEDICA</h1>
-      <p class="text-2xl text-emerald-700 mb-4">אבחון דושות וטיפול איורוודה מותאם אישית בתל אביב</p>
       <p class="text-lg text-slate-600 leading-relaxed">
         כל אדם הוא ייחודי. הטיפול בקליניקת VEDICA מתחיל ב<strong>אבחון דושות איורוודה תל אביב</strong> מקצועי ומעמיק - לא מסימפטום כללי. אנחנו בונים יחד תוכנית שתתאים
         בדיוק לך, כולל <strong>פתרונות איורוודיים לסטרס וחרדה</strong> וליווי <strong>IVF איורוודה לטיפולי פוריות</strong>.
@@ -340,6 +348,41 @@
     <p class="font-bold mb-2">VEDICA - ענבל הנסב | תל אביב</p>
     <p class="opacity-60 text-sm">© 2026 כל הזכויות שמורות</p>
   </footer>
+  <script>
+    const navToggle = document.getElementById('site-nav-toggle');
+    const navMenu = document.getElementById('site-nav-menu');
+
+    if (navToggle && navMenu) {
+      const closeMenu = () => {
+        navMenu.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      };
+
+      navToggle.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      navMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('click', (event) => {
+        if (window.innerWidth >= 1024) {
+          return;
+        }
+        if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+          closeMenu();
+        }
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 1024) {
+          closeMenu();
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

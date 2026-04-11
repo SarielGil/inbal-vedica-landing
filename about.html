@@ -10,11 +10,11 @@
     <title>מרפאה ומטפלת איורוודה בתל אביב - ענבל הנסב | VEDICA</title>
     <link rel="canonical" href="https://vedica-ayurveda.co.il/about.html"><link rel="alternate" type="text/plain" title="LLM Content" href="https://vedica-ayurveda.co.il/llms.txt">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/modern-shared.css">
+
     <style>
-        body {
-            font-family: 'Assistant', sans-serif;
-            background-color: #fdfbf7;
+        .about-hero {
+            --hero-image: url('assets/inbal-clinic.webp');
         }
     </style>
     <!-- Open Graph Tags -->
@@ -105,41 +105,19 @@
     }
     </script>
     <link rel="icon" href="assets/logo.webp" type="image/jpeg">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXKKRFNL56"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-MXKKRFNL56');
-    </script>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WZKF36P7');</script>
-    <!-- End Google Tag Manager -->
+  <script defer src="assets/analytics-loader.js"></script>
 </head>
 
 <body class="text-slate-800">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZKF36P7" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- Fixed Navigation Bar -->
-    <nav class="site-nav sticky top-0 z-50">
+    <nav class="site-nav">
         <div class="site-nav__inner">
             <a href="index.html" class="site-nav__brand">
-                <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA - קליניקת איורוודה בתל אביב" class="site-nav__logo" loading="lazy">
+                <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA - קליניקת איורוודה בתל אביב" class="site-nav__logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logo-transparent.png';">
                 <span class="site-nav__name">VEDICA</span>
             </a>
-            <div class="site-nav__menu"
-                style="scrollbar-width: none;">
+            <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
+            <div id="site-nav-menu" class="site-nav__menu">
                 <a href="index.html" class="site-nav__link">בית</a>
                 <a href="about.html" class="site-nav__link site-nav__link--active">אודות</a>
                 <a href="blog.html" class="site-nav__link">בלוג</a>
@@ -154,34 +132,36 @@
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-4 py-16">
-        <!-- Hero Section: Story -->
-        <div class="mb-20">
-            <h1 class="text-5xl font-bold text-emerald-900 mb-8 text-center">ענבל הנסב — מטפלת איורוודה בתל אביב</h1>
-            <p class="text-xl text-slate-600 text-center mb-8 leading-relaxed">
+    <main class="page-main max-w-4xl mx-auto px-4 py-16">
+        <section class="page-hero about-hero">
+            <div class="page-hero__content">
+                <p class="page-hero__eyebrow">ABOUT VEDICA</p>
+                <h1>ענבל הנסב — מטפלת איורוודה בתל אביב</h1>
+                <p>
                 המסע שלי מגלם שינוי עמוק. לאחר קריירה אינטנסיבית בחזית העשייה כעורכת דין ודיפלומטית, בחרתי להתמסר לעולם
                 הריפוי המסורתי. כיום אני מביאה קשב עמוק, ידע רחב, והבנה הוליסטית אמיתית, במטרה ללוות אחרים בדרכם לבריאות
                 ולאיזון.
-            </p>
-        </div>
+                </p>
+                <div class="page-hero__actions">
+                    <a href="clinic.html" class="page-hero__button">הכירו את הקליניקה</a>
+                    <a href="contact.html" class="page-hero__button--ghost">לתיאום שיחה קצרה</a>
+                </div>
+            </div>
+        </section>
 
-        <div class="grid md:grid-cols-2 gap-6 mb-20">
-            <div class="bg-white p-8 rounded-3xl shadow-lg border border-emerald-100">
-                <h3 class="text-2xl font-bold text-emerald-800 mb-4">הדרך המקצועית שלי</h3>
-                <p class="text-slate-700 leading-relaxed">הכשרתי הפורמלית באיורוודה היא בבית הספר <span dir="ltr">PranaVeda</span>. בנוסף העמקתי באבחון דופק מסורתי <span dir="ltr">Nadi Vigyan</span> ובשילוב כלים איורוודיים לתזונה, צמחי מרפא ואורח חיים.</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl shadow-lg border border-emerald-100">
-                <h3 class="text-2xl font-bold text-emerald-800 mb-4">איך נראית הפגישה הראשונה</h3>
-                <p class="text-slate-700 leading-relaxed">פגישת ההיכרות הראשונה נמשכת כ-2 שעות וכוללת תשאול מעמיק על עיכול, שינה, אנרגיה, סטרס, הרגלים, מצב רגשי ואבחון דופק, כדי לבנות הבנה רחבה של המצב האישי.</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl shadow-lg border border-emerald-100">
-                <h3 class="text-2xl font-bold text-emerald-800 mb-4">איך נבנה הליווי</h3>
-                <p class="text-slate-700 leading-relaxed">העבודה בקליניקה בנויה כתהליך: אבחון, בניית תוכנית אישית עם תזונה, צמחי מרפא והנחיות לשגרה, ובהמשך פגישת מעקב מומלצת לצורך דיוק וליווי.</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl shadow-lg border border-emerald-100">
-                <h3 class="text-2xl font-bold text-emerald-800 mb-4">למי הליווי יכול להתאים</h3>
-                <p class="text-slate-700 leading-relaxed">המיקוד הקליני שלי כולל בעיקר פוריות ו-<span dir="ltr">IVF</span>, עיכול, איזון הורמונלי, עייפות, שינה, סטרס ותזונה איורוודית מותאמת אישית.</p>
-            </div>
+        <div class="page-meta-grid mb-20">
+            <article class="page-meta-card">
+                <p class="page-meta-card__label">הדרך המקצועית</p>
+                <p>הכשרתי הפורמלית באיורוודה היא בבית הספר <span dir="ltr">PranaVeda</span> עם התמחות ב-<span dir="ltr">Nadi Vigyan</span> ובשילוב תזונה וצמחי מרפא.</p>
+            </article>
+            <article class="page-meta-card">
+                <p class="page-meta-card__label">פגישה ראשונה</p>
+                <p>פגישת היכרות של כ-2 שעות הכוללת תשאול מעמיק על עיכול, שינה, אנרגיה, סטרס, מצב רגשי ואבחון דופק מסורתי.</p>
+            </article>
+            <article class="page-meta-card">
+                <p class="page-meta-card__label">תחומי מיקוד</p>
+                <p>פוריות ו-<span dir="ltr">IVF</span>, עיכול, איזון הורמונלי, שינה וסטרס, עם תוכנית אישית שמתאימה לחיים האמיתיים.</p>
+            </article>
         </div>
 
         <!-- Timeline: The Journey -->
@@ -349,6 +329,41 @@
             </div>
         </div>
     </footer>
+    <script>
+        const navToggle = document.getElementById('site-nav-toggle');
+        const navMenu = document.getElementById('site-nav-menu');
+
+        if (navToggle && navMenu) {
+            const closeMenu = () => {
+                navMenu.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            };
+
+            navToggle.addEventListener('click', () => {
+                const isOpen = navMenu.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navMenu.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', closeMenu);
+            });
+
+            document.addEventListener('click', (event) => {
+                if (window.innerWidth >= 1024) {
+                    return;
+                }
+                if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+                    closeMenu();
+                }
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 1024) {
+                    closeMenu();
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

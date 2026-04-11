@@ -8,20 +8,562 @@
         content="מרפאה ומטפלת איורוודה מוסמכת בתל אביב. ליווי בפוריות ו-IVF, סטרס ושינה, אבחון דושות, תזונה איורוודית, סדנאות וסיורים.">
     <meta name="keywords" content="איורוודה תל אביב, מרפאה באיורוודה, מטפלת איורוודית, אבחון דושות, IVF איורוודה, סטרס וחרדה, תזונה איורוודית">
     <title>מרפאה באיורוודה בתל אביב - VEDICA | ענבל הנסב</title>
-    <link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
     <meta name="google-site-verification" content="2_zcRcTMURfU34s0u6d7L0WHijJwXhOBD-g80rTRl0g">
     <link rel="canonical" href="https://vedica-ayurveda.co.il/">
     <link rel="alternate" type="text/plain" title="LLM Content" href="https://vedica-ayurveda.co.il/llms.txt">
     <style>
-        body {
-            font-family: 'Assistant', sans-serif;
-            background-color: #fdfbf7;
+        :root {
+            --ink-strong: #173931;
+            --ink-soft: #2f4f48;
+            --accent: #0f766e;
+            --accent-hover: #115e59;
+            --bg-main: #f5f4ef;
+            --bg-glass: rgba(250, 252, 248, 0.88);
+            --line-soft: rgba(27, 59, 51, 0.14);
+            --shadow-soft: 0 20px 45px -32px rgba(8, 38, 34, 0.45);
+            --radius-xl: 1.4rem;
         }
 
-        .hero-bg {
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Assistant', sans-serif;
+            color: var(--ink-soft);
+            background:
+                radial-gradient(1200px 600px at 95% -10%, rgba(158, 205, 180, 0.24), transparent 60%),
+                radial-gradient(800px 560px at -8% 20%, rgba(247, 205, 141, 0.22), transparent 58%),
+                var(--bg-main);
+        }
+
+        h1,
+        h2,
+        h3,
+        .site-nav__name,
+        .hero-modern__kicker {
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .site-nav {
+            position: sticky;
+            top: 0;
+            z-index: 60;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--line-soft);
+            background: linear-gradient(to left, rgba(248, 251, 247, 0.95), rgba(247, 244, 237, 0.92));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .site-nav__inner {
+            position: relative;
+            max-width: 80rem;
+            margin-inline: auto;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.9rem;
+        }
+
+        .site-nav__brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .site-nav__logo {
+            height: 3.25rem;
+            width: auto;
+            filter: drop-shadow(0 9px 18px rgba(10, 35, 29, 0.12));
+        }
+
+        .site-nav__name {
+            margin-top: 2px;
+            color: #085c4d;
+            font-size: 1.7rem;
+            line-height: 1;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+
+        .site-nav__toggle {
+            border: 1px solid rgba(18, 99, 88, 0.22);
+            background: rgba(255, 255, 255, 0.78);
+            color: var(--ink-strong);
+            width: 2.9rem;
+            height: 2.9rem;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .site-nav__toggle:hover {
+            transform: translateY(-1px);
+            background: #ffffff;
+        }
+
+        .site-nav__menu {
+            position: absolute;
+            top: calc(100% + 0.55rem);
+            inset-inline: 1rem;
+            display: none;
+            flex-direction: column;
+            gap: 0.3rem;
+            padding: 0.9rem;
+            border-radius: 1.15rem;
+            background: var(--bg-glass);
+            border: 1px solid var(--line-soft);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .site-nav__menu.is-open {
+            display: flex;
+            animation: riseIn 0.24s ease;
+        }
+
+        .site-nav__link,
+        .site-nav__cta {
+            text-decoration: none;
+        }
+
+        .site-nav__link {
+            display: block;
+            padding: 0.72rem 0.95rem;
+            color: #284c44;
+            border-radius: 0.8rem;
+            font-size: 1.03rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .site-nav__link:hover,
+        .site-nav__link--active {
+            color: #0d6d60;
+            background: rgba(170, 217, 196, 0.22);
+        }
+
+        .site-nav__cta {
+            margin-top: 0.3rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.82rem 1.35rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #158270, #116357);
+            color: #fff;
+            font-weight: 700;
+            box-shadow: 0 16px 30px -20px rgba(17, 99, 87, 0.85);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .site-nav__cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 20px 32px -22px rgba(17, 99, 87, 0.95);
+        }
+
+        .hero-modern {
+            position: relative;
+            min-height: min(860px, calc(100vh - 92px));
+            padding: 1rem 0 2.3rem;
+            overflow: hidden;
+        }
+
+        .hero-modern::before {
+            content: "";
+            position: absolute;
+            inset: 1rem 1rem 0;
+            border-radius: 2rem;
+            background-image:
+                linear-gradient(105deg, rgba(8, 21, 21, 0.72), rgba(11, 35, 32, 0.42) 42%, rgba(11, 35, 32, 0.27) 62%, rgba(11, 35, 32, 0.5)),
+                url('assets/inbal-hero.webp');
             background-size: cover;
-            background-position: 25% center;
-            transition: background-image 0.5s ease-in-out;
+            background-position: center 28%;
+            box-shadow: 0 34px 70px -48px rgba(16, 49, 42, 0.85);
+        }
+
+        .hero-modern::after {
+            content: "";
+            position: absolute;
+            inset: auto -16% 8% auto;
+            width: 290px;
+            height: 290px;
+            border-radius: 999px;
+            background: radial-gradient(circle, rgba(125, 188, 170, 0.35), transparent 70%);
+            filter: blur(10px);
+            pointer-events: none;
+        }
+
+        .hero-modern__grid {
+            position: relative;
+            z-index: 2;
+            max-width: 80rem;
+            margin-inline: auto;
+            padding-inline: 1.2rem;
+            min-height: inherit;
+            display: grid;
+            align-content: end;
+            gap: 0.9rem;
+        }
+
+        .hero-modern__content {
+            color: #f3f8f6;
+            max-width: 44rem;
+            padding: 2rem 0.25rem 0.7rem;
+            animation: riseIn 0.5s ease;
+        }
+
+        .hero-modern__kicker {
+            margin: 0 0 0.75rem;
+            font-size: 0.86rem;
+            line-height: 1.2;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #bde8d8;
+        }
+
+        .hero-modern h1 {
+            margin: 0;
+            color: #ffffff;
+            font-size: clamp(2rem, 7vw, 3.85rem);
+            line-height: 1.1;
+            letter-spacing: -0.015em;
+            text-wrap: balance;
+        }
+
+        .hero-modern__lead {
+            margin: 1rem 0 0;
+            max-width: 35rem;
+            font-size: clamp(1.04rem, 2.3vw, 1.4rem);
+            line-height: 1.7;
+            color: rgba(247, 254, 252, 0.9);
+        }
+
+        .hero-modern__actions {
+            margin-top: 1.55rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .hero-modern .btn-primary,
+        .hero-modern .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.9rem 1.45rem;
+            border-radius: 999px;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        }
+
+        .hero-modern .btn-primary {
+            background: #1f9a61;
+            color: #ffffff;
+            box-shadow: 0 16px 26px -18px rgba(31, 154, 97, 0.8);
+        }
+
+        .hero-modern .btn-primary:hover {
+            transform: translateY(-1px);
+            background: #1d8c59;
+        }
+
+        .hero-modern .btn-secondary {
+            background: rgba(255, 255, 255, 0.92);
+            color: #154f46;
+        }
+
+        .hero-modern .btn-secondary:hover {
+            transform: translateY(-1px);
+            background: #ffffff;
+        }
+
+        .hero-modern__meta {
+            margin-top: 1.45rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .hero-modern__meta span {
+            padding: 0.42rem 0.74rem;
+            border-radius: 999px;
+            background: rgba(240, 253, 249, 0.18);
+            border: 1px solid rgba(229, 254, 247, 0.33);
+            color: rgba(245, 252, 250, 0.9);
+            font-size: 0.88rem;
+            line-height: 1.2;
+        }
+
+        .hero-modern__panel {
+            background: rgba(247, 252, 249, 0.94);
+            border: 1px solid rgba(42, 88, 74, 0.15);
+            border-radius: var(--radius-xl);
+            padding: 1.1rem;
+            box-shadow: var(--shadow-soft);
+            max-width: 22rem;
+            justify-self: end;
+            animation: riseIn 0.65s ease;
+        }
+
+        .hero-modern__panel-kicker {
+            margin: 0;
+            font-size: 0.78rem;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+            color: #397766;
+            font-weight: 700;
+        }
+
+        .hero-modern__panel h2 {
+            margin: 0.5rem 0 0.35rem;
+            color: var(--ink-strong);
+            font-size: 1.35rem;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        .hero-modern__panel ol {
+            margin: 0.65rem 0 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            gap: 0.43rem;
+            color: #32564d;
+            font-size: 0.98rem;
+            line-height: 1.5;
+        }
+
+        .hero-modern__panel li {
+            position: relative;
+            padding-inline-end: 1.35rem;
+        }
+
+        .hero-modern__panel li::before {
+            content: "✓";
+            position: absolute;
+            inset-inline-end: 0;
+            color: #0f766e;
+            font-weight: 800;
+        }
+
+        .hero-modern__panel-link {
+            margin-top: 0.85rem;
+            display: inline-flex;
+            color: #0f766e;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .hero-modern__panel-link:hover {
+            text-decoration: underline;
+        }
+
+        .info-strip {
+            position: relative;
+            z-index: 3;
+            max-width: 80rem;
+            margin: -2rem auto 0;
+            padding: 0 1rem;
+        }
+
+        .info-strip__grid {
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .info-card {
+            background: var(--bg-glass);
+            border: 1px solid var(--line-soft);
+            border-radius: 1rem;
+            padding: 1.15rem;
+            box-shadow: var(--shadow-soft);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+        }
+
+        .info-card__label {
+            margin: 0 0 0.4rem;
+            font-size: 0.77rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #2f7668;
+            font-weight: 700;
+        }
+
+        .info-card p:last-child {
+            margin: 0;
+            color: #274941;
+            font-size: 1.05rem;
+            line-height: 1.58;
+        }
+
+        .quick-path {
+            max-width: 80rem;
+            margin: 1.15rem auto 0;
+            padding: 0 1rem 2.2rem;
+        }
+
+        .quick-path__shell {
+            background: linear-gradient(130deg, rgba(227, 240, 234, 0.95), rgba(236, 246, 242, 0.8));
+            border-radius: 1.45rem;
+            padding: 1.4rem;
+            border: 1px solid rgba(40, 83, 74, 0.14);
+        }
+
+        .quick-path__title {
+            margin: 0;
+            color: #1c4d43;
+            font-size: clamp(1.45rem, 4vw, 2rem);
+            line-height: 1.25;
+            text-align: center;
+        }
+
+        .quick-path__subtitle {
+            margin: 0.55rem 0 1.2rem;
+            color: #3a6258;
+            text-align: center;
+            font-size: 1.04rem;
+        }
+
+        .quick-path__grid {
+            display: grid;
+            gap: 0.72rem;
+        }
+
+        .quick-path__item {
+            background: #ffffff;
+            border: 1px solid rgba(25, 87, 73, 0.12);
+            border-radius: 1rem;
+            padding: 1.05rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.55rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .quick-path__item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .quick-path__item h3 {
+            margin: 0;
+            color: #144a3f;
+            font-size: 1.23rem;
+            line-height: 1.2;
+        }
+
+        .quick-path__item p {
+            margin: 0;
+            color: #43645d;
+            font-size: 0.98rem;
+            line-height: 1.55;
+        }
+
+        .quick-path__item a {
+            margin-top: auto;
+            color: #0f766e;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .quick-path__item a:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 50rem) {
+            .info-strip__grid,
+            .quick-path__grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 64rem) {
+            .site-nav__inner {
+                gap: 1.5rem;
+                padding: 0 1.35rem;
+            }
+
+            .site-nav__toggle {
+                display: none;
+            }
+
+            .site-nav__menu {
+                position: static;
+                inset: auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: auto;
+                padding: 0;
+                gap: 0.3rem;
+                border: 0;
+                background: transparent;
+                box-shadow: none;
+            }
+
+            .site-nav__link {
+                padding: 0.64rem 0.95rem;
+            }
+
+            .site-nav__cta {
+                margin-top: 0;
+                margin-inline-start: 0.65rem;
+            }
+
+            .hero-modern {
+                padding: 1.15rem 0 2.8rem;
+            }
+
+            .hero-modern__grid {
+                grid-template-columns: minmax(0, 1.2fr) minmax(17rem, 0.8fr);
+                align-content: center;
+                gap: 1rem;
+            }
+
+            .hero-modern__panel {
+                margin-bottom: 0.8rem;
+            }
+
+            .quick-path__shell {
+                padding: 1.6rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        @keyframes riseIn {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
     <!-- Open Graph Tags -->
@@ -100,41 +642,19 @@
     }
     </script>
     <link rel="icon" href="assets/logo.webp" type="image/jpeg">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXKKRFNL56"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-MXKKRFNL56');
-    </script>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WZKF36P7');</script>
-    <!-- End Google Tag Manager -->
+  <script defer src="assets/analytics-loader.js"></script>
 </head>
 
 <body class="text-slate-800">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZKF36P7" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- Fixed Navigation Bar -->
-    <nav class="site-nav sticky top-0 z-50">
+    <nav class="site-nav">
         <div class="site-nav__inner">
             <a href="index.html" class="site-nav__brand">
-                <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA - קליניקת איורוודה בתל אביב" class="site-nav__logo" loading="lazy">
+                <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA - קליניקת איורוודה בתל אביב" class="site-nav__logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logo-transparent.png';">
                 <span id="site-name" class="site-nav__name">VEDICA</span>
             </a>
-            <div class="site-nav__menu"
-                style="scrollbar-width: none;">
+            <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
+            <div id="site-nav-menu" class="site-nav__menu">
                 <a href="index.html" class="site-nav__link site-nav__link--active">בית</a>
                 <a href="about.html" class="site-nav__link">אודות</a>
                 <a href="blog.html" class="site-nav__link">בלוג</a>
@@ -151,55 +671,83 @@
 
     <main>
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-[78vh] flex items-center justify-start text-white hero-bg"
-        style="background-image: url('assets/inbal-hero.webp');">
-        <div class="absolute inset-0 bg-gradient-to-l from-black/70 via-black/35 to-transparent"></div>
-        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-20">
-            <div class="max-w-2xl text-right">
-                <h1 class="text-4xl md:text-6xl font-bold mb-5 drop-shadow-2xl leading-tight">
-                    ליווי איורוודי אישי לפוריות ואיזון הורמונלי
-                </h1>
-                <p class="text-lg md:text-2xl mb-8 opacity-95 leading-relaxed">
-                    תהליך אישי עם ענבל הנסב: אבחון, תזונה והרגלים שמותאמים למצב שלך.
+    <section id="hero" class="hero-modern">
+        <div class="hero-modern__grid">
+            <div class="hero-modern__content">
+                <p class="hero-modern__kicker">VEDICA TEL AVIV</p>
+                <h1>ליווי איורוודי אישי לפוריות ואיזון הורמונלי</h1>
+                <p class="hero-modern__lead">
+                    תהליך אישי עם ענבל הנסב שמשלב אבחון מעמיק, תזונה והרגלים פרקטיים כדי ליצור יציבות אמיתית בגוף וביום-יום.
                 </p>
-                <div class="flex flex-col md:flex-row gap-4 justify-start">
-                    <a id="whatsapp-link" href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%95%D7%93%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D" target="_blank" rel="noopener noreferrer"
-                        class="bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-green-800 transition shadow-xl inline-flex items-center justify-center gap-2">
-                        <span>בדיקת התאמה בוואטסאפ</span>
+                <div class="hero-modern__actions">
+                    <a id="whatsapp-link" href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%95%D7%93%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        בדיקת התאמה בוואטסאפ
                     </a>
-                    <a href="clinic.html"
-                        class="bg-white text-emerald-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-emerald-50 transition shadow-xl inline-flex items-center justify-center">לפרטי
-                        הקליניקה</a>
+                    <a href="clinic.html" class="btn-secondary">לפרטי הקליניקה</a>
                 </div>
-                <p class="mt-6 text-sm md:text-base text-white/85">
-                    קליניקת "מרחבים", ארלוזורוב 82, תל אביב | פגישת אבחון כ-2 שעות
-                </p>
+                <div class="hero-modern__meta">
+                    <span>אבחון ראשון כ-2 שעות</span>
+                    <span>ליווי אישי בין הפגישות</span>
+                    <span>ארלוזורוב 82, תל אביב</span>
+                </div>
             </div>
+            <aside class="hero-modern__panel">
+                <p class="hero-modern__panel-kicker">איך מתחילים</p>
+                <h2>בדיקת התאמה מהירה</h2>
+                <ol>
+                    <li>שולחים הודעה קצרה עם מה שמטריד כרגע</li>
+                    <li>מקבלים הכוונה אם ואיך הליווי מתאים</li>
+                    <li>מתאמים פגישת אבחון ראשונה בקליניקה</li>
+                </ol>
+                <a href="contact.html" class="hero-modern__panel-link">לקביעת שיחה ראשונית</a>
+            </aside>
         </div>
     </section>
 
     <!-- Entity Clarity Section -->
-    <section class="bg-white py-8 border-b border-emerald-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
-                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-3">מי מלווה</p>
-                    <p class="text-lg text-slate-700 leading-relaxed">
+    <section class="info-strip">
+        <div class="info-strip__grid">
+            <article class="info-card">
+                <p class="info-card__label">מי מלווה</p>
+                <p>
                         <strong>ענבל הנסב</strong>, מטפלת איורוודה מוסמכת עם הכשרה באבחון דופק מסורתי.
-                    </p>
-                </div>
-                <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
-                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-3">תחומי מיקוד</p>
-                    <p class="text-lg text-slate-700 leading-relaxed">
+                </p>
+            </article>
+            <article class="info-card">
+                <p class="info-card__label">תחומי מיקוד</p>
+                <p>
                         פוריות ו-<span dir="ltr">IVF</span>, עיכול, שינה, סטרס ותזונה איורוודית מותאמת אישית.
-                    </p>
-                </div>
-                <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
-                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-3">איפה זה קורה</p>
-                    <p class="text-lg text-slate-700 leading-relaxed">
+                </p>
+            </article>
+            <article class="info-card">
+                <p class="info-card__label">איפה זה קורה</p>
+                <p>
                         קליניקת <strong>VEDICA</strong> בקליניקת "מרחבים", ארלוזורוב 82, תל אביב.
-                    </p>
-                </div>
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="quick-path">
+        <div class="quick-path__shell">
+            <h2 class="quick-path__title">מה הכי חשוב לך כרגע?</h2>
+            <p class="quick-path__subtitle">בחרו את הנושא שמרגיש דחוף עכשיו ותגיעו ישירות לעמוד הרלוונטי.</p>
+            <div class="quick-path__grid">
+                <article class="quick-path__item">
+                    <h3>פוריות והכנה ל-<span dir="ltr">IVF</span></h3>
+                    <p>הסבר על הגישה הקלינית, תהליך האבחון ומה מקבלים בפגישות הליווי.</p>
+                    <a href="clinic.html">למסלול הפוריות</a>
+                </article>
+                <article class="quick-path__item">
+                    <h3>עיכול, הורמונים ואנרגיה</h3>
+                    <p>תוכן מעשי להבנת הדפוס הגופני ואיך בונים התאמה אישית באיורוודה.</p>
+                    <a href="blog-dosha-diagnosis-tel-aviv.html">לקריאה על אבחון</a>
+                </article>
+                <article class="quick-path__item">
+                    <h3>סטרס, שינה ועייפות</h3>
+                    <p>עקרונות מרכזיים לאיזון עומס ושיפור שינה מתוך השגרה היומיומית שלך.</p>
+                    <a href="blog-stress-sleep-ayurveda.html">למאמר על שינה וסטרס</a>
+                </article>
             </div>
         </div>
     </section>
@@ -469,6 +1017,40 @@
     </footer>
 
     <script>
+        const navToggle = document.getElementById('site-nav-toggle');
+        const navMenu = document.getElementById('site-nav-menu');
+
+        if (navToggle && navMenu) {
+            const closeMenu = () => {
+                navMenu.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            };
+
+            navToggle.addEventListener('click', () => {
+                const isOpen = navMenu.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navMenu.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', closeMenu);
+            });
+
+            document.addEventListener('click', (event) => {
+                if (window.innerWidth >= 1024) {
+                    return;
+                }
+                if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+                    closeMenu();
+                }
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 1024) {
+                    closeMenu();
+                }
+            });
+        }
+
         function trackEvent(eventName, params = {}) {
             if (typeof gtag === 'function') {
                 gtag('event', eventName, params);
