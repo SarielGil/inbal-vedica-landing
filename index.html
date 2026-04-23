@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="מרפאה ומטפלת איורוודה מוסמכת בתל אביב. ליווי בפוריות ו-IVF, סטרס ושינה, אבחון דושות, תזונה איורוודית, סדנאות וסיורים.">
-    <meta name="keywords" content="איורוודה תל אביב, מרפאה באיורוודה, מטפלת איורוודית, אבחון דושות, IVF איורוודה, סטרס וחרדה, תזונה איורוודית">
-    <title>מרפאה באיורוודה בתל אביב - VEDICA | ענבל הנסב</title>
+        content="ענבל הנסב - מטפלת מוסמכת ברפואה איורוודית ופרסית בתל אביב. מייסדת VEDICA, עם ליווי אישי בפוריות, עיכול, איזון הורמונלי, שינה וסטרס.">
+    <meta name="keywords" content="איורוודה תל אביב, רפואה פרסית, מטפלת איורוודית, ענבל הנסב, פוריות, עיכול, איזון הורמונלי, צמחי מרפא">
+    <title>רפואה איורוודית ופרסית בתל אביב - VEDICA | ענבל הנסב</title>
     <link rel="stylesheet" href="style.css">
 
     <meta name="google-site-verification" content="2_zcRcTMURfU34s0u6d7L0WHijJwXhOBD-g80rTRl0g">
@@ -177,6 +177,7 @@
             min-height: min(860px, calc(100vh - 92px));
             padding: 1rem 0 2.3rem;
             overflow: hidden;
+            --hero-image: url('assets/inbal-hero.jpg');
         }
 
         .hero-modern::before {
@@ -186,9 +187,10 @@
             border-radius: 2rem;
             background-image:
                 linear-gradient(105deg, rgba(8, 21, 21, 0.72), rgba(11, 35, 32, 0.42) 42%, rgba(11, 35, 32, 0.27) 62%, rgba(11, 35, 32, 0.5)),
-                url('assets/inbal-hero.webp');
-            background-size: cover;
-            background-position: center 28%;
+                var(--hero-image);
+            background-size: cover, cover;
+            background-position: center, center 22%;
+            background-repeat: no-repeat;
             box-shadow: 0 34px 70px -48px rgba(16, 49, 42, 0.85);
         }
 
@@ -484,6 +486,17 @@
             text-decoration: underline;
         }
 
+        @media (max-width: 63.99rem) {
+            .hero-modern::before {
+                background-image:
+                    linear-gradient(180deg, rgba(8, 21, 21, 0.46) 0%, rgba(11, 35, 32, 0.26) 40%, rgba(11, 35, 32, 0.65) 100%),
+                    var(--hero-image);
+                background-size: cover, contain;
+                background-position: center, center top;
+                background-color: #122321;
+            }
+        }
+
         @media (min-width: 50rem) {
             .info-strip__grid,
             .quick-path__grid {
@@ -571,7 +584,7 @@
     <meta property="og:description" content="טיפול איורוודי מותאם אישית עם ענבל הנסב">
     <meta property="og:url" content="https://vedica-ayurveda.co.il">
     <meta property="og:site_name" content="VEDICA - ענבל הנסב">
-    <meta property="og:image" content="https://vedica-ayurveda.co.il/assets/inbal-hero.webp">
+    <meta property="og:image" content="https://vedica-ayurveda.co.il/assets/inbal-hero.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="he_IL">
@@ -581,9 +594,9 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "VEDICA",
-      "image": "https://vedica-ayurveda.co.il/assets/inbal-hero.webp",
+      "image": "https://vedica-ayurveda.co.il/assets/inbal-hero.jpg",
       "logo": "https://vedica-ayurveda.co.il/assets/logo.webp",
-      "description": "קליניקה לטיפול איורוודי בתל אביב - מומחית בפוריות, עיכול ואיזון הורמונלי",
+      "description": "קליניקת VEDICA בתל אביב לרפואה איורוודית ופרסית עם ליווי אישי בפוריות, עיכול, איזון הורמונלי, שינה וסטרס",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "ארלוזורוב 82",
@@ -617,7 +630,7 @@
         {"@type": "Question", "name": "איך עובד ניקוי רעלים איורוודי?", "acceptedAnswer": {"@type": "Answer", "text": "ניקוי רעלים (Ama) מסייע לפינוי פסולת מהרקמות, מה שמוביל להאטת תהליכי הזדקנות, שיפור מראה העור וחידוש חיוניות הגוף."}},
         {"@type": "Question", "name": "מה הם הדושות (Doshas) ואיך יודעים מה הטיפוס שלי?", "acceptedAnswer": {"@type": "Answer", "text": "הדושות (ואטה, פיטה וקאפה) הן שלוש האנרגיות שמנהלות את הגוף שלנו. בייעוץ איורוודי אנחנו מבצעים אבחון מקיף הכולל אבחון דופק, לשון ותשאול מעמיק."}},
         {"@type": "Question", "name": "מה ההבדל בין פנצ'קארמה לייעוץ איורוודי?", "acceptedAnswer": {"@type": "Answer", "text": "ייעוץ איורוודי כולל אבחון מקיף ובניית תוכנית טיפול אישית הכוללת תזונה, צמחי מרפא ואורח חיים. פנצ'קארמה (Panchakarma) היא תוכנית ניקוי רעלים מעמיקה הכוללת טיפולים גופניים ייחודיים לשחרור רעלנים מהרקמות ולשיקום שיווי משקל הגוף."}},
-        {"@type": "Question", "name": "מה קורה בפגישת איורוודה ראשונה?", "acceptedAnswer": {"@type": "Answer", "text": "הפגישה הראשונה בקליניקת VEDICA נמשכת כשעתיים וכוללת אבחון מקיף: בירור יסודי של המצב הפיזי, הנפשי-רגשי ואורח החיים, אבחון דופק מסורתי (Nadi Vigyan), ויצירת תמונה שלמה לצורך בניית תוכנית טיפול אישית."}},
+        {"@type": "Question", "name": "מה קורה בפגישת איורוודה ראשונה?", "acceptedAnswer": {"@type": "Answer", "text": "פגישת האבחון הראשונה בקליניקת VEDICA נמשכת כשעתיים וכוללת תשאול מעמיק ואבחון פיזי. ממנה נבנית תוכנית אישית עם תזונה, צמחי מרפא, חליטות והמלצות ישימות לשגרת החיים."}},
         {"@type": "Question", "name": "האם איורוודה בטוחה לנשים בהריון?", "acceptedAnswer": {"@type": "Answer", "text": "איורוודה מציעה גישה עדינה ותומכת להריון, עם דגש על תזונה מזינה, שגרות מרגיעות והתאמות אישיות. עם זאת, לא כל צמח או טיפול מתאים לתקופת ההריון, ולכן חשוב לקבל ליווי של מטפלת מוסמכת שמכירה את ההנחיות האיורוודיות המדויקות לתקופה זו."}},
         {"@type": "Question", "name": "כמה זמן לוקח לראות תוצאות מטיפול איורוודי?", "acceptedAnswer": {"@type": "Answer", "text": "זה תלוי במצב ובמורכבות הבעיה. שינויים ראשוניים בעיכול, שינה ואנרגיה יכולים להורגש תוך שבועות ספורים. תהליכים מורכבים יותר כמו פוריות או חוסר איזון הורמונלי דורשים לרוב מספר חודשים של טיפול עקבי."}},
         {"@type": "Question", "name": "האם טיפול איורוודי יכול להשתלב עם רפואה קונבנציונלית?", "acceptedAnswer": {"@type": "Answer", "text": "בהחלט. האיורוודה משלימה את הרפואה הקונבנציונלית ולא מחליפה אותה. מטופלים רבים בקליניקת VEDICA מקבלים ליווי איורוודי לצד טיפולים רפואיים מערביים, כולל תהליכי IVF, טיפולי עיכול ועוד."}}
@@ -675,9 +688,9 @@
         <div class="hero-modern__grid">
             <div class="hero-modern__content">
                 <p class="hero-modern__kicker">VEDICA TEL AVIV</p>
-                <h1>ליווי איורוודי אישי לפוריות ואיזון הורמונלי</h1>
+                <h1>ליווי אישי לבריאות שלמה באיורוודה ורפואה פרסית</h1>
                 <p class="hero-modern__lead">
-                    תהליך אישי עם ענבל הנסב שמשלב אבחון מעמיק, תזונה והרגלים פרקטיים כדי ליצור יציבות אמיתית בגוף וביום-יום.
+                    ענבל הנסב, מייסדת VEDICA, מביאה קליניקה שמשלבת אבחון מעמיק, תזונה, צמחי מרפא והרגלים פרקטיים ליצירת יציבות אמיתית בגוף וביום-יום.
                 </p>
                 <div class="hero-modern__actions">
                     <a id="whatsapp-link" href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%95%D7%93%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D" target="_blank" rel="noopener noreferrer" class="btn-primary">
@@ -710,13 +723,13 @@
             <article class="info-card">
                 <p class="info-card__label">מי מלווה</p>
                 <p>
-                        <strong>ענבל הנסב</strong>, מטפלת איורוודה מוסמכת עם הכשרה באבחון דופק מסורתי.
+                        <strong>ענבל הנסב</strong>, מטפלת באיורוודה, רפואה הודית מסורתית ורפואה פרסית, ומייסדת קליניקת VEDICA בתל אביב.
                 </p>
             </article>
             <article class="info-card">
                 <p class="info-card__label">תחומי מיקוד</p>
                 <p>
-                        פוריות ו-<span dir="ltr">IVF</span>, עיכול, שינה, סטרס ותזונה איורוודית מותאמת אישית.
+                        שיקום מערכת העיכול, חוסר ספיגה, עייפות, חולשה חיסונית, דלקות חוזרות, תמיכה וליווי הליכי פוריות ושימור פוריות, איזון הורמונלי, חיזוק העצם, שינה וסטרס.
                 </p>
             </article>
             <article class="info-card">
@@ -763,9 +776,9 @@
         </div>
         <div class="grid md:grid-cols-3 gap-8">
             <article class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-5">
-                <h3 class="text-2xl font-bold text-emerald-900">פוריות ו-<span dir="ltr">IVF</span></h3>
+                <h3 class="text-2xl font-bold text-emerald-900">פוריות ושימור פוריות</h3>
                 <p class="text-slate-700 leading-relaxed">
-                    ליווי סביב הכנה לסבבים, חיזוק הקרקע הגופנית, תמיכה בעיכול ובשינה, והחזקה של שגרה שאפשר להתמיד בה גם בתקופות עמוסות.
+                    תמיכה וליווי בהליכי פוריות, הכנה לסבבים ותמיכה בשימור פוריות, תוך התאמה אישית למצב הגופני ולשגרת החיים.
                 </p>
                 <div class="mt-auto pt-4 border-t border-emerald-100">
                     <a href="clinic.html" class="font-bold text-emerald-800 hover:underline">לפרטים על הליווי בקליניקה</a>
@@ -774,7 +787,7 @@
             <article class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-5">
                 <h3 class="text-2xl font-bold text-emerald-900">עיכול ואיזון הורמונלי</h3>
                 <p class="text-slate-700 leading-relaxed">
-                    נפיחות, עייפות אחרי אוכל, יציאות לא סדירות, חוסר יציבות הורמונלית או תחושה של עומס וחוסר איזון במערכת.
+                    שיקום מערכת העיכול, מענה לחוסר ספיגה ודלקות חוזרות, איזון הורמונלי וחיזוק העצם מתוך הסתכלות מלאה על הגוף.
                 </p>
                 <div class="mt-auto pt-4 border-t border-emerald-100">
                     <a href="blog-dosha-diagnosis-tel-aviv.html" class="font-bold text-emerald-800 hover:underline">לקרוא על אבחון והתאמה אישית</a>
@@ -783,7 +796,7 @@
             <article class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-5">
                 <h3 class="text-2xl font-bold text-emerald-900">סטרס, שינה ועייפות</h3>
                 <p class="text-slate-700 leading-relaxed">
-                    כאשר המערכת עמוסה, התהליך מתמקד ביצירת יציבות בשינה, ברמת האנרגיה ובשגרה היומיומית, מתוך הקשבה לקצב האישי.
+                    ליווי למצבי עייפות, חולשה חיסונית, סטרס והפרעות שינה, עם תוכנית אישית שמאפשרת יציבות והטמעה לאורך זמן.
                 </p>
                 <div class="mt-auto pt-4 border-t border-emerald-100">
                     <a href="blog-stress-sleep-ayurveda.html" class="font-bold text-emerald-800 hover:underline">לקרוא על הגישה לשינה וסטרס</a>
@@ -813,14 +826,14 @@
                     <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב ראשון</p>
                     <h3 class="text-2xl font-bold text-emerald-900">פגישת אבחון</h3>
                     <p class="text-slate-700 leading-relaxed">
-                        פגישה ראשונה של כ-2 שעות עם תשאול מעמיק, הסתכלות על עיכול, שינה, אנרגיה, הרגלים, מצב רגשי ואבחון דופק מסורתי.
+                        פגישת אבחון של כשעתיים הכוללת תשאול מעמיק, אבחון פיזי והסתכלות על עיכול, שינה, אנרגיה, סטרס ואורח חיים.
                     </p>
                 </div>
                 <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
                     <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב שני</p>
                     <h3 class="text-2xl font-bold text-emerald-900">תוכנית אישית</h3>
                     <p class="text-slate-700 leading-relaxed">
-                        משם נבנית תוכנית שמחברת בין אוכל, שגרה, צמחי מרפא והורדת עומס. המטרה היא המלצות ישימות, לא רשימה תיאורטית.
+                        משם נבנית תוכנית שמחברת בין תזונה, צמחי מרפא, חליטות והרגלי שגרה. המטרה היא המלצות ישימות שמתאימות לחיים עצמם.
                     </p>
                 </div>
                 <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
@@ -859,7 +872,7 @@
             <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
                 <div class="bg-white rounded-2xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
                     <h3 class="text-2xl font-bold text-emerald-900">הכשרה מקצועית</h3>
-                    <p class="text-slate-700 leading-relaxed">ענבל הנסב היא בוגרת בית הספר PranaVeda ללימודי איורוודה, עם הכשרה ב-<span dir="ltr">Nadi Vigyan</span> לאבחון דופק, וחברה בעמותה לקידום הרפואה האיורוודית בישראל.</p>
+                    <p class="text-slate-700 leading-relaxed">ענבל הנסב היא בוגרת בית הספר PranaVeda ללימודי איורוודה, עם התמחות בהתאמת תזונה אישית למבנה המולד ושילוב צמחי מרפא, וחברה פעילה בעמותה לקידום הרפואה האיורוודית בישראל.</p>
                     <div class="mt-auto pt-4 border-t border-emerald-100">
                         <a href="about.html" class="font-bold text-emerald-800 hover:underline">לפרטי ההכשרה המלאים</a>
                     </div>
@@ -895,7 +908,11 @@
             <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-4">לצד הקליניקה</p>
             <h2 class="text-3xl font-bold text-emerald-900 mb-4">עוד דרכים לעבוד עם ענבל</h2>
             <p class="text-lg text-slate-600 leading-relaxed">
-                לצד הליווי האישי בקליניקה, אפשר להזמין גם סדנאות, סיורים ומפגשי תוכן סביב תזונה, תבלינים וצמחי מרפא.
+                לצד הליווי האישי בקליניקה, אפשר להזמין גם סדנאות וסיורי צמחי מרפא, עם שימוש בתבלינים זמינים וחליטות מרפאות לשגרת החיים.
+            </p>
+            <p class="text-base text-slate-600 leading-relaxed mt-3">
+                אפשר להאזין גם לראיון ברדיו תל אביב על צמחי מרפא ושיפור איכות החיים:
+                <a href="https://www.102fm.co.il/tzafir/318191" target="_blank" rel="noopener noreferrer" class="font-bold text-emerald-800 hover:underline">להאזנה לראיון</a>
             </p>
         </div>
         <div id="services-grid" class="grid md:grid-cols-3 gap-8">
