@@ -40,6 +40,13 @@
    "description": "גלו את הסודות של דוכני התבלינים וצמחי המרפא בסיור חווייתי בשוק לוינסקי.",
    "link": "tours.html",
    "image": "assets/spices-market.webp"
+  },
+  {
+   "id": "tours-digitaf",
+   "title": "סיור דיגיטף להורים",
+   "description": "סיור צמחי מרפא חווייתי להורים ותינוקות בשוק לוינסקי. התפוסה מלאה - ניתן להצטרף לרשימת המתנה.",
+   "link": "tours.html",
+   "image": "assets/digitaf-tour.jpg"
   }
  ],
  "instagram_gallery": [
