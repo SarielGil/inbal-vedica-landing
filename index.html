@@ -418,48 +418,7 @@
             padding: 0 1rem 2.2rem;
         }
 
-        .review-banner {
-            max-width: 80rem;
-            margin: 0.85rem auto 0;
-            padding: 0 1rem;
-        }
 
-        .review-banner__shell {
-            display: flex;
-            flex-direction: column;
-            gap: 0.9rem;
-            align-items: flex-start;
-            background: linear-gradient(115deg, #f0fbf6, #ffffff);
-            border: 1px solid rgba(30, 103, 88, 0.2);
-            border-radius: 1.35rem;
-            padding: 1.15rem 1.2rem;
-            box-shadow: 0 20px 40px -34px rgba(15, 61, 53, 0.55);
-        }
-
-        .review-banner__text {
-            margin: 0;
-            color: #1f5147;
-            line-height: 1.6;
-            font-size: 1.01rem;
-        }
-
-        .review-banner__cta {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            font-weight: 700;
-            color: #ffffff;
-            background: #0f766e;
-            border-radius: 999px;
-            padding: 0.68rem 1.15rem;
-            transition: transform 0.2s ease, background-color 0.2s ease;
-        }
-
-        .review-banner__cta:hover {
-            transform: translateY(-1px);
-            background: #0c5f58;
-        }
 
         .reviews-live {
             max-width: 80rem;
@@ -476,17 +435,10 @@
         }
 
         .reviews-live__title {
-            margin: 0;
+            margin: 0 0 0.95rem;
             color: #174a40;
             font-size: clamp(1.3rem, 2vw, 1.75rem);
             line-height: 1.25;
-        }
-
-        .reviews-live__meta {
-            margin: 0.4rem 0 0;
-            color: #3d655d;
-            font-size: 0.94rem;
-            line-height: 1.5;
         }
 
         .reviews-live__frame-wrap {
@@ -503,23 +455,6 @@
             height: 620px;
             border: 0;
             background: #ffffff;
-        }
-
-        .reviews-live__footer {
-            margin-top: 0.95rem;
-            display: flex;
-            justify-content: flex-start;
-        }
-
-        .reviews-live__link {
-            display: inline-flex;
-            text-decoration: none;
-            color: #0d6b5f;
-            font-weight: 700;
-        }
-
-        .reviews-live__link:hover {
-            text-decoration: underline;
         }
 
         .quick-path__shell {
@@ -605,12 +540,6 @@
             .info-strip__grid,
             .quick-path__grid {
                 grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-
-            .review-banner__shell {
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
             }
 
             .reviews-live__frame {
@@ -855,23 +784,21 @@
         </div>
     </section>
 
-    <section class="review-banner" aria-label="חוות דעת מטופלים">
-        <div class="review-banner__shell">
-            <p class="review-banner__text">
-                רוצים לקרוא חוות דעת של מטופלים? אפשר לראות את עמוד ההמלצות ב-Infomed.
-            </p>
-            <a
-                href="https://www.infomed.co.il/experts/153972/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="review-banner__cta"
-            >
-                לעמוד ההמלצות ב-Infomed
-            </a>
+    <section class="reviews-live" aria-label="חוות דעת מטופלים ב-Infomed">
+        <div class="reviews-live__shell">
+            <h2 class="reviews-live__title">חוות דעת מטופלים</h2>
+            <div class="reviews-live__frame-wrap">
+                <iframe
+                    class="reviews-live__frame"
+                    title="חוות דעת מטופלים ב-Infomed"
+                    frameborder="0"
+                    width="100%"
+                    height="600px"
+                    src="https://www.infomed.co.il/experts/153972/"
+                ></iframe>
+            </div>
         </div>
     </section>
-
-
 
     <section class="quick-path">
         <div class="quick-path__shell">
