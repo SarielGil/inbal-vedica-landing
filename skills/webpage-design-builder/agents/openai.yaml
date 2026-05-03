@@ -1,0 +1,4 @@
+interface:
+  display_name: "Webpage Design Builder"
+  short_description: "Modern page UX and visual system upgrades."
+  default_prompt: "Use $webpage-design-builder to modernize this website page for clarity, usability, and conversion while preserving brand intent."
