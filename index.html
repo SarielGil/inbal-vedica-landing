@@ -350,13 +350,13 @@
 
         .hero-modern__panel li {
             position: relative;
-            padding-inline-end: 1.35rem;
+            padding-inline-start: 1.35rem;
         }
 
         .hero-modern__panel li::before {
             content: "✓";
             position: absolute;
-            inset-inline-end: 0;
+            inset-inline-start: 0;
             color: #0f766e;
             font-weight: 800;
         }
@@ -460,14 +460,17 @@
         .reviews-track-wrap {
             overflow: hidden;
             margin-top: 1rem;
+            direction: ltr; /* Ensure track starts at left so negative translation pulls content in correctly */
             -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
             mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
         }
 
         .reviews-track {
+            direction: ltr; /* Stack sets Left-to-Right so negative translation pulls Set 2 into view */
             display: flex;
             gap: 1rem;
             width: max-content;
+            padding-inline-end: 1rem; /* Ensure track is exactly 2 units long for seamless loop */
             animation: scrollReviews 55s linear infinite;
         }
 
@@ -481,6 +484,7 @@
         }
 
         .review-card {
+            direction: rtl; /* Keep content right-to-left */
             width: 300px;
             flex-shrink: 0;
             background: #f7faf9;
@@ -1156,11 +1160,11 @@
                     </article>
                     <article class="review-card" role="listitem" aria-hidden="true">
                         <div class="review-card__top"><div class="review-card__avatar">ס</div><div class="review-card__meta"><span class="review-card__stars">★★★★★</span><span class="review-card__date">29/12/2025</span></div></div>
-                        <p class="review-card__text">כל כך שמחה שהגעתי לענבל! יש לה שילוב נדיר של ידע עמוק עם אינטואיציה מדויקת. היא קשובה, רגישה, ומתאימה את הטיפול בצורה אישית ומדויקת. 🤍</p>
+                        <p class="review-card__text">כל כך שמחה שהגעתי לענבל! יש לה שילוב נדיר של ידע עמוק עם אינטואיציה מדויקת. היא קשובה, רגישה ולא עובדת לפי ספר אלא מתאימה את הטיפול בצורה אישית ומדויקת. הרגשתי שאני בידיים מאוד טובות. 🤍</p>
                     </article>
                     <article class="review-card" role="listitem" aria-hidden="true">
                         <div class="review-card__top"><div class="review-card__avatar">ש</div><div class="review-card__meta"><span class="review-card__stars">★★★★★</span><span class="review-card__date">15/12/2025</span></div></div>
-                        <p class="review-card__text">הגישה משלבת תזונה, צמחי מרפא והרגלים יומיומיים פשוטים. מה שמייחד את הטיפול הוא הפרקטיות — המלצות שקל ליישם ביום-יום.</p>
+                        <p class="review-card__text">הגישה מבוססת על איורוודה ומשלבת תזונה, צמחי מרפא והרגלים יומיומיים פשוטים. מה שמייחד את הטיפול הוא הפרקטיות — המלצות שקל ליישם ביום-יום, בלי שינויים קיצוניים.</p>
                     </article>
                     <article class="review-card" role="listitem" aria-hidden="true">
                         <div class="review-card__top"><div class="review-card__avatar">ס</div><div class="review-card__meta"><span class="review-card__stars">★★★★★</span><span class="review-card__date">06/11/2025</span></div></div>
@@ -1172,11 +1176,11 @@
                     </article>
                     <article class="review-card" role="listitem" aria-hidden="true">
                         <div class="review-card__top"><div class="review-card__avatar">נ</div><div class="review-card__meta"><span class="review-card__stars">★★★★★</span><span class="review-card__date">15/10/2025</span></div></div>
-                        <p class="review-card__text">הגעתי לענבל מעשרות המלצות. האבחון היה מעמיק ורק ממבט העיניים ידעתי שיש לי על מי לסמוך.</p>
+                        <p class="review-card__text">הגעתי לענבל מעשרות המלצות. האבחון היה מעמיק ורק ממבט העיניים ידעתי שיש לי על מי לסמוך — אישה מיוחדת שפועלת מתוך ייעוד לרפא אנשים.</p>
                     </article>
                     <article class="review-card" role="listitem" aria-hidden="true">
                         <div class="review-card__top"><div class="review-card__avatar">מ</div><div class="review-card__meta"><span class="review-card__stars">★★★★★</span><span class="review-card__date">29/07/2025</span></div></div>
-                        <p class="review-card__text">ענבל בעלת ידע נרחב וגישה מעולה. הגעתי עם בעיית עיכול מאתגרת והיא הצליחה לפתור אותה בעזרת מעקב מותאם. יצירתית, רגישה ומדויקת. ממליצה בחום.</p>
+                        <p class="review-card__text">ענבל בעלת ידע נרחב וגישה מעולה למטופלים. הגעתי עם בעיית עיכול מאתגרת והיא הצליחה לפתור אותה בעזרת מעקב מותאם והתאמות תזונה שעבדו עבורי. ענבל יצירתית, רגישה ומדויקת. ממליצה בחום.</p>
                     </article>
                 </div>
             </div>
