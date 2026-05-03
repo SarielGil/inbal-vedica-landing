@@ -430,31 +430,112 @@
             background: #ffffff;
             border: 1px solid rgba(30, 103, 88, 0.16);
             border-radius: 1.35rem;
-            padding: 1.2rem;
+            padding: 1.4rem 1.4rem 1.6rem;
             box-shadow: 0 20px 40px -34px rgba(15, 61, 53, 0.5);
         }
 
         .reviews-live__title {
-            margin: 0 0 0.95rem;
+            margin: 0 0 0.5rem;
             color: #174a40;
             font-size: clamp(1.3rem, 2vw, 1.75rem);
             line-height: 1.25;
         }
 
-        .reviews-live__frame-wrap {
-            margin-top: 0.95rem;
-            overflow: hidden;
-            border: 1px solid rgba(20, 90, 76, 0.16);
-            border-radius: 1rem;
-            background: #ffffff;
+        .reviews-live__source {
+            margin: 0 0 1.2rem;
+            font-size: 0.88rem;
+            color: #5a8077;
         }
 
-        .reviews-live__frame {
-            display: block;
-            width: 100%;
-            height: 620px;
-            border: 0;
-            background: #ffffff;
+        .reviews-live__source a {
+            color: #0f766e;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .reviews-live__source a:hover {
+            text-decoration: underline;
+        }
+
+        .reviews-live__grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .review-card {
+            background: #f7faf9;
+            border: 1px solid rgba(20, 90, 76, 0.12);
+            border-radius: 1rem;
+            padding: 1.1rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .review-card__top {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .review-card__avatar {
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1a6b5a, #2f7668);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .review-card__meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .review-card__stars {
+            color: #f59e0b;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+        }
+
+        .review-card__date {
+            font-size: 0.8rem;
+            color: #789088;
+        }
+
+        .review-card__text {
+            margin: 0;
+            color: #2d4f48;
+            font-size: 0.97rem;
+            line-height: 1.6;
+        }
+
+        .reviews-live__cta {
+            margin-top: 1.4rem;
+            text-align: center;
+        }
+
+        .reviews-live__cta-link {
+            display: inline-block;
+            padding: 0.65rem 1.6rem;
+            border: 1.5px solid #2f7668;
+            border-radius: 2rem;
+            color: #1a6b5a;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: background 0.18s ease, color 0.18s ease;
+        }
+
+        .reviews-live__cta-link:hover {
+            background: #1a6b5a;
+            color: #ffffff;
         }
 
         .quick-path__shell {
@@ -542,8 +623,8 @@
                 grid-template-columns: repeat(3, minmax(0, 1fr));
             }
 
-            .reviews-live__frame {
-                height: 680px;
+            .reviews-live__grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
 
@@ -624,7 +705,7 @@
     </style>
     <!-- Open Graph Tags -->
     <meta property="og:title" content="איורוודה בתל אביב - VEDICA">
-    <meta property="og:description" content="טיפול איורוודי מותאם אישית עם ענבל הנסב">
+    <meta property="og:description" content="קליניקת VEDICA בתל אביב — איורוודה ורפואה פרסית עם ענבל הנסב. ליווי אישי בפוריות, עיכול, איזון הורמונלי, שינה וסטרס. 14 חוות דעת 5★ באינפומד.">
     <meta property="og:url" content="https://vedica-ayurveda.co.il">
     <meta property="og:site_name" content="VEDICA - ענבל הנסב">
     <meta property="og:image" content="https://vedica-ayurveda.co.il/assets/inbal-hero.jpg">
@@ -650,14 +731,56 @@
       "email": "inbal.ph@gmail.com",
       "url": "https://vedica-ayurveda.co.il",
       "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "14",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "ד."},
+          "datePublished": "2026-05-01",
+          "reviewBody": "הגעתי לטיפול אצל ענבל לאחר תקופה של עומס וחיפוש אחר איזון, ומהרגע הראשון הרגשתי בידיים מקצועיות וקשובות. הטיפול התחיל באבחון יסודי ומעמיק, שבו היא הסבירה בסבלנות רבה על עקרונות האירוודה וכיצד הם רלוונטיים למצב הנוכחי שלי. ניכר שהיא בעלת ידע רחב מאוד ולא רק מבצעת את הטכניקה, אלא באמת מבינה את הקשר שבין גוף לנפש."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "ר."},
+          "datePublished": "2026-04-30",
+          "reviewBody": "ענבל מטפלת בחסד, עם המון ידע ורגישות. הרגשתי שהיא מתאימה את הטיפול בדיוק לצרכים שלי. מומלצת בחום."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "ש."},
+          "datePublished": "2026-01-08",
+          "reviewBody": "ענבל הייתה מדהימה ומסורה לטיפול שלי — הרגשתי שהיא ממש מלווה אותי בכל התהליך בצורה רגישה ועדינה. הרגשתי שאני יכולה לפנות אליה בכל זמן והיא נתנה לי שירות מצויין. ממליצה מאוד על הטיפול המקצועי שלה."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "א."},
+          "datePublished": "2026-01-06",
+          "reviewBody": "הגעתי לענבל עם רקע של קוליטיס (מחלת מעי דלקתית). ענבל גילתה הבנה רבה בתחום וידעה להתאים לי תזונה וחליטות תה שמאוד הקלו. גם במצבים של החמרה הייתה זמינה עבורי תמיד בחיוך גדול ואכפתיות. מרגיש הרבה יותר טוב כיום."
+        }
+      ],
       "founder": {
         "@type": "Person",
-        "name": "ענבל הנסב"
+        "name": "ענבל הנסב",
+        "memberOf": {
+          "@type": "Organization",
+          "name": "העמותה לקידום הרפואה האיורוודית בישראל"
+        }
       },
       "sameAs": [
         "https://www.facebook.com/inbal.hanasab",
         "https://www.instagram.com/inbal_hanasab_vedica",
-        "https://easy.co.il/page/10161776"
+        "https://easy.co.il/page/10161776",
+        "https://www.infomed.co.il/experts/153972/"
       ]
     }
     </script>
@@ -676,7 +799,9 @@
         {"@type": "Question", "name": "מה קורה בפגישת איורוודה ראשונה?", "acceptedAnswer": {"@type": "Answer", "text": "פגישת האבחון הראשונה בקליניקת VEDICA נמשכת כשעתיים וכוללת תשאול מעמיק ואבחון פיזי. ממנה נבנית תוכנית אישית עם תזונה, צמחי מרפא, חליטות והמלצות ישימות לשגרת החיים."}},
         {"@type": "Question", "name": "האם איורוודה בטוחה לנשים בהריון?", "acceptedAnswer": {"@type": "Answer", "text": "איורוודה מציעה גישה עדינה ותומכת להריון, עם דגש על תזונה מזינה, שגרות מרגיעות והתאמות אישיות. עם זאת, לא כל צמח או טיפול מתאים לתקופת ההריון, ולכן חשוב לקבל ליווי של מטפלת מוסמכת שמכירה את ההנחיות האיורוודיות המדויקות לתקופה זו."}},
         {"@type": "Question", "name": "כמה זמן לוקח לראות תוצאות מטיפול איורוודי?", "acceptedAnswer": {"@type": "Answer", "text": "זה תלוי במצב ובמורכבות הבעיה. שינויים ראשוניים בעיכול, שינה ואנרגיה יכולים להורגש תוך שבועות ספורים. תהליכים מורכבים יותר כמו פוריות או חוסר איזון הורמונלי דורשים לרוב מספר חודשים של טיפול עקבי."}},
-        {"@type": "Question", "name": "האם טיפול איורוודי יכול להשתלב עם רפואה קונבנציונלית?", "acceptedAnswer": {"@type": "Answer", "text": "בהחלט. האיורוודה משלימה את הרפואה הקונבנציונלית ולא מחליפה אותה. מטופלים רבים בקליניקת VEDICA מקבלים ליווי איורוודי לצד טיפולים רפואיים מערביים, כולל תהליכי IVF, טיפולי עיכול ועוד."}}
+        {"@type": "Question", "name": "האם טיפול איורוודי יכול להשתלב עם רפואה קונבנציונלית?", "acceptedAnswer": {"@type": "Answer", "text": "בהחלט. האיורוודה משלימה את הרפואה הקונבנציונלית ולא מחליפה אותה. מטופלים רבים בקליניקת VEDICA מקבלים ליווי איורוודי לצד טיפולים רפואיים מערביים, כולל תהליכי IVF, טיפולי עיכול ועוד."}},
+        {"@type": "Question", "name": "האם איורוודה יכולה לעזור במחלות מעי דלקתיות כמו קוליטיס?", "acceptedAnswer": {"@type": "Answer", "text": "כן. מטופלים עם קוליטיס ומחלות מעי דלקתיות (IBD) מצאו שהתאמת תזונה אישית וחליטות צמחי מרפא מקלות על התסמינים ומפחיתות החמרות. הגישה האיורוודית מזהה את גורמי הדלקת הספציפיים לכל גוף ומגיבה בהתאמה מלאה של תזונה, חליטות וצמחי מרפא אנטי-דלקתיים."}},
+        {"@type": "Question", "name": "מה זה רפואה פרסית ואיך היא משתלבת עם איורוודה?", "acceptedAnswer": {"@type": "Answer", "text": "הרפואה הפרסית (אוניאני) היא מסורת ריפוי עתיקה שהתפתחה במקביל לאיורוודה ומשתפת איתה עקרונות מרכזיים. ענבל הנסב משלבת עקרונות מהשתיים — כולל שימוש בצמחי מרפא על פי הרכב גופני, עיכול ומזג — ומציעה טיפול מותאם אישית ייחודי שאינו זמין ברוב הקליניקות בישראל."}}
       ]
     }
     </script>
@@ -784,21 +909,6 @@
         </div>
     </section>
 
-    <section class="reviews-live" aria-label="חוות דעת מטופלים ב-Infomed">
-        <div class="reviews-live__shell">
-            <h2 class="reviews-live__title">חוות דעת מטופלים</h2>
-            <div class="reviews-live__frame-wrap">
-                <iframe
-                    class="reviews-live__frame"
-                    title="חוות דעת מטופלים ב-Infomed"
-                    frameborder="0"
-                    width="100%"
-                    height="600px"
-                    src="https://www.infomed.co.il/experts/153972/"
-                ></iframe>
-            </div>
-        </div>
-    </section>
 
     <section class="quick-path">
         <div class="quick-path__shell">
@@ -961,6 +1071,66 @@
         </div>
     </section>
 
+    <!-- Patient Reviews -->
+    <section class="reviews-live" aria-label="חוות דעת מטופלים ב-Infomed">
+        <div class="reviews-live__shell">
+            <h2 class="reviews-live__title">מה מטופלים מספרים</h2>
+            <p class="reviews-live__source">חוות דעת אמיתיות מתוך פרופיל ענבל הנסב ב־<a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer">Infomed</a></p>
+            <div class="reviews-live__grid">
+
+                <article class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__avatar">ד</div>
+                        <div class="review-card__meta">
+                            <span class="review-card__stars">★★★★★</span>
+                            <span class="review-card__date">01/05/2026</span>
+                        </div>
+                    </div>
+                    <p class="review-card__text">הגעתי לטיפול אצל ענבל לאחר תקופה של עומס וחיפוש אחר איזון, ומהרגע הראשון הרגשתי בידיים מקצועיות וקשובות. הטיפול התחיל באבחון יסודי ומעמיק, שבו היא הסבירה בסבלנות רבה על עקרונות האירוודה וכיצד הם רלוונטיים למצב הנוכחי שלי. ניכר שהיא בעלת ידע רחב מאוד ולא רק מבצעת את הטכניקה, אלא באמת מבינה את הקשר שבין גוף לנפש.</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__avatar">ר</div>
+                        <div class="review-card__meta">
+                            <span class="review-card__stars">★★★★★</span>
+                            <span class="review-card__date">30/04/2026</span>
+                        </div>
+                    </div>
+                    <p class="review-card__text">ענבל מטפלת בחסד, עם המון ידע ורגישות. הרגשתי שהיא מתאימה את הטיפול בדיוק לצרכים שלי. מומלצת בחום.</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__avatar">ש</div>
+                        <div class="review-card__meta">
+                            <span class="review-card__stars">★★★★★</span>
+                            <span class="review-card__date">08/01/2026</span>
+                        </div>
+                    </div>
+                    <p class="review-card__text">ענבל הייתה מדהימה ומסורה לטיפול שלי — הרגשתי שהיא ממש מלווה אותי בכל התהליך בצורה רגישה ועדינה. הרגשתי שאני יכולה לפנות אליה בכל זמן והיא נתנה לי שירות מצויין. ממליצה מאוד על הטיפול המקצועי שלה.</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__avatar">א</div>
+                        <div class="review-card__meta">
+                            <span class="review-card__stars">★★★★★</span>
+                            <span class="review-card__date">06/01/2026</span>
+                        </div>
+                    </div>
+                    <p class="review-card__text">הגעתי לענבל עם רקע של קוליטיס (מחלת מעי דלקתית). ענבל גילתה הבנה רבה בתחום וידעה להתאים לי תזונה וחליטות תה שמאוד הקלו. גם במצבים של החמרה הייתה זמינה עבורי תמיד בחיוך גדול ואכפתיות. מרגיש הרבה יותר טוב כיום.</p>
+                </article>
+
+            </div>
+            <div class="reviews-live__cta">
+                <a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer" class="reviews-live__cta-link">
+                    לכל חוות הדעת בפרופיל האינפומד ←
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Secondary Offers -->
     <section class="max-w-7xl mx-auto px-4 py-20">
         <div class="max-w-3xl mx-auto text-center mb-12">
@@ -1004,6 +1174,14 @@
             <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50">
                 <h3 class="font-bold text-emerald-800 mb-2">האם אפשר לשאול שאלות גם בין הפגישות?</h3>
                 <p class="text-slate-600">כן. כחלק מהליווי ניתן לפנות לענבל גם בין הפגישות, כדי לקבל מענה לשאלות שעולות במהלך היישום וההתקדמות בתהליך.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50">
+                <h3 class="font-bold text-emerald-800 mb-2">האם איורוודה יכולה לעזור במחלות מעי דלקתיות כמו קוליטיס?</h3>
+                <p class="text-slate-600">כן. הגישה האיורוודית מזהה את גורמי הדלקת הספציפיים לכל גוף ומגיבה בהתאמה מלאה של תזונה, חליטות וצמחי מרפא אנטי-דלקתיים. מטופלים עם קוליטיס ו-IBD דיווחו על הקלה בתסמינים ופחות החמרות.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50">
+                <h3 class="font-bold text-emerald-800 mb-2">מה ההבדל בין האיורוודה לרפואה פרסית ומדוע ענבל משלבת ביניהן?</h3>
+                <p class="text-slate-600">הרפואה הפרסית (אוניאני) היא מסורת ריפוי עתיקה שמשתפת עם האיורוודה עקרונות של איזון על פי הרכב גופני ומזג. ענבל הנסב משלבת את השתיים לטיפול מותאם אישית ייחודי — גישה שאינה זמינה ברוב הקליניקות בישראל.</p>
             </div>
         </div>
     </section>
