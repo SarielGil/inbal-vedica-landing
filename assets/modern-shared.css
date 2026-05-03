@@ -163,7 +163,7 @@ h4,
 }
 
 .page-hero {
-    --hero-image: url('assets/inbal-hero.webp');
+    --hero-image: url('/assets/inbal-hero.webp');
     position: relative;
     overflow: hidden;
     border-radius: 1.75rem;
