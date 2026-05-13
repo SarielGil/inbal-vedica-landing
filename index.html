@@ -373,6 +373,49 @@
             text-decoration: underline;
         }
 
+        .hero-modern__review {
+            margin-top: 1rem;
+            padding-top: 0.95rem;
+            border-top: 1px solid rgba(42, 88, 74, 0.15);
+        }
+
+        .hero-modern__review-score {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            margin: 0 0 0.55rem;
+            color: #174a40;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        .hero-modern__review-stars {
+            color: #f59e0b;
+            font-size: 1rem;
+            letter-spacing: 0.04em;
+            white-space: nowrap;
+        }
+
+        .hero-modern__review-quote {
+            margin: 0;
+            color: #365950;
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+
+        .hero-modern__review-source {
+            margin-top: 0.62rem;
+            display: inline-flex;
+            color: #0f766e;
+            font-size: 0.92rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .hero-modern__review-source:hover {
+            text-decoration: underline;
+        }
+
         .info-strip {
             position: relative;
             z-index: 3;
@@ -903,6 +946,16 @@
                     <li>מתאמים פגישת אבחון ראשונה בקליניקה</li>
                 </ol>
                 <a href="contact.html" class="hero-modern__panel-link">לקביעת שיחה ראשונית</a>
+                <div class="hero-modern__review" aria-label="דירוג וחוות דעת מטופלים">
+                    <p class="hero-modern__review-score">
+                        <span class="hero-modern__review-stars">★★★★★</span>
+                        <span>14 חוות דעת 5 כוכבים</span>
+                    </p>
+                    <p class="hero-modern__review-quote">
+                        "ענבל מטפלת בחסד, עם המון ידע ורגישות. הרגשתי שהיא מתאימה את הטיפול בדיוק לצרכים שלי."
+                    </p>
+                    <a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer" class="hero-modern__review-source">לקריאת חוות הדעת ב-Infomed</a>
+                </div>
             </aside>
         </div>
     </section>
