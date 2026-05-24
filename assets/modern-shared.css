@@ -4,7 +4,7 @@
     --accent: #0f766e;
     --accent-hover: #115e59;
     --bg-main: #f5f4ef;
-    --bg-glass: rgba(250, 252, 248, 0.9);
+    --bg-glass: #fbfcf8;
     --line-soft: rgba(27, 59, 51, 0.14);
     --shadow-soft: 0 20px 45px -32px rgba(8, 38, 34, 0.45);
 }
@@ -107,7 +107,7 @@ h4,
     gap: 0.3rem;
     padding: 0.9rem;
     border-radius: 1.15rem;
-    background: var(--bg-glass);
+    background: #fbfcf8 !important;
     border: 1px solid var(--line-soft);
     box-shadow: var(--shadow-soft);
 }
@@ -354,7 +354,7 @@ h4,
         padding: 0;
         gap: 0.3rem;
         border: 0;
-        background: transparent;
+        background: transparent !important;
         box-shadow: none;
     }
 

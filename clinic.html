@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="description"
     content="קליניקת VEDICA בתל אביב לרפואה איורוודית ופרסית. פגישת אבחון של כשעתיים, תוכנית אישית עם תזונה, צמחי מרפא וחליטות, וליווי בתחומי פוריות, עיכול, איזון הורמונלי, שינה וסטרס.">
   <meta name="keywords" content="קליניקה איורוודה תל אביב, רפואה פרסית, פוריות, עיכול, איזון הורמונלי, צמחי מרפא, חליטות">
@@ -16,8 +17,10 @@
   <meta property="og:site_name" content="VEDICA - ענבל הנסב">
   <meta property="og:image" content="https://vedica-ayurveda.co.il/assets/inbal-hero.webp">
   <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="he_IL">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- FAQ Schema for SEO/AI -->
   <script type="application/ld+json">
@@ -85,32 +88,50 @@
  }
  </script>
 
-  <!-- MedicalBusiness Schema for SEO -->
+  <!-- MedicalBusiness and Service Schema for SEO -->
   <script type="application/ld+json">
  {
    "@context": "https://schema.org",
-   "@type": "MedicalBusiness",
-   "name": "VEDICA - קליניקת איורוודה",
-   "medicalSpecialty": "Ayurveda",
-   "description": "קליניקת VEDICA בתל אביב לרפואה איורוודית ופרסית, עם ליווי מותאם אישית בפוריות, עיכול, איזון הורמונלי, שינה וסטרס.",
-   "url": "https://vedica-ayurveda.co.il/clinic.html",
-   "telephone": "+972545774407",
-   "email": "inbal.ph@gmail.com",
-   "address": {
-     "@type": "PostalAddress",
-     "streetAddress": "ארלוזורוב 82",
-     "addressLocality": "תל אביב",
-     "addressCountry": "IL"
-   },
-   "founder": {
-     "@type": "Person",
-     "name": "ענבל הנסב",
-     "jobTitle": "מטפלת מוסמכת ברפואה איורוודית ופרסית"
-   },
-   "sameAs": [
-     "https://www.instagram.com/inbal_hanasab_vedica",
-     "https://www.facebook.com/inbal.hanasab",
-     "https://easy.co.il/page/10161776"
+   "@graph": [
+    {
+     "@type": ["MedicalBusiness", "LocalBusiness", "HealthAndBeautyBusiness"],
+     "@id": "https://vedica-ayurveda.co.il/#organization",
+     "name": "VEDICA - קליניקת איורוודה ורפואה פרסית",
+     "medicalSpecialty": "AlternativeMedicine",
+     "description": "קליניקת VEDICA בתל אביב לרפואה איורוודית ופרסית, עם ליווי מותאם אישית בפוריות, עיכול, איזון הורמונלי, שינה וסטרס.",
+     "url": "https://vedica-ayurveda.co.il/clinic.html",
+     "telephone": "+972545774407",
+     "email": "inbal.ph@gmail.com",
+     "priceRange": "₪₪",
+     "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "ארלוזורוב 82",
+       "addressLocality": "תל אביב",
+       "addressRegion": "מחוז תל אביב",
+       "addressCountry": "IL"
+     },
+     "founder": {
+       "@type": "Person",
+       "@id": "https://vedica-ayurveda.co.il/#person",
+       "name": "ענבל הנסב",
+       "jobTitle": "מטפלת מוסמכת ברפואה איורוודית ופרסית"
+     },
+     "sameAs": [
+       "https://www.instagram.com/inbal_hanasab_vedica",
+       "https://www.facebook.com/inbal.hanasab",
+       "https://easy.co.il/page/10161776",
+       "https://www.infomed.co.il/experts/153972/"
+     ]
+    },
+    {
+     "@type": "Service",
+     "@id": "https://vedica-ayurveda.co.il/clinic.html#diagnosis-service",
+     "serviceType": "אבחון וליווי איורוודי",
+     "name": "פגישת אבחון איורוודית ופרסית",
+     "provider": { "@id": "https://vedica-ayurveda.co.il/#organization" },
+     "areaServed": { "@type": "City", "name": "תל אביב" },
+     "description": "פגישת אבחון של כשעתיים הכוללת תשאול מקיף, אבחון דופק ובניית תוכנית אישית עם תזונה, צמחי מרפא, חליטות והרגלי שגרה."
+    }
    ]
  }
  </script>
@@ -142,6 +163,7 @@
         <a href="blog.html" class="site-nav__link">בלוג</a>
         <a href="podcast.html" class="site-nav__link">פודקאסט</a>
         <a href="clinic.html" class="site-nav__link site-nav__link--active">קליניקה</a>
+                <a href="persian-medicine.html" class="site-nav__link">רפואה פרסית</a>
         <a href="workshops.html" class="site-nav__link">סדנאות</a>
         <a href="tours.html" class="site-nav__link">סיורים</a>
         <a href="contact.html"

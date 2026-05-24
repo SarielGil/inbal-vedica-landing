@@ -7,13 +7,19 @@ Disallow: /private/
 User-agent: GPTBot
 Allow: /
 
-User-agent: Claude-bot
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 User-agent: Googlebot

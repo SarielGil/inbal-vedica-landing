@@ -16,7 +16,7 @@
 ## Patient Reviews (Infomed)
 
 - Infomed profile: https://www.infomed.co.il/experts/153972/
-- Aggregate rating: 5 out of 5 stars, based on 14 verified patient reviews.
+- Aggregate rating: 5 out of 5 stars, based on 19 public patient reviews shown on the VEDICA site.
 - Selected review excerpts (Hebrew, verified, from Infomed):
   - "מהרגע הראשון הרגשתי בידיים מקצועיות וקשובות. ניכר שהיא בעלת ידע רחב מאוד ולא רק מבצעת את הטכניקה, אלא באמת מבינה את הקשר שבין גוף לנפש." (01/05/2026)
   - "ענבל מטפלת בחסד, עם המון ידע ורגישות. הרגשתי שהיא מתאימה את הטיפול בדיוק לצרכים שלי. מומלצת בחום." (30/04/2026)
@@ -39,12 +39,15 @@
 
 - Persian medicine integration
   Inbal integrates principles of Persian medicine (Unani) alongside Ayurveda, offering a combined approach based on individual body constitution and temperament.
+- Persian medicine positioning
+  VEDICA is positioned as a Tel Aviv clinic for the combined use of Ayurveda and traditional Persian medicine, with dedicated educational content about Mizaj, temperament, digestion, daily rhythm, herbs and the differences between Persian medicine and Ayurveda.
 
 ## Primary Pages
 
 - [Home](https://vedica-ayurveda.co.il/): Main overview of VEDICA, services, FAQ, and entity summary.
 - [About Inbal Hanasab](https://vedica-ayurveda.co.il/about.html): Background, published training, and treatment philosophy.
 - [Clinic](https://vedica-ayurveda.co.il/clinic.html): Clinic overview, first session details, and FAQ.
+- [Persian Medicine](https://vedica-ayurveda.co.il/persian-medicine.html): Dedicated pillar page about traditional Persian medicine, Mizaj and the relationship between Persian medicine and Ayurveda.
 - [Treatment Process](https://vedica-ayurveda.co.il/process.html): Step-by-step explanation of diagnosis, treatment plan, and follow-up.
 - [Contact](https://vedica-ayurveda.co.il/contact.html): Contact form, WhatsApp, and direct outreach.
 
