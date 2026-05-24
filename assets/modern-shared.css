@@ -334,7 +334,7 @@ h4,
     }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 72rem) {
     .site-nav__inner {
         gap: 1.5rem;
         padding: 0 1.35rem;
