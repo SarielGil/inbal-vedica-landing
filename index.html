@@ -674,6 +674,77 @@
             text-decoration: underline;
         }
 
+        .levinsky-home-card {
+            max-width: 80rem;
+            margin-inline: auto;
+            padding-inline: 1rem;
+            padding-bottom: 4rem;
+        }
+
+        .levinsky-home-card__inner {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 1.25rem;
+            align-items: center;
+            padding: 1.5rem;
+            border: 1px solid #d1fae5;
+            border-radius: 1.5rem;
+            background: #fff;
+            box-shadow: 0 12px 26px rgba(15, 118, 110, 0.08);
+        }
+
+        .levinsky-home-card__image {
+            width: min(100%, 16rem);
+            height: 11rem;
+            margin-inline: auto;
+            border-radius: 1rem;
+            object-fit: cover;
+            object-position: center 42%;
+        }
+
+        .levinsky-home-card__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .levinsky-home-card__actions {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .levinsky-home-card__button {
+            display: inline-flex;
+            min-height: 3rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            text-align: center;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .levinsky-home-card__button--primary {
+            background: #065f46;
+            color: #fff;
+        }
+
+        .levinsky-home-card__button--primary:hover {
+            background: #064e3b;
+        }
+
+        .levinsky-home-card__button--secondary {
+            border: 2px solid #047857;
+            color: #047857;
+        }
+
+        .levinsky-home-card__button--secondary:hover {
+            background: #ecfdf5;
+        }
+
         @media (max-width: 63.99rem) {
             .hero-modern::before {
                 background-image:
@@ -691,6 +762,21 @@
                 grid-template-columns: repeat(3, minmax(0, 1fr));
             }
 
+            .levinsky-home-card__inner {
+                grid-template-columns: 13rem minmax(0, 1fr);
+                gap: 2rem;
+                padding: 2rem 2.5rem;
+            }
+
+            .levinsky-home-card__image {
+                width: 12rem;
+                height: 13.5rem;
+            }
+
+            .levinsky-home-card__actions {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
 
         }
 
@@ -1011,18 +1097,18 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 pb-16">
-        <div class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-sm md:grid md:grid-cols-[0.72fr_1.28fr] md:items-center">
-            <img src="assets/inbal-market.jpg" alt="ענבל הנסב בסיור צמחי מרפא ותבלינים בשוק לוינסקי" class="w-full h-52 sm:h-60 md:h-80 object-cover" loading="lazy">
-            <div class="p-6 sm:p-7 md:p-10 flex flex-col justify-center">
+    <section class="levinsky-home-card">
+        <div class="levinsky-home-card__inner">
+            <img src="assets/inbal-market.jpg" alt="ענבל הנסב בסיור צמחי מרפא ותבלינים בשוק לוינסקי" class="levinsky-home-card__image" loading="lazy">
+            <div class="levinsky-home-card__content">
                 <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-3">סיורי צמחי מרפא</p>
                 <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">סיור אוכל, צמחי מרפא וקולינריה בשוק לוינסקי</h2>
                 <p class="text-lg text-slate-700 leading-relaxed mb-6">
                     סיור קולינרי בעברית או באנגלית לקבוצות ויחידים, שמחבר בין שוק לוינסקי, קולינריה, תרבות איראנית, תזונה הודית, איורוודה וחליטות שאפשר לקחת הביתה לשגרת היום-יום.
                 </p>
-                <div class="flex flex-col sm:flex-row sm:flex-wrap gap-3">
-                    <a href="tours.html" class="inline-flex min-h-12 items-center justify-center rounded-xl bg-emerald-800 px-6 py-3 text-center font-bold text-white transition hover:bg-emerald-900">לעמוד הסיורים</a>
-                    <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A1%D7%99%D7%95%D7%A8%20%D7%A6%D7%9E%D7%97%D7%99%20%D7%9E%D7%A8%D7%A4%D7%90" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center justify-center rounded-xl border-2 border-emerald-700 px-6 py-3 text-center font-bold text-emerald-700 transition hover:bg-emerald-50">תיאום סיור בוואטסאפ</a>
+                <div class="levinsky-home-card__actions">
+                    <a href="tours.html" class="levinsky-home-card__button levinsky-home-card__button--primary">לעמוד הסיורים</a>
+                    <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A1%D7%99%D7%95%D7%A8%20%D7%A6%D7%9E%D7%97%D7%99%20%D7%9E%D7%A8%D7%A4%D7%90" target="_blank" rel="noopener noreferrer" class="levinsky-home-card__button levinsky-home-card__button--secondary">תיאום סיור בוואטסאפ</a>
                 </div>
             </div>
         </div>
