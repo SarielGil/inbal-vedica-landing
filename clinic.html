@@ -80,6 +80,22 @@
   },
   {
    "@type": "Question",
+   "name": "למי מתאים ליווי בקליניקת איורוודה ורפואה פרסית?",
+   "acceptedAnswer": {
+   "@type": "Answer",
+   "text": "הליווי מתאים למי שמחפש ליווי משלים סביב עיכול רגיש, שינה וסטרס, פוריות או IVF, איזון הורמונלי, עייפות ושגרת תזונה אישית. ההתאמה נעשית לפי המצב האישי ואינה מחליפה טיפול רפואי."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "מה כדאי להכין לפני פגישת האבחון הראשונה?",
+   "acceptedAnswer": {
+   "@type": "Answer",
+   "text": "כדאי להביא או לציין תרופות ותוספים שנלקחים כרגע, אבחנות רלוונטיות, בדיקות דם או מסמכים רפואיים אם יש, רקע סביב פוריות או מחזור אם רלוונטי, ודפוסים מרכזיים סביב עיכול, שינה, סטרס ואנרגיה."
+   }
+  },
+  {
+   "@type": "Question",
    "name": "מה הם הדושות (Doshas) ואיך יודעים מה הטיפוס שלי?",
    "acceptedAnswer": {
    "@type": "Answer",
@@ -105,6 +121,18 @@
      "telephone": "+972545774407",
      "email": "inbal.ph@gmail.com",
      "priceRange": "₪₪",
+     "availableLanguage": ["Hebrew", "English"],
+     "areaServed": [
+       { "@type": "City", "name": "תל אביב" },
+       { "@type": "AdministrativeArea", "name": "מחוז תל אביב" },
+       { "@type": "Country", "name": "ישראל" }
+     ],
+     "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "appointments",
+       "telephone": "+972545774407",
+       "availableLanguage": ["Hebrew", "English"]
+     },
      "address": {
        "@type": "PostalAddress",
        "streetAddress": "ארלוזורוב 82",
@@ -116,7 +144,16 @@
        "@type": "Person",
        "@id": "https://vedica-ayurveda.co.il/#person",
        "name": "ענבל הנסב",
-       "jobTitle": "מטפלת מוסמכת ברפואה איורוודית ופרסית"
+       "jobTitle": "מטפלת מוסמכת ברפואה איורוודית ופרסית",
+       "alumniOf": {
+         "@type": "EducationalOrganization",
+         "name": "PranaVeda - בית הספר ללימודי איורוודה"
+       },
+       "memberOf": {
+         "@type": "Organization",
+         "name": "העמותה לקידום הרפואה האיורוודית בישראל"
+       },
+       "knowsLanguage": ["Hebrew", "English"]
      },
      "sameAs": [
        "https://www.instagram.com/inbal_hanasab_vedica",
@@ -133,6 +170,24 @@
      "provider": { "@id": "https://vedica-ayurveda.co.il/#organization" },
      "areaServed": { "@type": "City", "name": "תל אביב" },
      "description": "פגישת אבחון של כשעתיים הכוללת תשאול מקיף, אבחון דופק ובניית תוכנית אישית עם תזונה, צמחי מרפא, חליטות והרגלי שגרה."
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://vedica-ayurveda.co.il/clinic.html#breadcrumb",
+     "itemListElement": [
+       {
+         "@type": "ListItem",
+         "position": 1,
+         "name": "בית",
+         "item": "https://vedica-ayurveda.co.il/"
+       },
+       {
+         "@type": "ListItem",
+         "position": 2,
+         "name": "קליניקה",
+         "item": "https://vedica-ayurveda.co.il/clinic.html"
+       }
+     ]
     }
    ]
  }
@@ -184,7 +239,7 @@
     <section class="page-hero clinic-hero">
       <div class="page-hero__content">
         <p class="page-hero__eyebrow">CLINIC EXPERIENCE</p>
-        <h1>קליניקת VEDICA</h1>
+        <h1>קליניקת איורוודה ורפואה פרסית בתל אביב | VEDICA</h1>
         <p>
           רפואה איורוודית ופרסית בהתאמה אישית בתל אביב. תהליך שמחבר בין אבחון יסודי, תוכנית פרקטית ומעקב מדויק לאורך הדרך.
         </p>
@@ -194,6 +249,11 @@
         </div>
       </div>
     </section>
+
+    <div class="mb-10 rounded-3xl border border-emerald-100 bg-white p-6 text-center shadow-sm">
+      <p class="text-lg font-bold text-emerald-900">ארלוזורוב 82, תל אביב · פגישת אבחון כ-2 שעות · עברית / English · 19 חוות דעת 5★ ב-Infomed</p>
+      <p class="mt-2 text-slate-600">בדיקת התאמה קצרה לפני קביעת פגישה, כדי להבין אם הליווי נכון למצב ולציפיות.</p>
+    </div>
 
     <div class="page-meta-grid mb-16">
       <article class="page-meta-card">
@@ -216,6 +276,27 @@
         בדיוק לך, כולל <strong>ליווי איורוודי למצבי סטרס וחרדה</strong> וליווי משלים לצד <strong>IVF וטיפולי פוריות</strong>.
       </p>
     </div>
+
+    <section class="mb-16 grid gap-5 md:grid-cols-2">
+      <article class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm">
+        <h2 class="mb-5 text-2xl font-bold text-emerald-900">למי זה מתאים</h2>
+        <ul class="space-y-3 leading-relaxed text-slate-700">
+          <li>למי שמחפש ליווי משלים סביב עיכול רגיש, שינה, סטרס או עייפות.</li>
+          <li>למי שרוצה התאמת תזונה, צמחי מרפא, חליטות והרגלי שגרה באופן אישי.</li>
+          <li>למי שנמצא בתהליכי פוריות, שימור פוריות או IVF ורוצה תמיכה משלימה לצד הטיפול הרפואי.</li>
+          <li>למי שמחפש קליניקת איורוודה בתל אביב עם שילוב ייחודי של רפואה פרסית ומזאג'.</li>
+        </ul>
+      </article>
+      <article class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm">
+        <h2 class="mb-5 text-2xl font-bold text-emerald-900">מה להכין לפני פגישת אבחון</h2>
+        <ul class="space-y-3 leading-relaxed text-slate-700">
+          <li>רשימת תרופות, תוספים או צמחי מרפא שנלקחים כרגע.</li>
+          <li>בדיקות דם, אבחנות או מסמכים רפואיים רלוונטיים, אם יש.</li>
+          <li>רקע סביב פוריות, מחזור או IVF אם זה חלק מסיבת הפנייה.</li>
+          <li>דפוסים בולטים סביב עיכול, שינה, אנרגיה, סטרס, תיאבון ושגרת יום.</li>
+        </ul>
+      </article>
+    </section>
 
     <!-- Treatment Process (Restored and Corrected) -->
     <div class="mb-20">
@@ -338,6 +419,14 @@
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50">
           <h3 class="font-bold text-emerald-800 mb-2">האם הטיפול האיורוודי מתאים לליווי בתהליכי פוריות ו-IVF?</h3>
           <p class="text-slate-600">הליווי בתהליכי פוריות ו-IVF הוא ליווי משלים בלבד. הוא יכול להתמקד בתזונה, שגרה, סטרס והרגלים תומכים לצד המעקב והטיפול הרפואי.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50">
+          <h3 class="font-bold text-emerald-800 mb-2">למי מתאים ליווי בקליניקת איורוודה ורפואה פרסית?</h3>
+          <p class="text-slate-600">הליווי מתאים למי שמחפש ליווי משלים סביב עיכול רגיש, שינה וסטרס, פוריות או IVF, איזון הורמונלי, עייפות ושגרת תזונה אישית. ההתאמה נעשית לפי המצב האישי ואינה מחליפה טיפול רפואי.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50">
+          <h3 class="font-bold text-emerald-800 mb-2">מה כדאי להכין לפני פגישת האבחון הראשונה?</h3>
+          <p class="text-slate-600">כדאי להביא או לציין תרופות ותוספים שנלקחים כרגע, אבחנות רלוונטיות, בדיקות דם או מסמכים רפואיים אם יש, רקע סביב פוריות או מחזור אם רלוונטי, ודפוסים מרכזיים סביב עיכול, שינה, סטרס ואנרגיה.</p>
         </div>
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50">
           <h3 class="font-bold text-emerald-800 mb-2">מה הם הדושות (Doshas)?</h3>
