@@ -12,7 +12,6 @@ from googleapiclient.discovery import build
 
 
 DEFAULT_SITE_URL = "https://vedica-ayurveda.co.il/"
-DEFAULT_SITEMAP_URL = "https://vedica-ayurveda.co.il/sitemap.xml"
 CONFIG_DIR = Path.home() / ".config" / "vedica-gsc"
 TOKEN_PATH = CONFIG_DIR / "token.json"
 SCOPES = ["https://www.googleapis.com/auth/webmasters"]
@@ -51,6 +50,13 @@ def print_json(data):
     print(json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True))
 
 
+def default_sitemap_for_site(site_url):
+    if site_url.startswith("sc-domain:"):
+        domain = site_url.split(":", 1)[1].strip("/")
+        return f"https://{domain}/sitemap.xml"
+    return site_url.rstrip("/") + "/sitemap.xml"
+
+
 def cmd_auth(args):
     load_credentials(client_secret=args.client_secret, interactive=True)
     print(f"Authenticated. Token stored at {TOKEN_PATH}")
@@ -69,9 +75,10 @@ def cmd_inspect(args):
 
 def cmd_sitemaps(args):
     svc = service()
+    sitemap_url = args.sitemap_url or default_sitemap_for_site(args.site_url)
     if args.submit:
-        svc.sitemaps().submit(siteUrl=args.site_url, feedpath=args.sitemap_url).execute()
-        print(f"Submitted {args.sitemap_url} for {args.site_url}")
+        svc.sitemaps().submit(siteUrl=args.site_url, feedpath=sitemap_url).execute()
+        print(f"Submitted {sitemap_url} for {args.site_url}")
         return
     print_json(svc.sitemaps().list(siteUrl=args.site_url).execute())
 
@@ -115,7 +122,7 @@ def main():
 
     sitemaps = sub.add_parser("sitemaps", help="List or submit sitemaps.")
     sitemaps.add_argument("--site-url", default=DEFAULT_SITE_URL)
-    sitemaps.add_argument("--sitemap-url", default=DEFAULT_SITEMAP_URL)
+    sitemaps.add_argument("--sitemap-url")
     sitemaps.add_argument("--submit", action="store_true")
     sitemaps.set_defaults(func=cmd_sitemaps)
 
