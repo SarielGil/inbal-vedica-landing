@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Search Console SEO"
+  short_description: "Diagnose indexing, sitemap, hreflang, and SERP regressions."
+  default_prompt: "Use $google-search-console-seo to diagnose why this page is not appearing in Google and what to check in Search Console."

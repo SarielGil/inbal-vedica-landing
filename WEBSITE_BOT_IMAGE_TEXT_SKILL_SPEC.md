@@ -177,6 +177,11 @@ image-text-optimizer/
 - Missing `meta description` tags often remain hidden in older pages and blog posts.
 - Canonical consistency is easy to maintain once audited, but hard to recover after drift.
 - One meaningful `h1` per page keeps content hierarchy cleaner and easier to parse.
+- New SEO landing pages need strong internal links from existing authority pages; sitemap and hreflang alone are weak discovery signals.
+- When pages are not found in Google shortly after launch, first separate crawlability from indexing/ranking: check `200 OK`, `index, follow`, robots, canonical, sitemap inclusion, reciprocal hreflang, and internal links.
+- Keep sitemap `lastmod` current for newly edited priority URLs, especially after adding multilingual or commercial landing pages.
+- Do not change a working title/H1 away from proven exact-match search language unless the replacement targets a better query.
+- SERP snippets and rankings can lag behind deployed HTML; compare live source against indexed cache before calling a change a regression.
 
 ### D. Analytics Lessons
 - Mixed GA/GTM setups across pages destroy measurement consistency.
@@ -187,6 +192,7 @@ image-text-optimizer/
 - `llms.txt` is useful only when coverage is complete and links are maintained.
 - If LLM discoverability is a goal, treat it like sitemap hygiene: audit regularly.
 - Entity clarity in copy helps both search engines and language-model crawlers.
+- LLM/AEO pages still need normal web discovery: internal links, stable canonical URLs, and crawlable HTML content are the base layer.
 
 ### F. Execution Lessons
 - Batch fixes are efficient, but each batch still needs a verification loop.

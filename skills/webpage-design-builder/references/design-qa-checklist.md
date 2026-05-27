@@ -36,6 +36,11 @@ Use this checklist after any page redesign.
 - Canonical URL exists.
 - Main page intent is obvious from `h1` + intro text.
 - Contact/location details are easy to find when relevant.
+- New landing pages are linked from at least one high-authority internal page, not only listed in sitemap/hreflang.
+- Multilingual alternate pages have reciprocal `hreflang`, matching canonical URLs, and sitemap alternates.
+- Sitemap `lastmod` reflects newly changed or newly published priority pages.
+- For fresh pages, distinguish crawlability from indexing: verify `200 OK`, `index, follow`, canonical, robots, sitemap, and internal links before judging SERP absence as ranking degradation.
+- Page titles preserve proven exact-match/high-intent terms unless there is a deliberate keyword strategy change.
 
 ## Regression Checks
 
@@ -43,3 +48,4 @@ Use this checklist after any page redesign.
 - No broken image references.
 - No accidental removal of analytics snippets.
 - No content claim inflation during copy tightening.
+- Search/SEO changes include a before/after note for titles, H1s, internal links, sitemap dates, and indexing expectations.
