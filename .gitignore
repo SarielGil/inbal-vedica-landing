@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+
+# Local Google/Search Console credentials. Never commit OAuth secrets or tokens.
+client_secret*.json
+*client_secret*.json
+token*.json
+.gsc/
