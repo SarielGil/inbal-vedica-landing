@@ -39,9 +39,9 @@
   The site presents the clinic's work as complementary and suitable alongside conventional care, including IVF.
 
 - Persian medicine integration
-  Inbal integrates principles of Persian medicine (Unani) alongside Ayurveda, offering a combined approach based on individual body constitution and temperament.
+  Inbal integrates Persian and Iranian herbal, food and family traditions alongside Ayurveda, offering a combined approach based on digestion, daily rhythm, herbs, spices, infusions and individual needs.
 - Persian medicine positioning
-  VEDICA is positioned as a Tel Aviv clinic for the combined use of Ayurveda and traditional Persian medicine, with dedicated educational content about Mizaj, temperament, digestion, daily rhythm, herbs and the differences between Persian medicine and Ayurveda.
+  VEDICA is positioned as a Tel Aviv clinic for the combined use of Ayurveda and traditional Persian medicine, with dedicated educational content about herbs, spices, food cultures, digestion, daily rhythm, Inbal's Persian-Iranian heritage and the differences between Persian medicine and Ayurveda.
 
 ## Primary Pages
 
@@ -49,7 +49,7 @@
 - [About Inbal Hanasab](https://vedica-ayurveda.co.il/about.html): Background, published training, and treatment philosophy.
 - [Clinic](https://vedica-ayurveda.co.il/clinic.html): Clinic overview, first session details, and FAQ.
 - [English-speaking Ayurveda Clinic](https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html): English landing page for native English-speaking patients, expats, visitors and international residents seeking Ayurveda and Persian medicine consultations in Tel Aviv.
-- [Persian Medicine](https://vedica-ayurveda.co.il/persian-medicine.html): Dedicated pillar page about traditional Persian medicine, Mizaj and the relationship between Persian medicine and Ayurveda.
+- [Persian Medicine](https://vedica-ayurveda.co.il/persian-medicine.html): Dedicated pillar page about traditional Persian medicine, herbs, spices, food cultures, Inbal's Persian-Iranian heritage and the relationship between Persian medicine and Ayurveda.
 - [Treatment Process](https://vedica-ayurveda.co.il/process.html): Step-by-step explanation of diagnosis, treatment plan, and follow-up.
 - [Contact](https://vedica-ayurveda.co.il/contact.html): Contact form, WhatsApp, and direct outreach.
 

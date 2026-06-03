@@ -1,0 +1,100 @@
+{
+  "captured_at": "2026-05-31T17:12:36.154238+00:00",
+  "current_compare_range": {
+    "end_date": "2026-05-30",
+    "start_date": "2026-05-24"
+  },
+  "inspections": {
+    "https://inbalhanasab.co.il/": {
+      "inspectionResult": {
+        "indexStatusResult": {
+          "coverageState": "Submitted and indexed",
+          "crawledAs": "MOBILE",
+          "googleCanonical": "https://inbalhanasab.co.il/",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-05-29T05:29:54Z",
+          "pageFetchState": "SUCCESSFUL",
+          "referringUrls": [
+            "http://inbalhanasab.co.il/"
+          ],
+          "robotsTxtState": "ALLOWED",
+          "sitemap": [
+            "https://inbalhanasab.co.il/sitemap.xml"
+          ],
+          "userCanonical": "https://inbalhanasab.co.il/",
+          "verdict": "PASS"
+        },
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:inbalhanasab.co.il&id=cjWh4yUs8nxIiNLCKSDxOA&utm_medium=link&utm_source=api",
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "detectedItems": [
+            {
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ],
+              "richResultType": "Breadcrumbs"
+            },
+            {
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ],
+              "richResultType": "FAQ"
+            }
+          ],
+          "verdict": "PASS"
+        }
+      }
+    }
+  },
+  "lookback_range": {
+    "end_date": "2026-05-30",
+    "start_date": "2026-05-03"
+  },
+  "performance": {
+    "current_pages": {
+      "responseAggregationType": "byPage",
+      "rows": [
+        {
+          "clicks": 2,
+          "ctr": 0.16666666666666666,
+          "impressions": 12,
+          "keys": [
+            "https://inbalhanasab.co.il/"
+          ],
+          "position": 4.666666666666666
+        }
+      ]
+    },
+    "pages": {
+      "responseAggregationType": "byPage",
+      "rows": [
+        {
+          "clicks": 2,
+          "ctr": 0.16666666666666666,
+          "impressions": 12,
+          "keys": [
+            "https://inbalhanasab.co.il/"
+          ],
+          "position": 4.666666666666666
+        }
+      ]
+    },
+    "previous_pages": {
+      "responseAggregationType": "byPage"
+    },
+    "queries_pages": {
+      "responseAggregationType": "byPage"
+    }
+  },
+  "previous_compare_range": {
+    "end_date": "2026-05-23",
+    "start_date": "2026-05-17"
+  },
+  "site_url": "sc-domain:inbalhanasab.co.il"
+}

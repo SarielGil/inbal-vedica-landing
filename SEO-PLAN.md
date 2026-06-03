@@ -50,7 +50,7 @@
 - **Internal Links**: About, Workshops, Contact, Blog (related)
 
 ### 4. **workshops.html** (Workshops)
-- **Meta Title**: סדנאות בישול ודיתני - VEDICA
+- **Meta Title**: סדנאות בישול ותזונה - VEDICA
 - **Meta Description**: סדנאות בישול בריא, תזונה איורוודית וסגנון חיים בתל אביב. למתחילים וילדים, בהדרכת ענבל הנסב.
 - **H1**: סדנאות בישול ואורח חיים איורוודי
 - **Keywords**: סדנאות בישול, תזונה איורוודית, רפואה איורוודית
