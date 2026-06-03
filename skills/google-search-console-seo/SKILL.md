@@ -30,7 +30,16 @@ Use this skill to separate three different problems that often get confused: cra
 - Resubmit sitemap after publishing batches of priority URLs.
 - Check Performance for query, page, country, device, date range, clicks, impressions, CTR, and average position.
 
-4. If Search Console is not available.
+4. Before pushing SEO or content changes.
+- Update `sitemap.xml` `lastmod` dates for changed priority URLs only.
+- Validate sitemap XML, for example `xmllint --noout sitemap.xml` when available.
+- Confirm changed URLs are listed in the sitemap and that multilingual pages have reciprocal page-level and sitemap `hreflang`.
+- If Search Console is available, submit the sitemap after deployment and inspect key changed URLs.
+- Record sitemap submission, coverage state, canonical, last crawl date and any rich-result warnings in the work summary.
+- If changes are only pushed to a branch and not deployed, say that GSC still sees the live sitemap/pages and may report stale dates or old schema.
+- Do not describe API sitemap submission as a manual "Request indexing"; that button is available in the Search Console UI.
+
+5. If Search Console is not available.
 - Give the user a manual checklist:
   - URL Inspection -> inspect exact URL.
   - Test Live URL.
@@ -52,4 +61,5 @@ Use this skill to separate three different problems that often get confused: cra
 - **Discovery:** sitemap, internal links, hreflang.
 - **Indexing:** Search Console URL Inspection result, if available.
 - **Ranking:** Search Console query/page comparison, if available.
+- **Sitemap/recrawl:** `lastmod` changes, XML validation, sitemap submission status, live-vs-branch caveat.
 - **Action:** what was fixed, what needs manual GSC action, and when to re-check.

@@ -39,6 +39,10 @@ Use this checklist after any page redesign.
 - New landing pages are linked from at least one high-authority internal page, not only listed in sitemap/hreflang.
 - Multilingual alternate pages have reciprocal `hreflang`, matching canonical URLs, and sitemap alternates.
 - Sitemap `lastmod` reflects newly changed or newly published priority pages.
+- Before pushing SEO/content changes, validate `sitemap.xml` as XML and confirm changed priority URLs have fresh `lastmod` dates.
+- If Search Console access is available, submit the sitemap after deployment and inspect key changed URLs; record coverage state, canonical, last crawl date, and rich-result warnings.
+- Do not report sitemap submission as manual "Request indexing"; manual URL indexing requests must be made from the Search Console UI.
+- If the changes are on a branch but not deployed, state that GSC still sees the live sitemap/pages and may show stale dates or old schema.
 - For fresh pages, distinguish crawlability from indexing: verify `200 OK`, `index, follow`, canonical, robots, sitemap, and internal links before judging SERP absence as ranking degradation.
 - Page titles preserve proven exact-match/high-intent terms unless there is a deliberate keyword strategy change.
 
@@ -49,3 +53,4 @@ Use this checklist after any page redesign.
 - No accidental removal of analytics snippets.
 - No content claim inflation during copy tightening.
 - Search/SEO changes include a before/after note for titles, H1s, internal links, sitemap dates, and indexing expectations.
+- Push summaries for SEO work include whether sitemap dates were updated, whether sitemap XML was validated, whether GSC sitemap submission was run, and whether URL inspection reflects deployed or still-stale live content.
