@@ -30,7 +30,7 @@
   About 2 hours, including questions about digestion, sleep, energy, stress, habits, emotional state, and traditional pulse diagnosis.
 
 - Treatment structure
-  An initial diagnostic session, a personalized plan with nutrition, herbs and lifestyle guidance, and a recommended follow-up session for refinement and ongoing support.
+  An initial diagnostic session followed by a second meeting with a personalized nutrition, infusion and lifestyle plan. When appropriate, individualized herbal pills are provided after the second meeting, with later follow-up for refinement and ongoing support.
 
 - Between-session support
   Patients can contact Inbal between sessions for questions that arise during implementation.
@@ -56,7 +56,7 @@
 ## Services
 
 - [Clinic](https://vedica-ayurveda.co.il/clinic.html): Personal consultations, pulse diagnosis, and individualized care plans.
-- [English-speaking Clinic](https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html): Ayurveda and Persian medicine consultations in English or Hebrew for digestion, stress, sleep, hormonal balance and fertility support, presented as complementary care.
+- [English-speaking Clinic](https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html): Ayurveda and Persian medicine consultations in English or Hebrew for digestion, stress, sleep, hormonal balance and fertility support. The personalized plan may include individualized herbal pills after the second meeting when appropriate.
 - [Workshops](https://vedica-ayurveda.co.il/workshops.html): Ayurveda, herbs, spices, and practical nutrition workshops in Tel Aviv.
 - [Tours](https://vedica-ayurveda.co.il/tours.html): Levinsky Market food tour available in Hebrew or English, herbal medicine tour, spice tour, and culinary-culture experience in Tel Aviv, combining Ayurveda, Indian nutrition, Persian medicine, Iranian culture, infusions, and practical home use.
 - [Levinsky Market Food Tour in English](https://vedica-ayurveda.co.il/levinsky-market-food-tour.html): English landing page for English-speaking groups seeking a Levinsky Market food, spice, Ayurveda, wellness, herbal medicine and health-focused cultural tour in Tel Aviv.
@@ -79,7 +79,10 @@
 - [Dosha Diagnosis in Tel Aviv](https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html)
 - [Ayurvedic Nutrition Consultation in Tel Aviv](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html)
 - [Ayurvedic Solutions for Stress, Anxiety, and Sleep](https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html)
+- [Ayurveda for Fertility and IVF in Tel Aviv](https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html): English practical guide to complementary support for nourishment, digestion, sleep and stress alongside fertility preservation or IVF. It clearly states that Ayurveda does not replace medical fertility care.
+- [Sensitive Digestion and Fatigue](https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html): English guide covering medical warning signs, symptom tracking and personalized complementary Ayurveda support for digestive sensitivity with fatigue.
 - [IVF and Fertility Preservation in Ayurveda](https://vedica-ayurveda.co.il/blog-ivf-fertility.html)
+- [Chronic Fatigue and Sensitive Digestion](https://vedica-ayurveda.co.il/blog-chronic-fatigue-sensitive-digestion.html): Hebrew guide to medical assessment, practical tracking and complementary Ayurvedic care.
 - [Ayurveda vs. Chinese Medicine](https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html)
 - [Ceylon vs. Cassia Cinnamon](https://vedica-ayurveda.co.il/blog-cinnamon.html)
 - [Sourdough and Digestion in Ayurveda](https://vedica-ayurveda.co.il/blog-sourdough.html)

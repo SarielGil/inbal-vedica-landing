@@ -31,7 +31,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"/>
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/clinic.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"/>
-        <lastmod>2026-06-04</lastmod>
+        <lastmod>2026-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -61,7 +61,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html"/>
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/tours.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html"/>
-        <lastmod>2026-06-04</lastmod>
+        <lastmod>2026-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.78</priority>
     </url>
@@ -103,9 +103,39 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog-ivf-fertility.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-ivf-fertility.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html"/>
+        <lastmod>2026-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.87</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html"/>
+        <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-ivf-fertility.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html"/>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.87</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html"/>
+        <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-chronic-fatigue-sensitive-digestion.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html"/>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.84</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/blog-chronic-fatigue-sensitive-digestion.html</loc>
+        <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-chronic-fatigue-sensitive-digestion.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html"/>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.84</priority>
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/podcast.html</loc>
