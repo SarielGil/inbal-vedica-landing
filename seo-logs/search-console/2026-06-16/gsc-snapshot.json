@@ -1,0 +1,795 @@
+{
+  "captured_at": "2026-06-16T07:24:23.285502+00:00",
+  "current_compare_range": {
+    "end_date": "2026-06-15",
+    "start_date": "2026-06-09"
+  },
+  "inspections": {
+    "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html": {
+      "inspectionResult": {
+        "indexStatusResult": {
+          "coverageState": "Submitted and indexed",
+          "crawledAs": "MOBILE",
+          "googleCanonical": "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-05-27T17:23:47Z",
+          "pageFetchState": "SUCCESSFUL",
+          "referringUrls": [
+            "https://vedica-ayurveda.co.il/tours.html"
+          ],
+          "robotsTxtState": "ALLOWED",
+          "sitemap": [
+            "https://vedica-ayurveda.co.il/sitemap.xml"
+          ],
+          "userCanonical": "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html",
+          "verdict": "PASS"
+        },
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:vedica-ayurveda.co.il&id=8ufl-P59YnuIT2pSSWGWuA&utm_medium=link&utm_source=api",
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    }
+  },
+  "lookback_range": {
+    "end_date": "2026-06-15",
+    "start_date": "2026-05-19"
+  },
+  "performance": {
+    "current_pages": {
+      "responseAggregationType": "byPage",
+      "rows": [
+        {
+          "clicks": 3,
+          "ctr": 0.05357142857142857,
+          "impressions": 56,
+          "keys": [
+            "https://vedica-ayurveda.co.il/"
+          ],
+          "position": 6.178571428571429
+        },
+        {
+          "clicks": 2,
+          "ctr": 0.06666666666666667,
+          "impressions": 30,
+          "keys": [
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 5.933333333333334
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.06666666666666667,
+          "impressions": 15,
+          "keys": [
+            "https://vedica-ayurveda.co.il/persian-medicine.html"
+          ],
+          "position": 5.266666666666667
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.07692307692307693,
+          "impressions": 13,
+          "keys": [
+            "https://vedica-ayurveda.co.il/workshops.html"
+          ],
+          "position": 20.307692307692307
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 6,
+          "keys": [
+            "https://vedica-ayurveda.co.il/about.html"
+          ],
+          "position": 5.666666666666667
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 8,
+          "keys": [
+            "https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html"
+          ],
+          "position": 10.125
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html"
+          ],
+          "position": 5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://vedica-ayurveda.co.il/clinic.html"
+          ],
+          "position": 5.857142857142857
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 8,
+          "keys": [
+            "https://vedica-ayurveda.co.il/contact.html"
+          ],
+          "position": 4.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 15,
+          "keys": [
+            "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html"
+          ],
+          "position": 4.933333333333334
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 9,
+          "keys": [
+            "https://vedica-ayurveda.co.il/podcast.html"
+          ],
+          "position": 7.666666666666667
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://vedica-ayurveda.co.il/process.html"
+          ],
+          "position": 10
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 12,
+          "keys": [
+            "https://vedica-ayurveda.co.il/tours.html"
+          ],
+          "position": 7.416666666666667
+        }
+      ]
+    },
+    "pages": {
+      "responseAggregationType": "byPage",
+      "rows": [
+        {
+          "clicks": 27,
+          "ctr": 0.14210526315789473,
+          "impressions": 190,
+          "keys": [
+            "https://vedica-ayurveda.co.il/"
+          ],
+          "position": 5.310526315789474
+        },
+        {
+          "clicks": 5,
+          "ctr": 0.13513513513513514,
+          "impressions": 37,
+          "keys": [
+            "https://vedica-ayurveda.co.il/persian-medicine.html"
+          ],
+          "position": 5.864864864864865
+        },
+        {
+          "clicks": 3,
+          "ctr": 0.06,
+          "impressions": 50,
+          "keys": [
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 7.7
+        },
+        {
+          "clicks": 3,
+          "ctr": 0.02654867256637168,
+          "impressions": 113,
+          "keys": [
+            "https://vedica-ayurveda.co.il/workshops.html"
+          ],
+          "position": 27.761061946902654
+        },
+        {
+          "clicks": 2,
+          "ctr": 0.15384615384615385,
+          "impressions": 13,
+          "keys": [
+            "https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html"
+          ],
+          "position": 8.538461538461538
+        },
+        {
+          "clicks": 2,
+          "ctr": 0.025974025974025976,
+          "impressions": 77,
+          "keys": [
+            "https://vedica-ayurveda.co.il/tours.html"
+          ],
+          "position": 9.402597402597403
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.024390243902439025,
+          "impressions": 41,
+          "keys": [
+            "https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html"
+          ],
+          "position": 12.682926829268293
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.041666666666666664,
+          "impressions": 24,
+          "keys": [
+            "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html"
+          ],
+          "position": 4.833333333333334
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.03225806451612903,
+          "impressions": 31,
+          "keys": [
+            "https://vedica-ayurveda.co.il/podcast.html"
+          ],
+          "position": 6.741935483870968
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 43,
+          "keys": [
+            "https://vedica-ayurveda.co.il/about.html"
+          ],
+          "position": 5.232558139534884
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html"
+          ],
+          "position": 21.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 10,
+          "keys": [
+            "https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html"
+          ],
+          "position": 26
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://vedica-ayurveda.co.il/blog.html"
+          ],
+          "position": 5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 14,
+          "keys": [
+            "https://vedica-ayurveda.co.il/clinic.html"
+          ],
+          "position": 5.357142857142857
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 37,
+          "keys": [
+            "https://vedica-ayurveda.co.il/contact.html"
+          ],
+          "position": 4.405405405405405
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://vedica-ayurveda.co.il/process.html"
+          ],
+          "position": 4.428571428571429
+        }
+      ]
+    },
+    "previous_pages": {
+      "responseAggregationType": "byPage",
+      "rows": [
+        {
+          "clicks": 4,
+          "ctr": 0.07547169811320754,
+          "impressions": 53,
+          "keys": [
+            "https://vedica-ayurveda.co.il/"
+          ],
+          "position": 5.735849056603773
+        },
+        {
+          "clicks": 2,
+          "ctr": 0.3333333333333333,
+          "impressions": 6,
+          "keys": [
+            "https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html"
+          ],
+          "position": 8
+        },
+        {
+          "clicks": 2,
+          "ctr": 0.125,
+          "impressions": 16,
+          "keys": [
+            "https://vedica-ayurveda.co.il/persian-medicine.html"
+          ],
+          "position": 6.4375
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.07142857142857142,
+          "impressions": 14,
+          "keys": [
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 13.285714285714286
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.08333333333333333,
+          "impressions": 12,
+          "keys": [
+            "https://vedica-ayurveda.co.il/podcast.html"
+          ],
+          "position": 6.833333333333333
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.023255813953488372,
+          "impressions": 43,
+          "keys": [
+            "https://vedica-ayurveda.co.il/workshops.html"
+          ],
+          "position": 31.930232558139537
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://vedica-ayurveda.co.il/about.html"
+          ],
+          "position": 11.428571428571429
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 19,
+          "keys": [
+            "https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html"
+          ],
+          "position": 10.105263157894736
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://vedica-ayurveda.co.il/blog.html"
+          ],
+          "position": 5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 6,
+          "keys": [
+            "https://vedica-ayurveda.co.il/clinic.html"
+          ],
+          "position": 5.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 11,
+          "keys": [
+            "https://vedica-ayurveda.co.il/contact.html"
+          ],
+          "position": 5.181818181818182
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html"
+          ],
+          "position": 6.333333333333333
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://vedica-ayurveda.co.il/process.html"
+          ],
+          "position": 6
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 19,
+          "keys": [
+            "https://vedica-ayurveda.co.il/tours.html"
+          ],
+          "position": 11.473684210526315
+        }
+      ]
+    },
+    "queries_pages": {
+      "responseAggregationType": "byPage",
+      "rows": [
+        {
+          "clicks": 1,
+          "ctr": 0.023809523809523808,
+          "impressions": 42,
+          "keys": [
+            "סדנת צמחי מרפא",
+            "https://vedica-ayurveda.co.il/workshops.html"
+          ],
+          "position": 11.214285714285714
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.25,
+          "impressions": 4,
+          "keys": [
+            "רפואה איורוודית",
+            "https://vedica-ayurveda.co.il/"
+          ],
+          "position": 8.5
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.16666666666666666,
+          "impressions": 6,
+          "keys": [
+            "רפואה פרסית",
+            "https://vedica-ayurveda.co.il/persian-medicine.html"
+          ],
+          "position": 6.666666666666667
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "ayu care ayurveda - pollewwa weda gedara bapola",
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 12
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "ayurved hospital near me",
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 7.666666666666667
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "ayurveda israel",
+            "https://vedica-ayurveda.co.il/"
+          ],
+          "position": 4.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "ayurveda israel",
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "ayurvedic clinic",
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 3
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "ayurvedic dr",
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 63.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "ayurvedic medicine near me",
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 16
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "ayurvedic pharmacy near me",
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 3
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "pranaveda",
+            "https://vedica-ayurveda.co.il/about.html"
+          ],
+          "position": 7
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "vedica ayurveda",
+            "https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"
+          ],
+          "position": 9.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "אבחון איורוודה",
+            "https://vedica-ayurveda.co.il/clinic.html"
+          ],
+          "position": 11
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "אורשינה",
+            "https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html"
+          ],
+          "position": 32
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "איורוודה",
+            "https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html"
+          ],
+          "position": 32
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 20,
+          "keys": [
+            "איורוודה אבחון",
+            "https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html"
+          ],
+          "position": 11.7
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "איורוודה אבחון",
+            "https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html"
+          ],
+          "position": 37
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "איורוודה תזונה",
+            "https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html"
+          ],
+          "position": 31
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "איורוודה תזונה",
+            "https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html"
+          ],
+          "position": 26
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "איורוודית",
+            "https://vedica-ayurveda.co.il/"
+          ],
+          "position": 17
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "הרצאות בנושא צמחי מרפא",
+            "https://vedica-ayurveda.co.il/workshops.html"
+          ],
+          "position": 95
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 12,
+          "keys": [
+            "חוות צמחי מרפא",
+            "https://vedica-ayurveda.co.il/workshops.html"
+          ],
+          "position": 74.58333333333333
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "טיפול טבעי בתל אביב",
+            "https://vedica-ayurveda.co.il/"
+          ],
+          "position": 12.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "טיפולי איורוודה",
+            "https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html"
+          ],
+          "position": 38
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 23,
+          "keys": [
+            "סיור צמחי מרפא",
+            "https://vedica-ayurveda.co.il/tours.html"
+          ],
+          "position": 18
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 17,
+          "keys": [
+            "סיור צמחי מרפא",
+            "https://vedica-ayurveda.co.il/workshops.html"
+          ],
+          "position": 73.82352941176471
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 5,
+          "keys": [
+            "סיורי חקר צמחי מרפא",
+            "https://vedica-ayurveda.co.il/tours.html"
+          ],
+          "position": 10.6
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "סיורי חקר צמחי מרפא",
+            "https://vedica-ayurveda.co.il/workshops.html"
+          ],
+          "position": 67
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "ענבל בוחניק",
+            "https://vedica-ayurveda.co.il/"
+          ],
+          "position": 7
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "ענבל דרסלר",
+            "https://vedica-ayurveda.co.il/about.html"
+          ],
+          "position": 60
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "ענבל פוריה",
+            "https://vedica-ayurveda.co.il/"
+          ],
+          "position": 10
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "שאלון איורוודה",
+            "https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html"
+          ],
+          "position": 27
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "תזונה איורוודית",
+            "https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html"
+          ],
+          "position": 12
+        }
+      ]
+    }
+  },
+  "previous_compare_range": {
+    "end_date": "2026-06-08",
+    "start_date": "2026-06-02"
+  },
+  "site_url": "sc-domain:vedica-ayurveda.co.il",
+  "tracked_urls": [
+    "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html"
+  ]
+}

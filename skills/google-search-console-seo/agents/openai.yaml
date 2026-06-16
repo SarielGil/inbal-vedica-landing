@@ -1,4 +1,4 @@
 interface:
   display_name: "Google Search Console SEO"
-  short_description: "Diagnose indexing, sitemap, hreflang, and SERP regressions."
-  default_prompt: "Use $google-search-console-seo to diagnose why this page is not appearing in Google and what to check in Search Console."
+  short_description: "Run SEO/AEO checks, indexing diagnostics, sitemap/hreflang checks, and SERP regression reviews."
+  default_prompt: "Use $google-search-console-seo to run an SEO/AEO test for this page and summarize Search Console, live search, schema, and answerability findings."
