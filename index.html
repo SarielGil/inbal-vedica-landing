@@ -301,7 +301,7 @@
             gap: 0.5rem;
         }
 
-        .hero-modern__meta span {
+        .hero-modern__meta a {
             padding: 0.42rem 0.74rem;
             border-radius: 999px;
             background: rgba(240, 253, 249, 0.18);
@@ -309,6 +309,14 @@
             color: rgba(245, 252, 250, 0.9);
             font-size: 0.88rem;
             line-height: 1.2;
+            text-decoration: none;
+            transition: background-color 0.18s ease, border-color 0.18s ease;
+        }
+
+        .hero-modern__meta a:hover,
+        .hero-modern__meta a:focus-visible {
+            background: rgba(240, 253, 249, 0.3);
+            border-color: rgba(229, 254, 247, 0.65);
         }
 
         .hero-modern__language-links {
@@ -471,13 +479,137 @@
             line-height: 1.58;
         }
 
-        .quick-path {
-            max-width: 80rem;
-            margin: 1.15rem auto 0;
-            padding: 0 1rem 2.2rem;
+        .info-card--profile {
+            display: block;
         }
 
+        .info-card__profile-row {
+            display: grid;
+            grid-template-columns: 5.25rem minmax(0, 1fr);
+            align-items: center;
+            gap: 1rem;
+        }
 
+        .info-card__portrait {
+            width: 5.25rem;
+            height: 5.25rem;
+            border-radius: 0.75rem;
+            object-fit: cover;
+            object-position: 58% 35%;
+        }
+
+        .info-card__content p {
+            margin: 0;
+            color: #274941;
+            font-size: 1.05rem;
+            line-height: 1.58;
+        }
+
+        .info-card__link {
+            display: inline-flex;
+            margin-top: 0.45rem;
+            color: #0f766e;
+            font-size: 0.92rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .info-card__link:hover {
+            text-decoration: underline;
+        }
+
+        .persian-home {
+            max-width: 80rem;
+            margin-inline: auto;
+            padding: 4.5rem 1rem;
+            border-top: 1px solid #d1fae5;
+        }
+
+        .persian-home__shell {
+            max-width: 62rem;
+            margin-inline: auto;
+        }
+
+        .persian-home__eyebrow {
+            margin: 0 0 0.75rem;
+            color: #2f7668;
+            font-size: 0.875rem;
+            font-weight: 800;
+            letter-spacing: 0;
+        }
+
+        .persian-home__title {
+            max-width: 48rem;
+            margin: 0;
+            color: #174a40;
+            font-size: 1.875rem;
+            line-height: 1.2;
+        }
+
+        .persian-home__intro {
+            max-width: 52rem;
+            margin: 1.25rem 0 0;
+            color: #365950;
+            font-size: 1.13rem;
+            line-height: 1.75;
+        }
+
+        .persian-home__benefits {
+            display: grid;
+            gap: 1.25rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #bde6d8;
+        }
+
+        .persian-home__benefit h3 {
+            margin: 0;
+            color: #174a40;
+            font-size: 1.25rem;
+            line-height: 1.3;
+        }
+
+        .persian-home__benefit p {
+            margin: 0.4rem 0 0;
+            color: #55736c;
+            line-height: 1.6;
+        }
+
+        .persian-home__actions {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .persian-home__action {
+            display: inline-flex;
+            min-height: 3rem;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #1a6b5a;
+            border-radius: 0.75rem;
+            padding: 0.7rem 1.3rem;
+            color: #1a6b5a;
+            font-weight: 800;
+            text-decoration: none;
+            transition: background 0.18s ease, color 0.18s ease;
+        }
+
+        .persian-home__action--primary {
+            background: #1a6b5a;
+            color: #ffffff;
+        }
+
+        .persian-home__action:hover {
+            background: #e8f5f0;
+        }
+
+        .persian-home__action--primary:hover {
+            background: #0f5145;
+            border-color: #0f5145;
+        }
 
         .reviews-live {
             max-width: 80rem;
@@ -621,74 +753,6 @@
             color: #ffffff;
         }
 
-        .quick-path__shell {
-            background: linear-gradient(130deg, rgba(227, 240, 234, 0.95), rgba(236, 246, 242, 0.8));
-            border-radius: 1.45rem;
-            padding: 1.4rem;
-            border: 1px solid rgba(40, 83, 74, 0.14);
-        }
-
-        .quick-path__title {
-            margin: 0;
-            color: #1c4d43;
-            font-size: clamp(1.45rem, 4vw, 2rem);
-            line-height: 1.25;
-            text-align: center;
-        }
-
-        .quick-path__subtitle {
-            margin: 0.55rem 0 1.2rem;
-            color: #3a6258;
-            text-align: center;
-            font-size: 1.04rem;
-        }
-
-        .quick-path__grid {
-            display: grid;
-            gap: 0.72rem;
-        }
-
-        .quick-path__item {
-            background: #ffffff;
-            border: 1px solid rgba(25, 87, 73, 0.12);
-            border-radius: 1rem;
-            padding: 1.05rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.55rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .quick-path__item:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-soft);
-        }
-
-        .quick-path__item h3 {
-            margin: 0;
-            color: #144a3f;
-            font-size: 1.23rem;
-            line-height: 1.2;
-        }
-
-        .quick-path__item p {
-            margin: 0;
-            color: #43645d;
-            font-size: 0.98rem;
-            line-height: 1.55;
-        }
-
-        .quick-path__item a {
-            margin-top: auto;
-            color: #0f766e;
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        .quick-path__item a:hover {
-            text-decoration: underline;
-        }
-
         .levinsky-home-card {
             max-width: 80rem;
             margin-inline: auto;
@@ -772,9 +836,25 @@
         }
 
         @media (min-width: 50rem) {
-            .info-strip__grid,
-            .quick-path__grid {
+            .info-strip__grid {
                 grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+            }
+
+            .persian-home__title {
+                font-size: 2.25rem;
+            }
+
+            .persian-home__benefits {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .persian-home__benefit h3 {
+                min-height: 3.25rem;
+            }
+
+            .persian-home__actions {
+                flex-direction: row;
+                align-items: center;
             }
 
             .levinsky-home-card__inner {
@@ -1050,9 +1130,9 @@
                     <a href="clinic.html" class="btn-secondary">לפרטי הקליניקה</a>
                 </div>
                 <div class="hero-modern__meta">
-                    <span>אבחון ותוכנית בשתי פגישות</span>
-                    <span>ליווי אישי בין הפגישות</span>
-                    <span>ארלוזורוב 82, תל אביב</span>
+                    <a href="clinic.html#treatment-process">אבחון ותוכנית בשתי פגישות</a>
+                    <a href="clinic.html#between-meetings-support">ליווי אישי בין הפגישות</a>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=ארלוזורוב+82+תל+אביב" target="_blank" rel="noopener noreferrer">ארלוזורוב 82, תל אביב</a>
                 </div>
                 <p class="hero-modern__language-links" lang="en" dir="ltr">
                     English pages:
@@ -1078,7 +1158,7 @@
                     <p class="hero-modern__review-quote">
                         "ענבל מטפלת בחסד, עם המון ידע ורגישות. הרגשתי שהיא מתאימה את הטיפול בדיוק לצרכים שלי."
                     </p>
-                    <a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer" class="hero-modern__review-source">לקריאת חוות הדעת ב-Infomed</a>
+                    <a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer" class="hero-modern__review-source">לקריאת כל 20 חוות הדעת ב-Infomed</a>
                 </div>
             </aside>
         </div>
@@ -1087,16 +1167,20 @@
     <!-- Entity Clarity Section -->
     <section class="info-strip">
         <div class="info-strip__grid">
-            <article class="info-card">
+            <article class="info-card info-card--profile">
                 <p class="info-card__label">מי מלווה</p>
-                <p>
-                        מטפלת מוסמכת באיורוודה, רפואה הודית מסורתית ורפואה פרסית, ומייסדת קליניקת VEDICA בתל אביב.
-                </p>
+                <div class="info-card__profile-row">
+                    <img src="assets/spices-market.webp" alt="ענבל הנסב, מייסדת קליניקת VEDICA" class="info-card__portrait" loading="lazy">
+                    <div class="info-card__content">
+                        <p><strong>ענבל הנסב</strong>, מטפלת מוסמכת באיורוודה וברפואה פרסית, ומייסדת קליניקת VEDICA בתל אביב.</p>
+                        <a href="about.html" class="info-card__link">להכיר את ענבל והדרך המקצועית</a>
+                    </div>
+                </div>
             </article>
             <article class="info-card">
-                <p class="info-card__label">תחומי מיקוד</p>
+                <p class="info-card__label">מה מקבלים</p>
                 <p>
-                        התאמות תזונה ושגרה במצבי עיכול רגיש, חוסר ספיגה, עייפות, חולשה חיסונית, עומס חוזר, ליווי משלים בתהליכי פוריות ושימור פוריות, איזון הורמונלי, חיזוק העצם, שינה וסטרס.
+                    תוכנית אישית עם תזונה, חליטות, צמחי מרפא והרגלי שגרה, לצד אפשרות לדייק את התוכנית לפי הצורך.
                 </p>
             </article>
             <article class="info-card">
@@ -1108,82 +1192,37 @@
         </div>
     </section>
 
-
-    <section class="quick-path">
-        <div class="quick-path__shell">
-            <h2 class="quick-path__title">מה הכי חשוב לך כרגע?</h2>
-            <p class="quick-path__subtitle">בחרו את הנושא שמרגיש דחוף עכשיו ותגיעו ישירות לעמוד הרלוונטי.</p>
-            <div class="quick-path__grid">
-                <article class="quick-path__item">
-                    <h3>פוריות והכנה ל-<span dir="ltr">IVF</span></h3>
-                    <p>הסבר על הגישה הקלינית, תהליך האבחון ומה מקבלים בפגישות הליווי.</p>
-                    <a href="clinic.html">למסלול הפוריות</a>
-                </article>
-                <article class="quick-path__item">
-                    <h3>עיכול, הורמונים ואנרגיה</h3>
-                    <p>תוכן מעשי להבנת הדפוס הגופני ואיך בונים התאמה אישית באיורוודה.</p>
-                    <a href="blog-dosha-diagnosis-tel-aviv.html">לקריאה על אבחון</a>
-                </article>
-                <article class="quick-path__item">
-                    <h3>סטרס, שינה ועייפות</h3>
-                    <p>עקרונות מרכזיים לאיזון עומס ולתמיכה בשינה מתוך השגרה היומיומית שלך.</p>
-                    <a href="blog-stress-sleep-ayurveda.html">למאמר על שינה וסטרס</a>
-                </article>
-                <article class="quick-path__item">
-                    <h3>רפואה פרסית וצמחי מרפא</h3>
-                    <p>היכרות עם תבלינים, חליטות, תרבויות אוכל והחיבור למסורת הפרסית-איראנית.</p>
-                    <a href="persian-medicine.html">לעמוד הרפואה הפרסית</a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="persian-medicine-home" class="max-w-7xl mx-auto px-4 py-20 border-t border-emerald-100">
-        <div class="grid gap-8 md:grid-cols-[1fr_1.1fr] md:items-center">
-            <div class="rounded-3xl overflow-hidden border border-emerald-100 bg-emerald-50 shadow-sm">
-                <img src="assets/spices-market.webp" alt="תבלינים וצמחי מרפא בשוק בהקשר של רפואה פרסית מסורתית ותרבויות אוכל" class="h-full min-h-80 w-full object-cover" loading="lazy">
-            </div>
-            <div>
-                <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-4">הייחוד של VEDICA</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-5">רפואה פרסית, צמחי מרפא ומורשת איראנית בתל אביב</h2>
-                <p class="text-lg text-slate-700 leading-relaxed mb-5">
-                    לצד האיורוודה, VEDICA משלבת בקליניקה גם נקודת מבט של רפואה פרסית מסורתית: תבלינים, חליטות, צמחי מרפא, תרבויות אוכל והרגלי תזונה שמתאימים לאדם, לעונה ולשגרת החיים.
+    <!-- Process Preview -->
+    <section class="bg-emerald-50 py-20 border-y border-emerald-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-4">תהליך הקליניקה</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">איך קובעים פגישה ומתחילים ליווי</h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    העבודה בקליניקה בנויה בשלבים ברורים, כדי לאפשר היכרות מעמיקה, התאמה אישית וליווי לאורך הדרך.
                 </p>
-                <p class="text-lg text-slate-700 leading-relaxed mb-7">
-                    זהו אחד ההבדלים המרכזיים של VEDICA מול קליניקות איורוודה רגילות: לא רק דושות ואבחון איורוודי, אלא גם שפה קרובה לאזור שלנו, למטבח, לשוק ולמסורת הפרסית-איראנית.
-                </p>
-                <div class="grid gap-3 sm:grid-cols-3 mb-7">
-                    <div class="rounded-2xl border border-emerald-100 bg-white p-4">
-                        <p class="font-bold text-emerald-900">צמחי מרפא</p>
-                        <p class="mt-1 text-sm leading-relaxed text-slate-600">חליטות, תבלינים וצמחים מתוך אבחון אישי.</p>
-                    </div>
-                    <div class="rounded-2xl border border-emerald-100 bg-white p-4">
-                        <p class="font-bold text-emerald-900">תרבויות אוכל</p>
-                        <p class="mt-1 text-sm leading-relaxed text-slate-600">חיבור בין הודו, פרס והמזרח התיכון.</p>
-                    </div>
-                    <div class="rounded-2xl border border-emerald-100 bg-white p-4">
-                        <p class="font-bold text-emerald-900">איורוודה</p>
-                        <p class="mt-1 text-sm leading-relaxed text-slate-600">אבחון דופק, דושות ותוכנית ליווי.</p>
-                    </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
+                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב ראשון</p>
+                    <h3 class="text-2xl font-bold text-emerald-900">פגישת אבחון</h3>
+                    <p class="text-slate-700 leading-relaxed">
+                        אבחון ותוכנית בשתי פגישות: היכרות ותשאול מעמיק, אבחון פיזי, ואז תוכנית אישית שאפשר להתחיל ליישם.
+                    </p>
                 </div>
-                <a href="persian-medicine.html" class="inline-flex items-center justify-center rounded-full bg-emerald-800 px-7 py-3 font-bold text-white transition hover:bg-emerald-900">לקריאה על רפואה פרסית</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="levinsky-home-card">
-        <div class="levinsky-home-card__inner">
-            <img src="assets/inbal-market.jpg" alt="סיור צמחי מרפא ותבלינים בשוק לוינסקי" class="levinsky-home-card__image" loading="lazy">
-            <div class="levinsky-home-card__content">
-                <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-3">סיורי צמחי מרפא</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">סיור אוכל, צמחי מרפא וקולינריה בשוק לוינסקי</h2>
-                <p class="text-lg text-slate-700 leading-relaxed mb-6">
-                    סיור קולינרי בעברית או באנגלית לקבוצות, יחידים והגיל השלישי, שמחבר בין שוק לוינסקי, קולינריה, תרבות איראנית, תזונה הודית, איורוודה וחליטות שאפשר לקחת הביתה לשגרת היום-יום. מחיר ליחיד 220 ₪, מחיר לקבוצות 180 ₪ למשתתף, ואפשרות לחבילת ארוחת צהריים לקבוצות לפי דרישה.
-                </p>
-                <div class="levinsky-home-card__actions">
-                    <a href="tours.html" class="levinsky-home-card__button levinsky-home-card__button--primary">סיור צמחי מרפא בשוק לוינסקי</a>
-                    <a href="levinsky-market-food-tour.html" hreflang="en" lang="en" dir="ltr" class="levinsky-home-card__button levinsky-home-card__button--secondary">Levinsky Market food tour in English</a>
-                    <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A1%D7%99%D7%95%D7%A8%20%D7%A6%D7%9E%D7%97%D7%99%20%D7%9E%D7%A8%D7%A4%D7%90" target="_blank" rel="noopener noreferrer" class="levinsky-home-card__button levinsky-home-card__button--secondary">תיאום סיור בוואטסאפ</a>
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
+                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב שני</p>
+                    <h3 class="text-2xl font-bold text-emerald-900">תוכנית אישית</h3>
+                    <p class="text-slate-700 leading-relaxed">
+                        משם נבנית תוכנית שמחברת בין תזונה, צמחי מרפא, חליטות והרגלי שגרה. המטרה היא המלצות ישימות שמתאימות לחיים עצמם.
+                    </p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
+                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב שלישי</p>
+                    <h3 class="text-2xl font-bold text-emerald-900">מעקב וליווי לפי הצורך</h3>
+                    <p class="text-slate-700 leading-relaxed">
+                        לפי הצורך ובהתאם לבקשת המטופל או המטופלת, אפשר לקבוע פגישת מעקב כדי לדייק את התוכנית, לבדוק התקדמות ולקבל מענה לשאלות.
+                    </p>
                 </div>
             </div>
         </div>
@@ -1235,51 +1274,47 @@
         </div>
     </section>
 
-    <!-- Process Preview -->
-    <section class="bg-emerald-50 py-20 border-y border-emerald-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center mb-12">
-                <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-4">תהליך הקליניקה</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">איך קובעים פגישה ומתחילים ליווי</h2>
-                <p class="text-lg text-slate-600 leading-relaxed">
-                    העבודה בקליניקה בנויה בשלבים ברורים, כדי לאפשר היכרות מעמיקה, התאמה אישית וליווי לאורך הדרך.
+    <section id="persian-medicine-home" class="persian-home">
+        <div class="persian-home__shell">
+            <p class="persian-home__eyebrow">מה מייחד את הליווי ב-VEDICA</p>
+            <h2 class="persian-home__title">שתי מסורות, תוכנית אישית אחת שאפשר ליישם</h2>
+            <p class="persian-home__intro">
+                ענבל משלבת בין אבחון איורוודי לבין ידע מהרפואה הפרסית והמסורת האיראנית. במקום המלצות כלליות, בוחנים יחד עיכול, שינה, אנרגיה, סטרס והרגלי אכילה, ואז בונים תוכנית שמתחברת לגוף ולשגרת החיים שלך.
+            </p>
+            <div class="persian-home__benefits">
+                <div class="persian-home__benefit">
+                    <h3>רואים את התמונה המלאה</h3>
+                    <p>לא מתמקדים רק בתסמין אחד, אלא בקשרים בין עיכול, שינה, עומס, אנרגיה והרגלים.</p>
+                </div>
+                <div class="persian-home__benefit">
+                    <h3>עוברים מהבנה ליישום</h3>
+                    <p>התוכנית יכולה לשלב תזונה, חליטות, צמחי מרפא והרגלים שאפשר להטמיע ביום-יום.</p>
+                </div>
+                <div class="persian-home__benefit">
+                    <h3>מחברים מסורות למטבח המקומי</h3>
+                    <p>ידע מסורתי הופך לבחירות מעשיות שמתאימות לאדם, לעונה ולחיים בישראל.</p>
+                </div>
+            </div>
+            <div class="persian-home__actions">
+                <a href="contact.html" class="persian-home__action persian-home__action--primary">לבדיקת התאמה קצרה</a>
+                <a href="persian-medicine.html" class="persian-home__action">לקריאה על השילוב עם רפואה פרסית</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="levinsky-home-card">
+        <div class="levinsky-home-card__inner">
+            <img src="assets/inbal-market.jpg" alt="סיור צמחי מרפא ותבלינים בשוק לוינסקי" class="levinsky-home-card__image" loading="lazy">
+            <div class="levinsky-home-card__content">
+                <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-3">סיורי צמחי מרפא</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">סיור אוכל, צמחי מרפא וקולינריה בשוק לוינסקי</h2>
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    סיור קולינרי בעברית או באנגלית לקבוצות, יחידים והגיל השלישי, שמחבר בין שוק לוינסקי, קולינריה, תרבות איראנית, תזונה הודית, איורוודה וחליטות שאפשר לקחת הביתה לשגרת היום-יום. מחיר ליחיד 220 ₪, מחיר לקבוצות 180 ₪ למשתתף, ואפשרות לחבילת ארוחת צהריים לקבוצות לפי דרישה.
                 </p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
-                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב ראשון</p>
-                    <h3 class="text-2xl font-bold text-emerald-900">פגישת אבחון</h3>
-                    <p class="text-slate-700 leading-relaxed">
-                        אבחון ותוכנית בשתי פגישות: היכרות ותשאול מעמיק, אבחון פיזי, ואז תוכנית אישית שאפשר להתחיל ליישם.
-                    </p>
-                </div>
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
-                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב שני</p>
-                    <h3 class="text-2xl font-bold text-emerald-900">תוכנית אישית</h3>
-                    <p class="text-slate-700 leading-relaxed">
-                        משם נבנית תוכנית שמחברת בין תזונה, צמחי מרפא, חליטות והרגלי שגרה. המטרה היא המלצות ישימות שמתאימות לחיים עצמם.
-                    </p>
-                </div>
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
-                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב שלישי</p>
-                    <h3 class="text-2xl font-bold text-emerald-900">מעקב וליווי</h3>
-                    <p class="text-slate-700 leading-relaxed">
-                        בהמשך מומלצת פגישת מעקב לצורך דיוק של התוכנית, בדיקת התקדמות ומענה לשאלות שעולות תוך כדי תנועה.
-                    </p>
-                </div>
-            </div>
-            <div class="mt-10 bg-emerald-900 text-white rounded-3xl p-8 md:p-10 flex flex-col lg:flex-row gap-6 lg:items-center lg:justify-between">
-                <div class="max-w-2xl">
-                    <h3 class="text-2xl font-bold mb-3">רוצים להתחיל?</h3>
-                    <p class="text-white/85 leading-relaxed">
-                        אפשר להתחיל בהודעת וואטסאפ קצרה, או לעבור לעמוד הקליניקה ולקבל תמונה מלאה על התהליך.
-                    </p>
-                </div>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="clinic.html" class="inline-flex items-center justify-center bg-white text-emerald-900 px-6 py-3 rounded-full font-bold hover:bg-emerald-50 transition">לראות
-                        את התהליך המלא</a>
-                    <a href="contact.html" class="inline-flex items-center justify-center bg-emerald-700 text-white px-6 py-3 rounded-full font-bold hover:bg-emerald-600 transition">להשאיר
-                        פרטים</a>
+                <div class="levinsky-home-card__actions">
+                    <a href="tours.html" class="levinsky-home-card__button levinsky-home-card__button--primary">סיור צמחי מרפא בשוק לוינסקי</a>
+                    <a href="levinsky-market-food-tour.html" hreflang="en" lang="en" dir="ltr" class="levinsky-home-card__button levinsky-home-card__button--secondary">Levinsky Market food tour in English</a>
+                    <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A1%D7%99%D7%95%D7%A8%20%D7%A6%D7%9E%D7%97%D7%99%20%D7%9E%D7%A8%D7%A4%D7%90" target="_blank" rel="noopener noreferrer" class="levinsky-home-card__button levinsky-home-card__button--secondary">תיאום סיור בוואטסאפ</a>
                 </div>
             </div>
         </div>
@@ -1311,7 +1346,7 @@
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
                     <h3 class="text-2xl font-bold text-emerald-900">תהליך טיפולי מסודר</h3>
-                    <p class="text-slate-700 leading-relaxed">אחרי האבחון נבנית תוכנית אישית שכוללת תזונה, צמחי מרפא, חליטות והנחיות לשגרה. בהמשך מומלצת פגישת מעקב לצורך דיוק וליווי מתמשך.</p>
+                    <p class="text-slate-700 leading-relaxed">אחרי האבחון נבנית תוכנית אישית שכוללת תזונה, צמחי מרפא, חליטות והנחיות לשגרה. פגישת מעקב מתקיימת לפי הצורך ובהתאם לבקשת המטופל או המטופלת.</p>
                     <div class="mt-auto pt-4 border-t border-emerald-100">
                         <a href="process.html" class="font-bold text-emerald-800 hover:underline">לראות את שלבי התהליך</a>
                     </div>
@@ -1331,7 +1366,7 @@
     <section class="reviews-live" aria-label="חוות דעת מטופלים ב-Infomed">
         <div class="reviews-live__shell">
             <h2 class="reviews-live__title">מה מטופלים מספרים</h2>
-            <p class="reviews-live__source">חוות דעת אמיתיות מתוך פרופיל VEDICA ב־<a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer">Infomed</a></p>
+            <p class="reviews-live__source">20 חוות דעת 5 כוכבים מתוך הפרופיל הציבורי של VEDICA ב־<a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer">Infomed</a></p>
             <div class="reviews-track-wrap" aria-live="off">
                 <div class="reviews-track" role="list">
                     <!-- Set 1 -->
@@ -1420,7 +1455,7 @@
             </div>
             <div class="reviews-live__cta">
                 <a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer" class="reviews-live__cta-link">
-                    לכל חוות הדעת בפרופיל האינפומד ←
+                    לקריאת כל 20 חוות הדעת ב-Infomed
                 </a>
             </div>
         </div>
