@@ -41,6 +41,60 @@
   window.gtag("js", new Date());
   window.gtag("config", "G-MXKKRFNL56");
 
+  function detectLlmReferrer(referrer) {
+    if (!referrer) return null;
+
+    try {
+      var url = new URL(referrer);
+      var host = url.hostname.replace(/^www\./, "").toLowerCase();
+      var path = url.pathname.toLowerCase();
+      var sourceByHost = {
+        "chatgpt.com": "chatgpt",
+        "chat.openai.com": "chatgpt",
+        "perplexity.ai": "perplexity",
+        "claude.ai": "claude",
+        "gemini.google.com": "gemini",
+        "bard.google.com": "gemini",
+        "copilot.microsoft.com": "copilot",
+        "poe.com": "poe",
+        "you.com": "you",
+        "phind.com": "phind",
+        "chat.mistral.ai": "mistral",
+        "lechat.mistral.ai": "mistral",
+        "meta.ai": "meta_ai",
+        "chat.deepseek.com": "deepseek",
+        "grok.com": "grok"
+      };
+
+      if (sourceByHost[host]) {
+        return {
+          host: host,
+          source: sourceByHost[host]
+        };
+      }
+
+      if ((host === "bing.com" || host === "microsoft.com") && /\/(chat|copilot)/.test(path)) {
+        return {
+          host: host,
+          source: "copilot"
+        };
+      }
+    } catch (e) {
+      return null;
+    }
+
+    return null;
+  }
+
+  var llmReferrer = detectLlmReferrer(document.referrer);
+  if (llmReferrer) {
+    window.gtag("event", "llm_referral_visit", {
+      llm_source: llmReferrer.source,
+      llm_referrer_host: llmReferrer.host,
+      transport_type: "beacon"
+    });
+  }
+
   if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
     var gaScript = document.createElement("script");
     gaScript.async = true;
