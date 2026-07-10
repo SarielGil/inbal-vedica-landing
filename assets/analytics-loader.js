@@ -95,6 +95,110 @@
     });
   }
 
+  function cleanText(value) {
+    return (value || "").replace(/\s+/g, " ").trim().slice(0, 120);
+  }
+
+  function getPath(url) {
+    try {
+      return new URL(url, window.location.href).pathname;
+    } catch (e) {
+      return "";
+    }
+  }
+
+  function getCtaLocation(link) {
+    var section = link.closest("section, article, header, footer, nav");
+    if (!section) return link.id || "unknown";
+    if (section.id) return section.id;
+    if (section.getAttribute("aria-label")) return cleanText(section.getAttribute("aria-label"));
+    var heading = section.querySelector("h1, h2, h3");
+    if (heading) return cleanText(heading.textContent);
+    return cleanText(section.className) || link.id || "unknown";
+  }
+
+  function baseClickParams(link, eventType) {
+    return {
+      event_category: eventType === "lead" ? "lead" : "engagement",
+      link_url: link.href,
+      link_text: cleanText(link.textContent),
+      link_id: link.id || "",
+      cta_location: getCtaLocation(link),
+      lead_page: window.location.pathname || "/",
+      transport_type: "beacon"
+    };
+  }
+
+  function trackLead(method, link) {
+    var params = baseClickParams(link, "lead");
+    params.lead_method = method;
+
+    window.gtag("event", method + "_click", params);
+    window.gtag("event", "generate_lead", params);
+  }
+
+  function trackEngagement(eventName, link, extraParams) {
+    var params = baseClickParams(link, "engagement");
+    Object.keys(extraParams || {}).forEach(function (key) {
+      params[key] = extraParams[key];
+    });
+    window.gtag("event", eventName, params);
+  }
+
+  document.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link) return;
+
+    var href = link.getAttribute("href") || "";
+    var lowerHref = href.toLowerCase();
+    var linkHost = "";
+    try {
+      linkHost = new URL(link.href).hostname.replace(/^www\./, "").toLowerCase();
+    } catch (e) {
+      linkHost = "";
+    }
+
+    if (lowerHref.indexOf("wa.me/") !== -1 || lowerHref.indexOf("whatsapp") !== -1) {
+      trackLead("whatsapp", link);
+      return;
+    }
+
+    if (lowerHref.indexOf("tel:") === 0) {
+      trackLead("phone", link);
+      return;
+    }
+
+    if (lowerHref.indexOf("mailto:") === 0) {
+      trackLead("email", link);
+      return;
+    }
+
+    if (getPath(link.href) === "/contact.html") {
+      trackEngagement("contact_click", link, {
+        contact_target: "contact_page"
+      });
+      return;
+    }
+
+    if (linkHost === "infomed.co.il") {
+      trackEngagement("review_click", link, {
+        review_source: "infomed"
+      });
+      return;
+    }
+
+    if (
+      linkHost === "google.com" ||
+      linkHost === "maps.google.com" ||
+      linkHost === "waze.com" ||
+      linkHost === "ul.waze.com"
+    ) {
+      trackEngagement("map_click", link, {
+        map_source: linkHost
+      });
+    }
+  }, true);
+
   if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
     var gaScript = document.createElement("script");
     gaScript.async = true;

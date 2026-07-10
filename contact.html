@@ -264,28 +264,14 @@
 
         const contactForm = document.getElementById('contactForm');
         const formMessage = document.getElementById('formMessage');
-        const waContact = document.getElementById('wa-contact');
-        const waShortcut = document.getElementById('wa-shortcut');
-
-        waContact.addEventListener('click', function () {
-            trackEvent('whatsapp_click', {
-                event_category: 'engagement',
-                event_label: 'contact_wa_button'
-            });
-        });
-
-        waShortcut.addEventListener('click', function () {
-            trackEvent('whatsapp_click', {
-                event_category: 'engagement',
-                event_label: 'contact_wa_shortcut'
-            });
-        });
 
         contactForm.addEventListener('submit', async function (event) {
             event.preventDefault(); // מניעת מעבר לעמוד של Formspree
             trackEvent('form_submit_attempt', {
                 event_category: 'lead',
-                event_label: 'contact_form'
+                event_label: 'contact_form',
+                lead_method: 'contact_form',
+                lead_page: window.location.pathname
             });
 
             // שינוי הכפתור בזמן טעינה
@@ -308,14 +294,24 @@
                 if (response.ok) {
                     trackEvent('form_submit_success', {
                         event_category: 'lead',
-                        event_label: 'contact_form'
+                        event_label: 'contact_form',
+                        lead_method: 'contact_form',
+                        lead_page: window.location.pathname
+                    });
+                    trackEvent('generate_lead', {
+                        event_category: 'lead',
+                        event_label: 'contact_form',
+                        lead_method: 'contact_form',
+                        lead_page: window.location.pathname
                     });
                     // מעבר מוצלח לעמוד התודה מבלי להציג את עמוד הביניים של Formspree
                     window.location.href = contactForm.querySelector('input[name="_next"]').value;
                 } else {
                     trackEvent('form_submit_error', {
                         event_category: 'lead',
-                        event_label: 'contact_form_http_error'
+                        event_label: 'contact_form_http_error',
+                        lead_method: 'contact_form',
+                        lead_page: window.location.pathname
                     });
                     const data = await response.json();
                     if (Object.hasOwn(data, 'errors')) {
@@ -331,7 +327,9 @@
             } catch (error) {
                 trackEvent('form_submit_error', {
                     event_category: 'lead',
-                    event_label: 'contact_form_network_error'
+                    event_label: 'contact_form_network_error',
+                    lead_method: 'contact_form',
+                    lead_page: window.location.pathname
                 });
                 formMessage.innerText = "אופס! הייתה תקלה נסה שוב מאוחר יותר.";
                 formMessage.classList.remove('hidden');
