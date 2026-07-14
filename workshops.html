@@ -20,11 +20,267 @@
     <meta property="og:locale" content="he_IL">
  <meta name="twitter:card" content="summary_large_image">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="assets/modern-shared.css">
 
  <style>
   body {
-   font-family: 'Assistant', sans-serif;
-   background-color: #fdfbf7;
+   background: #f5f4ef;
+  }
+
+  .site-nav__menu {
+   width: auto;
+  }
+
+  .workshops-hero {
+   --hero-image: url('/assets/roses.webp');
+   background: #233c31;
+  }
+
+  .workshops-hero::before {
+   background-position: center 54%;
+  }
+
+  .workshops-hero .page-hero__content {
+   max-width: 48rem;
+  }
+
+  .workshop-section {
+   margin-top: 3.5rem;
+  }
+
+  .workshop-section__heading {
+   max-width: 47rem;
+   margin: 0 auto 1.75rem;
+   text-align: center;
+  }
+
+  .workshop-section__heading h2,
+  .workshop-benefits h2,
+  .workshop-cta h2 {
+   margin: 0;
+   color: #174a40;
+   font-size: 2rem;
+   line-height: 1.25;
+   letter-spacing: 0;
+  }
+
+  .workshop-section__heading p {
+   margin: 0.7rem 0 0;
+   color: #567069;
+   font-size: 1.05rem;
+   line-height: 1.65;
+  }
+
+  #workshop-options {
+   scroll-margin-top: 6rem;
+  }
+
+  .workshop-list {
+   display: grid;
+   gap: 1.2rem;
+  }
+
+  .workshop-offer {
+   display: grid;
+   overflow: hidden;
+   border: 1px solid #d7e3de;
+   border-radius: 0.5rem;
+   background: #ffffff;
+   box-shadow: 0 20px 40px -34px rgba(8, 38, 34, 0.55);
+  }
+
+  .workshop-offer__image {
+   width: 100%;
+   height: 15rem;
+   object-fit: cover;
+  }
+
+  .workshop-offer__content {
+   padding: 1.5rem;
+  }
+
+  .workshop-offer__status {
+   display: inline-block;
+   color: #187263;
+   font-size: 0.84rem;
+   font-weight: 800;
+  }
+
+  .workshop-offer h3 {
+   margin: 0.5rem 0 0;
+   color: #174a40;
+   font-size: 1.65rem;
+   line-height: 1.3;
+   letter-spacing: 0;
+  }
+
+  .workshop-offer__intro {
+   margin: 0.75rem 0 1.1rem;
+   color: #566d67;
+   font-size: 1rem;
+   line-height: 1.65;
+  }
+
+  .workshop-offer__details {
+   display: grid;
+   gap: 0.55rem;
+   margin: 0;
+   padding: 1rem 0;
+   border-block: 1px solid #e3ebe7;
+   color: #385d54;
+   line-height: 1.55;
+   list-style: none;
+  }
+
+  .workshop-offer__details li {
+   position: relative;
+   padding-inline-start: 1.1rem;
+  }
+
+  .workshop-offer__details li::before {
+   content: "";
+   position: absolute;
+   inset-inline-start: 0;
+   top: 0.65rem;
+   width: 0.38rem;
+   height: 0.38rem;
+   border-radius: 50%;
+   background: #1b8a70;
+  }
+
+  .workshop-offer__actions,
+  .workshop-cta__actions {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.7rem;
+   margin-top: 1.15rem;
+  }
+
+  .workshop-button,
+  .workshop-button--ghost {
+   display: inline-flex;
+   min-height: 2.8rem;
+   align-items: center;
+   justify-content: center;
+   padding: 0.65rem 1.1rem;
+   border: 1px solid #176b5b;
+   border-radius: 0.5rem;
+   font-weight: 800;
+   text-decoration: none;
+  }
+
+  .workshop-button {
+   background: #176b5b;
+   color: #ffffff;
+  }
+
+  .workshop-button--ghost {
+   background: transparent;
+   color: #176b5b;
+  }
+
+  .workshop-benefits {
+   margin-top: 3.5rem;
+   padding: 2rem 0;
+   border-block: 1px solid #d7e3de;
+  }
+
+  .workshop-benefits > p {
+   max-width: 46rem;
+   margin: 0.7rem auto 0;
+   color: #567069;
+   line-height: 1.65;
+   text-align: center;
+  }
+
+  .workshop-benefits h2 {
+   text-align: center;
+  }
+
+  .workshop-benefits__grid {
+   display: grid;
+   gap: 1.5rem;
+   margin-top: 1.75rem;
+  }
+
+  .workshop-benefit h3 {
+   margin: 0;
+   color: #176354;
+   font-size: 1.2rem;
+   letter-spacing: 0;
+  }
+
+  .workshop-benefit p {
+   margin: 0.5rem 0 0;
+   color: #566d67;
+   line-height: 1.6;
+  }
+
+  .workshop-cta {
+   margin-top: 3.5rem;
+   padding: 2rem;
+   border-radius: 0.5rem;
+   background: #176354;
+   color: #ffffff;
+  }
+
+  .workshop-cta h2 {
+   color: #ffffff;
+  }
+
+  .workshop-cta p {
+   max-width: 44rem;
+   margin: 0.75rem 0 0;
+   line-height: 1.65;
+  }
+
+  .workshop-cta .workshop-button {
+   border-color: #ffffff;
+   background: #ffffff;
+   color: #176354;
+  }
+
+  .workshop-cta .workshop-button--ghost {
+   border-color: rgba(255, 255, 255, 0.8);
+   color: #ffffff;
+  }
+
+  @media (min-width: 50rem) {
+   .workshop-offer {
+    grid-template-columns: minmax(15rem, 0.78fr) minmax(0, 1.45fr);
+   }
+
+   .workshop-offer__image {
+    height: 100%;
+    min-height: 25rem;
+   }
+
+   .workshop-offer__content {
+    align-self: center;
+    padding: 2.2rem;
+   }
+
+   .workshop-offer:nth-child(even) {
+    grid-template-columns: minmax(0, 1.45fr) minmax(15rem, 0.78fr);
+   }
+
+   .workshop-offer:nth-child(even) .workshop-offer__image {
+    grid-column: 2;
+   }
+
+   .workshop-offer:nth-child(even) .workshop-offer__content {
+    grid-column: 1;
+    grid-row: 1;
+   }
+
+   .workshop-benefits__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+   }
+
+   .workshop-benefit + .workshop-benefit {
+    border-inline-start: 1px solid #d7e3de;
+    padding-inline-start: 1.5rem;
+   }
   }
  </style>
  <link rel="icon" href="assets/logo.webp" type="image/jpeg">
@@ -48,14 +304,14 @@
 
 <body class="text-slate-800">
  <!-- Fixed Navigation Bar -->
- <nav class="site-nav sticky top-0 z-50">
+ <nav class="site-nav">
   <div class="site-nav__inner">
    <a href="index.html" class="site-nav__brand">
      <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA - קליניקת איורוודה בתל אביב" class="site-nav__logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logo-transparent.png';">
     <span class="site-nav__name">VEDICA</span>
    </a>
-   <div class="site-nav__menu"
-    style="scrollbar-width: none;">
+   <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
+   <div id="site-nav-menu" class="site-nav__menu">
     <a href="index.html" class="site-nav__link">בית</a>
     <a href="about.html" class="site-nav__link">אודות</a>
     <a href="blog.html" class="site-nav__link">בלוג</a>
@@ -71,125 +327,122 @@
   </div>
  </nav>
 
- <main class="max-w-4xl mx-auto px-4 py-16">
-  <h1 class="text-4xl font-bold text-emerald-900 mb-8 text-center">סדנאות איורוודה, צמחי מרפא ותבלינים בתל אביב</h1>
-  <p class="text-xl text-slate-600 leading-relaxed text-center max-w-3xl mx-auto mb-12">הסדנאות של VEDICA מחברות בין תבלינים, חליטות, איורוודה ומסורות אוכל פרסיות בשפה נגישה ומעשית. אפשר להזמין סדנת צמחי מרפא, מפגש לקבוצה או ארוחת שף בהשראת הדושות בתל אביב.</p>
+ <main class="page-main">
+  <section class="page-hero workshops-hero">
+   <div class="page-hero__content">
+    <p class="page-hero__eyebrow">חוויה קבוצתית עם ענבל הנסב</p>
+    <h1>סדנאות צמחי מרפא, תבלינים ואיורוודה בתל אביב</h1>
+    <p>מפגשים חווייתיים שמחברים בין ידע מסורתי, המטבח הביתי וחיי היום-יום, לקבוצות פרטיות, ארגונים וימי צוות.</p>
+    <div class="page-hero__actions">
+     <a href="https://wa.me/972545774407" class="page-hero__button">לבירור מועד והתאמה</a>
+     <a href="#workshop-options" class="page-hero__button--ghost">לכל הסדנאות</a>
+    </div>
+   </div>
+  </section>
 
-  <div class="grid md:grid-cols-1 gap-12">
-    <!-- סדנה מ-Funzing -->
-    <article class="bg-white rounded-3xl overflow-hidden shadow-xl border border-emerald-100">
-     <div class="md:flex">
-      <div class="md:w-1/3">
-       <img src="assets/spices-market.webp" class="w-full h-full object-cover" alt="סדנת צמחי מרפא איורוודית עם ענבל הנסב - VEDICA" loading="lazy" onerror="this.onerror=null;this.src='assets/spices-market.jpg';">
-      </div>
-      <div class="p-8 md:w-2/3">
-       <div class="flex justify-between items-start mb-4">
-        <h2 class="text-3xl font-bold text-emerald-800">צמחים זה החיים! סדנת צמחי מרפא</h2>
-        <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-bold">מועדים מתעדכנים</span>
-       </div>
-       <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-        יש לנו זהב בבית! התבלינים הם נקודת מפגש בין מטבח, מסורת ובריאות יומיומית - דרך נגישה ללמוד איך להשתמש בהם בצורה מודעת ואחראית.
-        הצטרפו לסדנה חווייתית המנגישה ידע מסורתי ומחברת אותו לחיי היום-יום שלנו כאן ועכשיו.
-       </p>
-       <div class="flex gap-6 mb-8 text-sm text-slate-500 font-medium">
-        <div class="flex items-center gap-2">
-         <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-         <span>מועדים חדשים מתפרסמים לפי פתיחה</span>
-        </div>
-        <div class="flex items-center gap-2">
-         <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-         <span>תל אביב / לקבוצות פרטיות וארגונים</span>
-        </div>
-       </div>
-       <div class="flex flex-col sm:flex-row gap-4">
-        <a href="https://wa.me/972545774407" class="bg-emerald-700 text-white px-8 py-3 rounded-xl font-bold hover:bg-emerald-800 transition text-center shadow-lg shadow-emerald-700/20">להצטרפות לרשימת המתנה</a>
-        <a href="contact.html" class="border-2 border-emerald-700 text-emerald-700 px-8 py-3 rounded-xl font-bold hover:bg-emerald-50 transition text-center">לתיאום סדנה פרטית</a>
-       </div>
+  <div class="page-meta-grid">
+   <article class="page-meta-card">
+    <p class="page-meta-card__label">למי זה מתאים</p>
+    <p>קבוצות פרטיות, חברות, צוותים וימי תוכן שמחפשים חוויה משותפת עם ערך מעשי.</p>
+   </article>
+   <article class="page-meta-card">
+    <p class="page-meta-card__label">מה פוגשים</p>
+    <p>תבלינים, חליטות, צמחי מרפא, איורוודה ומסורות אוכל פרסיות בשפה נגישה.</p>
+   </article>
+   <article class="page-meta-card">
+    <p class="page-meta-card__label">מועדים ומיקום</p>
+    <p>המפגשים מתקיימים בתל אביב או בתיאום לקבוצה. המועדים מתעדכנים לפי פתיחה.</p>
+   </article>
+  </div>
+
+  <section id="workshop-options" class="workshop-section">
+   <div class="workshop-section__heading">
+    <h2>שלוש דרכים להיפגש סביב אוכל וצמחים</h2>
+    <p>אפשר לבחור מפגש קיים או לפנות לענבל כדי להתאים סדנה לקבוצה, לאופי האירוע ולזמן שעומד לרשותכם.</p>
+   </div>
+
+   <div class="workshop-list">
+    <article class="workshop-offer">
+     <img src="assets/spices-market.webp" class="workshop-offer__image" alt="תבלינים וצמחי מרפא בסדנה של ענבל הנסב" loading="lazy" onerror="this.onerror=null;this.src='assets/spices-market.jpg';">
+     <div class="workshop-offer__content">
+      <span class="workshop-offer__status">מועדים מתעדכנים</span>
+      <h3>צמחים זה החיים: סדנת צמחי מרפא</h3>
+      <p class="workshop-offer__intro">מפגש חווייתי עם תבלינים, חליטות וצמחים שנמצאים קרוב אלינו. לומדים לזהות, לטעום ולחשוב על שימוש יומיומי מודע ואחראי.</p>
+      <ul class="workshop-offer__details">
+       <li>היכרות נגישה עם צמחי מרפא ותבלינים מהמטבח</li>
+       <li>חיבור בין מסורת, טעם והרגלים בחיי היום-יום</li>
+       <li>מתאים לקבוצות פרטיות, ארגונים וימי צוות</li>
+      </ul>
+      <div class="workshop-offer__actions">
+       <a href="https://wa.me/972545774407" class="workshop-button">להצטרפות לרשימת ההמתנה</a>
+       <a href="contact.html" class="workshop-button--ghost">לתיאום סדנה פרטית</a>
       </div>
      </div>
     </article>
 
-   <!-- ארוחת שף בהשראת הדושות -->
-   <article class="bg-white rounded-3xl overflow-hidden shadow-xl border border-emerald-50">
-    <div class="md:flex">
-     <div class="md:w-1/3">
-      <img src="assets/dates-hands.webp" class="w-full h-full object-cover" alt="ארוחת שף בהשראת הדושות - חוויה קולינרית לימודית" loading="lazy" onerror="this.onerror=null;this.src='assets/dates-hands.jpg';">
-     </div>
-     <div class="p-8 md:w-2/3">
-      <div class="flex justify-between items-start mb-4">
-       <h2 class="text-3xl font-bold text-emerald-800">ארוחת שף בהשראת הדושות</h2>
-       <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-bold">חוויה פרטית / קבוצתית</span>
-      </div>
-      <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-       חוויה קולינרית שמתחילה בשאלון קצר למילוי עצמי, ממשיכה בהיכרות פשוטה עם ואטה, פיטה וקאפה, ומסתיימת בארוחה שבה כל מנה מסומנת לפי הטעמים והאיכויות שלה. המפגש מציע דרך חווייתית לחשוב על בחירות אוכל גם אחרי הערב עצמו.
-      </p>
-      <div class="bg-emerald-50 p-6 rounded-2xl mb-8">
-       <h3 class="font-bold text-emerald-900 mb-2">מה כוללת החוויה:</h3>
-       <ul class="space-y-2 text-slate-700">
-        <li>• שאלון קצר למילוי עצמי בתחילת המפגש או מראש</li>
-        <li>• הסבר נגיש על ואטה, פיטה וקאפה ומה זה אומר בפועל עבור המשתתפים</li>
-        <li>• מנות מסומנות לפי איכויות, טעמים ודושות כדי לאפשר בחירה מודעת</li>
-        <li>• חוויה טעימה, מלמדת וישימה לקבוצות, אירוח אינטימי וימי צוות</li>
-       </ul>
-      </div>
-      <div class="flex flex-col sm:flex-row gap-4">
-       <a href="https://wa.me/972545774407" class="bg-emerald-700 text-white px-8 py-3 rounded-xl font-bold hover:bg-emerald-800 transition text-center shadow-lg shadow-emerald-700/20">לפרטים ותיאום ארוחת שף</a>
-       <a href="clinic.html" class="border-2 border-emerald-700 text-emerald-700 px-8 py-3 rounded-xl font-bold hover:bg-emerald-50 transition text-center">להעמקה אישית בקליניקה</a>
+    <article class="workshop-offer">
+     <img src="assets/dates-hands.webp" class="workshop-offer__image" alt="ארוחת שף קבוצתית בהשראת הדושות" loading="lazy" onerror="this.onerror=null;this.src='assets/dates-hands.jpg';">
+     <div class="workshop-offer__content">
+      <span class="workshop-offer__status">חוויה פרטית או קבוצתית</span>
+      <h3>ארוחת שף בהשראת הדושות</h3>
+      <p class="workshop-offer__intro">ארוחה שהיא גם מפגש לימודי: היכרות פשוטה עם ואטה, פיטה וקאפה, וטעמים ואיכויות שמאפשרים להסתכל אחרת על הבחירות בצלחת.</p>
+      <ul class="workshop-offer__details">
+       <li>שאלון קצר למילוי עצמי בתחילת המפגש או מראש</li>
+       <li>הסבר נגיש על הדושות ומה הן מציעות כנקודת מבט</li>
+       <li>מנות מסומנות לפי איכויות וטעמים לאורך הארוחה</li>
+      </ul>
+      <div class="workshop-offer__actions">
+       <a href="https://wa.me/972545774407" class="workshop-button">לפרטים ותיאום ארוחה</a>
+       <a href="clinic.html" class="workshop-button--ghost">להעמקה אישית בקליניקה</a>
       </div>
      </div>
-    </div>
-   </article>
+    </article>
 
-   <!-- סדנת רפואה בצלחת -->
-   <article class="bg-white rounded-3xl overflow-hidden shadow-xl border border-emerald-50">
-    <div class="md:flex">
-     <div class="md:w-1/3">
-      <img src="assets/spices-mishmish.webp" class="w-full h-full object-cover" alt="סדנת רפואה בצלחת: ללמוד על תבלינים וצמחי מרפא במטבח" loading="lazy" onerror="this.onerror=null;this.src='assets/spices-mishmish.jpg';">
-     </div>
-     <div class="p-8 md:w-2/3">
-      <h2 class="text-3xl font-bold text-emerald-800 mb-4">רפואה בצלחת: סדנת תבלינים וצמחי מרפא</h2>
-      <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-       הכירו את ארון התבלינים הביתי מזווית חדשה. סדנה מעמיקה על שימוש מודע בתבלינים וצמחי מרפא, תמיכה בעיכול וחיבור בין מטבח, עונות השנה ושגרה יומיומית.
-      </p>
-      <div class="bg-emerald-50 p-6 rounded-2xl mb-8">
-       <h3 class="font-bold text-emerald-900 mb-2">מה נלמד בסדנה:</h3>
-       <ul class="space-y-2 text-slate-700">
-        <li>• שימוש מודע בתבלינים וחליטות בבית</li>
-        <li>• התאמת תיבול לפי עונות השנה</li>
-        <li>• חליטות ופורמולות פשוטות ליום-יום</li>
-        <li>• הפיכת הארוחה לכלי יומיומי תומך ומזין</li>
-       </ul>
+    <article class="workshop-offer">
+     <img src="assets/spices-mishmish.webp" class="workshop-offer__image" alt="תבלינים וחומרי גלם לסדנת רפואה בצלחת" loading="lazy" onerror="this.onerror=null;this.src='assets/spices-mishmish.jpg';">
+     <div class="workshop-offer__content">
+      <span class="workshop-offer__status">סדנה מעשית לקבוצות</span>
+      <h3>רפואה בצלחת: תבלינים וצמחי מרפא</h3>
+      <p class="workshop-offer__intro">מסתכלים על ארון התבלינים הביתי מזווית חדשה ומחברים בין טעמים, עונות השנה, עיכול ושגרה, בלי להפוך את המטבח למסובך.</p>
+      <ul class="workshop-offer__details">
+       <li>שימוש מודע בתבלינים ובחליטות בבית</li>
+       <li>התאמת טעמים ותיבול לעונות השנה</li>
+       <li>רעיונות מעשיים שאפשר לקחת למטבח הביתי</li>
+      </ul>
+      <div class="workshop-offer__actions">
+       <a href="https://wa.me/972545774407" class="workshop-button">לפרטים והרשמה בוואטסאפ</a>
       </div>
-      <a href="https://wa.me/972545774407"
-       class="inline-block w-full text-center bg-emerald-700 text-white py-4 rounded-xl text-xl font-bold hover:bg-emerald-800 transition">להרשמה ופרטים בוואטסאפ</a>
      </div>
+    </article>
+   </div>
+  </section>
+
+  <section class="workshop-benefits">
+   <h2>מה נשאר איתכם אחרי המפגש</h2>
+   <p>המטרה היא לא רק ערב נעים, אלא היכרות שאפשר להמשיך ממנה אל המטבח ואל השגרה.</p>
+   <div class="workshop-benefits__grid">
+    <div class="workshop-benefit">
+     <h3>שפה נגישה</h3>
+     <p>ידע מסורתי על תבלינים, חליטות ואיורוודה מקבל הסבר ברור ומחובר לחיים בישראל.</p>
     </div>
-   </article>
-  </div>
-  <section class="mt-16 bg-white rounded-3xl border border-emerald-100 shadow-sm p-8 md:p-10">
-   <h2 class="text-3xl font-bold text-emerald-900 mb-6 text-center">מה מקבלים מהסדנה</h2>
-   <div class="grid md:grid-cols-3 gap-6 text-slate-700">
-    <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
-     <h3 class="text-xl font-bold text-emerald-800 mb-3">שפה נגישה</h3>
-     <p>הסדנאות לוקחות ידע עמוק על תבלינים, חליטות וצמחי מרפא ומתרגמות אותו לשימוש יומיומי פשוט ומעשי.</p>
+    <div class="workshop-benefit">
+     <h3>חוויה משותפת</h3>
+     <p>טועמים, שואלים ומגלים יחד, בפורמט שמתאים לקבוצה ולאופי האירוע.</p>
     </div>
-    <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
-     <h3 class="text-xl font-bold text-emerald-800 mb-3">מתאים לקהלים שונים</h3>
-     <p>אפשר להזמין סדנה לקהל פרטי, לחברות, לצוותים ולימי תוכן שמחפשים גם חוויה וגם ערך בריאותי.</p>
-    </div>
-    <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
-     <h3 class="text-xl font-bold text-emerald-800 mb-3">חיבור טבעי לעוד תוכן</h3>
-     <p>הסדנאות מתחברות לסיורי צמחי המרפא ולפודקאסט, כך שאפשר להעמיק בכמה רמות של תוכן וחוויה.</p>
+    <div class="workshop-benefit">
+     <h3>רעיונות ליישום</h3>
+     <p>יוצאים עם דרכים פשוטות להסתכל על תיבול, חליטות והרגלי אוכל בבית.</p>
     </div>
    </div>
-   <div class="mt-8 bg-stone-50 rounded-2xl p-6 border border-emerald-100">
-    <h3 class="text-2xl font-bold text-emerald-900 mb-3 text-center">ידע שאפשר לקחת למטבח הביתי</h3>
-    <p class="text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">הסדנאות מציעות היכרות מעשית עם מה שכבר נמצא במטבח: טעמים, תבלינים, חליטות ועונות השנה. מי שרוצים להתאים את הידע למצב אישי יכולים להמשיך גם ל<strong>קליניקה</strong> לליווי מסודר.</p>
-   </div>
-   <div class="mt-8 pt-8 border-t border-emerald-100 flex flex-col md:flex-row gap-4 justify-center">
-    <a href="clinic.html" class="inline-flex items-center justify-center bg-emerald-900 text-white px-6 py-3 rounded-full font-bold hover:bg-emerald-950 transition">להמשך בקליניקה</a>
-    <a href="tours.html" class="inline-flex items-center justify-center bg-emerald-700 text-white px-6 py-3 rounded-full font-bold hover:bg-emerald-800 transition">לעמוד סיורי צמחי המרפא</a>
-    <a href="podcast.html" class="inline-flex items-center justify-center border-2 border-emerald-700 text-emerald-700 px-6 py-3 rounded-full font-bold hover:bg-emerald-50 transition">להאזנה לפודקאסט הבריאות</a>
+  </section>
+
+  <section class="workshop-cta">
+   <h2>רוצים להתאים סדנה לקבוצה שלכם?</h2>
+   <p>כתבו לענבל כמה משתתפים אתם, מה סוג האירוע ובאיזה מועד אתם חושבים עליו. משם אפשר לבדוק יחד איזה מפגש יתאים.</p>
+   <div class="workshop-cta__actions">
+    <a href="https://wa.me/972545774407" class="workshop-button">לשיחה קצרה בוואטסאפ</a>
+    <a href="tours.html" class="workshop-button--ghost">לסיורי צמחי המרפא</a>
+    <a href="podcast.html" class="workshop-button--ghost">להאזנה לפודקאסט</a>
    </div>
   </section>
  </main>
@@ -239,6 +492,7 @@
    </div>
   </div>
  </footer>
+ <script src="assets/site-nav.js"></script>
 </body>
 
 </html>

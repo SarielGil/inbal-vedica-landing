@@ -20,15 +20,185 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://vedica-ayurveda.co.il/blog.html"><link rel="alternate" type="text/plain" title="LLM Content" href="https://vedica-ayurveda.co.il/llms.txt">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/modern-shared.css">
 
     <style>
         body {
-            font-family: 'Assistant', sans-serif;
-            background-color: #fdfbf7;
+            background: #f5f4ef;
         }
 
-        #category-filters::-webkit-scrollbar {
+        .site-nav__menu {
+            width: auto;
+        }
+
+        .blog-hero {
+            --hero-image: url('/assets/dates-hands.webp');
+            background: #173d35;
+        }
+
+        .blog-hero::before {
+            background-image: var(--hero-image);
+            background-position: center 45%;
+            opacity: 0.34;
+        }
+
+        .blog-hero .page-hero__content {
+            max-width: 48rem;
+        }
+
+        .blog-toolbar {
+            margin: 2.4rem 0 2rem;
+            padding-block: 1rem;
+            border-block: 1px solid rgba(27, 59, 51, 0.14);
+        }
+
+        .blog-filters {
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            padding: 0.2rem 0 0.45rem;
+            scrollbar-width: none;
+        }
+
+        .blog-filters::-webkit-scrollbar {
             display: none;
+        }
+
+        .category-filter {
+            flex: 0 0 auto;
+            min-height: 2.6rem;
+            padding: 0.55rem 0.95rem;
+            border: 1px solid #d7e3de;
+            border-radius: 0.5rem;
+            background: #f0f3f1;
+            color: #365950;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+            transition: border-color 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+        }
+
+        .category-filter:hover,
+        .category-filter:focus-visible {
+            border-color: #6da99a;
+            outline: none;
+        }
+
+        .category-filter.is-active {
+            border-color: #176b5b;
+            background: #176b5b;
+            color: #ffffff;
+        }
+
+        .blog-grid {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .blog-card {
+            height: 100%;
+            overflow: hidden;
+            border: 1px solid #d7e3de;
+            border-radius: 0.5rem;
+            background: #ffffff;
+            box-shadow: 0 16px 34px -30px rgba(8, 38, 34, 0.5);
+            transition: border-color 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .blog-card:hover {
+            border-color: #9cc8bb;
+            box-shadow: 0 20px 38px -30px rgba(8, 38, 34, 0.62);
+        }
+
+        .blog-card--featured {
+            border-top: 3px solid #2b8a73;
+        }
+
+        .blog-card__body {
+            display: flex;
+            min-height: 100%;
+            flex-direction: column;
+            padding: 1.6rem;
+        }
+
+        .blog-card__meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.55rem 0.8rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .blog-card__category {
+            color: #176b5b;
+            font-size: 0.84rem;
+            font-weight: 800;
+        }
+
+        .blog-card__date {
+            color: #71837e;
+            font-size: 0.82rem;
+        }
+
+        .blog-card h2 {
+            margin: 0;
+            color: #174a40;
+            font-size: 1.42rem;
+            line-height: 1.35;
+            letter-spacing: 0;
+        }
+
+        .blog-card h2 a,
+        .blog-card__link {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .blog-card h2 a:hover,
+        .blog-card h2 a:focus-visible {
+            color: #0f766e;
+        }
+
+        .blog-card__excerpt {
+            flex: 1;
+            margin: 0.8rem 0 1.25rem;
+            color: #566d67;
+            line-height: 1.65;
+        }
+
+        .blog-card__link {
+            padding-top: 0.85rem;
+            border-top: 1px solid #e3ebe7;
+            color: #176b5b;
+            font-weight: 800;
+        }
+
+        .blog-card__link:hover,
+        .blog-card__link:focus-visible {
+            text-decoration: underline;
+            text-underline-offset: 0.2em;
+        }
+
+        .blog-empty {
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        @media (min-width: 50rem) {
+            .blog-filters {
+                justify-content: center;
+            }
+
+            .blog-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 70rem) {
+            .blog-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
         }
     </style>
     <link rel="icon" href="assets/logo.webp" type="image/jpeg">
@@ -37,14 +207,14 @@
 
 <body class="text-slate-800">
     <!-- Fixed Navigation Bar -->
-    <nav class="site-nav sticky top-0 z-50">
+    <nav class="site-nav">
         <div class="site-nav__inner">
             <a href="index.html" class="site-nav__brand">
                 <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA - קליניקת איורוודה בתל אביב" class="site-nav__logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logo-transparent.png';">
                 <span class="site-nav__name">VEDICA</span>
             </a>
-            <div class="site-nav__menu"
-                style="scrollbar-width: none;">
+            <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
+            <div id="site-nav-menu" class="site-nav__menu">
                 <a href="index.html" class="site-nav__link">בית</a>
                 <a href="about.html" class="site-nav__link">אודות</a>
                 <a href="blog.html" class="site-nav__link site-nav__link--active">בלוג</a>
@@ -60,24 +230,47 @@
         </div>
     </nav>
 
-    <header class="bg-emerald-900 text-white py-20 px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">בלוג VEDICA — מדריכים מעשיים לאיורוודה, תזונה ושגרה</h1>
-        <p class="text-xl opacity-90 max-w-2xl mx-auto leading-relaxed">מאמרים מאת ענבל הנסב עם דוגמאות, כלי מעקב, מקורות מקצועיים וגבולות ברורים בין ידע מסורתי לייעוץ רפואי.</p>
-    </header>
+    <main class="page-main">
+        <section class="page-hero blog-hero">
+            <div class="page-hero__content">
+                <p class="page-hero__eyebrow">הבלוג של VEDICA</p>
+                <h1>מדריכים מעשיים לאיורוודה, תזונה ושגרת חיים</h1>
+                <p>מאמרים מאת ענבל הנסב עם דוגמאות, כלי מעקב, מקורות מקצועיים והפרדה ברורה בין ידע מסורתי לבין ייעוץ רפואי אישי.</p>
+                <div class="page-hero__actions">
+                    <a href="#posts-container" class="page-hero__button">לכל המדריכים</a>
+                    <a href="about.html" class="page-hero__button--ghost">להכיר את ענבל</a>
+                </div>
+            </div>
+        </section>
 
-    <main class="max-w-6xl mx-auto px-4 py-16">
-        <div id="category-filters" class="flex gap-3 mb-12 overflow-x-auto justify-start md:justify-center whitespace-nowrap pb-2" style="scrollbar-width: none; -ms-overflow-style: none;"></div>
+        <div class="page-meta-grid">
+            <article class="page-meta-card">
+                <p class="page-meta-card__label">מי כותבת</p>
+                <p>ענבל הנסב, מטפלת מוסמכת באיורוודה וברפואה פרסית ומייסדת VEDICA בתל אביב.</p>
+            </article>
+            <article class="page-meta-card">
+                <p class="page-meta-card__label">מה תמצאו כאן</p>
+                <p>מדריכים על עיכול, תזונה, שינה, סטרס, פוריות, צמחי מרפא והרגלים שאפשר ליישם ביום־יום.</p>
+            </article>
+            <article class="page-meta-card">
+                <p class="page-meta-card__label">חשוב לדעת</p>
+                <p>המידע באתר כללי ומשלים בלבד, ואינו מחליף אבחון, ייעוץ או טיפול רפואי אישי.</p>
+            </article>
+        </div>
+
+        <div class="blog-toolbar" aria-label="סינון מאמרים לפי נושא">
+            <div id="category-filters" class="blog-filters" role="tablist"></div>
+        </div>
 
         <!-- Blog Posts Grid -->
-        <div id="posts-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div id="posts-container" class="blog-grid">
             <!-- Posts will load here from blog-data.json -->
         </div>
 
         <!-- Empty State -->
-        <div id="empty-state" class="text-center py-20">
-            <p class="text-4xl mb-4"></p>
-            <p class="text-2xl text-slate-600">תוכן חדש בדרך</p>
-            <p class="text-slate-500 mt-2">אפשר לנסות קטגוריה אחרת, או לפנות אליי לייעוץ מותאם אישית.</p>
+        <div id="empty-state" class="blog-empty">
+            <h2>תוכן חדש בדרך</h2>
+            <p>אפשר לנסות קטגוריה אחרת, או לפנות לענבל לבדיקת התאמה קצרה.</p>
         </div>
     </main>
 
@@ -138,6 +331,28 @@
         let allPosts = [];
         let currentCategory = 'all';
 
+        const navToggle = document.getElementById('site-nav-toggle');
+        const navMenu = document.getElementById('site-nav-menu');
+
+        if (navToggle && navMenu) {
+            const closeMenu = () => {
+                navMenu.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            };
+
+            navToggle.addEventListener('click', () => {
+                const isOpen = navMenu.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+            document.addEventListener('click', event => {
+                if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+                    closeMenu();
+                }
+            });
+        }
+
         fetch('blog-data.json')
             .then(res => res.json())
             .then(data => {
@@ -150,15 +365,15 @@
         function renderCategoryFilters(categories) {
             const container = document.getElementById('category-filters');
             const buttons = categories.map(category => `
-                <button class="category-filter px-4 py-2 rounded-full font-bold transition ${currentCategory === category ? 'bg-emerald-700 text-white' : 'bg-slate-200 text-slate-800'}"
-                    data-category="${category}">
+                <button class="category-filter${currentCategory === category ? ' is-active' : ''}"
+                    type="button" role="tab" aria-selected="${currentCategory === category}" data-category="${category}">
                     ${category}
                 </button>
             `).join('');
 
             container.innerHTML = `
-                <button class="category-filter px-4 py-2 rounded-full font-bold transition ${currentCategory === 'all' ? 'bg-emerald-700 text-white' : 'bg-slate-200 text-slate-800'}"
-                    data-category="all">
+                <button class="category-filter${currentCategory === 'all' ? ' is-active' : ''}"
+                    type="button" role="tab" aria-selected="${currentCategory === 'all'}" data-category="all">
                     הכל
                 </button>
                 ${buttons}
@@ -167,12 +382,12 @@
             document.querySelectorAll('.category-filter').forEach(btn => {
                 btn.addEventListener('click', function () {
                     document.querySelectorAll('.category-filter').forEach(b => {
-                        b.classList.remove('bg-emerald-700', 'text-white');
-                        b.classList.add('bg-slate-200', 'text-slate-800');
+                        b.classList.remove('is-active');
+                        b.setAttribute('aria-selected', 'false');
                     });
 
-                    this.classList.add('bg-emerald-700', 'text-white');
-                    this.classList.remove('bg-slate-200', 'text-slate-800');
+                    this.classList.add('is-active');
+                    this.setAttribute('aria-selected', 'true');
 
                     currentCategory = this.dataset.category;
                     renderPosts();
@@ -203,23 +418,15 @@
 
             emptyState.style.display = 'none';
             container.innerHTML = filtered.map(post => `
-                <article class="h-full overflow-hidden rounded-lg border border-emerald-100 bg-white shadow-lg transition hover:shadow-xl">
-                    <div class="flex h-full flex-col p-8">
-                        <div class="mb-4 flex flex-wrap items-center gap-3">
-                            <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-bold">
-                                ${post.category}
-                            </span>
-                            <span class="whitespace-nowrap text-sm text-slate-500">${formatPostDate(post.date)}</span>
+                <article class="blog-card${post.featured ? ' blog-card--featured' : ''}">
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__category">${post.category}</span>
+                            <span class="blog-card__date">${formatPostDate(post.date)}</span>
                         </div>
-                        <h3 class="text-2xl font-bold text-emerald-900 mb-3"><a href="${post.slug}.html" class="hover:text-emerald-700 transition">
-                                ${post.title}
-                            </a></h3>
-                        <p class="mb-6 flex-1 leading-relaxed text-slate-600">
-                            ${post.excerpt}
-                        </p>
-                        <a href="${post.slug}.html" class="text-emerald-700 font-bold hover:text-emerald-900 transition">
-                            קרא עוד →
-                        </a>
+                        <h2><a href="${post.slug}.html">${post.title}</a></h2>
+                        <p class="blog-card__excerpt">${post.excerpt}</p>
+                        <a href="${post.slug}.html" class="blog-card__link">לקריאת המדריך</a>
                     </div>
                 </article>
             `).join('');

@@ -35,10 +35,7 @@
             margin: 0;
             font-family: 'Assistant', sans-serif;
             color: var(--ink-soft);
-            background:
-                radial-gradient(1200px 600px at 95% -10%, rgba(158, 205, 180, 0.24), transparent 60%),
-                radial-gradient(800px 560px at -8% 20%, rgba(247, 205, 141, 0.22), transparent 58%),
-                var(--bg-main);
+            background: var(--bg-main);
         }
 
         h1,
@@ -91,7 +88,7 @@
             font-size: 1.7rem;
             line-height: 1;
             font-weight: 800;
-            letter-spacing: -0.03em;
+            letter-spacing: 0;
         }
 
         .site-nav__toggle {
@@ -176,36 +173,26 @@
 
         .hero-modern {
             position: relative;
-            min-height: min(860px, calc(100vh - 92px));
-            padding: 1rem 0 2.3rem;
+            min-height: 680px;
+            padding: 0;
             overflow: hidden;
-            --hero-image: url('assets/inbal-hero.jpg');
+            background: #173d35;
+            --hero-image: url('assets/spices-mishmish.webp');
         }
 
         .hero-modern::before {
             content: "";
             position: absolute;
-            inset: 1rem 1rem 0;
-            border-radius: 2rem;
-            background-image:
-                linear-gradient(105deg, rgba(8, 21, 21, 0.72), rgba(11, 35, 32, 0.42) 42%, rgba(11, 35, 32, 0.27) 62%, rgba(11, 35, 32, 0.5)),
-                var(--hero-image);
-            background-size: cover, cover;
-            background-position: center, center 22%;
+            inset: 0;
+            background-image: var(--hero-image);
+            background-size: cover;
+            background-position: center 52%;
             background-repeat: no-repeat;
-            box-shadow: 0 34px 70px -48px rgba(16, 49, 42, 0.85);
+            opacity: 0.3;
         }
 
         .hero-modern::after {
-            content: "";
-            position: absolute;
-            inset: auto -16% 8% auto;
-            width: 290px;
-            height: 290px;
-            border-radius: 999px;
-            background: radial-gradient(circle, rgba(125, 188, 170, 0.35), transparent 70%);
-            filter: blur(10px);
-            pointer-events: none;
+            content: none;
         }
 
         .hero-modern__grid {
@@ -214,42 +201,60 @@
             max-width: 80rem;
             margin-inline: auto;
             padding-inline: 1.2rem;
-            min-height: inherit;
+            min-height: 680px;
             display: grid;
-            align-content: end;
-            gap: 0.9rem;
+            align-items: center;
         }
 
         .hero-modern__content {
             color: #f3f8f6;
-            max-width: 44rem;
-            padding: 2rem 0.25rem 0.7rem;
+            width: min(100%, 42rem);
+            padding: 4rem 0.25rem;
+            justify-self: end;
             animation: riseIn 0.5s ease;
         }
 
         .hero-modern__kicker {
             margin: 0 0 0.75rem;
-            font-size: 0.86rem;
+            font-size: 1rem;
             line-height: 1.2;
-            letter-spacing: 0.16em;
-            text-transform: uppercase;
+            letter-spacing: 0;
             color: #bde8d8;
+            font-weight: 700;
         }
 
         .hero-modern h1 {
             margin: 0;
             color: #ffffff;
-            font-size: clamp(2rem, 7vw, 3.85rem);
-            line-height: 1.1;
-            letter-spacing: -0.015em;
+            max-width: 38rem;
+            font-size: 3.35rem;
+            line-height: 1.08;
+            letter-spacing: 0;
             text-wrap: balance;
         }
 
-        .hero-modern__lead {
+        .hero-modern__owner {
             margin: 1rem 0 0;
+            color: #d9eee7;
+            font-size: 1.15rem;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+
+        .hero-modern__promise {
+            margin: 1.5rem 0 0;
+            color: #ffffff;
+            font-family: 'Heebo', sans-serif;
+            font-size: 1.55rem;
+            line-height: 1.35;
+            font-weight: 800;
+        }
+
+        .hero-modern__lead {
+            margin: 0.55rem 0 0;
             max-width: 35rem;
-            font-size: clamp(1.04rem, 2.3vw, 1.4rem);
-            line-height: 1.7;
+            font-size: 1.15rem;
+            line-height: 1.65;
             color: rgba(247, 254, 252, 0.9);
         }
 
@@ -266,7 +271,7 @@
             align-items: center;
             justify-content: center;
             padding: 0.9rem 1.45rem;
-            border-radius: 999px;
+            border-radius: 0.5rem;
             font-size: 1rem;
             font-weight: 700;
             text-decoration: none;
@@ -295,28 +300,28 @@
         }
 
         .hero-modern__meta {
-            margin-top: 1.45rem;
+            margin-top: 1.25rem;
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.45rem 1.25rem;
         }
 
         .hero-modern__meta a {
-            padding: 0.42rem 0.74rem;
-            border-radius: 999px;
-            background: rgba(240, 253, 249, 0.18);
-            border: 1px solid rgba(229, 254, 247, 0.33);
+            position: relative;
+            padding: 0;
             color: rgba(245, 252, 250, 0.9);
-            font-size: 0.88rem;
-            line-height: 1.2;
-            text-decoration: none;
-            transition: background-color 0.18s ease, border-color 0.18s ease;
+            font-size: 0.95rem;
+            line-height: 1.45;
+            text-decoration: underline;
+            text-underline-offset: 0.2em;
         }
 
-        .hero-modern__meta a:hover,
-        .hero-modern__meta a:focus-visible {
-            background: rgba(240, 253, 249, 0.3);
-            border-color: rgba(229, 254, 247, 0.65);
+        .hero-modern__meta a + a::before {
+            content: "·";
+            position: absolute;
+            inset-inline-start: -0.75rem;
+            text-decoration: none;
+            color: #91cdb9;
         }
 
         .hero-modern__language-links {
@@ -347,7 +352,7 @@
         .hero-modern__panel-kicker {
             margin: 0;
             font-size: 0.78rem;
-            letter-spacing: 0.11em;
+            letter-spacing: 0;
             text-transform: uppercase;
             color: #397766;
             font-weight: 700;
@@ -416,7 +421,7 @@
         .hero-modern__review-stars {
             color: #f59e0b;
             font-size: 1rem;
-            letter-spacing: 0.04em;
+            letter-spacing: 0;
             white-space: nowrap;
         }
 
@@ -441,33 +446,29 @@
         }
 
         .info-strip {
-            position: relative;
-            z-index: 3;
-            max-width: 80rem;
-            margin: -2rem auto 0;
-            padding: 0 1rem;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            border-bottom: 1px solid var(--line-soft);
         }
 
         .info-strip__grid {
+            max-width: 80rem;
+            margin-inline: auto;
             display: grid;
-            gap: 0.8rem;
+            gap: 0;
+            padding-inline: 1rem;
         }
 
         .info-card {
-            background: var(--bg-glass);
-            border: 1px solid var(--line-soft);
-            border-radius: 1rem;
-            padding: 1.15rem;
-            box-shadow: var(--shadow-soft);
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
+            padding: 1.35rem 1rem;
+            border-bottom: 1px solid var(--line-soft);
         }
 
         .info-card__label {
             margin: 0 0 0.4rem;
             font-size: 0.77rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
+            letter-spacing: 0;
             color: #2f7668;
             font-weight: 700;
         }
@@ -485,15 +486,22 @@
 
         .info-card__profile-row {
             display: grid;
-            grid-template-columns: 5.25rem minmax(0, 1fr);
-            align-items: center;
+            grid-template-columns: minmax(0, 1fr) 4.25rem;
+            align-items: start;
             gap: 1rem;
         }
 
+        .info-card__content {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
         .info-card__portrait {
-            width: 5.25rem;
-            height: 5.25rem;
-            border-radius: 0.75rem;
+            grid-column: 2;
+            grid-row: 1;
+            width: 4.25rem;
+            height: 4.25rem;
+            border-radius: 0.5rem;
             object-fit: cover;
             object-position: 58% 35%;
         }
@@ -516,6 +524,167 @@
 
         .info-card__link:hover {
             text-decoration: underline;
+        }
+
+        .clinic-process {
+            padding: 5rem 1rem;
+            background: #ecf7f2;
+            border-bottom: 1px solid #cfe8dd;
+        }
+
+        .clinic-process__shell,
+        .clinic-focus__shell {
+            max-width: 74rem;
+            margin-inline: auto;
+        }
+
+        .section-heading {
+            max-width: 48rem;
+            margin-inline: auto;
+            text-align: center;
+        }
+
+        .section-heading__eyebrow {
+            margin: 0 0 0.65rem;
+            color: #187263;
+            font-size: 0.9rem;
+            font-weight: 800;
+        }
+
+        .section-heading h2 {
+            margin: 0;
+            color: #174a40;
+            font-size: 2.35rem;
+            line-height: 1.2;
+            letter-spacing: 0;
+        }
+
+        .section-heading p:last-child {
+            margin: 0.9rem auto 0;
+            color: #496a62;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .clinic-process__steps {
+            display: grid;
+            gap: 0;
+            max-width: 64rem;
+            margin: 2.5rem auto 0;
+            border-block: 1px solid #b9ddd0;
+        }
+
+        .clinic-process__step {
+            display: grid;
+            grid-template-columns: 3rem minmax(0, 1fr);
+            gap: 1rem;
+            padding: 1.8rem 0;
+        }
+
+        .clinic-process__step + .clinic-process__step {
+            border-top: 1px solid #b9ddd0;
+        }
+
+        .clinic-process__number {
+            color: #14806d;
+            font-family: 'Heebo', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+        }
+
+        .clinic-process__step h3 {
+            margin: 0;
+            color: #174a40;
+            font-size: 1.55rem;
+            line-height: 1.3;
+        }
+
+        .clinic-process__step p {
+            margin: 0.5rem 0 0;
+            color: #496a62;
+            line-height: 1.65;
+        }
+
+        .clinic-process__followup {
+            max-width: 64rem;
+            margin: 1.25rem auto 0;
+            color: #365950;
+            line-height: 1.65;
+        }
+
+        .clinic-process__followup strong {
+            color: #174a40;
+        }
+
+        .clinic-process__cta {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .clinic-process__cta a {
+            display: inline-flex;
+            min-height: 3rem;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.4rem;
+            border-radius: 0.5rem;
+            background: #176b5b;
+            color: #ffffff;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .clinic-focus {
+            padding: 5rem 1rem;
+            background: #f8f7f3;
+        }
+
+        .clinic-focus__grid {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .clinic-focus__item {
+            display: flex;
+            flex-direction: column;
+            padding: 1.6rem;
+            border: 1px solid #d9e5df;
+            border-radius: 0.5rem;
+            background: #ffffff;
+        }
+
+        .clinic-focus__item h3 {
+            margin: 0;
+            color: #174a40;
+            font-size: 1.4rem;
+            line-height: 1.3;
+        }
+
+        .clinic-focus__item p {
+            margin: 0.65rem 0 1rem;
+            color: #496a62;
+            line-height: 1.65;
+        }
+
+        .clinic-focus__item a {
+            margin-top: auto;
+            padding-top: 0.9rem;
+            border-top: 1px solid #e1ebe6;
+            color: #176b5b;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .clinic-focus__item a:hover {
+            text-decoration: underline;
+        }
+
+        .clinic-focus__note {
+            margin: 1.5rem auto 0;
+            text-align: center;
+            color: #5a716b;
         }
 
         .persian-home {
@@ -620,7 +789,7 @@
         .reviews-live__shell {
             background: #ffffff;
             border: 1px solid rgba(30, 103, 88, 0.16);
-            border-radius: 1.35rem;
+            border-radius: 0.5rem;
             padding: 1.4rem 1.4rem 1.6rem;
             box-shadow: 0 20px 40px -34px rgba(15, 61, 53, 0.5);
         }
@@ -649,29 +818,24 @@
         }
 
         .reviews-track-wrap {
-            overflow: hidden;
+            overflow-x: auto;
+            overflow-y: hidden;
             margin-top: 1rem;
-            direction: ltr; /* Ensure track starts at left so negative translation pulls content in correctly */
-            -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-            mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+            direction: rtl;
+            scrollbar-color: #8ebeb0 #edf5f2;
+            scrollbar-width: thin;
         }
 
         .reviews-track {
-            direction: ltr; /* Stack sets Left-to-Right so negative translation pulls Set 2 into view */
+            direction: rtl;
             display: flex;
             gap: 1rem;
             width: max-content;
-            padding-inline-end: 1rem; /* Ensure track is exactly 2 units long for seamless loop */
-            animation: scrollReviews 55s linear infinite;
+            padding: 0 0 0.75rem;
         }
 
-        .reviews-track:hover {
-            animation-play-state: paused;
-        }
-
-        @keyframes scrollReviews {
-            from { transform: translateX(-50%); }
-            to   { transform: translateX(0); }
+        .review-card[aria-hidden="true"] {
+            display: none;
         }
 
         .review-card {
@@ -680,7 +844,7 @@
             flex-shrink: 0;
             background: #f7faf9;
             border: 1px solid rgba(20, 90, 76, 0.12);
-            border-radius: 1rem;
+            border-radius: 0.5rem;
             padding: 1.1rem 1.25rem;
             display: flex;
             flex-direction: column;
@@ -716,7 +880,7 @@
         .review-card__stars {
             color: #f59e0b;
             font-size: 0.95rem;
-            letter-spacing: 0.05em;
+            letter-spacing: 0;
         }
 
         .review-card__date {
@@ -740,7 +904,7 @@
             display: inline-block;
             padding: 0.65rem 1.6rem;
             border: 1.5px solid #2f7668;
-            border-radius: 2rem;
+            border-radius: 0.5rem;
             color: #1a6b5a;
             font-weight: 700;
             font-size: 0.95rem;
@@ -767,7 +931,7 @@
             align-items: center;
             padding: 1.5rem;
             border: 1px solid #d1fae5;
-            border-radius: 1.5rem;
+            border-radius: 0.5rem;
             background: #fff;
             box-shadow: 0 12px 26px rgba(15, 118, 110, 0.08);
         }
@@ -776,7 +940,7 @@
             width: min(100%, 16rem);
             height: 11rem;
             margin-inline: auto;
-            border-radius: 1rem;
+            border-radius: 0.5rem;
             object-fit: cover;
             object-position: center 42%;
         }
@@ -806,6 +970,12 @@
             transition: background-color 0.2s ease, color 0.2s ease;
         }
 
+        .rounded-xl,
+        .rounded-2xl,
+        .rounded-3xl {
+            border-radius: 0.5rem !important;
+        }
+
         .levinsky-home-card__button--primary {
             background: #065f46;
             color: #fff;
@@ -826,18 +996,42 @@
 
         @media (max-width: 63.99rem) {
             .hero-modern::before {
-                background-image:
-                    linear-gradient(180deg, rgba(8, 21, 21, 0.46) 0%, rgba(11, 35, 32, 0.26) 40%, rgba(11, 35, 32, 0.65) 100%),
-                    var(--hero-image);
-                background-size: cover, contain;
-                background-position: center, center top;
-                background-color: #122321;
+                background-image: var(--hero-image);
+                background-size: cover;
+                background-position: center 52%;
+                opacity: 0.26;
             }
         }
 
         @media (min-width: 50rem) {
             .info-strip__grid {
-                grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .info-card {
+                border-bottom: 0;
+                border-inline-start: 1px solid var(--line-soft);
+            }
+
+            .info-card:first-child {
+                border-inline-start: 0;
+            }
+
+            .clinic-process__steps {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .clinic-process__step {
+                padding: 2rem 2.25rem;
+            }
+
+            .clinic-process__step + .clinic-process__step {
+                border-top: 0;
+                border-inline-start: 1px solid #b9ddd0;
+            }
+
+            .clinic-focus__grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
             }
 
             .persian-home__title {
@@ -909,21 +1103,62 @@
             }
 
             .hero-modern {
-                padding: 1.15rem 0 2.8rem;
+                min-height: min(760px, calc(100svh - 72px));
             }
 
             .hero-modern__grid {
-                grid-template-columns: minmax(0, 1.2fr) minmax(17rem, 0.8fr);
-                align-content: center;
-                gap: 1rem;
+                min-height: min(760px, calc(100svh - 72px));
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 49.99rem) {
+            .hero-modern,
+            .hero-modern__grid {
+                min-height: 680px;
             }
 
-            .hero-modern__panel {
-                margin-bottom: 0.8rem;
+            .hero-modern__grid {
+                align-items: end;
             }
 
-            .quick-path__shell {
-                padding: 1.6rem;
+            .hero-modern__content {
+                padding: 3rem 0.15rem 2.75rem;
+            }
+
+            .hero-modern h1 {
+                font-size: 2.35rem;
+            }
+
+            .hero-modern__promise {
+                font-size: 1.3rem;
+            }
+
+            .hero-modern__lead {
+                font-size: 1.05rem;
+            }
+
+            .hero-modern__actions {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .hero-modern .btn-primary,
+            .hero-modern .btn-secondary {
+                width: 100%;
+            }
+
+            .hero-modern__meta a + a::before {
+                content: none;
+            }
+
+            .section-heading h2 {
+                font-size: 1.9rem;
+            }
+
+            .clinic-process,
+            .clinic-focus {
+                padding-block: 4rem;
             }
         }
 
@@ -1113,158 +1348,121 @@
     <section id="hero" class="hero-modern">
         <div class="hero-modern__grid">
             <div class="hero-modern__content">
-                <p class="hero-modern__kicker">קליניקת איורוודה בתל אביב</p>
-                <h1>קליניקת איורוודה ורפואה פרסית בתל אביב עם ענבל הנסב</h1>
+                <p class="hero-modern__kicker">VEDICA | קליניקה בתל אביב</p>
+                <h1>קליניקת איורוודה ורפואה פרסית בתל אביב</h1>
+                <p class="hero-modern__owner">עם ענבל הנסב, מטפלת מוסמכת ומייסדת VEDICA</p>
+                <p class="hero-modern__promise">אבחון ותוכנית אישית בשתי פגישות</p>
                 <p class="hero-modern__lead">
-                    בשתי פגישות נבין לעומק את התמונה הגופנית ונבנה תוכנית אישית עם תזונה, חליטות, צמחי מרפא והרגלים שמתאימים לשגרה שלך.
+                    בפגישה הראשונה נכיר לעומק את התמונה הגופנית. בפגישה השנייה תקבלו תוכנית מעשית עם תזונה, חליטות, צמחי מרפא והרגלים שמתאימים לשגרה שלכם.
                 </p>
                 <div class="hero-modern__actions">
                     <a id="whatsapp-link" href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%95%D7%93%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D" target="_blank" rel="noopener noreferrer" class="btn-primary">
                         בדיקת התאמה בוואטסאפ
                     </a>
-                    <a href="clinic.html" class="btn-secondary">לפרטי הקליניקה</a>
+                    <a href="clinic.html#two-meeting-plan" class="btn-secondary">איך עובדות שתי הפגישות</a>
                 </div>
                 <div class="hero-modern__meta">
-                    <a href="clinic.html#two-meeting-plan">אבחון ותוכנית בשתי פגישות</a>
                     <a href="clinic.html#between-meetings-support">ליווי אישי בין הפגישות</a>
                     <a href="https://www.google.com/maps/search/?api=1&amp;query=ארלוזורוב+82+תל+אביב" target="_blank" rel="noopener noreferrer">ארלוזורוב 82, תל אביב</a>
+                    <a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer">20 חוות דעת מאומתות ב-Infomed</a>
                 </div>
-                <p class="hero-modern__language-links" lang="en" dir="ltr">
-                    English pages:
-                    <a href="english-speaking-ayurveda-clinic-tel-aviv.html" hreflang="en">Ayurveda clinic in Tel Aviv</a>
-                    ·
-                    <a href="levinsky-market-food-tour.html" hreflang="en">Levinsky Market food & wellness tour</a>
-                </p>
             </div>
-            <aside class="hero-modern__panel">
-                <p class="hero-modern__panel-kicker">איך מתחילים</p>
-                <h2>בדיקת התאמה מהירה</h2>
-                <ol>
-                    <li>שולחים הודעה קצרה עם סיבת הפנייה</li>
-                    <li>בודקים אם הליווי מתאים למצב ולציפיות</li>
-                    <li>אם יש התאמה, קובעים את פגישת האבחון הראשונה</li>
-                </ol>
-                <a href="contact.html" class="hero-modern__panel-link">לקביעת שיחה ראשונית</a>
-                <div class="hero-modern__review" aria-label="תקציר תהליך האבחון">
-                    <p class="hero-modern__review-score">
-                        <span class="hero-modern__review-stars">01 → 02</span>
-                        <span>משתי פגישות לתוכנית אישית</span>
-                    </p>
-                    <p class="hero-modern__review-quote">
-                        בפגישה הראשונה מבינים את התמונה הרחבה. בפגישה השנייה מקבלים תוכנית אישית שאפשר להתחיל ליישם.
-                    </p>
-                    <a href="clinic.html#two-meeting-plan" class="hero-modern__review-source">לראות איך התהליך עובד</a>
-                </div>
-            </aside>
         </div>
     </section>
 
     <!-- Entity Clarity Section -->
     <section class="info-strip">
         <div class="info-strip__grid">
-            <article class="info-card info-card--profile">
+            <article class="info-card">
                 <p class="info-card__label">מי מלווה</p>
-                <div class="info-card__profile-row">
-                    <img src="assets/spices-market.webp" alt="ענבל הנסב, מייסדת קליניקת VEDICA" class="info-card__portrait" loading="lazy">
-                    <div class="info-card__content">
-                        <p><strong>ענבל הנסב</strong>, מטפלת מוסמכת באיורוודה וברפואה פרסית, ומייסדת קליניקת VEDICA בתל אביב.</p>
-                        <a href="about.html" class="info-card__link">להכיר את ענבל והדרך המקצועית</a>
-                    </div>
-                </div>
+                <p><strong>ענבל הנסב</strong>, מטפלת מוסמכת באיורוודה וברפואה פרסית ומייסדת VEDICA.</p>
+                <a href="about.html" class="info-card__link">להכיר את ענבל והדרך המקצועית</a>
             </article>
             <article class="info-card">
-                <p class="info-card__label">מה מקבלים</p>
-                <p>
-                    תוכנית אישית עם תזונה, חליטות, צמחי מרפא והרגלי שגרה, לצד אפשרות לדייק את התוכנית לפי הצורך.
-                </p>
+                <p class="info-card__label">שתי פגישות</p>
+                <p>אבחון מעמיק ולאחריו תוכנית אישית שאפשר להתחיל ליישם.</p>
+                <a href="clinic.html#two-meeting-plan" class="info-card__link">לפרטי התהליך</a>
             </article>
             <article class="info-card">
-                <p class="info-card__label">איפה זה קורה</p>
-                <p>
-                        קליניקת <strong>VEDICA</strong> בקליניקת "מרחבים", ארלוזורוב 82, תל אביב.
-                </p>
+                <p class="info-card__label">קליניקה בתל אביב</p>
+                <p>קליניקת "מרחבים", ארלוזורוב 82.</p>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=ארלוזורוב+82+תל+אביב" target="_blank" rel="noopener noreferrer" class="info-card__link">פתיחה ב-Google Maps</a>
+            </article>
+            <article class="info-card">
+                <p class="info-card__label">חוות דעת מאומתות</p>
+                <p><strong>5 כוכבים</strong> ב-20 חוות דעת בפרופיל Infomed.</p>
+                <a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer" class="info-card__link">לקריאת כל חוות הדעת</a>
             </article>
         </div>
     </section>
 
     <!-- Process Preview -->
-    <section class="bg-emerald-50 py-20 border-y border-emerald-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center mb-12">
-                <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-4">תהליך הקליניקה</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">איך קובעים פגישה ומתחילים ליווי</h2>
-                <p class="text-lg text-slate-600 leading-relaxed">
-                    העבודה בקליניקה בנויה בשלבים ברורים, כדי לאפשר היכרות מעמיקה, התאמה אישית וליווי לאורך הדרך.
-                </p>
+    <section class="clinic-process">
+        <div class="clinic-process__shell">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">תהליך הקליניקה</p>
+                <h2>בשתי פגישות יוצאים לדרך עם תוכנית ברורה</h2>
+                <p>האבחון והתוכנית מופרדים כדי לאפשר לענבל לעבור על התמונה המלאה ולבנות המלצות מדויקות, במקום לתת תשובה כללית במקום.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
-                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב ראשון</p>
-                    <h3 class="text-2xl font-bold text-emerald-900">פגישת אבחון</h3>
-                    <p class="text-slate-700 leading-relaxed">
-                        בפגישה הראשונה נערוך היכרות ותשאול מעמיק, אבחון דופק ובדיקה של העיכול, השינה, האנרגיה ושגרת החיים.
-                    </p>
-                </div>
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
-                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב שני</p>
-                    <h3 class="text-2xl font-bold text-emerald-900">תוכנית אישית</h3>
-                    <p class="text-slate-700 leading-relaxed">
-                        בפגישה השנייה תקבלו תוכנית שמחברת בין תזונה, צמחי מרפא, חליטות והרגלי שגרה, עם המלצות שאפשר ליישם בחיי היום־יום.
-                    </p>
-                </div>
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
-                    <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase">שלב שלישי</p>
-                    <h3 class="text-2xl font-bold text-emerald-900">מעקב וליווי לפי הצורך</h3>
-                    <p class="text-slate-700 leading-relaxed">
-                        לפי הצורך ובהתאם לבקשת המטופל או המטופלת, אפשר לקבוע פגישת מעקב כדי לדייק את התוכנית, לבדוק התקדמות ולקבל מענה לשאלות.
-                    </p>
-                </div>
+            <div class="clinic-process__steps">
+                <article class="clinic-process__step">
+                    <span class="clinic-process__number">01</span>
+                    <div>
+                        <h3>פגישת אבחון</h3>
+                        <p>היכרות ותשאול מעמיק, אבחון דופק ובחינה של העיכול, השינה, האנרגיה, העומס ושגרת החיים.</p>
+                    </div>
+                </article>
+                <article class="clinic-process__step">
+                    <span class="clinic-process__number">02</span>
+                    <div>
+                        <h3>תוכנית אישית</h3>
+                        <p>תוכנית מעשית שיכולה לשלב תזונה, חליטות, צמחי מרפא והרגלים, עם הסבר איך להתחיל ליישם אותה.</p>
+                    </div>
+                </article>
             </div>
+            <p class="clinic-process__followup"><strong>אחר כך, לפי הצורך:</strong> אפשר להמשיך בליווי בין הפגישות ולקבוע פגישת מעקב כדי לדייק את התוכנית ולענות על שאלות שעולות בדרך.</p>
+            <div class="clinic-process__cta"><a href="clinic.html#two-meeting-plan">לראות מה כולל האבחון</a></div>
         </div>
     </section>
 
     <!-- Fit Section -->
-    <section class="max-w-7xl mx-auto px-4 py-20">
-        <div class="max-w-3xl mx-auto text-center mb-12">
-            <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-4">תחומי ליווי מרכזיים</p>
-            <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">באילו מצבים אני מלווה בקליניקה</h2>
-            <p class="text-lg text-slate-600 leading-relaxed">
-                הליווי בקליניקה מתמקד בכמה תחומים מרכזיים, מתוך התאמה אישית למצב הגופני, לאורח החיים ולשלב שבו אתם נמצאים.
-            </p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <article class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-5">
-                <h3 class="text-2xl font-bold text-emerald-900">פוריות ושימור פוריות</h3>
-                <p class="text-slate-700 leading-relaxed">
+    <section class="clinic-focus">
+        <div class="clinic-focus__shell">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">תחומי ליווי מרכזיים</p>
+                <h2>באילו מצבים ענבל מלווה בקליניקה</h2>
+                <p>
+                    הליווי בקליניקה מתמקד בכמה תחומים מרכזיים, מתוך התאמה אישית למצב הגופני, לאורח החיים ולשלב שבו אתם נמצאים.
+                </p>
+            </div>
+            <div class="clinic-focus__grid">
+            <article class="clinic-focus__item">
+                <h3>פוריות ושימור פוריות</h3>
+                <p>
                     ליווי משלים בהליכי פוריות, הכנה לסבבים ותמיכה בשימור פוריות, תוך התאמה אישית למצב הגופני ולשגרת החיים.
                 </p>
-                <div class="mt-auto pt-4 border-t border-emerald-100">
-                    <a href="clinic.html" class="font-bold text-emerald-800 hover:underline">לפרטים על הליווי בקליניקה</a>
-                </div>
+                <a href="clinic.html">לפרטים על הליווי בקליניקה</a>
             </article>
-            <article class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-5">
-                <h3 class="text-2xl font-bold text-emerald-900">עיכול ואיזון הורמונלי</h3>
-                <p class="text-slate-700 leading-relaxed">
+            <article class="clinic-focus__item">
+                <h3>עיכול ואיזון הורמונלי</h3>
+                <p>
                     התאמות תזונה ושגרה במקרים של רגישות במערכת העיכול ואי־נוחות חוזרת, לצד ליווי סביב איזון הורמונלי ושמירה על בריאות העצם.
                 </p>
-                <div class="mt-auto pt-4 border-t border-emerald-100">
-                    <a href="blog-dosha-diagnosis-tel-aviv.html" class="font-bold text-emerald-800 hover:underline">לקרוא על אבחון והתאמה אישית</a>
-                </div>
+                <a href="blog-dosha-diagnosis-tel-aviv.html">לקרוא על אבחון והתאמה אישית</a>
             </article>
-            <article class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-5">
-                <h3 class="text-2xl font-bold text-emerald-900">סטרס, שינה ועייפות</h3>
-                <p class="text-slate-700 leading-relaxed">
+            <article class="clinic-focus__item">
+                <h3>סטרס, שינה ועייפות</h3>
+                <p>
                     ליווי במצבים של עייפות, סטרס, שינה לא רציפה ותחושת חולשה חוזרת, עם שינויים שאפשר לשלב בהדרגה בחיי היום־יום.
                 </p>
-                <div class="mt-auto pt-4 border-t border-emerald-100">
-                    <a href="blog-stress-sleep-ayurveda.html" class="font-bold text-emerald-800 hover:underline">לקרוא על הגישה לשינה וסטרס</a>
-                </div>
+                <a href="blog-stress-sleep-ayurveda.html">לקרוא על הגישה לשינה וסטרס</a>
             </article>
-        </div>
-        <div class="mt-10 text-center text-slate-600">
+            </div>
+        <div class="clinic-focus__note">
             לצד הליווי האישי בקליניקה, אפשר להכיר גם את
-            <a href="workshops.html" class="font-bold text-emerald-800 hover:underline">סדנאות</a>
-            ולהצטרף ל<a href="tours.html" class="font-bold text-emerald-800 hover:underline">סיורים</a>.
+            <a href="workshops.html">הסדנאות</a>
+            ולהצטרף ל<a href="tours.html">סיורים</a>.
+        </div>
         </div>
     </section>
 
@@ -1292,66 +1490,6 @@
             <div class="persian-home__actions">
                 <a href="contact.html" class="persian-home__action persian-home__action--primary">לבדיקת התאמה קצרה</a>
                 <a href="persian-medicine.html" class="persian-home__action">לקריאה על השילוב עם רפואה פרסית</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="levinsky-home-card">
-        <div class="levinsky-home-card__inner">
-            <img src="assets/inbal-market.jpg" alt="סיור צמחי מרפא ותבלינים בשוק לוינסקי" class="levinsky-home-card__image" loading="lazy">
-            <div class="levinsky-home-card__content">
-                <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-3">סיורי צמחי מרפא</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">סיור אוכל, צמחי מרפא וקולינריה בשוק לוינסקי</h2>
-                <p class="text-lg text-slate-700 leading-relaxed mb-6">
-                    סיור קולינרי בעברית או באנגלית לקבוצות, יחידים והגיל השלישי, שמחבר בין שוק לוינסקי, קולינריה, תרבות איראנית, תזונה הודית, איורוודה וחליטות שאפשר לקחת הביתה לשגרת היום-יום. מחיר ליחיד 220 ₪, מחיר לקבוצות 180 ₪ למשתתף, ואפשרות לחבילת ארוחת צהריים לקבוצות לפי דרישה.
-                </p>
-                <div class="levinsky-home-card__actions">
-                    <a href="tours.html" class="levinsky-home-card__button levinsky-home-card__button--primary">סיור צמחי מרפא בשוק לוינסקי</a>
-                    <a href="levinsky-market-food-tour.html" hreflang="en" lang="en" dir="ltr" class="levinsky-home-card__button levinsky-home-card__button--secondary">Levinsky Market food tour in English</a>
-                    <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A1%D7%99%D7%95%D7%A8%20%D7%A6%D7%9E%D7%97%D7%99%20%D7%9E%D7%A8%D7%A4%D7%90" target="_blank" rel="noopener noreferrer" class="levinsky-home-card__button levinsky-home-card__button--secondary">תיאום סיור בוואטסאפ</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Section -->
-    <section class="bg-emerald-50 py-20 border-t border-emerald-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center mb-12">
-                <p class="text-sm font-bold tracking-widest text-emerald-700 uppercase mb-4">למה VEDICA</p>
-                <h2 class="text-3xl font-bold text-emerald-900 mb-4">מה חשוב לדעת לפני שקובעים</h2>
-                <p class="text-lg text-slate-600 leading-relaxed">הנה כמה נקודות מרכזיות על ההכשרה, התהליך והמסגרת שבה מתקיים הליווי בקליניקה.</p>
-            </div>
-            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
-                    <h3 class="text-2xl font-bold text-emerald-900">הכשרה מקצועית</h3>
-                    <p class="text-slate-700 leading-relaxed">ענבל היא בוגרת בית הספר PranaVeda ללימודי איורוודה, מתמחה בהתאמת תזונה אישית למבנה המולד ובשילוב צמחי מרפא, וחברה פעילה בעמותה לקידום הרפואה האיורוודית בישראל.</p>
-                    <p class="text-slate-700 leading-relaxed">למידע על השירות המשפטי הנפרד בתחום ייפוי כוח מתמשך בתל אביב: <a href="https://inbalhanasab.co.il/" target="_blank" rel="me noopener noreferrer" class="font-bold text-emerald-800 hover:underline">inbalhanasab.co.il</a>.</p>
-                    <div class="mt-auto pt-4 border-t border-emerald-100">
-                        <a href="about.html" class="font-bold text-emerald-800 hover:underline">לפרטי ההכשרה המלאים</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
-                    <h3 class="text-2xl font-bold text-emerald-900">אבחון יסודי</h3>
-                    <p class="text-slate-700 leading-relaxed">האבחון נפרס על פני שתי פגישות וכולל תשאול מעמיק, אבחון דופק מסורתי ובניית תוכנית אישית שאפשר להתחיל ליישם.</p>
-                    <div class="mt-auto pt-4 border-t border-emerald-100">
-                        <a href="clinic.html" class="font-bold text-emerald-800 hover:underline">לראות מה כולל האבחון</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
-                    <h3 class="text-2xl font-bold text-emerald-900">תהליך טיפולי מסודר</h3>
-                    <p class="text-slate-700 leading-relaxed">אחרי האבחון נבנית תוכנית אישית שכוללת תזונה, צמחי מרפא, חליטות והנחיות לשגרה. פגישת מעקב מתקיימת לפי הצורך ובהתאם לבקשת המטופל או המטופלת.</p>
-                    <div class="mt-auto pt-4 border-t border-emerald-100">
-                        <a href="process.html" class="font-bold text-emerald-800 hover:underline">לראות את שלבי התהליך</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-sm border border-emerald-100 flex flex-col gap-4">
-                    <h3 class="text-2xl font-bold text-emerald-900">ליווי גם בין הפגישות</h3>
-                    <p class="text-slate-700 leading-relaxed">במהלך התהליך אפשר לפנות לענבל גם בין הפגישות, כשעולות שאלות על ההמלצות, היישום או התאמות שנדרשות בדרך.</p>
-                    <div class="mt-auto pt-4 border-t border-emerald-100">
-                        <a href="contact.html" class="font-bold text-emerald-800 hover:underline">ליצירת קשר</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
