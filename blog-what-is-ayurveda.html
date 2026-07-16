@@ -12,6 +12,7 @@
     <meta property="og:type" content="article">
     <meta property="og:locale" content="he_IL">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/modern-shared.css">
     <style>
         body { font-family: 'Assistant', sans-serif; background-color: #fdfbf7; }
         article p { line-height: 1.8; margin-bottom: 1.5rem; }
@@ -26,7 +27,7 @@
       "headline": "מה זה איורוודה ואיך זה עובד? מדריך בהיר למי שרוצים להבין את השיטה",
       "description": "היכרות מסודרת עם עקרונות האיורוודה, הדושות, האבחון והאופן שבו משלבים תזונה, אורח חיים וצמחי מרפא בצורה אחראית.",
       "datePublished": "2026-03-16",
-      "dateModified": "2026-07-14",
+      "dateModified": "2026-07-17",
       "inLanguage": "he-IL",
       "author": {
         "@type": "Person",
@@ -50,7 +51,8 @@
                 <img id="site-logo" src="assets/logo-transparent.webp" alt="Logo" class="site-nav__logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logo-transparent.png';">
                 <span class="site-nav__name">VEDICA</span>
             </a>
-            <div class="site-nav__menu" style="scrollbar-width: none;">
+            <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
+            <div id="site-nav-menu" class="site-nav__menu" style="scrollbar-width: none;">
                 <a href="index.html" class="site-nav__link">בית</a>
                 <a href="about.html" class="site-nav__link">אודות</a>
                 <a href="blog.html" class="site-nav__link site-nav__link--active">בלוג</a>
@@ -68,16 +70,16 @@
         <div class="mb-12">
             <div class="flex items-center gap-4 mb-4">
                 <span class="bg-emerald-100 text-emerald-800 px-4 py-1 rounded-full text-sm font-bold">יסודות האיורוודה</span>
-                <span class="text-slate-500 text-sm">מאת <a href="about.html" class="font-bold text-emerald-800 hover:underline">ענבל הנסב</a> · פורסם 16.03.2026 · עודכן 14.07.2026</span>
+                <span class="text-slate-500 text-sm">מאת <a href="about.html" class="font-bold text-emerald-800 hover:underline">ענבל הנסב</a> · פורסם 16.03.2026 · עודכן 17.07.2026</span>
             </div>
-            <h1 class="text-4xl md:text-5xl font-bold text-emerald-900 mb-4">מה זה איורוודה ואיך זה עובד? מדריך בהיר למי שרוצים להבין את השיטה</h1>
-            <p class="text-xl text-slate-600 leading-relaxed">אם המילה "איורוודה" עולה שוב ושוב ואתם עדיין לא בטוחים מה עומד מאחוריה, זה המקום להתחיל. בלי מיסטיקה מיותרת ובלי סיסמאות, אלא דרך מסודרת להבין איך הגישה חושבת על הגוף ועל תהליך האיזון.</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-emerald-900 mb-4">מה זה איורוודה ואיך משתמשים בה בפועל?</h1>
+            <p class="text-xl text-slate-600 leading-relaxed">איורוודה מחברת בין תזונה, שינה ושגרה. הנה איך משתמשים בה בקליניקה, ומה גבולות הראיות.</p>
         </div>
 
         <img src="assets/inbal-hero.webp" alt="איורוודה וקליניקת VEDICA בתל אביב" class="w-full rounded-2xl shadow-lg mb-12 object-cover h-96" loading="lazy" onerror="this.onerror=null;this.src='assets/inbal-hero.jpg';">
 
         <article class="prose prose-lg max-w-none">
-            <p>איורוודה היא מסורת רפואית שמקורה בהודו, ושמה פירושו "מדע החיים". בפועל, זו דרך הסתכלות שמנסה להבין את האדם כמכלול אחד: עיכול, שינה, אנרגיה, מצב רגשי, רוטינה, תיאבון, רגישויות, מחזורי חיים והרגלים יומיומיים. במקום לשאול רק "מה הסימפטום?", איורוודה שואלת "איזה דפוס יוצר אותו ומה מחזיק אותו".</p>
+            <p>איורוודה היא מסורת רפואית שמקורה בהודו, ושמה מתורגם בדרך כלל ל"מדע החיים". היא מחברת בין תזונה, שגרת יום, שינה, תנועה ושימוש מסורתי בצמחי מרפא. בקליניקה משתמשים בעקרונות האלה כמסגרת להתאמה אישית, ולא כתחליף לבדיקות או לאבחנה רפואית.</p>
 
             <h2>אז מה ההבדל בין איורוודה לבין עצות בריאות רגילות?</h2>
             <p>עצות כלליות מדברות בדרך כלל על מה "נכון לכולם". איורוודה יוצאת מנקודת הנחה שלא כל מה שטוב לאדם אחד ישרת גם אדם אחר. מזון מסוים יכול להיות מצוין למישהי אחת ולהכביד על מישהי אחרת. אותו דבר לגבי צום, פעילות, שעות שינה, תבלינים ואפילו שגרת בוקר. ההתאמה האישית היא לא תוספת נחמדה, אלא הבסיס.</p>
@@ -102,8 +104,25 @@
             <h2>איך זה נראה בפגישה בקליניקה?</h2>
             <p>בפגישה לא מסתפקים ברשימת תלונות. בודקים את הרקע הרחב: איך אתם ישנים, מתי יש רעב, איך נראית האנרגיה לאורך היום, מה קורה במערכת העיכול, האם יש עומס נפשי, אילו דפוסים חוזרים, ואיך נראה אורח החיים בפועל. בקליניקה אני משלבת תשאול מקיף, אבחון דופק מסורתי והתבוננות על התמונה המלאה כדי לבנות כיוון עבודה ברור.</p>
 
-            <h2>מה כולל טיפול איורוודי?</h2>
-            <p>הטיפול יכול לכלול התאמות תזונה, שינויים קטנים אבל מדויקים ברוטינה, צמחי מרפא מתאימים, תמיכה בשינה, הרגעה של מערכת העצבים, חיזוק העיכול והפחתת עומס. הרעיון אינו להעמיס עוד משימות, אלא לבחור את הדברים שיש להם הכי הרבה השפעה על המצב הנוכחי.</p>
+            <h2>איך משתמשים בעקרונות האיורוודה בפועל?</h2>
+            <div class="grid gap-4 md:grid-cols-2 my-8">
+                <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+                    <h3 class="text-xl font-bold text-emerald-900 mb-2">תיעוד דפוסים</h3>
+                    <p class="mb-0">בודקים מתי התסמין מופיע, מה קדם לו ומה משתנה יחד איתו — למשל ארוחה, שינה, עומס או מחזור.</p>
+                </div>
+                <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+                    <h3 class="text-xl font-bold text-emerald-900 mb-2">תזונה מותאמת</h3>
+                    <p class="mb-0">בוחנים מה אוכלים בפועל, אילו ארוחות מכבידות ואיזה שינוי קטן אפשר לבדוק בלי להתחיל תפריט קיצוני.</p>
+                </div>
+                <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+                    <h3 class="text-xl font-bold text-emerald-900 mb-2">שגרת יום ושינה</h3>
+                    <p class="mb-0">עובדים על זמני ארוחות, מנוחה, תנועה ושעות ערב בהתאם למה שאפשר להחזיק בחיים עצמם.</p>
+                </div>
+                <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+                    <h3 class="text-xl font-bold text-emerald-900 mb-2">צמחים בזהירות</h3>
+                    <p class="mb-0">צמחי מרפא נשקלים רק לאחר מעבר על תרופות, תוספים, בדיקות ורקע רפואי, ובמידת הצורך בתיאום עם הצוות המטפל.</p>
+                </div>
+            </div>
 
             <h2>איך בודקים אם התוכנית באמת מועילה?</h2>
             <p>לא מסתפקים בתחושה כללית של "יותר מאוזן". בוחרים שניים או שלושה מדדים שאפשר לעקוב אחריהם: מספר יקיצות בלילה, רמת אנרגיה בשעה קבועה, תדירות יציאות, נפיחות אחרי הארוחה המרכזית או היכולת לעבור את אחר הצהריים בלי עוד קפה. מעקב קצר עוזר להבין מה עובד ומה דורש שינוי, בלי להפוך את היום לפרויקט מדידה.</p>
@@ -116,17 +135,26 @@
                 <ul class="list-disc list-inside space-y-2 text-slate-700">
                     <li>כשיש בעיות עיכול, נפיחות, עצירות או כבדות שחוזרות שוב ושוב.</li>
                     <li>כשהמערכת עצבנית, יש סטרס, קושי להירגע או שינה לא יציבה.</li>
-                    <li>בשלבים של חוסר איזון הורמונלי, הכנה לפוריות או ליווי IVF.</li>
-                    <li>כשיש תחושה שהגוף מבקש גישה עמוקה ומסודרת יותר, לא רק עוד טיפ נקודתי.</li>
+                    <li>בתקופות של שינוי במחזור, פרימנופאוזה, הכנה לפוריות או ליווי IVF, במקביל למעקב הרפואי.</li>
+                    <li>כשרוצים לעקוב בצורה מסודרת אחרי הקשר בין תסמינים לבין האוכל והשגרה.</li>
                 </ul>
             </div>
 
             <h2>האם איורוודה מחליפה רפואה קונבנציונלית?</h2>
-            <p>לא. בעבודה אחראית, איורוודה פועלת כתמיכה משלימה ולא במקום מעקב רפואי. במצבים רבים היא יכולה לחזק את הקרקע שעליה הגוף פועל: עיכול טוב יותר, שינה יציבה יותר, עומס נמוך יותר ויכולת התמדה גבוהה יותר. אבל היא אינה תחליף לאבחון רפואי או לטיפול נחוץ.</p>
+            <p>לא. בעבודה אחראית, איורוודה פועלת כתמיכה משלימה ולא במקום מעקב רפואי. היא יכולה לעזור לארגן תזונה, שינה, תנועה ומעקב אחר תסמינים, אבל אינה מאבחנת מחלה ואינה מחליפה טיפול נחוץ.</p>
 
             <h2>איך יודעים אם זה מתאים דווקא לכם?</h2>
-            <p>אם אתם מחפשים גישה אישית, סבלנית ומעמיקה שמסתכלת גם על היומיום וגם על הרקע הרחב, סביר להניח שתמצאו באיורוודה ערך. אם אתם רוצים פתרון קסם מיידי בלי לשנות דבר, זו כנראה לא תהיה הגישה הנכונה. היתרון של איורוודה הוא לא בקיצור דרך, אלא בדרך חכמה ואישית יותר.</p>
-            <p class="text-sm text-slate-600"><strong>מקור להעמקה:</strong> <a href="https://www.nccih.nih.gov/health/ayurvedic-medicine-in-depth" target="_blank" rel="noopener noreferrer">Ayurvedic Medicine: In Depth, NCCIH</a>.</p>
+            <p>הליווי מתאים בעיקר למי שמוכנים לבדוק דפוסים, לנסות שינוי אחד בכל פעם ולעדכן את התוכנית לפי התגובה בפועל. אם יש תסמין חדש, חריף או מתמשך, מתחילים בבירור רפואי ולא באבחון מסורתי.</p>
+
+            <section class="bg-stone-50 border border-stone-200 rounded-2xl p-6 mt-10">
+                <h2 class="text-2xl font-bold text-emerald-900 mt-0">מקורות וספרי יסוד להעמקה</h2>
+                <ul class="space-y-3 text-slate-700">
+                    <li><a href="https://www.nccih.nih.gov/health/ayurvedic-medicine-in-depth" target="_blank" rel="noopener noreferrer">NCCIH — Ayurvedic Medicine: In Depth</a>: סקירה על הראיות הקיימות, מגבלות המחקר ובטיחות מוצרים.</li>
+                    <li><a href="https://www.mlbd.in/products/ayurveda-the-science-of-self-healing-a-practical-guide-9789391024758-9391024750-9789391024802-9391024807-9788120811300-8120811305-9788120818392-8120818393" target="_blank" rel="noopener noreferrer"><em>Ayurveda: The Science of Self-Healing</em>, Vasant Lad</a>: מבוא לעקרונות המסורתיים של האיורוודה.</li>
+                    <li><a href="https://ayurveda.com/ayurvedic-press/" target="_blank" rel="noopener noreferrer"><em>Textbook of Ayurveda, Volume 1</em>, Vasant Lad</a>: ספר לימוד רחב על מושגי היסוד וההערכה המסורתית.</li>
+                </ul>
+                <p class="text-sm text-slate-600 mt-4 mb-0">ספרי האיורוודה מסבירים את המסורת ואת השפה המקצועית שלה; הם אינם הוכחה ליעילות רפואית של טיפול מסוים.</p>
+            </section>
             <aside class="blog-trust-note bg-stone-50 border border-stone-200 rounded-2xl p-5 mt-10 text-sm leading-relaxed text-slate-700">
                 <strong class="text-emerald-900">חשוב לדעת:</strong> המידע במאמר הוא מידע כללי בלבד ואינו מחליף אבחון, ייעוץ או טיפול רפואי אישי. אם יש מצב רפואי פעיל, תרופות קבועות, הריון, הנקה או תהליך רפואי כמו IVF, חשוב להתייעץ עם גורם רפואי מוסמך לפני שינוי תזונה, תוספים או צמחי מרפא.
             </aside>
@@ -138,6 +166,7 @@
                 <li><a class="font-bold text-emerald-800 hover:underline" href="clinic.html">איך נראה ליווי אישי בקליניקת VEDICA</a></li>
                 <li><a class="font-bold text-emerald-800 hover:underline" href="process.html">שלבי התהליך: אבחון, תוכנית ומעקב</a></li>
                 <li><a class="font-bold text-emerald-800 hover:underline" href="persian-medicine.html">רפואה פרסית, צמחי מרפא ומורשת איראנית ב-VEDICA</a></li>
+                <li><a class="font-bold text-emerald-800 hover:underline" href="blog-perimenopause-ayurveda.html">פרימנופאוזה ואיורוודה: מה יכול לעזור ומה דורש בירור</a></li>
                 <li><a class="font-bold text-emerald-800 hover:underline" href="blog.html">עוד מאמרים על איורוודה, תזונה וצמחי מרפא</a></li>
             </ul>
         </section>
@@ -188,6 +217,7 @@
             </div>
         </div>
     </footer>
+    <script defer src="assets/site-nav.js"></script>
 </body>
 
 </html>

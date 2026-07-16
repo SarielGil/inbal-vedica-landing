@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="סיור אוכל, צמחי מרפא, תבלינים ותרבויות אוכל בשוק לוינסקי תל אביב עם ענבל הנסב. חיבור בין קולינריה, איורוודה, מורשת פרסית-איראנית וידע ביתי לקבוצות בעברית או באנגלית.">
+    content="סיור קולינרי בשוק לוינסקי לקבוצות וימי גיבוש: כ־2–2.5 שעות, טעימות, תבלינים וסיפורי תרבות. 180 ₪ למשתתף בקבוצה, בעברית או באנגלית.">
   <meta name="keywords"
     content="סיור אוכל, סיור קולינרי, יום גיבוש, יום כיף לעובדים, פעילות גיבוש לעובדים, סיור הייטק, סיור לקבוצות, סיור קולינרי לקבוצות, השתלמות עובדים, food tour tel aviv, Tel Aviv food tour in English, Levinsky Market food tour, סיור צמחי מרפא, סיור תבלינים, סיור באנגלית, קולינריה, תרבויות, תרבות איראנית, תזונה הודית, תזונה איורוודית, שוק לוינסקי, ענבל הנסב, איורוודה">
-  <title>סיור אוכל, צמחי מרפא וקולינריה בשוק לוינסקי | VEDICA</title>
+  <title>סיור קולינרי בשוק לוינסקי לקבוצות | 180 ₪ | VEDICA</title>
   <link rel="canonical" href="https://vedica-ayurveda.co.il/tours.html">
   <link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/tours.html">
   <link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html">
   <link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html">
   <link rel="alternate" type="text/plain" title="LLM Content" href="https://vedica-ayurveda.co.il/llms.txt">
   <!-- Open Graph Tags -->
-  <meta property="og:title" content="סיור אוכל, צמחי מרפא וקולינריה בשוק לוינסקי - VEDICA">
-  <meta property="og:description" content="סיור קולינרי בשוק לוינסקי לקבוצות, חברות, ימי גיבוש והשתלמויות, בעברית או באנגלית, עם תבלינים, חליטות, איורוודה, תרבויות אוכל ומורשת פרסית-איראנית.">
+  <meta property="og:title" content="סיור קולינרי בשוק לוינסקי לקבוצות | VEDICA">
+  <meta property="og:description" content="כ־2–2.5 שעות בשוק לוינסקי עם טעימות, תבלינים, חליטות וסיפורים מהמסורת הפרסית־איראנית. 180 ₪ למשתתף בקבוצה.">
   <meta property="og:url" content="https://vedica-ayurveda.co.il/tours.html">
   <meta property="og:site_name" content="VEDICA - ענבל הנסב">
   <meta property="og:image" content="https://vedica-ayurveda.co.il/assets/tour-1.webp">
@@ -26,6 +26,7 @@
   <meta property="og:locale" content="he_IL">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/modern-shared.css">
   <style>
     body {
       font-family: 'Assistant', 'Segoe UI', Arial, sans-serif;
@@ -62,6 +63,48 @@
       padding: 1rem;
     }
 
+    .tour-hero-facts {
+      display: grid;
+      gap: 0.65rem;
+      margin: 1.5rem auto 0;
+      max-width: 48rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tour-hero-fact {
+      padding: 0.75rem;
+      border: 1px solid #d1fae5;
+      border-radius: 0.9rem;
+      background: #ffffff;
+      color: #065f46;
+      font-size: 0.92rem;
+      font-weight: 700;
+      box-shadow: 0 10px 25px -24px rgba(6, 95, 70, 0.8);
+    }
+
+    .tour-mobile-cta {
+      position: fixed;
+      right: 0.75rem;
+      bottom: 0.75rem;
+      left: 0.75rem;
+      z-index: 70;
+      display: block;
+      padding: 0.9rem 1rem;
+      border-radius: 1rem;
+      background: #065f46;
+      color: #ffffff;
+      text-align: center;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 18px 40px -18px rgba(6, 78, 59, 0.9);
+    }
+
+    @media (max-width: 47.99rem) {
+      body {
+        padding-bottom: 5rem;
+      }
+    }
+
     @media (min-width: 48rem) {
       .tour-page-title {
         font-size: 2.25rem;
@@ -90,6 +133,14 @@
       .tour-audience-card {
         padding: 1.25rem;
       }
+
+      .tour-hero-facts {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .tour-mobile-cta {
+        display: none;
+      }
     }
   </style>
   <link rel="icon" href="assets/logo.webp" type="image/jpeg">
@@ -98,9 +149,9 @@
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": "סיור אוכל, צמחי מרפא, תבלינים וקולינריה בשוק לוינסקי לקבוצות",
-      "serviceType": "סיור קולינרי בשוק לוינסקי, סיור צמחי מרפא ותבלינים, יום גיבוש לעובדים, פעילות לקבוצות הייטק",
-      "description": "סיור אוכל, צמחי מרפא, תבלינים וקולינריה בשוק לוינסקי בתל אביב עם ענבל הנסב. חוויה תרבותית בעברית או באנגלית לקבוצות, חברות, צוותי הייטק, הגיל השלישי, ימי כיף והשתלמויות, המשלבת איורוודה, תזונה הודית, רפואה פרסית, תרבות איראנית, מורשת פרסית-איראנית, חליטות וכלים מעשיים לשימוש ביתי.",
+      "name": "סיור קולינרי בשוק לוינסקי לקבוצות וימי גיבוש",
+      "serviceType": "סיור קולינרי פרטי לקבוצות, חברות ואורחים בשוק לוינסקי",
+      "description": "סיור קולינרי של כשעתיים עד שעתיים וחצי בשוק לוינסקי, בעברית או באנגלית, עם טעימות, תבלינים, חליטות וסיפורים מהמסורת הפרסית-איראנית ומהאיורוודה.",
       "offers": [
         {
           "@type": "Offer",
@@ -166,6 +217,14 @@
           "@type": "Answer",
           "text": "שלחו מספר משתתפים, תאריך או טווח תאריכים, שפה רצויה, רגישויות מזון, מטרת הפעילות והאם תרצו את תוספת ארוחת הצהריים."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "כמה זמן נמשך הסיור?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "הסיור נמשך בדרך כלל כשעתיים עד שעתיים וחצי. המסלול המדויק נקבע לפי גודל הקבוצה, קצב ההליכה, זמינות הדוכנים ורגישויות המזון."
+        }
       }
     ]
   }
@@ -181,7 +240,9 @@
         <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA - קליניקת איורוודה בתל אביב" class="site-nav__logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logo-transparent.png';">
         <span class="site-nav__name">VEDICA</span>
       </a>
+      <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
       <div
+        id="site-nav-menu"
         class="site-nav__menu"
         style="scrollbar-width: none;">
         <a href="index.html" class="site-nav__link">בית</a>
@@ -206,22 +267,35 @@
         English tour page
       </a>
     </div>
-    <h1 class="tour-page-title text-3xl font-bold text-emerald-900 mb-8 text-center">סיור אוכל, צמחי מרפא וקולינריה בשוק לוינסקי</h1>
-    <p class="tour-page-lead text-lg text-slate-600 leading-relaxed text-center max-w-3xl mx-auto mb-12">סיור קולינרי בשוק לוינסקי עם ענבל הנסב, בעברית או באנגלית. לאורך הדרך פוגשים טעימות, תבלינים, חליטות וסיפורים מהמסורת הפרסית־איראנית ומהאיורוודה, ומתאימים את הקצב והתוכן לקבוצה.</p>
+    <p class="mb-3 text-center text-sm font-bold tracking-widest text-emerald-700">לקבוצות, חברות ואורחים בתל אביב</p>
+    <h1 class="tour-page-title text-3xl font-bold text-emerald-900 mb-6 text-center">סיור קולינרי בשוק לוינסקי לקבוצות וימי גיבוש</h1>
+    <p class="tour-page-lead text-lg text-slate-600 leading-relaxed text-center max-w-3xl mx-auto mb-6">טועמים, מריחים ושומעים את הסיפורים של שוק לוינסקי דרך תבלינים, חליטות והמורשת הפרסית־איראנית של ענבל.</p>
+    <div class="flex flex-col justify-center gap-3 sm:flex-row">
+      <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%A1%D7%99%D7%95%D7%A8%20%D7%91%D7%A9%D7%95%D7%A7%20%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99.%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%AA%D7%AA%D7%A4%D7%99%D7%9D%3A%20___%20%7C%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9E%D7%95%D7%A2%D7%93%D7%A3%3A%20___%20%7C%20%D7%A9%D7%A4%D7%94%3A%20___%20%7C%20%D7%A8%D7%92%D7%99%D7%A9%D7%95%D7%99%D7%95%D7%AA%20%D7%9E%D7%96%D7%95%D7%9F%3A%20___%20%7C%20%D7%90%D7%A8%D7%95%D7%97%D7%AA%20%D7%A6%D7%94%D7%A8%D7%99%D7%99%D7%9D%3A%20%D7%9B%D7%9F%2F%D7%9C%D7%90"
+        class="inline-flex items-center justify-center rounded-xl bg-emerald-800 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-emerald-900">קבלת הצעה לקבוצה</a>
+      <a href="#tour-details"
+        class="inline-flex items-center justify-center rounded-xl border-2 border-emerald-700 px-8 py-4 text-lg font-bold text-emerald-800 transition hover:bg-emerald-50">מה כולל הסיור</a>
+    </div>
+    <div class="tour-hero-facts" aria-label="פרטים עיקריים על הסיור">
+      <div class="tour-hero-fact">כ־2–2.5 שעות</div>
+      <div class="tour-hero-fact">180 ₪ בקבוצה</div>
+      <div class="tour-hero-fact">עברית או אנגלית</div>
+      <div class="tour-hero-fact">טעימות וחליטה</div>
+    </div>
 
-    <section class="tour-feature-panel mb-12 rounded-3xl bg-emerald-900 p-6 text-white shadow-xl">
+    <section id="group-tour-quote" class="tour-feature-panel mt-12 mb-12 rounded-3xl bg-emerald-900 p-6 text-white shadow-xl">
       <div class="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
         <div>
           <p class="mb-3 text-sm font-bold tracking-widest text-emerald-200">לקבוצות מאורגנות</p>
           <h2 class="tour-feature-title mb-4 text-2xl font-bold">סיור לקבוצות הייטק, הגיל השלישי, ימי כיף והשתלמויות</h2>
           <p class="tour-feature-copy text-base leading-relaxed text-emerald-50">
-            במקום עוד ארוחה במסעדה או פעילות גיבוש גנרית, הסיור יוצר מפגש חי בשוק: טעימות, ריחות, סיפורי תרבות וכלים שימושיים מעולם התבלינים וצמחי המרפא, כולל נקודת מבט פרסית-איראנית אישית.
+            הסיור משלב טעימות, ריחות וסיפורים מהשוק עם היכרות מעשית עם תבלינים, חליטות ומסורות אוכל פרסיות־איראניות.
           </p>
         </div>
         <div class="tour-quote-box rounded-2xl border border-emerald-700 bg-emerald-800/70 p-5">
           <h3 class="mb-3 text-xl font-bold">כדי לקבל הצעה מותאמת</h3>
           <p class="mb-5 leading-relaxed text-emerald-50">מחיר לקבוצה: 180 ₪ למשתתף. שלחו מספר משתתפים, תאריך רצוי, שפה מועדפת, רגישויות מזון, מטרת הפעילות והאם תרצו להוסיף חבילת ארוחת צהריים.</p>
-          <a href="https://wa.me/972545774407" class="inline-flex w-full items-center justify-center rounded-xl bg-white px-6 py-3 text-center font-bold text-emerald-900 transition hover:bg-emerald-50">בקשת הצעת מחיר לקבוצה</a>
+          <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%A1%D7%99%D7%95%D7%A8%20%D7%91%D7%A9%D7%95%D7%A7%20%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99.%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%AA%D7%AA%D7%A4%D7%99%D7%9D%3A%20___%20%7C%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9E%D7%95%D7%A2%D7%93%D7%A3%3A%20___%20%7C%20%D7%A9%D7%A4%D7%94%3A%20___%20%7C%20%D7%A8%D7%92%D7%99%D7%A9%D7%95%D7%99%D7%95%D7%AA%20%D7%9E%D7%96%D7%95%D7%9F%3A%20___%20%7C%20%D7%90%D7%A8%D7%95%D7%97%D7%AA%20%D7%A6%D7%94%D7%A8%D7%99%D7%99%D7%9D%3A%20%D7%9B%D7%9F%2F%D7%9C%D7%90" class="inline-flex w-full items-center justify-center rounded-xl bg-white px-6 py-3 text-center font-bold text-emerald-900 transition hover:bg-emerald-50">פתיחת בקשה מוכנה בוואטסאפ</a>
         </div>
       </div>
       <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -231,11 +305,11 @@
         </article>
         <article class="tour-audience-card rounded-2xl bg-white/10 p-4">
           <h3 class="mb-2 font-bold">קבוצות הייטק</h3>
-          <p class="text-sm leading-relaxed text-emerald-50">מתאים ל־offsite, צוותים שמגיעים למרכז ולמפגש שמרגיש פחות פורמלי ויותר אנושי.</p>
+          <p class="text-sm leading-relaxed text-emerald-50">מתאים ל־offsite או ליום צוות קליל, עם זמן לדבר, לטעום ולהכיר.</p>
         </article>
         <article class="tour-audience-card rounded-2xl bg-white/10 p-4">
           <h3 class="mb-2 font-bold">הגיל השלישי</h3>
-          <p class="text-sm leading-relaxed text-emerald-50">סיור נינוח, נגיש ומלא תוכן לקבוצות שמחפשות חוויה תרבותית ובריאותית בקצב מותאם.</p>
+          <p class="text-sm leading-relaxed text-emerald-50">סיור קולינרי ותרבותי בקצב נינוח, עם אפשרות להתאים את המסלול לצורכי הקבוצה.</p>
         </article>
         <article class="tour-audience-card rounded-2xl bg-white/10 p-4">
           <h3 class="mb-2 font-bold">השתלמות עם תוכן</h3>
@@ -250,7 +324,7 @@
 
     <div class="grid md:grid-cols-1 gap-12">
       <!-- סיור בשוק לוינסקי -->
-      <article class="bg-white rounded-3xl overflow-hidden shadow-xl border border-emerald-100">
+      <article id="tour-details" class="bg-white rounded-3xl overflow-hidden shadow-xl border border-emerald-100" style="scroll-margin-top: 6rem;">
         <div class="md:flex">
           <div class="md:w-1/3">
             <img src="assets/inbal-market.jpg" class="w-full h-full object-cover" alt="ענבל הנסב מחייכת בשוק לוינסקי - סיור צמחי מרפא" loading="lazy">
@@ -258,7 +332,7 @@
           <div class="p-8 md:w-2/3">
             <h2 class="text-3xl font-bold text-emerald-800 mb-4">סיור אוכל חווייתי בשוק לוינסקי דרך תבלינים, צמחי מרפא ותרבויות אוכל</h2>
             <p class="text-lg text-slate-600 mb-4 leading-relaxed">
-              זהו סיור אוכל וקולינריה שמחבר בין תרבויות אוכל, תבלינים ומסורות עתיקות לחיי היום־יום. דרך הטעמים, הריחות והדוכנים של השוק פוגשים תזונה הודית, איורוודה, תרבות איראנית והמורשת המשפחתית של ענבל.
+              דרך הטעמים, הריחות והדוכנים פוגשים את שוק לוינסקי, את תרבות האוכל האיראנית ואת המורשת המשפחתית של ענבל, לצד נקודת מבט מהאיורוודה.
             </p>
             <p class="text-lg text-slate-600 mb-6 leading-relaxed">
               במהלך הסיור נכיר שימושים מסורתיים בתבלינים ובחליטות, נלמד איך לבחור ולאחסן אותם, ונקבל רעיונות פשוטים לשילוב במטבח הביתי. התוכן לימודי ותרבותי ואינו ייעוץ רפואי אישי.
@@ -268,8 +342,7 @@
             </p>
             <div class="grid md:grid-cols-2 gap-4 mb-8 text-slate-700">
               <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
-                <strong class="text-emerald-900">מה בסיור?</strong><br>מוגשת חליטה איורוודית, נשנושים וערכת התנסות
-                ראשונית.
+                <strong class="text-emerald-900">מה בסיור?</strong><br>הליכה מודרכת, טעימות בשוק, חליטה איורוודית, נשנושים וערכת התנסות ראשונית.
               </div>
               <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
                 <strong class="text-emerald-900">שפות וקבוצות:</strong><br>הסיור זמין בעברית או באנגלית, וניתן להתאמה לפי גודל הקבוצה, אופי הפעילות ורגישויות מזון.
@@ -281,7 +354,7 @@
             <a href="https://forms.gle/98kVxasBnLb2rxbcA" target="_blank" rel="noopener noreferrer"
               class="inline-block w-full text-center bg-emerald-700 text-white py-4 rounded-xl text-xl font-bold hover:bg-emerald-800 transition shadow-lg shadow-emerald-700/20">להרשמה
               ושריון מקום</a>
-            <a href="https://wa.me/972545774407"
+            <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%A1%D7%99%D7%95%D7%A8%20%D7%91%D7%A9%D7%95%D7%A7%20%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99.%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%AA%D7%AA%D7%A4%D7%99%D7%9D%3A%20___%20%7C%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9E%D7%95%D7%A2%D7%93%D7%A3%3A%20___%20%7C%20%D7%A9%D7%A4%D7%94%3A%20___%20%7C%20%D7%A8%D7%92%D7%99%D7%A9%D7%95%D7%99%D7%95%D7%AA%20%D7%9E%D7%96%D7%95%D7%9F%3A%20___%20%7C%20%D7%90%D7%A8%D7%95%D7%97%D7%AA%20%D7%A6%D7%94%D7%A8%D7%99%D7%99%D7%9D%3A%20%D7%9B%D7%9F%2F%D7%9C%D7%90"
               class="inline-block w-full text-center border-2 border-emerald-700 text-emerald-700 py-4 rounded-xl text-xl font-bold hover:bg-emerald-50 transition mt-4">בקשת
               הצעת מחיר לקבוצה</a>
           </div>
@@ -328,7 +401,7 @@
       <div class="grid md:grid-cols-2 gap-4 text-slate-700 mb-12">
         <article class="bg-emerald-50 rounded-2xl p-5 border border-emerald-100">
           <h3 class="font-bold text-emerald-800 mb-2">משך ומסלול</h3>
-          <p class="text-sm leading-relaxed">משך הסיור, נקודת המפגש המדויקת והמסלול נקבעים אחרי התיאום לפי גודל הקבוצה, קצב ההליכה, זמינות הדוכנים ומטרת הפעילות.</p>
+          <p class="text-sm leading-relaxed">הסיור נמשך בדרך כלל כ־2–2.5 שעות. נקודת המפגש והמסלול נקבעים אחרי התיאום לפי הקבוצה וזמינות הדוכנים.</p>
         </article>
         <article class="bg-emerald-50 rounded-2xl p-5 border border-emerald-100">
           <h3 class="font-bold text-emerald-800 mb-2">קצב ונגישות</h3>
@@ -339,19 +412,19 @@
           <p class="text-sm leading-relaxed">מחיר ליחיד הוא 220 ₪ למשתתף, ומחיר לקבוצה הוא 180 ₪ למשתתף. שלחו מספר משתתפים, תאריך או טווח תאריכים, שפה רצויה, רגישויות מזון, מטרת הפעילות והאם תרצו להוסיף חבילת ארוחת צהריים.</p>
         </article>
         <article class="bg-emerald-50 rounded-2xl p-5 border border-emerald-100">
-          <h3 class="font-bold text-emerald-800 mb-2">היקף לימודי</h3>
+          <h3 class="font-bold text-emerald-800 mb-2">אופי הסיור</h3>
           <p class="text-sm leading-relaxed">הסיור משתף ידע מסורתי על אוכל, תבלינים וצמחי מרפא באופן חווייתי ולא רפואי. הוא אינו מחליף אבחון, ייעוץ או טיפול רפואי אישי.</p>
         </article>
       </div>
       <h2 class="text-3xl font-bold text-emerald-900 mb-6 text-center">מה מייחד את הסיור</h2>
       <div class="grid md:grid-cols-3 gap-6 text-slate-700">
         <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
-          <h3 class="text-xl font-bold text-emerald-800 mb-3">ידע שמתחבר לחיים</h3>
-          <p>לא רק סיפור על שוק ותבלינים, אלא הבנה איך לעבוד עם צמחי מרפא, חליטות ותבלינים באופן שימושי בבית.</p>
+          <h3 class="text-xl font-bold text-emerald-800 mb-3">רעיונות שאפשר לקחת הביתה</h3>
+          <p>לומדים איך לבחור, לאחסן ולשלב תבלינים וחליטות במטבח, בלי להפוך את הסיור להרצאה רפואית.</p>
         </div>
         <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
           <h3 class="text-xl font-bold text-emerald-800 mb-3">סיור קולינרי עם עומק תרבותי</h3>
-          <p>הסיור מחבר בין סיור אוכל בשוק לוינסקי לבין איורוודה, תזונה הודית, תרבות איראנית וידע פרסי עתיק, כדי להראות איך מסורות קולינריות פוגשות את המטבח ואת הגוף ביום-יום.</p>
+          <p>הסיור מחבר בין אוכל מהשוק, איורוודה, תרבות איראנית וסיפורים מהמטבח הפרסי של ענבל.</p>
         </div>
         <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
           <h3 class="text-xl font-bold text-emerald-800 mb-3">מתאים גם לקבוצות</h3>
@@ -360,7 +433,7 @@
       </div>
       <div class="mt-8 bg-stone-50 rounded-2xl p-6 border border-emerald-100">
         <h3 class="text-2xl font-bold text-emerald-900 mb-3 text-center">רוצים להעמיק מעבר לסיור?</h3>
-        <p class="text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">הסיור מציע היכרות קבוצתית עם תבלינים, חליטות ומסורות אוכל. לשאלות אישיות על תזונה, עיכול או שגרה אפשר להמשיך משם גם ל<strong>קליניקה</strong> ולקבל ליווי מותאם.</p>
+        <p class="text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">הסיור מציע היכרות קבוצתית עם תבלינים, חליטות ומסורות אוכל. לשאלות אישיות על תזונה, עיכול או שגרה אפשר להמשיך משם גם <a href="clinic.html" class="font-bold text-emerald-800 hover:underline">לקליניקה</a> ולקבל ליווי מותאם.</p>
       </div>
       <section class="mt-8 rounded-2xl border border-emerald-100 bg-white p-6">
         <h2 class="text-2xl font-bold text-emerald-900 mb-5 text-center">שאלות ותשובות על מחיר הסיור</h2>
@@ -377,12 +450,41 @@
             <h3 class="font-bold text-emerald-800">מה צריך לשלוח כדי לקבל הצעה?</h3>
             <p class="mt-1 leading-relaxed">שלחו מספר משתתפים, תאריך או טווח תאריכים, שפה רצויה, רגישויות מזון, מטרת הפעילות והאם תרצו את תוספת ארוחת הצהריים.</p>
           </div>
+          <div>
+            <h3 class="font-bold text-emerald-800">כמה זמן נמשך הסיור?</h3>
+            <p class="mt-1 leading-relaxed">בדרך כלל כשעתיים עד שעתיים וחצי. המסלול המדויק נקבע לפי גודל הקבוצה, קצב ההליכה, זמינות הדוכנים ורגישויות המזון.</p>
+          </div>
         </div>
       </section>
       <div class="mt-8 pt-8 border-t border-emerald-100 flex flex-col md:flex-row gap-4 justify-center">
         <a href="clinic.html" class="inline-flex items-center justify-center bg-emerald-900 text-white px-6 py-3 rounded-full font-bold hover:bg-emerald-950 transition">להעמקה בקליניקה</a>
         <a href="workshops.html" class="inline-flex items-center justify-center bg-emerald-700 text-white px-6 py-3 rounded-full font-bold hover:bg-emerald-800 transition">לעמוד סדנאות צמחי מרפא</a>
         <a href="podcast.html" class="inline-flex items-center justify-center border-2 border-emerald-700 text-emerald-700 px-6 py-3 rounded-full font-bold hover:bg-emerald-50 transition">להאזנה לפודקאסט הבריאות</a>
+      </div>
+    </section>
+    <section id="booking-process" class="mt-12 rounded-3xl border border-emerald-100 bg-emerald-50 p-8 md:p-10">
+      <p class="mb-3 text-center text-sm font-bold tracking-widest text-emerald-700">מתאמים בפשטות</p>
+      <h2 class="mb-8 text-center text-3xl font-bold text-emerald-900">מה קורה אחרי ששולחים את פרטי הקבוצה?</h2>
+      <div class="grid gap-4 md:grid-cols-3">
+        <article class="rounded-2xl bg-white p-5">
+          <p class="mb-2 text-sm font-bold text-emerald-700">01</p>
+          <h3 class="mb-2 text-xl font-bold text-emerald-900">בודקים מועד והתאמה</h3>
+          <p class="text-slate-700">עוברים על מספר המשתתפים, התאריך, השפה, מטרת האירוע ורגישויות המזון.</p>
+        </article>
+        <article class="rounded-2xl bg-white p-5">
+          <p class="mb-2 text-sm font-bold text-emerald-700">02</p>
+          <h3 class="mb-2 text-xl font-bold text-emerald-900">מתאימים את המסלול</h3>
+          <p class="text-slate-700">בוחרים קצב, תחנות וטעימות שמתאימים לקבוצה ולזמינות בשוק.</p>
+        </article>
+        <article class="rounded-2xl bg-white p-5">
+          <p class="mb-2 text-sm font-bold text-emerald-700">03</p>
+          <h3 class="mb-2 text-xl font-bold text-emerald-900">סוגרים את הפרטים</h3>
+          <p class="text-slate-700">מקבלים הצעה מסודרת ומאשרים את המועד, המחיר ונקודת המפגש.</p>
+        </article>
+      </div>
+      <div class="mt-7 text-center">
+        <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%A1%D7%99%D7%95%D7%A8%20%D7%91%D7%A9%D7%95%D7%A7%20%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99.%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%AA%D7%AA%D7%A4%D7%99%D7%9D%3A%20___%20%7C%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9E%D7%95%D7%A2%D7%93%D7%A3%3A%20___%20%7C%20%D7%A9%D7%A4%D7%94%3A%20___%20%7C%20%D7%A8%D7%92%D7%99%D7%A9%D7%95%D7%99%D7%95%D7%AA%20%D7%9E%D7%96%D7%95%D7%9F%3A%20___%20%7C%20%D7%90%D7%A8%D7%95%D7%97%D7%AA%20%D7%A6%D7%94%D7%A8%D7%99%D7%99%D7%9D%3A%20%D7%9B%D7%9F%2F%D7%9C%D7%90"
+          class="inline-flex items-center justify-center rounded-xl bg-emerald-800 px-8 py-4 text-lg font-bold text-white transition hover:bg-emerald-900">להתחיל תיאום בוואטסאפ</a>
       </div>
     </section>
     <!-- Video Experience -->
@@ -438,6 +540,9 @@
     </div>
   </main>
 
+  <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%A1%D7%99%D7%95%D7%A8%20%D7%91%D7%A9%D7%95%D7%A7%20%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99.%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%AA%D7%AA%D7%A4%D7%99%D7%9D%3A%20___%20%7C%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9E%D7%95%D7%A2%D7%93%D7%A3%3A%20___%20%7C%20%D7%A9%D7%A4%D7%94%3A%20___%20%7C%20%D7%A8%D7%92%D7%99%D7%A9%D7%95%D7%99%D7%95%D7%AA%20%D7%9E%D7%96%D7%95%D7%9F%3A%20___%20%7C%20%D7%90%D7%A8%D7%95%D7%97%D7%AA%20%D7%A6%D7%94%D7%A8%D7%99%D7%99%D7%9D%3A%20%D7%9B%D7%9F%2F%D7%9C%D7%90"
+    class="tour-mobile-cta">קבלת הצעה לסיור בוואטסאפ</a>
+
   <footer class="bg-emerald-900 text-white pt-16 pb-8">
     <div class="max-w-4xl mx-auto px-4">
       <div class="grid md:grid-cols-3 gap-12 mb-12 text-center">
@@ -487,6 +592,7 @@
       </div>
     </div>
   </footer>
+  <script defer src="assets/site-nav.js"></script>
 </body>
 
 </html>

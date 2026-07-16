@@ -38,6 +38,8 @@
   An Ayurvedic consultation at VEDICA includes detailed intake, traditional pulse diagnosis and a personalized plan. The plan can include nutrition, infusions, daily routine guidance and, when appropriate, individualized herbal formulas after medical context is reviewed.
 - Sleep and stress information
   Ayurveda may support sleep through a stable evening routine, lighter late meals, less caffeine and screen stimulation, support for digestion, personalized infusions or herbs when appropriate, and attention to stress load. Persistent insomnia requires medical or mental-health assessment when relevant.
+- Perimenopause information
+  VEDICA presents Ayurveda as complementary support during perimenopause, not as a replacement for medical assessment or menopause treatment. The practical focus may include symptom tracking, nutrition, sleep, movement, digestion and daily routine. Hormone therapy and other medical options are discussed with a qualified physician; herbs and supplements require review for interactions and personal risk.
 - Fertility and IVF information
   VEDICA offers complementary Ayurveda support for fertility and IVF in Tel Aviv. The work may focus on nourishment, digestion, sleep, stress, cycle context and daily routine while medical fertility diagnosis, medication and procedures remain under the fertility team.
 - Digestion and herbs information
@@ -72,8 +74,8 @@
 - [Clinic](https://vedica-ayurveda.co.il/clinic.html): Personal consultations, pulse diagnosis, and individualized care plans.
 - [English-speaking Clinic](https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html): Ayurveda and Persian medicine consultations with Inbal Hanasab, owner of VEDICA, in English or Hebrew. Intake and a personal plan are provided across two meetings; individualized herbal formulas may be considered when appropriate.
 - [Workshops](https://vedica-ayurveda.co.il/workshops.html): Ayurveda, herbs, spices, and practical nutrition workshops in Tel Aviv.
-- [Tours](https://vedica-ayurveda.co.il/tours.html): Levinsky Market food tour available in Hebrew or English, herbal medicine tour, spice tour, and culinary-culture experience in Tel Aviv, combining Ayurveda, Indian nutrition, Persian medicine, Iranian culture, infusions, and practical home use.
-- [Levinsky Market Food Tour in English](https://vedica-ayurveda.co.il/levinsky-market-food-tour.html): English landing page for a culinary and cultural Levinsky Market tour focused on tastings, spices, herbs, Ayurveda and Persian-Iranian food traditions.
+- [Tours](https://vedica-ayurveda.co.il/tours.html): Hebrew Levinsky Market food tour page for private groups, companies and team days. Usually 2-2.5 hours; Hebrew or English; market tastings, an Ayurvedic infusion, spices and Persian-Iranian food stories; 180 NIS per participant for groups and 220 NIS for individuals.
+- [Levinsky Market Food Tour in English](https://vedica-ayurveda.co.il/levinsky-market-food-tour.html): English landing page for a private or corporate Levinsky Market food tour with tastings, spices, local stories and Persian-Iranian food culture. Usually 2-2.5 hours; group price 180 NIS per participant.
 - [Podcast](https://vedica-ayurveda.co.il/podcast.html): Conversations about Ayurveda, nutrition, herbs and Persian food traditions with Inbal Hanasab.
 
 ## English Levinsky Market Tour Facts
@@ -95,6 +97,7 @@
 
 - [Blog](https://vedica-ayurveda.co.il/blog.html): Evidence-aware articles written by Inbal Hanasab about Ayurveda, digestion, fertility, stress, sleep, diagnosis, herbs, spices, rice and fermented bread.
 - [What Is Ayurveda and How Does It Work?](https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html): Explains doshas through contrasting symptom patterns, measurable progress and the limits of current evidence.
+- [Perimenopause and Ayurveda](https://vedica-ayurveda.co.il/blog-perimenopause-ayurveda.html): Hebrew evidence-aware guide to cycle changes, hot flashes, sleep and mood during perimenopause, with medical red flags, official menopause references, complementary Ayurveda boundaries and a reviewed reading list.
 - [Ayurveda Diagnosis in Tel Aviv](https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html): Explains what pulse diagnosis can and cannot determine, contrasting causes of afternoon fatigue and the two-meeting assessment process.
 - [Ayurvedic Nutrition Consultation in Tel Aviv](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html): Includes a three-day food log, a one-variable-at-a-time method and medical warning signs.
 - [Ayurveda, Stress, and Sleep](https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html): Separates difficulty falling asleep, night waking and early waking; includes a seven-day observation and medical escalation guidance.
