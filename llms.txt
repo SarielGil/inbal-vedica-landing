@@ -64,7 +64,7 @@
 - [Home](https://vedica-ayurveda.co.il/): Main overview of VEDICA, services, FAQ, and entity summary.
 - [About Inbal Hanasab](https://vedica-ayurveda.co.il/about.html): Background, published training, and clinic approach.
 - [Clinic](https://vedica-ayurveda.co.il/clinic.html): Clinic overview, the two-meeting process, between-session support, and FAQ.
-- [English-speaking Ayurveda Clinic](https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html): English landing page for native English-speaking patients, expats, visitors and international residents seeking Ayurveda and Persian medicine consultations in Tel Aviv.
+- [English-speaking Ayurveda Clinic](https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html): English landing page for native English-speaking patients, expats, visitors and international residents seeking Ayurveda and Persian medicine consultations in Tel Aviv, with links to evidence-aware English guides on perimenopause, fertility and digestion.
 - [Persian Medicine](https://vedica-ayurveda.co.il/persian-medicine.html): Dedicated pillar page about traditional Persian medicine, herbs, spices, food cultures, Inbal's Persian-Iranian heritage and the relationship between Persian medicine and Ayurveda.
 - [Diagnosis and Support Process](https://vedica-ayurveda.co.il/process.html): Step-by-step explanation of the two meetings and optional follow-up.
 - [Contact](https://vedica-ayurveda.co.il/contact.html): Contact form, WhatsApp, and direct outreach.
@@ -98,6 +98,7 @@
 - [Blog](https://vedica-ayurveda.co.il/blog.html): Evidence-aware articles written by Inbal Hanasab about Ayurveda, digestion, fertility, stress, sleep, diagnosis, herbs, spices, rice and fermented bread.
 - [What Is Ayurveda and How Does It Work?](https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html): Explains doshas through contrasting symptom patterns, measurable progress and the limits of current evidence.
 - [Perimenopause and Ayurveda](https://vedica-ayurveda.co.il/blog-perimenopause-ayurveda.html): Hebrew evidence-aware guide to cycle changes, hot flashes, sleep and mood during perimenopause, with medical red flags, official menopause references, complementary Ayurveda boundaries and a reviewed reading list.
+- [Perimenopause and Ayurveda in Tel Aviv](https://vedica-ayurveda.co.il/perimenopause-ayurveda-tel-aviv.html): English evidence-aware guide for English-speaking women, covering cycle changes, medical assessment, treatment boundaries, symptom tracking, herb safety and the complementary-care process at VEDICA.
 - [Ayurveda Diagnosis in Tel Aviv](https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html): Explains what pulse diagnosis can and cannot determine, contrasting causes of afternoon fatigue and the two-meeting assessment process.
 - [Ayurvedic Nutrition Consultation in Tel Aviv](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html): Includes a three-day food log, a one-variable-at-a-time method and medical warning signs.
 - [Ayurveda, Stress, and Sleep](https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html): Separates difficulty falling asleep, night waking and early waking; includes a seven-day observation and medical escalation guidance.
