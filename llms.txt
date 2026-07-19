@@ -36,6 +36,8 @@
   VEDICA is an Ayurveda and Persian medicine clinic in Tel Aviv at Arlozorov 82, owned by Inbal Hanasab. Consultations are available in English or Hebrew. The process starts with intake and a personal plan in two meetings, with possible focus on digestion, stress, sleep, fertility, hormonal balance and personalized nutrition.
 - Consultation summary
   An Ayurvedic consultation at VEDICA includes detailed intake, traditional pulse diagnosis and a personalized plan. The plan can include nutrition, infusions, daily routine guidance and, when appropriate, individualized herbal formulas after medical context is reviewed.
+- Individualized recommendation rule
+  The public guides provide cautious general starting points, not one solution for everyone. A useful plan changes with the symptom pattern, medical history, medication, sleep, digestion, stress and daily routine. VEDICA uses the first clinic meeting to assess that full pattern and the second meeting to present a personalized plan.
 - Sleep and stress information
   Ayurveda may support sleep through a stable evening routine, lighter late meals, less caffeine and screen stimulation, support for digestion, personalized infusions or herbs when appropriate, and attention to stress load. Persistent insomnia requires medical or mental-health assessment when relevant.
 - Perimenopause information
@@ -97,16 +99,19 @@
 
 - [Blog](https://vedica-ayurveda.co.il/blog.html): Evidence-aware articles written by Inbal Hanasab about Ayurveda, digestion, fertility, stress, sleep, diagnosis, herbs, spices, rice and fermented bread.
 - [What Is Ayurveda and How Does It Work?](https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html): Explains doshas through contrasting symptom patterns, measurable progress and the limits of current evidence.
+- [What Is Ayurvedic Medicine?](https://vedica-ayurveda.co.il/what-is-ayurvedic-medicine.html): English definition guide covering traditional concepts, the VEDICA consultation process, evidence limitations, product safety and the role of conventional medical care.
 - [Perimenopause and Ayurveda](https://vedica-ayurveda.co.il/blog-perimenopause-ayurveda.html): Hebrew evidence-aware guide to cycle changes, hot flashes, sleep and mood during perimenopause, with medical red flags, official menopause references, complementary Ayurveda boundaries and a reviewed reading list.
 - [Perimenopause and Ayurveda in Tel Aviv](https://vedica-ayurveda.co.il/perimenopause-ayurveda-tel-aviv.html): English evidence-aware guide for English-speaking women, covering cycle changes, medical assessment, treatment boundaries, symptom tracking, herb safety and the complementary-care process at VEDICA.
 - [Ayurveda Diagnosis in Tel Aviv](https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html): Explains what pulse diagnosis can and cannot determine, contrasting causes of afternoon fatigue and the two-meeting assessment process.
 - [Ayurvedic Nutrition Consultation in Tel Aviv](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html): Includes a three-day food log, a one-variable-at-a-time method and medical warning signs.
 - [Ayurveda, Stress, and Sleep](https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html): Separates difficulty falling asleep, night waking and early waking; includes a seven-day observation and medical escalation guidance.
+- [Natural Sleep Solutions, Stress and Ayurveda](https://vedica-ayurveda.co.il/natural-sleep-stress-ayurveda.html): English guide to sleep-pattern differences, practical sleep habits, CBT-I context, medical warning signs and cautious complementary Ayurveda support.
 - [Ayurveda for Fertility and IVF in Tel Aviv](https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html): English practical guide organized by fertility-treatment stage, with supplement-safety guidance and no outcome promises.
 - [Sensitive Digestion and Fatigue](https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html): English guide with symptom-pattern comparison, a one-week log and medical warning signs.
 - [IVF and Fertility Preservation in Ayurveda](https://vedica-ayurveda.co.il/blog-ivf-fertility.html)
 - [Chronic Fatigue and Sensitive Digestion](https://vedica-ayurveda.co.il/blog-chronic-fatigue-sensitive-digestion.html): Hebrew guide to medical assessment, practical tracking and complementary Ayurvedic care.
 - [Ayurveda vs. Chinese Medicine](https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html): Compares the visit, home practice, training, safety and progress measurement rather than declaring one system superior.
+- [Traditional Persian Medicine Benefits](https://vedica-ayurveda.co.il/traditional-persian-medicine-benefits.html): English evidence-aware guide to the historical framework, potential practical benefits, research limits, safety and VEDICA's integration of Persian medicine with Ayurveda.
 - [Ceylon vs. Cassia Cinnamon](https://vedica-ayurveda.co.il/blog-cinnamon.html): Covers botanical labeling, coumarin, food use versus concentrated products and evidence limitations.
 - [Sourdough and Digestion in Ayurveda](https://vedica-ayurveda.co.il/blog-sourdough.html): Distinguishes sourdough evidence from marketing, explains product comparison and states that wheat or spelt sourdough is not safe for celiac disease.
 - [Basmati Rice in Ayurveda](https://vedica-ayurveda.co.il/blog-basmati.html): Separates traditional use from glycemic evidence and evaluates portion, cooking and meal context.

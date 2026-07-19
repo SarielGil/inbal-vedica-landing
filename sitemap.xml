@@ -22,7 +22,7 @@
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/clinic.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"/>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.95</priority>
     </url>
@@ -37,9 +37,18 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/persian-medicine.html</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.92</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/traditional-persian-medicine-benefits.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/traditional-persian-medicine-benefits.html"/>
+        <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/persian-medicine.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/traditional-persian-medicine-benefits.html"/>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.84</priority>
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/workshops.html</loc>
@@ -73,7 +82,16 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.82</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/what-is-ayurvedic-medicine.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/what-is-ayurvedic-medicine.html"/>
+        <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/what-is-ayurvedic-medicine.html"/>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.82</priority>
     </url>
@@ -97,7 +115,19 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html</loc>
-        <lastmod>2026-07-14</lastmod>
+        <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/natural-sleep-stress-ayurveda.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/natural-sleep-stress-ayurveda.html"/>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.84</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/natural-sleep-stress-ayurveda.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/natural-sleep-stress-ayurveda.html"/>
+        <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/natural-sleep-stress-ayurveda.html"/>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.84</priority>
     </url>
@@ -109,13 +139,13 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html</loc>
-        <lastmod>2026-07-14</lastmod>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.83</priority>
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html</loc>
-        <lastmod>2026-07-14</lastmod>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -124,7 +154,7 @@
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-ivf-fertility.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html"/>
-        <lastmod>2026-07-14</lastmod>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.87</priority>
     </url>
@@ -133,7 +163,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html"/>
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-ivf-fertility.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html"/>
-        <lastmod>2026-07-14</lastmod>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.87</priority>
     </url>
@@ -142,7 +172,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html"/>
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-chronic-fatigue-sensitive-digestion.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html"/>
-        <lastmod>2026-07-14</lastmod>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.84</priority>
     </url>
@@ -151,7 +181,7 @@
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-chronic-fatigue-sensitive-digestion.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html"/>
-        <lastmod>2026-07-14</lastmod>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.84</priority>
     </url>
