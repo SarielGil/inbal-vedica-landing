@@ -1345,7 +1345,7 @@
 
     <main>
     <!-- Hero Section -->
-    <section id="hero" class="hero-modern">
+    <section id="hero" class="hero-modern" data-analytics-view-event="hero_view" data-cta-location="hero">
         <div class="hero-modern__grid">
             <div class="hero-modern__content">
                 <p class="hero-modern__kicker">VEDICA | קליניקה בתל אביב</p>
@@ -1356,10 +1356,10 @@
                     בפגישה הראשונה נברר לעומק מה מפריע עכשיו. בפגישה השנייה תקבלו תוכנית אישית עם תזונה, חליטות והרגלים שאפשר לשלב בשגרה.
                 </p>
                 <div class="hero-modern__actions">
-                    <a id="whatsapp-link" href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%95%D7%93%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    <a id="whatsapp-link" href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%A7%D7%99%D7%91%D7%9C%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A9%D7%9C%D7%9A%20%D7%9E%D7%90%D7%AA%D7%A8%20%D7%94%D7%A7%D7%9C%D7%99%D7%A0%D7%99%D7%A7%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D." target="_blank" rel="noopener noreferrer" class="btn-primary" data-analytics-event="hero_primary_cta_click" data-cta-location="hero">
                         בדיקת התאמה בוואטסאפ
                     </a>
-                    <a href="clinic.html#two-meeting-plan" class="btn-secondary">איך עובדות שתי הפגישות</a>
+                    <a href="clinic.html#two-meeting-plan" class="btn-secondary" data-analytics-event="hero_secondary_cta_click" data-cta-location="hero">איך עובדות שתי הפגישות</a>
                 </div>
                 <div class="hero-modern__meta">
                     <a href="clinic.html#between-meetings-support">ליווי אישי בין הפגישות</a>
@@ -1799,7 +1799,7 @@
                 }
 
                 const waLink = document.getElementById('whatsapp-link');
-                waLink.href = `https://wa.me/${data.site.whatsapp}?text=${encodeURIComponent('היי, הגעתי מהאתר ואשמח לשמוע עוד פרטים')}`;
+                waLink.href = `https://wa.me/${data.site.whatsapp}?text=${encodeURIComponent('היי ענבל, קיבלתי את המספר שלך מאתר הקליניקה ואשמח לשמוע פרטים נוספים.')}`;
 
                 document.getElementById('podcast-title').innerText = data.podcast.title;
                 document.getElementById('podcast-description').innerText = data.podcast.description;

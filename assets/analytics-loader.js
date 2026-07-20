@@ -108,6 +108,9 @@
   }
 
   function getCtaLocation(link) {
+    var explicitLocation = link.getAttribute("data-cta-location");
+    if (explicitLocation) return cleanText(explicitLocation);
+
     var section = link.closest("section, article, header, footer, nav");
     if (!section) return link.id || "unknown";
     if (section.id) return section.id;
@@ -145,6 +148,38 @@
     window.gtag("event", eventName, params);
   }
 
+  function trackSectionView(section) {
+    var eventName = section.getAttribute("data-analytics-view-event");
+    if (!eventName) return;
+
+    window.gtag("event", eventName, {
+      event_category: "engagement",
+      cta_location: cleanText(section.getAttribute("data-cta-location") || section.id || "unknown"),
+      transport_type: "beacon"
+    });
+  }
+
+  var trackedSections = document.querySelectorAll("[data-analytics-view-event]");
+  if (trackedSections.length) {
+    if ("IntersectionObserver" in window) {
+      var sectionObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting || entry.intersectionRatio < 0.25) return;
+          trackSectionView(entry.target);
+          sectionObserver.unobserve(entry.target);
+        });
+      }, {
+        threshold: [0.25]
+      });
+
+      trackedSections.forEach(function (section) {
+        sectionObserver.observe(section);
+      });
+    } else {
+      trackedSections.forEach(trackSectionView);
+    }
+  }
+
   document.addEventListener("click", function (event) {
     var link = event.target.closest && event.target.closest("a[href]");
     if (!link) return;
@@ -156,6 +191,11 @@
       linkHost = new URL(link.href).hostname.replace(/^www\./, "").toLowerCase();
     } catch (e) {
       linkHost = "";
+    }
+
+    var explicitEventName = link.getAttribute("data-analytics-event");
+    if (explicitEventName) {
+      trackEngagement(cleanText(explicitEventName), link);
     }
 
     if (lowerHref.indexOf("wa.me/") !== -1 || lowerHref.indexOf("whatsapp") !== -1) {
