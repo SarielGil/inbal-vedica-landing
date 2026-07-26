@@ -4,18 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="אבחון איורוודה בתל אביב: מה בודקים בשתי פגישות, מה אבחון דופק אינו קובע ואיך מבדילים בין דפוסים שנראים כמו אותו סימפטום.">
-    <title>אבחון איורוודה בתל אביב | דושות ודופק | VEDICA</title>
-    <meta property="og:title" content="אבחון איורוודה בתל אביב | דושות ודופק | VEDICA">
-    <meta property="og:description" content="מה בודקים בפגישת אבחון איורוודית: דושות, דופק, עיכול, שינה, סטרס ותוכנית אישית.">
+    <meta name="description" content="אבחון איורוודה בתל אביב: מאפייני ואטה, פיטה וקאפה, שאלון לא־אבחוני, שילוב בדיקות דם ומה קורה בשתי פגישות.">
+    <title>אבחון איורוודה: מה בודקים בשתי פגישות | VEDICA</title>
+    <meta property="og:title" content="אבחון איורוודה: מה בודקים בשתי פגישות | VEDICA">
+    <meta property="og:description" content="מדריך לדושות, שאלון מאפיינים קצר, שילוב בדיקות דם ורקע רפואי והסבר על תהליך האבחון האיורוודי בשתי פגישות.">
     <meta property="og:url" content="https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="he_IL">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/modern-shared.css">
     <style>
         body { font-family: 'Assistant', sans-serif; background-color: #fdfbf7; }
         article p { line-height: 1.8; margin-bottom: 1.5rem; }
         article h2 { font-size: 1.875rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; }
+        .dosha-test-option:has(input:checked) { border-color: #047857; background-color: #ecfdf5; }
+        .dosha-test-option:focus-within { outline: 3px solid rgba(16, 185, 129, 0.25); outline-offset: 2px; }
+        .dosha-test-option input { accent-color: #047857; }
+        .dosha-card { padding: 1.25rem; }
+        .dosha-card--vata { border-color: #dbeafe; background-color: #f0f9ff; }
+        .dosha-card--vata .dosha-card__title,
+        .dosha-card--vata .dosha-card__qualities { color: #0c4a6e; }
+        .dosha-card--pitta { border-color: #fde68a; background-color: #fffbeb; }
+        .dosha-card--pitta .dosha-card__title,
+        .dosha-card--pitta .dosha-card__qualities { color: #78350f; }
+        .dosha-card--kapha { border-color: #d1fae5; background-color: #ecfdf5; }
+        .dosha-card--kapha .dosha-card__title,
+        .dosha-card--kapha .dosha-card__qualities { color: #064e3b; }
+        .dosha-caution { border-right: 4px solid #f59e0b; background-color: #fffbeb; }
+        .dosha-test-question,
+        .dosha-result-title { color: #064e3b; }
+        .dosha-test-error { background-color: #fffbeb; color: #78350f; }
+        .dosha-sources-list { padding-right: 1.25rem; }
+        .my-6 { margin-top: 1.5rem; margin-bottom: 1.5rem; }
     </style>
     <link rel="icon" href="assets/logo.webp" type="image/webp">
     <link rel="canonical" href="https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html"><link rel="alternate" type="text/plain" title="LLM Content" href="https://vedica-ayurveda.co.il/llms.txt">
@@ -29,7 +49,7 @@
           "name": "מה זה אבחון איורוודה?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "אבחון איורוודה הוא פגישה מעמיקה שבוחנת דושות, עיכול, שינה, אנרגיה, סטרס, הרגלים יומיומיים ולעיתים גם אבחון דופק, כדי לבנות המלצות תזונה, צמחי מרפא ואורח חיים שמתאימות למצב האישי."
+            "text": "אבחון איורוודה הוא תהליך מסורתי ומשלים שבוחן דושות, עיכול, שינה, אנרגיה, סטרס, הרגלים יומיומיים ולעיתים גם אבחון דופק, כדי לבנות המלצות תזונה, צמחי מרפא ואורח חיים שמתאימות למצב האישי. הוא אינו מחליף אבחון רפואי."
           }
         },
         {
@@ -42,10 +62,42 @@
         },
         {
           "@type": "Question",
+          "name": "איך משלבים בדיקות דם באבחון איורוודי?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "אם יש בדיקות דם עדכניות, אבחנות או מסמכים רפואיים רלוונטיים, אפשר להביא אותם לפגישה. הם משמשים כרקע להבנת התמונה ולבחירת המלצות משלימות זהירות. פענוח רפואי, הזמנת בדיקות, אבחון מחלה ושינוי תרופות נשארים באחריות הרופא או הרופאה."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "במה הליווי בקליניקת VEDICA יכול להתמקד?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "הליווי יכול להתמקד בעיכול ותזונה יומיומית, שינה, סטרס ואנרגיה, ובהתאמות שגרה. ניתן לקבל גם ליווי משלים סביב מחזור, פרימנופאוזה, פוריות, שימור פוריות או IVF, במקביל למעקב ולטיפול הרפואי."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "מה ההבדל בין שאלון דושות לאבחון אישי?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "שאלון דושות יכול לתת כיוון כללי, אבל הוא לא מחליף אבחון אישי. אבחון בקליניקה מתייחס לתמונה הרחבה, לרקע הבריאותי, למצב הנוכחי של הגוף וליכולת היישום של ההמלצות."
+            "text": "שאלון קצר יכול להצביע על איכויות שמורגשות בתקופה האחרונה, אבל אינו קובע Prakriti, אינו מאבחן חוסר איזון ואינו מחליף אבחון אישי או רפואי. אבחון בקליניקה מתייחס גם לרקע הבריאותי, לתמונה לאורך זמן ולמצב הנוכחי."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "למה פגישת אבחון אישית נותנת יותר משאלון דושות אונליין?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "שאלון אונליין מציג אותן שאלות לכולם ויכול לתת כיוון ראשוני בלבד. בפגישה אישית אפשר לשאול שאלות המשך, להשוות בין הנטייה לאורך החיים למצב הנוכחי, להתייחס לדפוסים מעורבים, לרקע רפואי, לתרופות ולבדיקות, ולהחליט מתי נדרש קודם בירור רפואי. גם פגישה איורוודית אינה אבחנה רפואית."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "מה ההבדל בין Prakriti ל־Vikriti?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "במסורת האיורוודית Prakriti היא הנטייה הבסיסית והיציבה יחסית של האדם, ואילו Vikriti היא התמונה הנוכחית והמשתנה, שיכולה להיות מושפעת משינה, תזונה, מתח, עונה, גיל ומצב בריאותי. המטרה המסורתית אינה להפוך את שלוש הדושות לשוות, אלא לצמצם סטייה מן האיזון המתאים לאדם."
           }
         },
         {
@@ -63,10 +115,10 @@
     {
       "@context": "https://schema.org",
       "@type": ["BlogPosting", "Article"],
-      "headline": "אבחון איורוודה בתל אביב: דושות, דופק ומה בודקים בפגישה",
-      "description": "הסבר מעשי על אבחון דושות, אבחון דופק, עיכול, שינה, סטרס ומבנה אישי, ואיך מתרגמים את המידע להמלצות מותאמות.",
+      "headline": "אבחון איורוודה: מה בודקים בשתי פגישות ומה הדופק אינו קובע",
+      "description": "מדריך מעשי לדושות, שאלון מאפיינים לא־אבחוני, Prakriti מול Vikriti, שילוב בדיקות דם ורקע רפואי ותהליך האבחון בשתי פגישות.",
       "datePublished": "2026-03-16",
-      "dateModified": "2026-07-14",
+      "dateModified": "2026-07-24",
       "inLanguage": "he-IL",
       "author": {
         "@type": "Person",
@@ -76,7 +128,16 @@
         "@type": "Organization",
         "name": "VEDICA"
       },
-      "mainEntityOfPage": "https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html"
+      "mainEntityOfPage": "https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html",
+      "citation": [
+        "https://ayusoft.ayush.gov.in/principles-of-ayurveda/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5747507/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12631390/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10953754/",
+        "https://pubmed.ncbi.nlm.nih.gov/34548242/",
+        "https://www.nccih.nih.gov/health/ayurvedic-medicine-in-depth",
+        "https://www.nccih.nih.gov/health/complementary-alternative-or-integrative-health-whats-in-a-name"
+      ]
     }
     </script>
   <script defer src="assets/analytics-loader.js"></script>
@@ -90,7 +151,8 @@
                 <img id="site-logo" src="assets/logo-transparent.webp" alt="Logo" class="site-nav__logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logo-transparent.png';">
                 <span class="site-nav__name">VEDICA</span>
             </a>
-            <div class="site-nav__menu" style="scrollbar-width: none;">
+            <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
+            <div id="site-nav-menu" class="site-nav__menu">
                 <a href="index.html" class="site-nav__link">בית</a>
                 <a href="about.html" class="site-nav__link">אודות</a>
                 <a href="blog.html" class="site-nav__link site-nav__link--active">בלוג</a>
@@ -108,19 +170,203 @@
         <div class="mb-12">
             <div class="flex items-center gap-4 mb-4">
                 <span class="bg-emerald-100 text-emerald-800 px-4 py-1 rounded-full text-sm font-bold">קליניקה</span>
-                <span class="text-slate-500 text-sm">מאת <a href="about.html" class="font-bold text-emerald-800 hover:underline">ענבל הנסב</a> · פורסם 16.03.2026 · עודכן 14.07.2026</span>
+                <span class="text-slate-500 text-sm">מאת <a href="about.html" class="font-bold text-emerald-800 hover:underline">ענבל הנסב</a> · פורסם 16.03.2026 · עודכן 24.07.2026</span>
             </div>
-            <h1 class="text-4xl md:text-5xl font-bold text-emerald-900 mb-4">אבחון איורוודה בתל אביב: דושות, דופק ומה בודקים בפגישה</h1>
-            <p class="text-xl text-slate-600 leading-relaxed">אבחון טוב הוא ההבדל בין רשימת המלצות כללית לבין תוכנית שבאמת מתאימה לאדם שמולה. בפגישת אבחון איורוודית בודקים דושות, עיכול, שינה, אנרגיה, עומס יומיומי ולעיתים גם אבחון דופק.</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-emerald-900 mb-4">אבחון איורוודה: מה בודקים בשתי פגישות ומה הדופק אינו קובע</h1>
+            <p class="text-xl text-slate-600 leading-relaxed">תהליך מסורתי ומשלים שבוחן עיכול, שינה, אנרגיה, עומס והרגלים כדי לבנות תוכנית אישית — בלי להציג אבחון דופק כתחליף לבדיקה רפואית.</p>
         </div>
 
         <img src="assets/inbal-clinic.webp" alt="אבחון איורוודי בקליניקת VEDICA" class="w-full rounded-2xl shadow-lg mb-12 object-cover h-96" loading="lazy" onerror="this.onerror=null;this.src='assets/inbal-clinic.jpg';">
 
         <article class="prose prose-lg max-w-none">
-            <p>אבחון דושות אינו חידון אינטרנטי שמסכם אותך בשלוש דקות. זו דרך להבין אילו דפוסים מנהלים כרגע את הגוף: חום, יובש, כבדות, תנודתיות, עומס, חולשה, גירוי או קיפאון. באיורוודה, ההבנה הזאת היא הבסיס לכל המלצה על תזונה, צמחי מרפא, שינה ורוטינה.</p>
+            <section class="mb-10 rounded-2xl border border-emerald-100 bg-emerald-50 p-6" aria-labelledby="diagnosis-short-answer">
+                <h2 id="diagnosis-short-answer" class="!mt-0 !text-2xl">התשובה הקצרה</h2>
+                <p><strong>אבחון איורוודה הוא תהליך מסורתי ומשלים</strong> שמחבר תשאול על עיכול, שינה, אנרגיה, סטרס, תזונה ושגרת חיים עם אבחון דופק לפי הצורך. ב־VEDICA התהליך מחולק לשתי פגישות: בראשונה אוספים את התמונה המלאה, ובשנייה מקבלים תוכנית מדורגת. אבחון דופק אינו בדיקה רפואית ואינו משמש כדי לקבוע או לשלול מחלה.</p>
+                <a href="#dosha-reflection-title" data-analytics-event="dosha_quiz_cta_click" data-cta-location="dosha-article-intro" class="inline-flex items-center justify-center rounded-full bg-emerald-700 px-6 py-3 font-bold text-white transition hover:bg-emerald-800">לשאלון מאפייני הדושות</a>
+            </section>
 
-            <h2>מה בודקים בפגישה הראשונה?</h2>
-            <p>הפגישה הראשונה בקליניקה נועדה לייצר תמונה מלאה. בודקים את העיכול, התיאבון, היציאות, רמות האנרגיה, איכות השינה, מצבי עומס, רגישויות, דפוסים הורמונליים והרגלים יומיומיים. בנוסף אני משלבת אבחון דופק מסורתי, שעוזר לדייק את ההבנה לגבי המבנה האישי ומה קורה כרגע בגוף.</p>
+            <p>אבחון דושות אינו חידון אינטרנטי שמסכם אותך בשלוש דקות. זו דרך להבין אילו דפוסים מנהלים כרגע את הגוף: חום, יובש, כבדות, תנודתיות, עומס, חולשה, גירוי או קיפאון. באיורוודה, ההבנה הזאת היא אחד הבסיסים לבחירת המלצות על תזונה, צמחי מרפא, שינה ורוטינה.</p>
+
+            <section aria-labelledby="dosha-guide">
+                <h2 id="dosha-guide">מדריך קצר: מהן ואטה, פיטה וקאפה?</h2>
+                <p>באיורוודה, <strong>דושות הן מסגרת מסורתית לתיאור איכויות ודפוסים</strong> — לא איברים, חומרים מדידים או אבחנות רפואיות. בכל אדם קיימות שלוש הדושות, ולעיתים קרובות מופיע דפוס משולב. המילים שלהלן מתארות את השפה המסורתית ואינן קובעות לבדן מה הסיבה לתסמין.</p>
+                <div class="grid gap-4 md:grid-cols-3 my-6">
+                    <article class="dosha-card dosha-card--vata rounded-2xl border">
+                        <h3 class="dosha-card__title text-xl font-bold mb-2">ואטה (Vata)</h3>
+                        <p class="dosha-card__qualities text-sm font-bold mb-3">קלילה · יבשה · קרה · ניידת · משתנה</p>
+                        <p class="text-base mb-0">קשורה במסורת לתנועה ולשינוי. כשאיכויות אלה בולטות בתקופה מסוימת, עשויים להופיע חוסר סדירות בתיאבון או ביציאות, גזים, יובש, שינה מקוטעת, פיזור או אי־שקט.</p>
+                    </article>
+                    <article class="dosha-card dosha-card--pitta rounded-2xl border">
+                        <h3 class="dosha-card__title text-xl font-bold mb-2">פיטה (Pitta)</h3>
+                        <p class="dosha-card__qualities text-sm font-bold mb-3">חמה · חדה · עוצמתית · מתפשטת</p>
+                        <p class="text-base mb-0">קשורה במסורת לתהליכי עיכול ושינוי. כשהאיכויות האלה בולטות, עשויים להופיע תחושת חום או צריבה, יציאות רכות, רגישות ואדמומיות בעור, חוסר סבלנות או עצבנות.</p>
+                    </article>
+                    <article class="dosha-card dosha-card--kapha rounded-2xl border">
+                        <h3 class="dosha-card__title text-xl font-bold mb-2">קאפה (Kapha)</h3>
+                        <p class="dosha-card__qualities text-sm font-bold mb-3">כבדה · איטית · קרירה · יציבה · שמנונית</p>
+                        <p class="text-base mb-0">קשורה במסורת למבנה, יציבות וסיכוך. כשהאיכויות האלה בולטות, עשויים להופיע כבדות, עיכול איטי, עודף ליחה, שינה ארוכה, קושי להתניע או תחושת תקיעות.</p>
+                    </article>
+                </div>
+                <p class="dosha-caution rounded-xl p-4 text-base"><strong>חשוב:</strong> אלה דוגמאות לאיכויות במסורת, לא רשימת אבחון. צרבת, שינוי ביציאות, עייפות, הפרעת שינה או שינוי בעור יכולים לנבוע מסיבות רפואיות שונות, במיוחד אם הם חדשים, חזקים או מתמשכים.</p>
+            </section>
+
+            <section aria-labelledby="prakriti-vikriti">
+                <h2 id="prakriti-vikriti">Prakriti מול Vikriti: הבסיס מול המצב הנוכחי</h2>
+                <p><strong>Prakriti</strong> היא הנטייה הבסיסית והיציבה יחסית של האדם לפי המסורת האיורוודית. <strong>Vikriti</strong> היא התמונה הנוכחית והמשתנה: מה בולט עכשיו בהשפעת שינה, תזונה, מתח, עונות השנה, גיל, שלב בחיים ומצב בריאותי. לכן אדם יכול להיות בעל נטייה בסיסית אחת ולהראות בתקופה מסוימת איכויות של דושה אחרת.</p>
+                <p>הביטוי <strong>״לחזור למקור״</strong> הוא מטאפורה טובה רק אם מדייקים אותה: המטרה המסורתית אינה להפוך את שלוש הדושות לשוות או למחוק תכונות טבעיות, אלא לצמצם סטייה מן האיזון האישי ולתמוך בשיווי משקל דינמי שמתאים לאדם ולמצבו. זו מסגרת קלינית מסורתית — לא מנגנון ביולוגי שהוכח ברפואה המודרנית.</p>
+            </section>
+
+            <section class="my-10 rounded-2xl border border-emerald-200 bg-white p-6 shadow-sm" aria-labelledby="dosha-reflection-title" data-analytics-view-event="dosha_quiz_view" data-cta-location="dosha-reflection-test">
+                <h2 id="dosha-reflection-title" class="!mt-0">שאלון קצר: אילו מאפייני דושה בולטים עכשיו?</h2>
+                <p>ענו לפי <strong>השבועיים עד ארבעת השבועות האחרונים</strong>, ולא לפי איך שהייתם רוב חייכם. השאלון מצביע רק על דמיון לאיכויות מסורתיות של ואטה, פיטה או קאפה; הוא <strong>אינו קובע Prakriti, אינו מאבחן ״חוסר איזון״ ואינו מחליף בירור רפואי או אבחון אישי</strong>.</p>
+                <p class="text-sm text-slate-600">שש התשובות מעובדות בדפדפן בלבד ואינן נשלחות או נשמרות.</p>
+                <form id="dosha-reflection-test" class="space-y-6" novalidate>
+                    <fieldset>
+                        <legend class="dosha-test-question font-bold mb-3">1. איך התיאבון הרגיש לאחרונה?</legend>
+                        <div class="grid gap-2">
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="appetite" value="vata"> משתנה: לפעמים רעב ולפעמים שוכח/ת לאכול</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="appetite" value="pitta"> חזק וחד: איחור בארוחה מורגש מיד</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="appetite" value="kapha"> מתון או איטי: יש כבדות גם אחרי ארוחה רגילה</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="dosha-test-question font-bold mb-3">2. איזה דפוס עיכול היה בולט יותר?</legend>
+                        <div class="grid gap-2">
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="digestion" value="vata"> גזים, נפיחות, עצירות או חוסר סדירות</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="digestion" value="pitta"> צריבה, חומציות או נטייה ליציאות רכות</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="digestion" value="kapha"> עיכול איטי, כבדות ממושכת או תחושת מלאות</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="dosha-test-question font-bold mb-3">3. איך נראתה השינה?</legend>
+                        <div class="grid gap-2">
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="sleep" value="vata"> קלה, מקוטעת או עם קושי להירדם</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="sleep" value="pitta"> יקיצות עם חום, דריכות או מחשבות ממוקדות</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="sleep" value="kapha"> עמוקה או ארוכה, עם קושי להתעורר</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="dosha-test-question font-bold mb-3">4. מה בלט בתחושת הגוף או העור?</legend>
+                        <div class="grid gap-2">
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="body" value="vata"> קור, יובש או תחושת מתח בגוף</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="body" value="pitta"> חום, רגישות, אדמומיות או צריבה</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="body" value="kapha"> כבדות, קרירות, שמנוניות או גודש</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="dosha-test-question font-bold mb-3">5. איך התנהלה האנרגיה?</legend>
+                        <div class="grid gap-2">
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="energy" value="vata"> בפרצים: התלהבות ואחריה ירידה</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="energy" value="pitta"> ממוקדת ואינטנסיבית, לפעמים עד שחיקה</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="energy" value="kapha"> יציבה אך איטית, עם קושי להתניע</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="dosha-test-question font-bold mb-3">6. מה הייתה התגובה השכיחה יותר לעומס?</legend>
+                        <div class="grid gap-2">
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="stress" value="vata"> דאגה, פיזור או אי־שקט</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="stress" value="pitta"> חוסר סבלנות, ביקורתיות או עצבנות</label>
+                            <label class="dosha-test-option cursor-pointer rounded-xl border border-slate-200 p-3"><input class="ml-2" type="radio" name="stress" value="kapha"> הסתגרות, היצמדות להרגל או קושי לזוז</label>
+                        </div>
+                    </fieldset>
+                    <div class="flex flex-col gap-3 sm:flex-row">
+                        <button type="submit" class="rounded-full bg-emerald-700 px-6 py-3 font-bold text-white transition hover:bg-emerald-800">הצגת מאפייני הדושה הבולטים</button>
+                        <button type="reset" class="rounded-full border border-emerald-700 px-6 py-3 font-bold text-emerald-800 transition hover:bg-emerald-50">איפוס</button>
+                    </div>
+                    <p id="dosha-reflection-error" class="dosha-test-error hidden rounded-xl p-3" role="alert">כדי לראות אילו מאפייני דושה בולטים, יש לענות על כל שש השאלות.</p>
+                    <div id="dosha-reflection-result" class="hidden rounded-2xl border border-emerald-200 bg-emerald-50 p-6" role="status" aria-live="polite" tabindex="-1">
+                        <h3 id="dosha-reflection-result-title" class="dosha-result-title text-xl font-bold mb-2"></h3>
+                        <p id="dosha-reflection-result-text" class="mb-3"></p>
+                        <p class="text-sm"><strong>מה עושים עם זה?</strong> מתייחסים לתוצאה כפתיחה להתבוננות בלבד. אם תסמין חדש, חזק, מחמיר או מתמשך — פונים לבירור רפואי. לקביעת מבנה אישי ולבחירת המלצות נדרשת תמונה רחבה יותר.</p>
+                        <div class="mt-4 border-t border-emerald-200 pt-4">
+                            <h4 class="text-lg font-bold text-emerald-900 mb-2">רוצים להפוך את התוצאה לתמונה אישית?</h4>
+                            <p class="text-sm mb-4">בפגישת 1:1 אפשר לחבר בין הדפוס הנוכחי, הנטייה לאורך החיים, הרקע הבריאותי והשגרה — בלי להסיק המלצות מתוצאת השאלון לבדה.</p>
+                            <div class="flex flex-col gap-3 sm:flex-row">
+                                <a href="https://wa.me/972545774407?text=היי%20ענבל,%20השלמתי%20את%20שאלון%20מאפייני%20הדושות%20באתר%20ואשמח%20לבדוק%20התאמה%20לפגישת%20אבחון%20איורוודית%20אישית." target="_blank" rel="noopener noreferrer" data-analytics-event="dosha_quiz_followup_click" data-cta-location="dosha-quiz-result-follow-up" class="inline-flex items-center justify-center rounded-full bg-emerald-700 px-5 py-3 font-bold text-white transition hover:bg-emerald-800">בדיקת התאמה לפגישת 1:1</a>
+                                <a href="process.html" data-analytics-event="dosha_quiz_process_click" data-cta-location="dosha-quiz-result-follow-up" class="inline-flex items-center justify-center rounded-full border border-emerald-700 px-5 py-3 font-bold text-emerald-800 transition hover:bg-emerald-100">איך נראה התהליך?</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="my-10" aria-labelledby="personal-diagnosis-benefit">
+                <h2 id="personal-diagnosis-benefit">למה פגישה אישית נותנת יותר משאלון אונליין?</h2>
+                <p><strong>שאלון אונליין הוא נקודת פתיחה, לא מסקנה אישית.</strong> הוא מציג את אותן שש שאלות לכולם ומסכם רק את מה שסומן. פגישת אבחון איורוודית 1:1 אינה פשוט ״שאלון ארוך יותר״: היא מאפשרת לשנות את שאלות ההמשך לפי התשובות ולהבין מה קבוע יחסית, מה חדש ומה עשוי לדרוש בירור אחר.</p>
+                <div class="grid gap-3 my-6">
+                    <div class="rounded-xl border border-emerald-100 bg-emerald-50 p-4">
+                        <h3 class="text-lg font-bold text-emerald-900 mb-2">מבדילים בין הבסיס למצב הנוכחי</h3>
+                        <p class="mb-0 text-base">משווים בין דפוסים לאורך החיים לבין שינויים של השבועות או החודשים האחרונים, במקום להסיק שדפוס נוכחי הוא בהכרח ה־Prakriti.</p>
+                    </div>
+                    <div class="rounded-xl border border-emerald-100 bg-emerald-50 p-4">
+                        <h3 class="text-lg font-bold text-emerald-900 mb-2">שואלים מה עומד מאחורי אותה תשובה</h3>
+                        <p class="mb-0 text-base">עייפות, נפיחות או שינה מקוטעת יכולות להופיע בהקשרים שונים. בפגישה אפשר לברר מתי התחילו, מה מחמיר או מקל, ואילו בדיקות, תרופות או מצבים רפואיים רלוונטיים.</p>
+                    </div>
+                    <div class="rounded-xl border border-emerald-100 bg-emerald-50 p-4">
+                        <h3 class="text-lg font-bold text-emerald-900 mb-2">מתייחסים לדפוסים מעורבים וליכולת היישום</h3>
+                        <p class="mb-0 text-base">לא חייבת להיות ״דושה מנצחת״. פגישה אישית מאפשרת לקבוע סדר עדיפויות ולבנות צעדים שמתאימים לשגרה, במקום לבחור עצות כלליות מרשימה.</p>
+                    </div>
+                    <div class="rounded-xl border border-emerald-100 bg-emerald-50 p-4">
+                        <h3 class="text-lg font-bold text-emerald-900 mb-2">שומרים על גבול רפואי</h3>
+                        <p class="mb-0 text-base">אפשר לזהות מתי לא נכון להמשיך רק במסלול משלים ומתי כדאי לפנות קודם לרופא או לרופאה. גם פגישת אבחון איורוודית אינה אבחנה רפואית ואינה מחליפה אותה.</p>
+                    </div>
+                </div>
+                <p class="text-base"><strong>למי זה שימושי יותר?</strong> למי שרוצים המלצות אישיות, מתמודדים עם כמה תסמינים יחד, מקבלים תוצאה מעורבת, או כבר ניסו עצות אונליין שלא התחברו לתמונה המלאה.</p>
+            </section>
+
+            <section class="my-10 rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm" aria-labelledby="labs-and-western-medicine">
+                <h2 id="labs-and-western-medicine" class="!mt-0">איך משלבים בדיקות דם ורפואה מערבית?</h2>
+                <p><strong>בדיקות דם, אבחנות רפואיות ורשימת תרופות הן חלק מההקשר — לא תחליף לתשאול ולא חומר לאבחון עצמי.</strong> אם יש תוצאות עדכניות או מסמכים רפואיים רלוונטיים, כדאי להביא אותם לפגישה. הם עוזרים להבין מה כבר נבדק, אילו מצבים נמצאים במעקב ואילו המלצות תזונה או צמחים דורשות זהירות.</p>
+                <div class="rounded-xl border-r-4 border-emerald-500 bg-emerald-50 p-4 my-6">
+                    <p class="mb-0 text-base"><strong>חלוקת האחריות ברורה:</strong> פענוח רפואי של בדיקות, הזמנת בדיקות חדשות, אבחון מחלה, שינוי תרופות והחלטות על טיפול רפואי נשארים אצל הרופא או הרופאה. בקליניקה משתמשים במידע הקיים כדי לבנות ליווי משלים שאינו מתנגש במעקב הרפואי, ולהפנות חזרה לבירור כאשר עולה צורך.</p>
+                </div>
+                <h3 class="text-xl font-bold text-emerald-900 mb-3">מה כדאי להביא לפגישה?</h3>
+                <ul class="dosha-sources-list list-disc space-y-2 text-base">
+                    <li>בדיקות דם, אבחנות או סיכומים רפואיים רלוונטיים, אם יש.</li>
+                    <li>רשימה מלאה של תרופות, תוספים וצמחי מרפא שנלקחים כרגע.</li>
+                    <li>ציר זמן קצר: מתי התחילו התסמינים ומה השתנה סביבם.</li>
+                    <li>רקע סביב מחזור, פרימנופאוזה, פוריות או IVF, כאשר הוא קשור לסיבת הפנייה.</li>
+                </ul>
+            </section>
+
+            <section class="my-10" aria-labelledby="clinic-process-and-focus">
+                <h2 id="clinic-process-and-focus">איך זה נעשה בקליניקה?</h2>
+                <div class="grid gap-4 md:grid-cols-3 my-6">
+                    <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">1. פגישה ראשונה</h3>
+                        <p class="mb-0 text-base">תשאול על עיכול, שינה, אנרגיה, סטרס, מחזור, תזונה ושגרה; מעבר על הרקע הרפואי, התרופות והבדיקות שהובאו; ואבחון דופק מסורתי לפי הצורך.</p>
+                    </div>
+                    <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">2. עיבוד התמונה</h3>
+                        <p class="mb-0 text-base">מפרידים בין המבנה הבסיסי למצב הנוכחי, מסמנים סדרי עדיפויות ובודקים מה מתאים לליווי משלים ומה צריך להישאר או לחזור למעקב רפואי.</p>
+                    </div>
+                    <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">3. פגישה שנייה ומעקב</h3>
+                        <p class="mb-0 text-base">מקבלים תוכנית מדורגת עם תזונה, חליטות והרגלי שגרה. צמחי מרפא או פורמולות משולבים רק כאשר הם מתאימים ובטוחים לצד התרופות והרקע הרפואי; בהמשך מדייקים לפי הצורך.</p>
+                    </div>
+                </div>
+
+                <h2>במה הליווי יכול להתמקד?</h2>
+                <p>המיקוד הוא בתמיכה באדם ובשגרה, לא בהבטחה לרפא מחלה. התחומים המוצגים באתר ובקליניקה כוללים:</p>
+                <div class="grid gap-3 md:grid-cols-2 my-6">
+                    <div class="rounded-xl border border-emerald-100 bg-white p-4">
+                        <h3 class="text-lg font-bold text-emerald-900 mb-2">עיכול ותזונה יומיומית</h3>
+                        <p class="mb-0 text-base">דפוסי תיאבון, נפיחות, כבדות או רגישות, קצב ארוחות והתאמות מזון הדרגתיות.</p>
+                    </div>
+                    <div class="rounded-xl border border-emerald-100 bg-white p-4">
+                        <h3 class="text-lg font-bold text-emerald-900 mb-2">שינה, סטרס ואנרגיה</h3>
+                        <p class="mb-0 text-base">הרגלים סביב שעות שינה, עומס, קצב יום ותזונה — במקביל לטיפול רפואי או נפשי כשצריך.</p>
+                    </div>
+                    <div class="rounded-xl border border-emerald-100 bg-white p-4">
+                        <h3 class="text-lg font-bold text-emerald-900 mb-2">מחזור ופרימנופאוזה</h3>
+                        <p class="mb-0 text-base">ליווי משלים סביב תזונה, שינה, עיכול ושגרה, בלי להחליף בירור גינקולוגי או טיפול רפואי.</p>
+                    </div>
+                    <div class="rounded-xl border border-emerald-100 bg-white p-4">
+                        <h3 class="text-lg font-bold text-emerald-900 mb-2">פוריות, שימור פוריות ו־IVF</h3>
+                        <p class="mb-0 text-base">תמיכה משלימה בשגרה ובתזונה לצד פרוטוקול הפוריות, התרופות והמעקב של הצוות המטפל.</p>
+                    </div>
+                </div>
+            </section>
 
             <h2>מהו בעצם אבחון דופק?</h2>
             <p>אבחון דופק הוא כלי מסורתי מתוך האיורוודה שמטרתו לאסוף עוד מידע על המערכת. הוא אינו עומד לבד, אלא מצטרף לתשאול ולסיפור החיים הנוכחי. המטרה היא לא "לנבא", אלא לדייק את הכיוון הטיפולי ולזהות איפה יש חוסר איזון שנמשך כבר זמן מה.</p>
@@ -166,21 +412,50 @@
                 <div class="space-y-5">
                     <div>
                         <h3 class="text-lg font-bold text-emerald-800 mb-2">מה זה אבחון איורוודה?</h3>
-                        <p class="mb-0">אבחון איורוודה הוא פגישה מעמיקה שבוחנת דושות, עיכול, שינה, אנרגיה, סטרס, הרגלים יומיומיים ולעיתים גם אבחון דופק, כדי לבנות המלצות תזונה, צמחי מרפא ואורח חיים שמתאימות למצב האישי.</p>
+                        <p class="mb-0">אבחון איורוודה הוא תהליך מסורתי ומשלים שבוחן דושות, עיכול, שינה, אנרגיה, סטרס, הרגלים יומיומיים ולעיתים גם אבחון דופק, כדי לבנות המלצות תזונה, צמחי מרפא ואורח חיים שמתאימות למצב האישי. הוא אינו מחליף אבחון רפואי.</p>
                     </div>
                     <div>
                         <h3 class="text-lg font-bold text-emerald-800 mb-2">מה בודקים באבחון איורוודי?</h3>
                         <p class="mb-0">בודקים עיכול, תיאבון, יציאות, שינה, אנרגיה, עומס רגשי, רגישויות, דפוסים הורמונליים, שגרת יום ותזונה. בקליניקה אפשר לשלב גם אבחון דופק מסורתי.</p>
                     </div>
                     <div>
+                        <h3 class="text-lg font-bold text-emerald-800 mb-2">איך משלבים בדיקות דם באבחון איורוודי?</h3>
+                        <p class="mb-0">אם יש בדיקות דם עדכניות, אבחנות או מסמכים רפואיים רלוונטיים, אפשר להביא אותם לפגישה. הם משמשים כרקע להבנת התמונה ולבחירת המלצות משלימות זהירות. פענוח רפואי, הזמנת בדיקות, אבחון מחלה ושינוי תרופות נשארים באחריות הרופא או הרופאה.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-emerald-800 mb-2">במה הליווי בקליניקת VEDICA יכול להתמקד?</h3>
+                        <p class="mb-0">הליווי יכול להתמקד בעיכול ותזונה יומיומית, שינה, סטרס ואנרגיה, ובהתאמות שגרה. ניתן לקבל גם ליווי משלים סביב מחזור, פרימנופאוזה, פוריות, שימור פוריות או IVF, במקביל למעקב ולטיפול הרפואי.</p>
+                    </div>
+                    <div>
                         <h3 class="text-lg font-bold text-emerald-800 mb-2">מה ההבדל בין שאלון דושות לאבחון אישי?</h3>
-                        <p class="mb-0">שאלון דושות יכול לתת כיוון כללי, אבל הוא לא מחליף אבחון אישי. אבחון בקליניקה מתייחס לתמונה הרחבה, לרקע הבריאותי, למצב הנוכחי של הגוף וליכולת היישום של ההמלצות.</p>
+                        <p class="mb-0">שאלון קצר יכול להצביע על איכויות שמורגשות בתקופה האחרונה, אבל הוא אינו קובע Prakriti, אינו מאבחן חוסר איזון ואינו מחליף אבחון אישי או רפואי. אבחון בקליניקה מתייחס גם לרקע הבריאותי, לתמונה לאורך זמן ולמצב הנוכחי.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-emerald-800 mb-2">למה פגישת אבחון אישית נותנת יותר משאלון דושות אונליין?</h3>
+                        <p class="mb-0">שאלון אונליין מציג אותן שאלות לכולם ויכול לתת כיוון ראשוני בלבד. בפגישה אישית אפשר לשאול שאלות המשך, להשוות בין הנטייה לאורך החיים למצב הנוכחי, להתייחס לדפוסים מעורבים, לרקע רפואי, לתרופות ולבדיקות, ולהחליט מתי נדרש קודם בירור רפואי. גם פגישה איורוודית אינה אבחנה רפואית.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-emerald-800 mb-2">מה ההבדל בין Prakriti ל־Vikriti?</h3>
+                        <p class="mb-0">במסורת האיורוודית Prakriti היא הנטייה הבסיסית והיציבה יחסית של האדם, ואילו Vikriti היא התמונה הנוכחית והמשתנה, שיכולה להיות מושפעת משינה, תזונה, מתח, עונה, גיל ומצב בריאותי. המטרה המסורתית אינה להפוך את שלוש הדושות לשוות, אלא לצמצם סטייה מן האיזון המתאים לאדם.</p>
                     </div>
                     <div>
                         <h3 class="text-lg font-bold text-emerald-800 mb-2">איך בנוי תהליך אבחון איורוודי?</h3>
                         <p class="mb-0">תהליך האבחון בקליניקת VEDICA בנוי כאבחון ותוכנית בשתי פגישות, כדי לאפשר תשאול עמוק, הבנת דפוסים, אבחון דופק לפי הצורך וקבלת כיוון טיפולי אישי שאפשר להתחיל ליישם בצורה מסודרת.</p>
                     </div>
                 </div>
+            </section>
+            <section class="my-10 rounded-2xl border border-stone-200 bg-stone-50 p-6" aria-labelledby="dosha-sources">
+                <h2 id="dosha-sources" class="!mt-0 !text-2xl">מקורות וגבולות הידע</h2>
+                <p class="text-base">ההבחנות בין דושות, Prakriti ו־Vikriti מוצגות כאן כמסגרת מסורתית. סקירות מחקריות מצאו שונות רבה בין שאלוני Prakriti ומגבלות בתיקוף שלהם; לכן שאלון קצר באתר אינו יכול לקבוע מבנה אישי. גם הראיות המדעיות ליעילות טיפולים איורוודיים במצבים רפואיים רבים עדיין מוגבלות.</p>
+                <ul class="dosha-sources-list list-disc space-y-2 text-base">
+                    <li><a class="font-bold text-emerald-800 hover:underline" href="https://ayusoft.ayush.gov.in/principles-of-ayurveda/" target="_blank" rel="noopener noreferrer">משרד AYUSH: עקרונות האיורוודה והמסגרת המסורתית</a></li>
+                    <li><a class="font-bold text-emerald-800 hover:underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5747507/" target="_blank" rel="noopener noreferrer">מחקר על מהימנות שאלוני מבנה בדיווח עצמי</a></li>
+                    <li><a class="font-bold text-emerald-800 hover:underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12631390/" target="_blank" rel="noopener noreferrer">סקירה ביקורתית של כלי הערכת Prakriti</a></li>
+                    <li><a class="font-bold text-emerald-800 hover:underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10953754/" target="_blank" rel="noopener noreferrer">סקירת Ayurgenomics על Prakriti, Vikriti ואיזון אישי</a></li>
+                    <li><a class="font-bold text-emerald-800 hover:underline" href="https://pubmed.ncbi.nlm.nih.gov/34548242/" target="_blank" rel="noopener noreferrer">פיתוח שאלון דושות בן 39 פריטים</a></li>
+                    <li><a class="font-bold text-emerald-800 hover:underline" href="https://www.nccih.nih.gov/health/ayurvedic-medicine-in-depth" target="_blank" rel="noopener noreferrer">NCCIH: ראיות, בטיחות ושילוב טיפול רפואי</a></li>
+                    <li><a class="font-bold text-emerald-800 hover:underline" href="https://www.nccih.nih.gov/health/complementary-alternative-or-integrative-health-whats-in-a-name" target="_blank" rel="noopener noreferrer">NCCIH: ההבדל בין טיפול משלים, חלופי ואינטגרטיבי</a></li>
+                </ul>
             </section>
             <aside class="blog-trust-note bg-stone-50 border border-stone-200 rounded-2xl p-5 mt-10 text-sm leading-relaxed text-slate-700">
                 <strong class="text-emerald-900">חשוב לדעת:</strong> המידע במאמר הוא מידע כללי בלבד ואינו מחליף אבחון, ייעוץ או טיפול רפואי אישי. אם יש מצב רפואי פעיל, תרופות קבועות, הריון, הנקה או תהליך רפואי כמו IVF, חשוב להתייעץ עם גורם רפואי מוסמך לפני שינוי תזונה, תוספים או צמחי מרפא.
@@ -197,13 +472,17 @@
             </ul>
         </section>
 
-        <div class="mt-20 pt-8 border-t border-slate-200">
-            <div class="bg-emerald-50 p-8 rounded-2xl">
-                <h3 class="text-2xl font-bold text-emerald-900 mb-4">רוצים לעבור אבחון דושות מסודר בקליניקה בתל אביב?</h3>
-                <p class="text-slate-700 mb-6">אם אתם מחפשים אבחון מעמיק ולא עוד המלצה כללית, אפשר לתאם שיחה ולבדוק אם זה הזמן הנכון להתחיל.</p>
-                <a href="contact.html" class="inline-block bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-emerald-800 transition inline-flex items-center justify-center">לקביעת שיחת היכרות</a>
+        <section class="mt-20 border-t border-slate-200 pt-8" aria-labelledby="diagnosis-fit-cta">
+            <div class="rounded-2xl bg-emerald-50 p-8">
+                <h2 id="diagnosis-fit-cta" class="mb-4 text-2xl font-bold text-emerald-900">רוצים לבדוק אם תהליך אבחון איורוודי מתאים לכם?</h2>
+                <p class="mb-2 text-slate-700">הקליניקה נמצאת בארלוזורוב 82 בתל אביב, והתהליך כולל איסוף תמונה ותוכנית אישית בשתי פגישות. אפשר לשלוח כמה שורות על הסיבה לפנייה ולבדוק התאמה לפני שקובעים.</p>
+                <p class="mb-6 text-sm text-slate-600">הליווי משלים בלבד ואינו מחליף אבחון או טיפול רפואי.</p>
+                <div class="flex flex-col gap-3 sm:flex-row">
+                    <a href="https://wa.me/972545774407?text=היי%20ענבל,%20קראתי%20על%20אבחון%20איורוודה%20ואשמח%20לבדוק%20אם%20התהליך%20מתאים%20לי.%20הסיבה%20העיקרית%20לפנייה:%20___" target="_blank" rel="noopener noreferrer" data-cta-location="dosha-diagnosis-final-cta" class="inline-flex items-center justify-center rounded-full bg-emerald-700 px-8 py-4 text-lg font-bold text-white transition hover:bg-emerald-800">בדיקת התאמה בוואטסאפ</a>
+                    <a href="contact.html" data-cta-location="dosha-diagnosis-final-cta" class="inline-flex items-center justify-center rounded-full border border-emerald-700 px-8 py-4 text-lg font-bold text-emerald-800 transition hover:bg-emerald-100">טופס יצירת קשר</a>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer class="bg-emerald-900 text-white pt-16 pb-8">
@@ -243,6 +522,8 @@
             </div>
         </div>
     </footer>
+    <script defer src="assets/site-nav.js"></script>
+    <script defer src="assets/dosha-reflection-test.js"></script>
 </body>
 
 </html>
