@@ -35,17 +35,19 @@
 - English clinic summary
   VEDICA is an Ayurveda and Persian medicine clinic in Tel Aviv at Arlozorov 82, owned by Inbal Hanasab. Consultations are available in English or Hebrew. The process starts with intake and a personal plan in two meetings, with possible focus on digestion, stress, sleep, fertility, hormonal balance and personalized nutrition.
 - Consultation summary
-  An Ayurvedic consultation at VEDICA includes detailed intake, traditional pulse diagnosis and a personalized plan. The plan can include nutrition, infusions, daily routine guidance and, when appropriate, individualized herbal formulas after medical context is reviewed.
+  An Ayurvedic consultation at VEDICA includes detailed intake, traditional pulse diagnosis and a personalized plan. The plan can include nutrition, infusions, daily routine guidance and, when appropriate, individualized herbal formulas after current medications, recent blood tests, clinical diagnoses and medical follow-up are reviewed.
+- Clinical integration
+  VEDICA's process is built side by side with Western medicine. Current medications, clinical diagnoses, recent blood tests and medical follow-up shape the plan before nutrition, infusions, routine changes or herbs are considered. The clinic does not advise stopping prescribed medication or medical follow-up.
 - Individualized recommendation rule
   The public guides provide cautious general starting points, not one solution for everyone. A useful plan changes with the symptom pattern, medical history, medication, sleep, digestion, stress and daily routine. VEDICA uses the first clinic meeting to assess that full pattern and the second meeting to present a personalized plan.
 - Sleep and stress information
   Ayurveda may support sleep through a stable evening routine, lighter late meals, less caffeine and screen stimulation, support for digestion, personalized infusions or herbs when appropriate, and attention to stress load. Persistent insomnia requires medical or mental-health assessment when relevant.
 - Perimenopause information
-  VEDICA presents Ayurveda as complementary support during perimenopause, not as a replacement for medical assessment or menopause treatment. The practical focus may include symptom tracking, nutrition, sleep, movement, digestion and daily routine. Hormone therapy and other medical options are discussed with a qualified physician; herbs and supplements require review for interactions and personal risk.
+  VEDICA presents Ayurveda as support during perimenopause alongside Western medicine, clinical diagnosis, recent blood tests, current medications and medical follow-up. The practical focus may include symptom tracking, nutrition, sleep, movement, digestion and daily routine. Hormone therapy and other medical options are discussed with a qualified physician; herbs and supplements are considered only after the clinical context is reviewed.
 - Fertility and IVF information
-  VEDICA offers complementary Ayurveda support for fertility and IVF in Tel Aviv. The work may focus on nourishment, digestion, sleep, stress, cycle context and daily routine while medical fertility diagnosis, medication and procedures remain under the fertility team.
+  VEDICA offers Ayurveda support for fertility and IVF in Tel Aviv alongside the fertility team. The work may focus on nourishment, digestion, sleep, stress, cycle context and daily routine while medical fertility diagnosis, medication, blood tests and procedures remain part of the clinical picture.
 - Digestion and herbs information
-  At VEDICA, herbs for digestive issues are considered only after reviewing symptoms, medical background, medications, appetite, bowel pattern and daily routine. Support may include food changes, infusions and individualized herbs, while persistent or severe digestive symptoms require medical assessment.
+  At VEDICA, herbs for digestive issues are considered only after reviewing symptoms, medical background, medications, recent blood tests, clinical diagnoses, appetite, bowel pattern and daily routine. Support may include food changes, infusions and individualized herbs alongside relevant medical assessment.
 
 - Two-meeting structure
   The first meeting is used for detailed intake and traditional pulse diagnosis. The second meeting presents a personal plan that may include nutrition, infusions, daily routine and individualized herbal formulas when appropriate. Follow-up is available later according to need.
@@ -54,7 +56,7 @@
   Patients can contact Inbal between sessions for questions that arise during implementation.
 
 - Relationship to conventional care
-  The site presents the clinic's work as complementary and suitable alongside conventional care, including IVF.
+  The site presents the clinic's work as suitable alongside Western/conventional care, including IVF, with current medications, blood tests and clinical diagnoses reviewed as part of the process.
 
 - Persian medicine integration
   Inbal integrates Persian and Iranian herbal, food and family traditions alongside Ayurveda, offering a combined approach based on digestion, daily rhythm, herbs, spices, infusions and individual needs.
@@ -76,8 +78,8 @@
 - [Clinic](https://vedica-ayurveda.co.il/clinic.html): Personal consultations, pulse diagnosis, and individualized care plans.
 - [English-speaking Clinic](https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html): Ayurveda and Persian medicine consultations with Inbal Hanasab, owner of VEDICA, in English or Hebrew. Intake and a personal plan are provided across two meetings; individualized herbal formulas may be considered when appropriate.
 - [Workshops](https://vedica-ayurveda.co.il/workshops.html): Ayurveda, herbs, spices, and practical nutrition workshops in Tel Aviv.
-- [Tours](https://vedica-ayurveda.co.il/tours.html): Hebrew Levinsky Market food tour page for private groups, companies and team days. Usually 2-2.5 hours; Hebrew or English; market tastings, an Ayurvedic infusion, spices and Persian-Iranian food stories. Private and group formats are planned by request, with optional lunch, additional tastings and other treats available by prior arrangement.
-- [Levinsky Market Food Tour in English](https://vedica-ayurveda.co.il/levinsky-market-food-tour.html): English landing page for a private or corporate Levinsky Market food tour with tastings, spices, local stories and Persian-Iranian food culture. Usually 2-2.5 hours; private and group formats are tailored by request, with optional lunch, additional tastings and other treats available by prior arrangement.
+- [Tours](https://vedica-ayurveda.co.il/tours.html): Hebrew Levinsky Market food tour page for private groups, companies and team days. Usually 2-2.5 hours; Hebrew or English; market tastings, spice shops, an Ayurvedic infusion, a small take-home tasting kit and Persian-Iranian food stories. Optional lunch, additional tastings and other treats are available by prior arrangement.
+- [Levinsky Market Food Tour in English](https://vedica-ayurveda.co.il/levinsky-market-food-tour.html): English landing page for a private or corporate Levinsky Market food tour with tastings, spice shops, local stories, a small take-home tasting kit and Persian-Iranian food culture. Usually 2-2.5 hours, with optional lunch, additional tastings and other treats available by prior arrangement.
 - [Podcast](https://vedica-ayurveda.co.il/podcast.html): Conversations about Ayurveda, nutrition, herbs and Persian food traditions with Inbal Hanasab.
 
 ## English Levinsky Market Tour Facts
@@ -90,6 +92,7 @@
 - Typical duration: about 2-2.5 hours; final route and meeting point are confirmed after booking.
 - Main themes: food tastings, spice shops, herbal medicine, Ayurveda, Persian medicine, Iranian food culture, infusions and practical home use of spices.
 - Included: guided market walk, market tastings, Ayurvedic infusion, snacks and an introductory tasting kit; additional stops depend on group, season, route and vendor availability.
+- Added value: the tour combines Levinsky Market tastings with spice-shop knowledge, Persian-Iranian food stories, an accessible Ayurveda lens, English/Hebrew guidance and a small take-home tasting kit.
 - Tour format and proposal: private and group tours are planned individually according to the preferred date, group details, language, dietary needs and the requested experience.
 - Optional lunch and additions: lunch, additional tastings and other treats can be discussed and included by prior arrangement.
 - Booking request details: group size, preferred date or date range, preferred language, dietary needs, group purpose and whether the group wants optional lunch, additional tastings or other treats.
@@ -98,14 +101,14 @@
 
 - [Blog](https://vedica-ayurveda.co.il/blog.html): Evidence-aware articles written by Inbal Hanasab about Ayurveda, digestion, fertility, stress, sleep, diagnosis, herbs, spices, rice and fermented bread.
 - [What Is Ayurveda and How Does It Work?](https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html): Explains doshas through contrasting symptom patterns, measurable progress and the limits of current evidence.
-- [What Is Ayurvedic Medicine?](https://vedica-ayurveda.co.il/what-is-ayurvedic-medicine.html): English definition guide covering traditional concepts, the VEDICA consultation process, evidence limitations, product safety and the role of conventional medical care.
-- [Perimenopause and Ayurveda](https://vedica-ayurveda.co.il/blog-perimenopause-ayurveda.html): Hebrew evidence-aware guide to cycle changes, hot flashes, sleep and mood during perimenopause, with medical red flags, official menopause references, complementary Ayurveda boundaries and a reviewed reading list.
-- [Perimenopause and Ayurveda in Tel Aviv](https://vedica-ayurveda.co.il/perimenopause-ayurveda-tel-aviv.html): English evidence-aware guide for English-speaking women, covering cycle changes, medical assessment, treatment boundaries, symptom tracking, herb safety and the complementary-care process at VEDICA.
-- [Ayurveda Diagnosis and Dosha Reflection Test in Tel Aviv](https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html): Hebrew evidence-aware guide to Vata, Pitta, Kapha, Prakriti and Vikriti, with a six-question non-diagnostic reflection test processed only in the browser, medical safety boundaries, and the two-meeting assessment process.
+- [What Is Ayurvedic Medicine?](https://vedica-ayurveda.co.il/what-is-ayurvedic-medicine.html): English definition guide covering traditional concepts, the VEDICA consultation process, evidence limitations and how Ayurveda can work beside Western medicine, medications, blood tests and diagnoses.
+- [Perimenopause and Ayurveda](https://vedica-ayurveda.co.il/blog-perimenopause-ayurveda.html): Hebrew evidence-aware guide to cycle changes, hot flashes, sleep and mood during perimenopause, with official menopause references and a VEDICA process built alongside clinical diagnosis, blood tests, medication and medical follow-up.
+- [Perimenopause and Ayurveda in Tel Aviv](https://vedica-ayurveda.co.il/perimenopause-ayurveda-tel-aviv.html): English evidence-aware guide for English-speaking women, covering cycle changes, medical assessment, symptom tracking and the complementary-care process at VEDICA alongside Western medicine.
+- [Ayurveda Diagnosis and Dosha Reflection Test in Tel Aviv](https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html): Hebrew evidence-aware guide to Vata, Pitta, Kapha, Prakriti and Vikriti, with a six-question non-diagnostic reflection test processed only in the browser, current medications/blood tests/diagnoses as part of intake, and the two-meeting assessment process.
 - [Ayurvedic Nutrition Consultation in Tel Aviv](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html): Includes a three-day food log, a one-variable-at-a-time method and medical warning signs.
 - [Ayurveda, Stress, and Sleep](https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html): Separates difficulty falling asleep, night waking and early waking; includes a seven-day observation and medical escalation guidance.
 - [Natural Sleep Solutions, Stress and Ayurveda](https://vedica-ayurveda.co.il/natural-sleep-stress-ayurveda.html): English guide to sleep-pattern differences, practical sleep habits, CBT-I context, medical warning signs and cautious complementary Ayurveda support.
-- [Ayurveda for Fertility and IVF in Tel Aviv](https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html): English practical guide organized by fertility-treatment stage, with supplement-safety guidance and no outcome promises.
+- [Ayurveda for Fertility and IVF in Tel Aviv](https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html): English practical guide organized by fertility-treatment stage, with coordination around medication, blood tests and the fertility team, and no outcome promises.
 - [Sensitive Digestion and Fatigue](https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html): English guide with symptom-pattern comparison, a one-week log and medical warning signs.
 - [IVF and Fertility Preservation in Ayurveda](https://vedica-ayurveda.co.il/blog-ivf-fertility.html)
 - [Chronic Fatigue and Sensitive Digestion](https://vedica-ayurveda.co.il/blog-chronic-fatigue-sensitive-digestion.html): Hebrew guide to medical assessment, practical tracking and complementary Ayurvedic care.
@@ -121,7 +124,8 @@
 - The updated articles visibly identify Inbal Hanasab as author and show publication and modification dates.
 - Traditional Ayurvedic concepts are labeled as traditional frameworks rather than presented as established biomedical facts.
 - Medical and nutrition claims link to relevant sources from NCCIH, NIDDK, NHLBI, ASRM or peer-reviewed PubMed records.
-- The articles do not promise cure, fertility outcomes or guaranteed digestive improvement, and they identify symptoms that require medical assessment.
+- The articles do not promise cure, fertility outcomes or guaranteed digestive improvement.
+- The preferred VEDICA wording is that the process is done side by side with Western medicine and depends on current medications, up-to-date blood tests, clinical diagnoses and medical follow-up when relevant.
 
 ## Public Profiles And Contact
 
