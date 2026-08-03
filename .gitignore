@@ -10,3 +10,14 @@ client_secret*.json
 *client_secret*.json
 token*.json
 .gsc/
+
+# Local SEO/AEO/GSC/GA4 audit exports. Force-add a report if we intentionally
+# want to publish it as audit history.
+seo-logs/ga4/
+seo-logs/search-console/[0-9][0-9][0-9][0-9]-*/
+seo-logs/aeo-live-search/[0-9][0-9][0-9][0-9]-*.md
+
+# One-off local analysis scratch files.
+*_analyzer.py
+*_explorer.py
+kobi_*.csv
