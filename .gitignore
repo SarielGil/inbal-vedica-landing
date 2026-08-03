@@ -21,3 +21,13 @@ seo-logs/aeo-live-search/[0-9][0-9][0-9][0-9]-*.md
 *_analyzer.py
 *_explorer.py
 kobi_*.csv
+
+# Local/private tour proposal and planning artifacts. Force-add intentionally
+# if one of these should become a public page or asset.
+tour-group-quote.html
+inbal-tour-global-listing-plan.html
+assets/herbs-spices-personal-kit.jpg
+assets/levinsky-spice-shop-privacy.jpg
+
+# Local markdown notes/spec drafts. Tracked markdown files are unaffected.
+*.md
