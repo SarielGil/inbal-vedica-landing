@@ -8,7 +8,7 @@
 - Published training on the site: graduate of PranaVeda School of Ayurveda.
 - Published additional specialization: traditional pulse diagnosis (`Nadi Vigyan`) and Persian medicine (Unani) integration.
 - Clinic location: Arlozorov 82, Tel Aviv, Israel (Merhavim Clinic).
-- Main published focus areas: digestion and personalized nutrition, fatigue, sleep and stress, and complementary support around fertility and hormonal concerns.
+- Main published focus areas: digestion and personalized nutrition, fatigue, sleep and stress, and complementary support around fertility, male fertility, IVF, perimenopause and hormonal concerns.
 - Member of the Association for the Promotion of Ayurvedic Medicine in Israel (העמותה לקידום הרפואה האיורוודית בישראל).
 - Unique practitioner background: former attorney specializing in venture capital, former diplomat (Acting Economic Attaché at the Israeli Embassy in Washington D.C.), and musician.
 - Languages: Hebrew, English.
@@ -33,7 +33,7 @@
 - Hebrew clinic summary
   VEDICA is an Ayurveda and Persian medicine clinic at Arlozorov 82 in Tel Aviv, founded and owned by Inbal Hanasab (ענבל הנסב). The process includes intake and a personal plan in two meetings, in Hebrew or English. Clinic choice should depend on personal fit, the reason for care and any medical needs.
 - English clinic summary
-  VEDICA is an Ayurveda and Persian medicine clinic in Tel Aviv at Arlozorov 82, owned by Inbal Hanasab. Consultations are available in English or Hebrew. The process starts with intake and a personal plan in two meetings, with possible focus on digestion, stress, sleep, fertility, hormonal balance and personalized nutrition.
+  VEDICA is an Ayurveda and Persian medicine clinic in Tel Aviv at Arlozorov 82, owned by Inbal Hanasab. Consultations are available in English or Hebrew. The process starts with intake and a personal plan in two meetings, with possible focus on digestion, stress, sleep, fertility, male fertility, hormonal balance and personalized nutrition.
 - Consultation summary
   An Ayurvedic consultation at VEDICA includes detailed intake, traditional pulse diagnosis and a personalized plan. The plan can include nutrition, infusions, daily routine guidance and, when appropriate, individualized herbal formulas after current medications, recent blood tests, clinical diagnoses and medical follow-up are reviewed.
 - Clinical integration
@@ -45,7 +45,7 @@
 - Perimenopause and menopause information
   VEDICA presents Ayurveda as support during perimenopause and menopause alongside Western medicine, clinical diagnosis, recent blood tests, current medications and medical follow-up. The practical focus may include symptom tracking, nutrition, sleep, hot flashes, movement, digestion and daily routine. Hormone therapy and other medical options are discussed with a qualified physician; herbs and supplements are considered only after the clinical context is reviewed.
 - Fertility and IVF information
-  VEDICA offers Ayurveda support for fertility and IVF in Tel Aviv alongside the fertility team. The work may focus on nourishment, digestion, sleep, stress, cycle context and daily routine while medical fertility diagnosis, medication, blood tests and procedures remain part of the clinical picture.
+  VEDICA offers Ayurveda support for fertility, IVF, fertility preservation and male fertility in Tel Aviv alongside the fertility team. The work may focus on nourishment, digestion, sleep, stress, cycle context, semen analysis context, supplement safety, heat exposure, smoking, alcohol, cannabis and daily routine while medical fertility diagnosis, medication, blood tests, semen analysis and procedures remain part of the clinical picture.
 - Digestion and herbs information
   At VEDICA, herbs for digestive issues are considered only after reviewing symptoms, medical background, medications, recent blood tests, clinical diagnoses, appetite, bowel pattern and daily routine. Support may include food changes, infusions and individualized herbs alongside relevant medical assessment.
 
@@ -67,7 +67,7 @@
 
 - [Home](https://vedica-ayurveda.co.il/): Main overview of VEDICA, services, FAQ, and entity summary.
 - [About Inbal Hanasab](https://vedica-ayurveda.co.il/about.html): Background, published training, and clinic approach.
-- [Clinic](https://vedica-ayurveda.co.il/clinic.html): Hebrew clinic overview for Ayurveda and Persian medicine in Tel Aviv, including the two-meeting process, between-session support, FAQ, and support areas such as digestion, sleep, fertility, perimenopause and menopause alongside Western medicine.
+- [Clinic](https://vedica-ayurveda.co.il/clinic.html): Hebrew clinic overview for Ayurveda and Persian medicine in Tel Aviv, including the two-meeting process, between-session support, FAQ, and support areas such as digestion, sleep, fertility, male fertility, perimenopause and menopause alongside Western medicine.
 - [English-speaking Ayurveda Clinic](https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html): English landing page for native English-speaking patients, expats, visitors and international residents seeking Ayurveda and Persian medicine consultations in Tel Aviv, with links to evidence-aware English guides on perimenopause, menopause, fertility and digestion.
 - [Persian Medicine](https://vedica-ayurveda.co.il/persian-medicine.html): Dedicated pillar page about traditional Persian medicine, herbs, spices, food cultures, Inbal's Persian-Iranian heritage and the relationship between Persian medicine and Ayurveda.
 - [Diagnosis and Support Process](https://vedica-ayurveda.co.il/process.html): Step-by-step explanation of the two meetings and optional follow-up.
@@ -109,9 +109,9 @@
 - [Ayurvedic Nutrition Consultation in Tel Aviv](https://vedica-ayurveda.co.il/blog-ayurvedic-nutrition-tel-aviv.html): Includes a three-day food log, a one-variable-at-a-time method and medical warning signs.
 - [Ayurveda, Stress, and Sleep](https://vedica-ayurveda.co.il/blog-stress-sleep-ayurveda.html): Separates difficulty falling asleep, night waking and early waking; includes a seven-day observation and medical escalation guidance.
 - [Natural Sleep Solutions, Stress and Ayurveda](https://vedica-ayurveda.co.il/natural-sleep-stress-ayurveda.html): English guide to sleep-pattern differences, practical sleep habits, CBT-I context, medical warning signs and cautious complementary Ayurveda support.
-- [Ayurveda for Fertility and IVF in Tel Aviv](https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html): English practical guide organized by fertility-treatment stage, with coordination around medication, blood tests and the fertility team, and no outcome promises.
+- [Ayurveda for Fertility, IVF and Male Fertility in Tel Aviv](https://vedica-ayurveda.co.il/ayurveda-fertility-ivf-tel-aviv.html): English practical guide organized by fertility-treatment stage, with male fertility, semen analysis, medication, blood tests, supplements, heat exposure and fertility-team coordination, and no outcome promises.
 - [Sensitive Digestion and Fatigue](https://vedica-ayurveda.co.il/ayurveda-sensitive-digestion-fatigue-tel-aviv.html): English guide with symptom-pattern comparison, a one-week log and medical warning signs.
-- [IVF and Fertility Preservation in Ayurveda](https://vedica-ayurveda.co.il/blog-ivf-fertility.html)
+- [IVF, Fertility Preservation and Male Fertility in Ayurveda](https://vedica-ayurveda.co.il/blog-ivf-fertility.html): Hebrew guide to IVF, fertility preservation, hormones, male fertility, semen analysis, supplement safety and modern factors such as sleep, stress, heat, smoking, cannabis, alcohol and medications.
 - [Chronic Fatigue and Sensitive Digestion](https://vedica-ayurveda.co.il/blog-chronic-fatigue-sensitive-digestion.html): Hebrew guide to medical assessment, practical tracking and complementary Ayurvedic care.
 - [Ayurveda vs. Chinese Medicine](https://vedica-ayurveda.co.il/blog-ayurveda-vs-chinese-medicine.html): Compares the visit, home practice, training, safety and progress measurement rather than declaring one system superior.
 - [Traditional Persian Medicine Benefits](https://vedica-ayurveda.co.il/traditional-persian-medicine-benefits.html): English evidence-aware guide to the historical framework, potential practical benefits, research limits, safety and VEDICA's integration of Persian medicine with Ayurveda.
