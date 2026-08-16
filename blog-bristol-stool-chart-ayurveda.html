@@ -20,10 +20,168 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
   <style>
-    body { font-family: 'Assistant', Arial, sans-serif; background: #fdfbf7; }
-    article p { line-height: 1.8; margin-bottom: 1.5rem; }
-    article h2 { color: #064e3b; font-size: 1.875rem; font-weight: 700; margin: 2rem 0 1rem; }
-    article h3 { color: #174a40; font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 0.75rem; }
+    body.stool-guide-page {
+      background: #f8f6ef;
+      color: #243f38;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Hebrew", Arial, sans-serif;
+      font-size: 17px;
+    }
+
+    .stool-guide-page h1,
+    .stool-guide-page h2,
+    .stool-guide-page h3,
+    .stool-guide-page p,
+    .stool-guide-page a,
+    .stool-guide-page li,
+    .stool-guide-page td,
+    .stool-guide-page th {
+      font-family: inherit;
+      letter-spacing: 0;
+    }
+
+    .stool-guide-page main {
+      max-width: 54rem;
+      padding-inline: 1.25rem;
+    }
+
+    .stool-guide-page header {
+      margin-bottom: 3.5rem;
+    }
+
+    .stool-guide-page h1 {
+      max-width: 48rem;
+      margin-inline: auto;
+      line-height: 1.16;
+    }
+
+    .stool-guide-page header > p:last-child {
+      max-width: 42rem;
+      margin-inline: auto;
+      line-height: 1.8;
+    }
+
+    .stool-guide-page article {
+      max-width: 46rem;
+      margin-inline: auto;
+    }
+
+    .stool-guide-page article p {
+      color: #2f4f48;
+      font-size: 1.04rem;
+      line-height: 1.92;
+      margin-bottom: 1.35rem;
+    }
+
+    .stool-guide-page article h2 {
+      color: #064e3b;
+      font-size: clamp(1.55rem, 2.8vw, 2rem);
+      font-weight: 750;
+      line-height: 1.3;
+      margin: 3.1rem 0 1rem;
+    }
+
+    .stool-guide-page article h3 {
+      color: #174a40;
+      font-size: 1.2rem;
+      font-weight: 740;
+      line-height: 1.45;
+      margin: 1.6rem 0 0.8rem;
+    }
+
+    .stool-guide-page main .rounded-2xl {
+      border-radius: 0.75rem;
+    }
+
+    .stool-guide-page main > section,
+    .stool-guide-page article .rounded-2xl {
+      box-shadow: 0 16px 34px -30px rgba(8, 38, 34, 0.52);
+    }
+
+    .stool-guide-page main > section.rounded-2xl {
+      max-width: 46rem;
+      margin-inline: auto;
+      padding: 1.7rem !important;
+    }
+
+    .stool-guide-page article .grid > section {
+      padding: 1.45rem !important;
+      border-color: rgba(17, 94, 89, 0.2);
+    }
+
+    .stool-guide-page article .grid > section p {
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+
+    .stool-guide-page article .border-r-4 {
+      border-right-width: 3px;
+      padding: 1.7rem 2rem 1.7rem 1.7rem !important;
+    }
+
+    .stool-guide-page table {
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border: 1px solid #dbe9e3;
+      border-radius: 0.75rem;
+    }
+
+    .stool-guide-page th,
+    .stool-guide-page td {
+      padding: 1rem 1.15rem !important;
+      line-height: 1.7;
+      vertical-align: top;
+      border-color: #dbe9e3 !important;
+    }
+
+    .stool-guide-page th {
+      color: #174a40;
+      font-weight: 750;
+    }
+
+    .stool-guide-page a {
+      text-underline-offset: 0.18em;
+    }
+
+    .stool-guide-page main > section:last-child {
+      padding: 2rem !important;
+    }
+
+    @media (max-width: 640px) {
+      body.stool-guide-page {
+        font-size: 16px;
+      }
+
+      .stool-guide-page main {
+        padding-inline: 1rem;
+        padding-top: 2.75rem;
+      }
+
+      .stool-guide-page h1 {
+        font-size: 2.05rem;
+        line-height: 1.2;
+      }
+
+      .stool-guide-page header {
+        margin-bottom: 2.4rem;
+      }
+
+      .stool-guide-page article h2 {
+        margin-top: 2.55rem;
+      }
+
+      .stool-guide-page article .grid > section,
+      .stool-guide-page main > section.rounded-2xl,
+      .stool-guide-page article .border-r-4 {
+        padding: 1.25rem !important;
+      }
+
+      .stool-guide-page th,
+      .stool-guide-page td {
+        min-width: 9.5rem;
+        padding: 0.9rem !important;
+      }
+    }
   </style>
   <link rel="icon" href="assets/logo.webp" type="image/webp">
   <script type="application/ld+json">
@@ -74,7 +232,7 @@
   </script>
   <script defer src="assets/analytics-loader.js"></script>
 </head>
-<body class="text-slate-800">
+<body class="text-slate-800 stool-guide-page">
   <nav class="site-nav sticky top-0 z-50">
     <div class="site-nav__inner">
       <a href="index.html" class="site-nav__brand">
