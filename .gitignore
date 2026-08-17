@@ -21,6 +21,7 @@ seo-logs/aeo-live-search/[0-9][0-9][0-9][0-9]-*.md
 *_analyzer.py
 *_explorer.py
 kobi_*.csv
+netanel-bsimchot-site/
 
 # Local/private tour proposal and planning artifacts. Force-add intentionally
 # if one of these should become a public page or asset.

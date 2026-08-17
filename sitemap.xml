@@ -7,7 +7,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>https://vedica-ayurveda.co.il/</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -52,7 +52,7 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/workshops.html</loc>
-        <lastmod>2026-08-14</lastmod>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -82,7 +82,7 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
@@ -94,7 +94,7 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.82</priority>
     </url>
@@ -112,7 +112,7 @@
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-perimenopause-ayurveda.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/perimenopause-ayurveda-tel-aviv.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/perimenopause-ayurveda-tel-aviv.html"/>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.86</priority>
     </url>
@@ -211,7 +211,7 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/llms.txt</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -223,7 +223,7 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog-cinnamon.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -235,7 +235,7 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog-basmati.html</loc>
-        <lastmod>2026-07-14</lastmod>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
