@@ -277,6 +277,7 @@
 </head>
 
 <body class="text-slate-800">
+    <a class="skip-link" href="#main-content">דילוג לתוכן הראשי</a>
     <!-- Fixed Navigation Bar -->
     <nav class="site-nav">
         <div class="site-nav__inner">
@@ -301,7 +302,7 @@
         </div>
     </nav>
 
-    <main class="page-main">
+    <main id="main-content" tabindex="-1" class="page-main">
         <section class="page-hero blog-hero">
             <div class="page-hero__content">
                 <p class="page-hero__eyebrow">הבלוג של VEDICA</p>
@@ -431,27 +432,7 @@
         let allPosts = [];
         let currentCategory = 'all';
 
-        const navToggle = document.getElementById('site-nav-toggle');
-        const navMenu = document.getElementById('site-nav-menu');
 
-        if (navToggle && navMenu) {
-            const closeMenu = () => {
-                navMenu.classList.remove('is-open');
-                navToggle.setAttribute('aria-expanded', 'false');
-            };
-
-            navToggle.addEventListener('click', () => {
-                const isOpen = navMenu.classList.toggle('is-open');
-                navToggle.setAttribute('aria-expanded', String(isOpen));
-            });
-
-            navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-            document.addEventListener('click', event => {
-                if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
-                    closeMenu();
-                }
-            });
-        }
 
         fetch('blog-data.json')
             .then(res => res.json())
@@ -538,6 +519,7 @@
         }
 
     </script>
+    <script src="assets/site-nav.js"></script>
 </body>
 
 </html>

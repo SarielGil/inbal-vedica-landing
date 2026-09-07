@@ -321,6 +321,7 @@
 </head>
 
 <body class="text-slate-800">
+    <a class="skip-link" href="#main-content">דילוג לתוכן הראשי</a>
 
   <nav class="site-nav">
     <div class="site-nav__inner">
@@ -344,7 +345,7 @@
     </div>
   </nav>
 
-  <main class="page-main max-w-4xl mx-auto px-4 py-16">
+  <main id="main-content" tabindex="-1" class="page-main max-w-4xl mx-auto px-4 py-16">
     <nav aria-label="פירורי לחם" class="mb-6 text-sm text-slate-600">
       <ol class="flex flex-wrap items-center justify-center gap-2">
         <li><a href="index.html" class="font-semibold text-emerald-800 hover:underline">בית</a></li>
@@ -636,41 +637,7 @@
     <p class="opacity-70 text-sm max-w-3xl mx-auto px-4 mb-4">המידע באתר הוא מידע כללי. ב־VEDICA התהליך נבנה לצד רפואה מערבית, תרופות קיימות, בדיקות דם עדכניות ואבחנות קליניות, ואינו מיועד לעצור טיפול או מעקב רפואי שניתנו לך.</p>
     <p class="opacity-60 text-sm">© 2026 כל הזכויות שמורות</p>
   </footer>
-  <script>
-    const navToggle = document.getElementById('site-nav-toggle');
-    const navMenu = document.getElementById('site-nav-menu');
-
-    if (navToggle && navMenu) {
-      const closeMenu = () => {
-        navMenu.classList.remove('is-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      };
-
-      navToggle.addEventListener('click', () => {
-        const isOpen = navMenu.classList.toggle('is-open');
-        navToggle.setAttribute('aria-expanded', String(isOpen));
-      });
-
-      navMenu.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', closeMenu);
-      });
-
-      document.addEventListener('click', (event) => {
-        if (window.innerWidth >= 1024) {
-          return;
-        }
-        if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
-          closeMenu();
-        }
-      });
-
-      window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024) {
-          closeMenu();
-        }
-      });
-    }
-  </script>
+    <script src="assets/site-nav.js"></script>
 </body>
 
 </html>

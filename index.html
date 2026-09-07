@@ -1183,6 +1183,37 @@
                 transform: translateY(0);
             }
         }
+
+/* Keep keyboard navigation visible and anchor headings below the sticky header. */
+:where(a, button, input, select, textarea, summary):focus-visible {
+    outline: 3px solid #0f766e;
+    outline-offset: 4px;
+    box-shadow: 0 0 0 3px #fff;
+}
+main [id], main[id] { scroll-margin-top: 6rem; }
+.skip-link {
+    position: fixed;
+    top: 0.5rem;
+    inset-inline-start: 1rem;
+    z-index: 100;
+    padding: 0.8rem 1rem;
+    background: #fff;
+    color: #174a40;
+    font-weight: 700;
+    transform: translateY(-200%);
+}
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 1023px) {
+    .site-nav__menu {
+        max-height: calc(100dvh - 6rem);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
     </style>
     <!-- Open Graph Tags -->
     <meta property="og:title" content="איורוודה בתל אביב | תוכנית אישית ב־2 פגישות | VEDICA">
@@ -1345,6 +1376,7 @@
 </head>
 
 <body class="text-slate-800">
+    <a class="skip-link" href="#main-content">דילוג לתוכן הראשי</a>
     <!-- Fixed Navigation Bar -->
     <nav class="site-nav">
         <div class="site-nav__inner">
@@ -1369,7 +1401,7 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main-content" tabindex="-1">
     <!-- Hero Section -->
     <section id="hero" class="hero-modern" data-analytics-view-event="hero_view" data-cta-location="hero">
         <div class="hero-modern__grid">
@@ -1377,9 +1409,9 @@
                 <p class="hero-modern__kicker">אבחון דופק, תזונה וצמחי מרפא</p>
                 <h1>איורוודה בתל אביב: תוכנית אישית בשתי פגישות</h1>
                 <p class="hero-modern__owner">ארלוזורוב 82 · עברית / English · רפואה פרסית</p>
-                <p class="hero-modern__promise">תוכנית אישית בשתי פגישות</p>
+                <p class="hero-modern__promise">עם ענבל הנסב, מטפלת באיורוודה וברפואה פרסית</p>
                 <p class="hero-modern__lead">
-                    מחפשים איורוודה בתל אביב? כאן מתחילים באבחון דופק ובשיחה קלינית רחבה, ואז בונים תוכנית אישית בשתי פגישות. התוכנית יכולה לשלב תזונה, חליטות וצמחי מרפא לעיכול, שינה, סטרס והורמונים, לצד תרופות קיימות, בדיקות דם ואבחנות קליניות.
+                    ליווי אישי סביב תזונה, עיכול, שינה וסטרס. מתחילים בשיחה ובאבחון איורוודי, וממשיכים לתוכנית שמתאימה לשגרת החיים ולרקע הרפואי, לצד הטיפול והמעקב הרפואי הקיימים.
                 </p>
                 <div class="hero-modern__actions">
                     <a id="whatsapp-link" href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%A7%D7%99%D7%91%D7%9C%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A9%D7%9C%D7%9A%20%D7%9E%D7%90%D7%AA%D7%A8%20%D7%94%D7%A7%D7%9C%D7%99%D7%A0%D7%99%D7%A7%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D." target="_blank" rel="noopener noreferrer" class="btn-primary" data-analytics-event="hero_primary_cta_click" data-cta-location="hero">
@@ -1388,7 +1420,8 @@
                     <a href="clinic.html#two-meeting-plan" class="btn-secondary" data-analytics-event="hero_secondary_cta_click" data-cta-location="hero">איך עובדות שתי הפגישות</a>
                 </div>
                 <div class="hero-modern__meta">
-                    <a href="clinic.html#between-meetings-support">ליווי אישי בין הפגישות</a>
+                    <a href="english-speaking-ayurveda-clinic-tel-aviv.html" lang="en" dir="ltr" hreflang="en">English clinic</a>
+                    <a href="corporate-wellness-lectures.html">הרצאות לארגונים</a>
                     <a href="https://www.google.com/maps/search/?api=1&amp;query=ארלוזורוב+82+תל+אביב" target="_blank" rel="noopener noreferrer">ארלוזורוב 82, תל אביב</a>
                     <a href="https://www.infomed.co.il/experts/153972/" target="_blank" rel="noopener noreferrer">20 חוות דעת מאומתות ב-Infomed</a>
                 </div>
@@ -1693,6 +1726,38 @@
             </p>
         </div>
         <div id="services-grid" class="grid md:grid-cols-2 gap-8">
+            <article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img src="assets/fertility.webp" alt="ליווי אישי בקליניקה" class="w-full h-48 object-cover" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-emerald-800">ליווי אישי בקליניקה</h3>
+                    <p class="text-slate-600 mb-4">ליווי משלים סביב עיכול, שינה, סטרס, פרימנופאוזה ותהליכי פוריות, עם התאמות שאפשר לשלב בהדרגה בשגרת החיים.</p>
+                    <a href="clinic.html" class="text-emerald-700 font-bold hover:underline">לפרטים על ליווי אישי בקליניקה ←</a>
+                </div>
+            </article>
+            <article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img src="assets/spices-market.webp" alt="סדנאות צמחי מרפא ותזונה" class="w-full h-48 object-cover" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-emerald-800">סדנאות צמחי מרפא ותזונה</h3>
+                    <p class="text-slate-600 mb-4">מפגשים לקבוצות סביב תבלינים, חליטות, צמחי מרפא וארוחת שף בהשראת הדושות, בשפה פשוטה ובגובה העיניים.</p>
+                    <a href="workshops.html" class="text-emerald-700 font-bold hover:underline">לפרטים על סדנאות צמחי מרפא ותזונה ←</a>
+                </div>
+            </article>
+            <article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img src="assets/inbal-market.jpg" alt="סיור אוכל וצמחי מרפא בשוק לוינסקי" class="w-full h-48 object-cover" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-emerald-800">סיור אוכל וצמחי מרפא בשוק לוינסקי</h3>
+                    <p class="text-slate-600 mb-4">סיור קולינרי של כ־2–2.5 שעות בעברית או באנגלית, עם טעימות, תבלינים וסיפורים מהמסורת הפרסית־איראנית ומהאיורוודה.</p>
+                    <a href="tours.html" class="text-emerald-700 font-bold hover:underline">לפרטים על סיור אוכל וצמחי מרפא בשוק לוינסקי ←</a>
+                </div>
+            </article>
+            <article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img src="assets/digitaf-tour.jpg" alt="סיור דיגיטף להורים" class="w-full h-48 object-cover" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-emerald-800">סיור דיגיטף להורים</h3>
+                    <p class="text-slate-600 mb-4">סיור צמחי מרפא חווייתי להורים ותינוקות בשוק לוינסקי. התפוסה מלאה - ניתן להצטרף לרשימת המתנה.</p>
+                    <a href="tours.html" class="text-emerald-700 font-bold hover:underline">לפרטים על סיור דיגיטף להורים ←</a>
+                </div>
+            </article>
         </div>
     </section>
 
@@ -1750,12 +1815,12 @@
     <section class="bg-emerald-50 py-16 border-t border-emerald-100">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
-                <img id="podcast-image" src="" alt="פודקאסט רפואה בצלחת - VEDICA" class="rounded-2xl shadow-2xl w-full h-80 object-cover" loading="lazy">
+                <img id="podcast-image" src="assets/dates-hands.webp" alt="פודקאסט רפואה בצלחת - VEDICA" class="rounded-2xl shadow-2xl w-full h-80 object-cover" loading="lazy">
             </div>
             <div class="md:w-1/2">
                 <span class="text-emerald-700 font-bold tracking-widest uppercase text-sm">להעמקה בין הפגישות</span>
-                <h2 id="podcast-title" class="text-3xl font-bold mt-2 mb-4 text-emerald-900"></h2>
-                <p id="podcast-description" class="text-lg text-slate-700 mb-8 leading-relaxed"></p>
+                <h2 id="podcast-title" class="text-3xl font-bold mt-2 mb-4 text-emerald-900">פודקאסט: רפואה בצלחת - עם ענבל הנסב</h2>
+                <p id="podcast-description" class="text-lg text-slate-700 mb-8 leading-relaxed">תזונה ובריאות טבעית בגישה המשלבת מדע ורפואה מסורתית. טיפים מעשיים וכלים מעולם האיורוודה לאיזון ובריאות ביום-יום.</p>
                 <a id="podcast-link" href="podcast.html"
                     class="inline-block bg-emerald-800 text-white px-6 py-3 rounded-lg font-bold hover:bg-emerald-900 transition">לרשימת
                     הפרקים המלאה ←</a>
@@ -1837,40 +1902,6 @@
     </footer>
 
     <script>
-        const navToggle = document.getElementById('site-nav-toggle');
-        const navMenu = document.getElementById('site-nav-menu');
-
-        if (navToggle && navMenu) {
-            const closeMenu = () => {
-                navMenu.classList.remove('is-open');
-                navToggle.setAttribute('aria-expanded', 'false');
-            };
-
-            navToggle.addEventListener('click', () => {
-                const isOpen = navMenu.classList.toggle('is-open');
-                navToggle.setAttribute('aria-expanded', String(isOpen));
-            });
-
-            navMenu.querySelectorAll('a').forEach((link) => {
-                link.addEventListener('click', closeMenu);
-            });
-
-            document.addEventListener('click', (event) => {
-                if (window.innerWidth >= 1024) {
-                    return;
-                }
-                if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
-                    closeMenu();
-                }
-            });
-
-            window.addEventListener('resize', () => {
-                if (window.innerWidth >= 1024) {
-                    closeMenu();
-                }
-            });
-        }
-
         function trackEvent(eventName, params = {}) {
             if (typeof gtag === 'function') {
                 gtag('event', eventName, params);
@@ -1899,19 +1930,18 @@
                 document.getElementById('instagram-follow-btn').href = data.site.instagram;
 
                 const servicesGrid = document.getElementById('services-grid');
-                data.services.forEach(service => {
-                    const card = `
+                servicesGrid.innerHTML = data.services.map(service => {
+                    return `
                         <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
                             <img src="${service.image}" alt="${service.title}" class="w-full h-48 object-cover" loading="lazy">
                             <div class="p-6">
                                 <h3 class="text-xl font-bold mb-2 text-emerald-800">${service.title}</h3>
                                 <p class="text-slate-600 mb-4">${service.description}</p>
-                                <a href="${service.link}" class="text-emerald-700 font-bold hover:underline">לפרטים נוספים ←</a>
+                                <a href="${service.link}" class="text-emerald-700 font-bold hover:underline">לפרטים על ${service.title} ←</a>
                             </div>
                         </div>
                     `;
-                    servicesGrid.innerHTML += card;
-                });
+                }).join('');
 
                 const igFeed = document.getElementById('instagram-feed');
                 if (data.instagram_gallery) {
@@ -1927,6 +1957,7 @@
             });
 
     </script>
+    <script src="assets/site-nav.js"></script>
 </body>
 
 </html>

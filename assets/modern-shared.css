@@ -387,3 +387,30 @@ h4,
         transform: translateY(0);
     }
 }
+
+/* Keep keyboard navigation visible and anchor headings below the sticky header. */
+:where(a, button, input, select, textarea, summary):focus-visible {
+    outline: 3px solid #0f766e;
+    outline-offset: 4px;
+    box-shadow: 0 0 0 3px #fff;
+}
+main [id], main[id] { scroll-margin-top: 6rem; }
+.skip-link {
+    position: fixed;
+    top: 0.5rem;
+    inset-inline-start: 1rem;
+    z-index: 100;
+    padding: 0.8rem 1rem;
+    background: #fff;
+    color: #174a40;
+    font-weight: 700;
+    transform: translateY(-200%);
+}
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 1023px) {
+    .site-nav__menu {
+        max-height: calc(100dvh - 6rem);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+}

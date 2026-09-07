@@ -72,6 +72,7 @@
 </head>
 
 <body class="text-slate-800">
+    <a class="skip-link" href="#main-content">דילוג לתוכן הראשי</a>
     <!-- Fixed Navigation Bar -->
     <nav class="site-nav">
         <div class="site-nav__inner">
@@ -96,7 +97,7 @@
         </div>
     </nav>
 
-    <main class="page-main max-w-4xl mx-auto px-4 py-16">
+    <main id="main-content" tabindex="-1" class="page-main max-w-4xl mx-auto px-4 py-16">
         <section class="page-hero about-hero">
             <div class="page-hero__content">
                 <p class="page-hero__eyebrow">ABOUT VEDICA</p>
@@ -308,41 +309,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        const navToggle = document.getElementById('site-nav-toggle');
-        const navMenu = document.getElementById('site-nav-menu');
-
-        if (navToggle && navMenu) {
-            const closeMenu = () => {
-                navMenu.classList.remove('is-open');
-                navToggle.setAttribute('aria-expanded', 'false');
-            };
-
-            navToggle.addEventListener('click', () => {
-                const isOpen = navMenu.classList.toggle('is-open');
-                navToggle.setAttribute('aria-expanded', String(isOpen));
-            });
-
-            navMenu.querySelectorAll('a').forEach((link) => {
-                link.addEventListener('click', closeMenu);
-            });
-
-            document.addEventListener('click', (event) => {
-                if (window.innerWidth >= 1024) {
-                    return;
-                }
-                if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
-                    closeMenu();
-                }
-            });
-
-            window.addEventListener('resize', () => {
-                if (window.innerWidth >= 1024) {
-                    closeMenu();
-                }
-            });
-        }
-    </script>
+    <script src="assets/site-nav.js"></script>
 </body>
 
 </html>

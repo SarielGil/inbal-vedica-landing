@@ -34,6 +34,7 @@
 </head>
 
 <body class="text-slate-800">
+    <a class="skip-link" href="#main-content">דילוג לתוכן הראשי</a>
     <!-- Fixed Navigation Bar -->
     <nav class="site-nav">
         <div class="site-nav__inner">
@@ -58,7 +59,7 @@
         </div>
     </nav>
 
-    <main class="page-main max-w-3xl mx-auto px-4 py-16">
+    <main id="main-content" tabindex="-1" class="page-main max-w-3xl mx-auto px-4 py-16">
         <section class="page-hero contact-hero">
             <div class="page-hero__content">
                 <p class="page-hero__eyebrow">CONTACT VEDICA</p>
@@ -70,7 +71,7 @@
             <article class="contact-shortcut">
                 <h3>WhatsApp</h3>
                 <p>לשיחה מהירה לגבי התאמה וזמינות.</p>
-                <a id="wa-shortcut" href="#" target="_blank" rel="noopener noreferrer">פתיחת שיחה</a>
+                <a id="wa-shortcut" href="https://wa.me/972545774407" target="_blank" rel="noopener noreferrer">פתיחת שיחה</a>
             </article>
             <article class="contact-shortcut">
                 <h3>אימייל</h3>
@@ -89,8 +90,7 @@
             </article>
         </div>
         <div class="bg-white p-8 rounded-3xl shadow-xl border border-emerald-100">
-            <!-- NOTE: Replace the string "YOUR_EMAIL_HERE" in the action URL with the user's actual email converted to a Formspree hash later if they register -->
-            <form id="contactForm" action="https://formspree.io/f/maqdvyae" method="POST" class="space-y-6">
+            <form id="contactForm" aria-label="טופס יצירת קשר" action="https://formspree.io/f/maqdvyae" method="POST" class="space-y-6">
                 <!-- Redirect after success -->
                 <input type="hidden" name="_next" value="https://vedica-ayurveda.co.il/thank-you.html">
                 <!-- Subject line for emails -->
@@ -103,12 +103,12 @@
                 </div>
                 <div>
                     <label for="contact-phone" class="block text-sm font-bold mb-2">טלפון</label>
-                    <input id="contact-phone" type="tel" name="phone" placeholder="050-0000000" inputmode="tel" autocomplete="tel" pattern="^[0-9+()\\s-]{7,20}$"
+                    <input id="contact-phone" type="tel" name="phone" placeholder="050-0000000" inputmode="tel" autocomplete="tel" pattern="[+0-9\s\(\)\-]{7,20}" minlength="7" maxlength="20" dir="ltr" title="מספר טלפון הכולל 7–20 תווים: ספרות, רווחים, מקפים וקידומת מדינה"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
                     <label for="contact-email" class="block text-sm font-bold mb-2">דואר אלקטרוני</label>
-                    <input id="contact-email" type="email" name="email" placeholder="va@gmail.com" autocomplete="email"
+                    <input id="contact-email" type="email" name="email" placeholder="name@example.com" autocomplete="email" dir="ltr"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
@@ -134,7 +134,7 @@
                 <button type="submit"
                     class="w-full bg-emerald-700 text-white py-4 rounded-xl text-xl font-bold hover:bg-emerald-800 transition shadow-lg flex items-center justify-center">שליחת
                     פנייה</button>
-                <div id="formMessage" class="text-center text-sm hidden"></div>
+                <div id="formMessage" role="status" aria-live="polite" aria-atomic="true" class="text-center text-sm hidden"></div>
             </form>
             <div class="mt-8 pt-8 border-t">
                 <h2 class="font-bold text-emerald-800 mb-2 text-center">איך מגיעים?</h2>
@@ -152,7 +152,7 @@
                 </p>
                 <div class="text-center">
                     <p class="text-slate-500 mb-4">או פשוט שלחו לי הודעה ישירה:</p>
-                    <a id="wa-contact" href="#" target="_blank" rel="noopener noreferrer"
+                    <a id="wa-contact" href="https://wa.me/972545774407" target="_blank" rel="noopener noreferrer"
                         class="bg-green-600 text-white px-8 py-3 rounded-full font-bold hover:bg-green-700 transition inline-flex items-center gap-2">
                         <span>WhatsApp</span>
                     </a>
@@ -210,40 +210,6 @@
     </footer>
 
     <script>
-        const navToggle = document.getElementById('site-nav-toggle');
-        const navMenu = document.getElementById('site-nav-menu');
-
-        if (navToggle && navMenu) {
-            const closeMenu = () => {
-                navMenu.classList.remove('is-open');
-                navToggle.setAttribute('aria-expanded', 'false');
-            };
-
-            navToggle.addEventListener('click', () => {
-                const isOpen = navMenu.classList.toggle('is-open');
-                navToggle.setAttribute('aria-expanded', String(isOpen));
-            });
-
-            navMenu.querySelectorAll('a').forEach((link) => {
-                link.addEventListener('click', closeMenu);
-            });
-
-            document.addEventListener('click', (event) => {
-                if (window.innerWidth >= 1024) {
-                    return;
-                }
-                if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
-                    closeMenu();
-                }
-            });
-
-            window.addEventListener('resize', () => {
-                if (window.innerWidth >= 1024) {
-                    closeMenu();
-                }
-            });
-        }
-
         function trackEvent(eventName, params = {}) {
             if (typeof gtag === 'function') {
                 gtag('event', eventName, params);
@@ -265,8 +231,14 @@
 
         const contactForm = document.getElementById('contactForm');
         const formMessage = document.getElementById('formMessage');
+        const serviceField = document.getElementById('contact-service');
+        const requestedService = new URLSearchParams(window.location.search).get('service');
+        if ([...serviceField.options].some(option => option.value === requestedService)) {
+            serviceField.value = requestedService;
+        }
 
         contactForm.addEventListener('submit', async function (event) {
+            formMessage.textContent = '';
             event.preventDefault(); // מניעת מעבר לעמוד של Formspree
             trackEvent('form_submit_attempt', {
                 event_category: 'lead',
@@ -340,6 +312,7 @@
             }
         });
     </script>
+    <script src="assets/site-nav.js"></script>
 </body>
 
 </html>
