@@ -111,13 +111,22 @@
     var explicitLocation = link.getAttribute("data-cta-location");
     if (explicitLocation) return cleanText(explicitLocation);
 
-    var section = link.closest("section, article, header, footer, nav");
-    if (!section) return link.id || "unknown";
-    if (section.id) return section.id;
-    if (section.getAttribute("aria-label")) return cleanText(section.getAttribute("aria-label"));
-    var heading = section.querySelector("h1, h2, h3");
-    if (heading) return cleanText(heading.textContent);
-    return cleanText(section.className) || link.id || "unknown";
+    var labeledContainer = link.closest("[data-cta-location]");
+    if (labeledContainer && labeledContainer.getAttribute("data-cta-location")) {
+      return cleanText(labeledContainer.getAttribute("data-cta-location"));
+    }
+
+    var section = link.closest("section, article, header, footer, nav, aside, form");
+    if (section && section.id) return cleanText(section.id);
+    if (link.id) return cleanText(link.id);
+
+    // Use stable locations instead of translated headings or styling classes.
+    if (link.closest("footer")) return "footer";
+    if (link.closest("nav")) return "navigation";
+    if (link.closest("header")) return "header";
+    if (link.closest(".page-hero")) return "hero";
+    if (section) return section.tagName.toLowerCase();
+    return link.closest("main") ? "main" : "unknown";
   }
 
   function baseClickParams(link, eventType) {

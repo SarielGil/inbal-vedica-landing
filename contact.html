@@ -244,6 +244,7 @@
                 event_category: 'lead',
                 event_label: 'contact_form',
                 lead_method: 'contact_form',
+                cta_location: 'contactForm',
                 lead_page: window.location.pathname
             });
 
@@ -269,12 +270,14 @@
                         event_category: 'lead',
                         event_label: 'contact_form',
                         lead_method: 'contact_form',
+                        cta_location: 'contactForm',
                         lead_page: window.location.pathname
                     });
                     trackEvent('generate_lead', {
                         event_category: 'lead',
                         event_label: 'contact_form',
                         lead_method: 'contact_form',
+                        cta_location: 'contactForm',
                         lead_page: window.location.pathname
                     });
                     // מעבר מוצלח לעמוד התודה מבלי להציג את עמוד הביניים של Formspree
@@ -284,6 +287,7 @@
                         event_category: 'lead',
                         event_label: 'contact_form_http_error',
                         lead_method: 'contact_form',
+                        cta_location: 'contactForm',
                         lead_page: window.location.pathname
                     });
                     const data = await response.json();
@@ -302,6 +306,7 @@
                     event_category: 'lead',
                     event_label: 'contact_form_network_error',
                     lead_method: 'contact_form',
+                    cta_location: 'contactForm',
                     lead_page: window.location.pathname
                 });
                 formMessage.innerText = "אופס! הייתה תקלה נסה שוב מאוחר יותר.";
