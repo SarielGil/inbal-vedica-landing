@@ -13,3 +13,6 @@ jobs:
 
       - name: Run external dependency guard
         run: bash scripts/check-no-external-tags.sh
+
+      - name: Check crawlable blog cards
+        run: python3 scripts/render_blog.py --check

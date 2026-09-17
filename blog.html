@@ -173,6 +173,11 @@
             transition: border-color 0.18s ease, box-shadow 0.18s ease;
         }
 
+        .blog-card[hidden],
+        .blog-toolbar[hidden] {
+            display: none;
+        }
+
         .blog-card:hover {
             border-color: #9cc8bb;
             box-shadow: 0 20px 38px -30px rgba(8, 38, 34, 0.62);
@@ -359,14 +364,158 @@
             </div>
         </section>
 
-        <div class="blog-toolbar" aria-label="סינון מאמרים לפי נושא">
-            <div id="category-filters" class="blog-filters" role="tablist"></div>
+        <div class="blog-toolbar" aria-label="סינון מאמרים לפי נושא" hidden>
+            <div id="category-filters" class="blog-filters" role="group" aria-label="נושאי המאמרים"></div>
         </div>
 
-        <!-- Blog Posts Grid -->
+        <!-- Generated from blog-data.json: npm run build:blog -->
+        <!-- blog-posts:start -->
         <div id="posts-container" class="blog-grid">
-            <!-- Posts will load here from blog-data.json -->
+            <article class="blog-card blog-card--featured" data-category="עיכול ואנרגיה">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">עיכול ואנרגיה</span>
+                        <time class="blog-card__date" datetime="2026-08-16">16.08.2026</time>
+                    </div>
+                    <h2><a href="blog-bristol-stool-chart-ayurveda.html">טבלת בריסטול לצואה: 7 סוגי יציאות ואיורוודה</a></h2>
+                    <p class="blog-card__excerpt">איך להשתמש בטבלת בריסטול לצואה כדי לתעד את שבעת סוגי היציאות, מה איורוודה מוסיפה ומתי שינוי ביציאות דורש בדיקה רפואית.</p>
+                    <a href="blog-bristol-stool-chart-ayurveda.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card blog-card--featured" data-category="הורמונים וגיל המעבר">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">הורמונים וגיל המעבר</span>
+                        <time class="blog-card__date" datetime="2026-07-17">17.07.2026</time>
+                    </div>
+                    <h2><a href="blog-perimenopause-ayurveda.html">פרימנופאוזה: תסמינים, גלי חום, שינה ובדיקות דם</a></h2>
+                    <p class="blog-card__excerpt">מדריך אחראי למחזור משתנה, גלי חום, שינה ובדיקות דם, עם תמיכה באוכל, תנועה ושגרה לצד אבחנה קלינית וטיפול מערבי.</p>
+                    <a href="blog-perimenopause-ayurveda.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card blog-card--featured" data-category="עיכול ואנרגיה">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">עיכול ואנרגיה</span>
+                        <time class="blog-card__date" datetime="2026-06-10">10.06.2026</time>
+                    </div>
+                    <h2><a href="blog-chronic-fatigue-sensitive-digestion.html">עייפות כרונית ועיכול רגיש: מה בודקים ואיך איורוודה יכולה להשתלב</a></h2>
+                    <p class="blog-card__excerpt">ציר זמן ותיעוד של שבוע שעוזרים להפריד בין מה שדורש בירור רפואי לבין דפוסים סביב ארוחות, יציאות, שינה, סטרס ואנרגיה.</p>
+                    <a href="blog-chronic-fatigue-sensitive-digestion.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card blog-card--featured" data-category="יסודות האיורוודה">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">יסודות האיורוודה</span>
+                        <time class="blog-card__date" datetime="2026-03-16">16.03.2026</time>
+                    </div>
+                    <h2><a href="blog-what-is-ayurveda.html">מה זה איורוודה? דושות, תזונה ואבחון</a></h2>
+                    <p class="blog-card__excerpt">תשובה מעשית לשאלה מה זה איורוודה: דושות, תזונה איורוודית, אבחון דופק, שגרת יום ומה בודקים לצד רפואה מערבית.</p>
+                    <a href="blog-what-is-ayurveda.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card blog-card--featured" data-category="איזון רגשי">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">איזון רגשי</span>
+                        <time class="blog-card__date" datetime="2026-03-16">16.03.2026</time>
+                    </div>
+                    <h2><a href="blog-stress-sleep-ayurveda.html">שינה טובה יותר בזמן סטרס: מדריך מעשי ואיורוודי</a></h2>
+                    <p class="blog-card__excerpt">איך להבדיל בין קושי להירדם, יקיצות ויקיצה מוקדמת, לתעד שבעה ימים ולבנות שגרה אישית בלי להעמיס עוד עצות.</p>
+                    <a href="blog-stress-sleep-ayurveda.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card blog-card--featured" data-category="קליניקה">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">קליניקה</span>
+                        <time class="blog-card__date" datetime="2026-03-16">16.03.2026</time>
+                    </div>
+                    <h2><a href="blog-dosha-diagnosis-tel-aviv.html">אבחון איורוודה: דושות, דופק ותוכנית אישית</a></h2>
+                    <p class="blog-card__excerpt">מדריך בהיר לדושות, שאלון מאפיינים קצר ותהליך האבחון האיורוודי האישי עם ענבל הנסב בקליניקת VEDICA.</p>
+                    <a href="blog-dosha-diagnosis-tel-aviv.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card blog-card--featured" data-category="תזונה">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">תזונה</span>
+                        <time class="blog-card__date" datetime="2026-03-16">16.03.2026</time>
+                    </div>
+                    <h2><a href="blog-ayurvedic-nutrition-tel-aviv.html">ייעוץ תזונה איורוודית בתל אביב: למי זה מתאים ומה מקבלים בתהליך</a></h2>
+                    <p class="blog-card__excerpt">יומן אכילה של שלושה ימים, דרך מסודרת לבדוק שינוי אחד בכל פעם וסימני אזהרה שלא פותרים באמצעות דיאטה ביתית.</p>
+                    <a href="blog-ayurvedic-nutrition-tel-aviv.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card blog-card--featured" data-category="השוואה">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">השוואה</span>
+                        <time class="blog-card__date" datetime="2026-03-16">16.03.2026</time>
+                    </div>
+                    <h2><a href="blog-ayurveda-vs-chinese-medicine.html">איורוודה או רפואה סינית? ההבדלים המעשיים לפני שבוחרים</a></h2>
+                    <p class="blog-card__excerpt">השוואה מעשית בין מה שקורה בפגישה, מה עושים בבית ואילו שאלות על הכשרה, בטיחות ומדידת התקדמות חשובות יותר משם השיטה.</p>
+                    <a href="blog-ayurveda-vs-chinese-medicine.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card blog-card--featured" data-category="פוריות">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">פוריות</span>
+                        <time class="blog-card__date" datetime="2026-03-16">16.03.2026</time>
+                    </div>
+                    <h2><a href="blog-ivf-fertility.html">IVF, שימור פוריות ופוריות הגבר באיורוודה: איך ליווי נכון יכול לתמוך בתהליך</a></h2>
+                    <p class="blog-card__excerpt">מפת שלבי IVF, פוריות הגבר, בדיקת זרע, תוספים והרגלים מודרניים כמו שינה, סטרס, חום, עישון וקנאביס לצד בירור רפואי.</p>
+                    <a href="blog-ivf-fertility.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card" data-category="תזונה">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">תזונה</span>
+                        <time class="blog-card__date" datetime="2026-03-16">16.03.2026</time>
+                    </div>
+                    <h2><a href="blog-cinnamon.html">סוגי קינמון: ציילון או קסיה? ההבדל וקומרין</a></h2>
+                    <p class="blog-card__excerpt">איך לזהות קינמון ציילון מול קסיה, מה לבדוק על האריזה ולמה קומרין משנה בעיקר בשימוש קבוע או מרוכז.</p>
+                    <a href="blog-cinnamon.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card" data-category="תזונה">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">תזונה</span>
+                        <time class="blog-card__date" datetime="2026-03-16">16.03.2026</time>
+                    </div>
+                    <h2><a href="blog-sourdough.html">לחם מחמצת באיורוודה: מתי הוא יכול להקל על העיכול ומתי עדיין כדאי להיזהר</a></h2>
+                    <p class="blog-card__excerpt">מה המחקר באמת אומר על מחמצת, איך לקרוא את רשימת הרכיבים, למה היא אינה בטוחה לצליאק ואיך לבצע השוואה ביתית מסודרת.</p>
+                    <a href="blog-sourdough.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card" data-category="תזונה">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">תזונה</span>
+                        <time class="blog-card__date" datetime="2026-03-16">16.03.2026</time>
+                    </div>
+                    <h2><a href="blog-bread.html">מחמצת, לחם חליטה וקמבוצ&#x27;ה: מה באמת שונה ביניהם</a></h2>
+                    <p class="blog-card__excerpt">השוואה בין שלוש שיטות שונות, כולל הסבר למה קמבוצ&#x27;ה בבצק אינה מבטיחה פרוביוטיקה ומה התסיסה כן יכולה לשנות.</p>
+                    <a href="blog-bread.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
+            <article class="blog-card" data-category="תזונה">
+                <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__category">תזונה</span>
+                        <time class="blog-card__date" datetime="2026-03-16">16.03.2026</time>
+                    </div>
+                    <h2><a href="blog-basmati.html">אורז בסמטי: ערך גליקמי, פרבולד והכנה</a></h2>
+                    <p class="blog-card__excerpt">בסמטי לבן, מלא ופרבולד: ערך גליקמי, דושות, למה איורוודה אוהבת בסמטי, למי זה מתאים ואיך לבשל אותו כחלק מתזונה מאוזנת.</p>
+                    <a href="blog-basmati.html" class="blog-card__link">לקריאת המדריך</a>
+                </div>
+            </article>
         </div>
+        <!-- blog-posts:end -->
 
         <!-- Empty State -->
         <div id="empty-state" class="blog-empty">
@@ -429,95 +578,39 @@
     </footer>
 
     <script>
-        let allPosts = [];
-        let currentCategory = 'all';
+        // Articles and links are already in the HTML; JavaScript only filters them.
+        const cards = [...document.querySelectorAll('#posts-container .blog-card')];
+        const filters = document.getElementById('category-filters');
+        const categories = [...new Set(cards.map(card => card.dataset.category))];
 
-
-
-        fetch('blog-data.json')
-            .then(res => res.json())
-            .then(data => {
-                allPosts = data.posts;
-                renderCategoryFilters([...new Set((data.posts || []).map(post => post.category))]);
-                renderPosts();
-            })
-            .catch(err => console.error('Error loading blog data:', err));
-
-        function renderCategoryFilters(categories) {
-            const container = document.getElementById('category-filters');
-            const buttons = categories.map(category => `
-                <button class="category-filter${currentCategory === category ? ' is-active' : ''}"
-                    type="button" role="tab" aria-selected="${currentCategory === category}" data-category="${category}">
-                    ${category}
-                </button>
-            `).join('');
-
-            container.innerHTML = `
-                <button class="category-filter${currentCategory === 'all' ? ' is-active' : ''}"
-                    type="button" role="tab" aria-selected="${currentCategory === 'all'}" data-category="all">
-                    הכל
-                </button>
-                ${buttons}
-            `;
-
-            document.querySelectorAll('.category-filter').forEach(btn => {
-                btn.addEventListener('click', function () {
-                    document.querySelectorAll('.category-filter').forEach(b => {
-                        b.classList.remove('is-active');
-                        b.setAttribute('aria-selected', 'false');
-                    });
-
-                    this.classList.add('is-active');
-                    this.setAttribute('aria-selected', 'true');
-
-                    currentCategory = this.dataset.category;
-                    renderPosts();
+        function addCategoryFilter(category, label) {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'category-filter';
+            button.dataset.category = category;
+            button.textContent = label;
+            button.classList.toggle('is-active', category === 'all');
+            button.setAttribute('aria-pressed', String(category === 'all'));
+            button.addEventListener('click', () => {
+                filters.querySelectorAll('button').forEach(filter => {
+                    const selected = filter === button;
+                    filter.classList.toggle('is-active', selected);
+                    filter.setAttribute('aria-pressed', String(selected));
+                });
+                cards.forEach(card => {
+                    card.hidden = category !== 'all' && card.dataset.category !== category;
                 });
             });
+            filters.appendChild(button);
         }
 
-        function renderPosts() {
-            const container = document.getElementById('posts-container');
-            const emptyState = document.getElementById('empty-state');
-
-            const filtered = allPosts.filter(post => {
-                const categoryMatch = currentCategory === 'all' || post.category === currentCategory;
-                return categoryMatch;
-            }).sort((a, b) => {
-                const featuredDelta = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
-                if (featuredDelta !== 0) {
-                    return featuredDelta;
-                }
-                return b.date.localeCompare(a.date);
-            });
-
-            if (filtered.length === 0) {
-                container.innerHTML = '';
-                emptyState.style.display = 'block';
-                return;
-            }
-
-            emptyState.style.display = 'none';
-            container.innerHTML = filtered.map(post => `
-                <article class="blog-card${post.featured ? ' blog-card--featured' : ''}">
-                    <div class="blog-card__body">
-                        <div class="blog-card__meta">
-                            <span class="blog-card__category">${post.category}</span>
-                            <span class="blog-card__date">${formatPostDate(post.date)}</span>
-                        </div>
-                        <h2><a href="${post.slug}.html">${post.title}</a></h2>
-                        <p class="blog-card__excerpt">${post.excerpt}</p>
-                        <a href="${post.slug}.html" class="blog-card__link">לקריאת המדריך</a>
-                    </div>
-                </article>
-            `).join('');
+        if (cards.length) {
+            addCategoryFilter('all', 'הכל');
+            categories.forEach(category => addCategoryFilter(category, category));
+            document.querySelector('.blog-toolbar').hidden = false;
+        } else {
+            document.getElementById('empty-state').style.display = 'block';
         }
-
-        function formatPostDate(date) {
-            const [year, month, day] = date.split('-');
-            return `${day}.${month}.${year}`;
-        }
-
     </script>
     <script src="assets/site-nav.js"></script>
 </body>

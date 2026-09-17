@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:blog": "python3 scripts/render_blog.py",
+    "check:blog": "python3 scripts/render_blog.py --check",
     "test": "echo \"Error: no test specified\" && exit 1",
     "check:external-tags": "bash scripts/check-no-external-tags.sh"
   },
