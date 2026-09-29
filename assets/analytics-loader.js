@@ -129,6 +129,50 @@
     return link.closest("main") ? "main" : "unknown";
   }
 
+  var LEAD_CONTEXT_KEY = "vedica_lead_context";
+  var LEAD_CONTEXT_MAX_AGE = 30 * 60 * 1000;
+
+  function readLeadContext() {
+    try {
+      var stored = window.sessionStorage.getItem(LEAD_CONTEXT_KEY);
+      if (!stored) return null;
+
+      var context = JSON.parse(stored);
+      if (!context.created_at || Date.now() - context.created_at > LEAD_CONTEXT_MAX_AGE) {
+        window.sessionStorage.removeItem(LEAD_CONTEXT_KEY);
+        return null;
+      }
+
+      return context;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function rememberLeadContext(link) {
+    try {
+      window.sessionStorage.setItem(LEAD_CONTEXT_KEY, JSON.stringify({
+        lead_origin_page: window.location.pathname || "/",
+        lead_origin_cta: getCtaLocation(link),
+        lead_origin_text: cleanText(link.textContent),
+        created_at: Date.now()
+      }));
+    } catch (e) {
+      // Analytics must never block navigation when storage is unavailable.
+    }
+  }
+
+  window.vedicaLeadContext = function () {
+    var context = readLeadContext();
+    if (!context) return {};
+
+    return {
+      lead_origin_page: context.lead_origin_page,
+      lead_origin_cta: context.lead_origin_cta,
+      lead_origin_text: context.lead_origin_text
+    };
+  };
+
   function baseClickParams(link, eventType) {
     return {
       event_category: eventType === "lead" ? "lead" : "engagement",
@@ -223,6 +267,7 @@
     }
 
     if (getPath(link.href) === "/contact.html") {
+      rememberLeadContext(link);
       trackEngagement("contact_click", link, {
         contact_target: "contact_page"
       });

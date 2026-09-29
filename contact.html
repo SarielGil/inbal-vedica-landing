@@ -237,16 +237,27 @@
             serviceField.value = requestedService;
         }
 
+        function leadEventParams(eventLabel) {
+            const params = {
+                event_category: 'lead',
+                event_label: eventLabel,
+                lead_method: 'contact_form',
+                lead_service: serviceField.value || 'not_selected',
+                cta_location: 'contactForm',
+                lead_page: window.location.pathname
+            };
+
+            if (typeof window.vedicaLeadContext === 'function') {
+                Object.assign(params, window.vedicaLeadContext());
+            }
+
+            return params;
+        }
+
         contactForm.addEventListener('submit', async function (event) {
             formMessage.textContent = '';
             event.preventDefault(); // מניעת מעבר לעמוד של Formspree
-            trackEvent('form_submit_attempt', {
-                event_category: 'lead',
-                event_label: 'contact_form',
-                lead_method: 'contact_form',
-                cta_location: 'contactForm',
-                lead_page: window.location.pathname
-            });
+            trackEvent('form_submit_attempt', leadEventParams('contact_form'));
 
             // שינוי הכפתור בזמן טעינה
             const submitBtn = contactForm.querySelector('button[type="submit"]');
@@ -266,30 +277,12 @@
                 });
 
                 if (response.ok) {
-                    trackEvent('form_submit_success', {
-                        event_category: 'lead',
-                        event_label: 'contact_form',
-                        lead_method: 'contact_form',
-                        cta_location: 'contactForm',
-                        lead_page: window.location.pathname
-                    });
-                    trackEvent('generate_lead', {
-                        event_category: 'lead',
-                        event_label: 'contact_form',
-                        lead_method: 'contact_form',
-                        cta_location: 'contactForm',
-                        lead_page: window.location.pathname
-                    });
+                    trackEvent('form_submit_success', leadEventParams('contact_form'));
+                    trackEvent('generate_lead', leadEventParams('contact_form'));
                     // מעבר מוצלח לעמוד התודה מבלי להציג את עמוד הביניים של Formspree
                     window.location.href = contactForm.querySelector('input[name="_next"]').value;
                 } else {
-                    trackEvent('form_submit_error', {
-                        event_category: 'lead',
-                        event_label: 'contact_form_http_error',
-                        lead_method: 'contact_form',
-                        cta_location: 'contactForm',
-                        lead_page: window.location.pathname
-                    });
+                    trackEvent('form_submit_error', leadEventParams('contact_form_http_error'));
                     const data = await response.json();
                     if (Object.hasOwn(data, 'errors')) {
                         formMessage.innerText = data["errors"].map(error => error["message"]).join(", ");
@@ -302,13 +295,7 @@
                     submitBtn.disabled = false;
                 }
             } catch (error) {
-                trackEvent('form_submit_error', {
-                    event_category: 'lead',
-                    event_label: 'contact_form_network_error',
-                    lead_method: 'contact_form',
-                    cta_location: 'contactForm',
-                    lead_page: window.location.pathname
-                });
+                trackEvent('form_submit_error', leadEventParams('contact_form_network_error'));
                 formMessage.innerText = "אופס! הייתה תקלה נסה שוב מאוחר יותר.";
                 formMessage.classList.remove('hidden');
                 formMessage.classList.add('text-red-500');
