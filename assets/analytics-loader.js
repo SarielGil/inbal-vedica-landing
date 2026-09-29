@@ -40,6 +40,7 @@
 
   window.gtag("js", new Date());
   window.gtag("config", "G-MXKKRFNL56");
+  window.gtag("config", "AW-18482470660");
 
   function detectLlmReferrer(referrer) {
     if (!referrer) return null;
