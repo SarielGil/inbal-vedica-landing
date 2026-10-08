@@ -190,6 +190,13 @@
     var params = baseClickParams(link, "lead");
     params.lead_method = method;
 
+    if (window.location.pathname === "/contact.html") {
+      var leadContext = window.vedicaLeadContext();
+      Object.keys(leadContext).forEach(function (key) {
+        params[key] = leadContext[key];
+      });
+    }
+
     window.gtag("event", method + "_click", params);
     window.gtag("event", "generate_lead", params);
   }

@@ -34,7 +34,7 @@
 </head>
 
 <body class="text-slate-800">
-    <a class="skip-link" href="#main-content">דילוג לתוכן הראשי</a>
+    <a class="skip-link" href="#main-content" data-en="Skip to main content">דילוג לתוכן הראשי</a>
     <!-- Fixed Navigation Bar -->
     <nav class="site-nav">
         <div class="site-nav__inner">
@@ -44,16 +44,16 @@
             </a>
             <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
             <div id="site-nav-menu" class="site-nav__menu">
-                <a href="index.html" class="site-nav__link">בית</a>
-                <a href="about.html" class="site-nav__link">אודות</a>
-                <a href="blog.html" class="site-nav__link">בלוג</a>
-                <a href="podcast.html" class="site-nav__link">פודקאסט</a>
-                <a href="clinic.html" class="site-nav__link">קליניקה</a>
-                <a href="persian-medicine.html" class="site-nav__link">רפואה פרסית</a>
-                <a href="workshops.html" class="site-nav__link">סדנאות</a>
-                <a href="tours.html" class="site-nav__link">סיורים</a>
+                <a href="index.html" class="site-nav__link" data-en="Hebrew home">בית</a>
+                <a href="about.html" class="site-nav__link" data-en="About (Hebrew)">אודות</a>
+                <a href="blog.html" class="site-nav__link" data-en="Blog (Hebrew)">בלוג</a>
+                <a href="podcast.html" class="site-nav__link" data-en="Podcast (Hebrew)">פודקאסט</a>
+                <a href="clinic.html" class="site-nav__link" data-en="English clinic">קליניקה</a>
+                <a href="persian-medicine.html" class="site-nav__link" data-en="Persian medicine (Hebrew)">רפואה פרסית</a>
+                <a href="workshops.html" class="site-nav__link" data-en="Workshops (Hebrew)">סדנאות</a>
+                <a href="tours.html" class="site-nav__link" data-en="Tours (Hebrew)">סיורים</a>
                 <a href="contact.html"
-                    class="site-nav__cta">צור
+                    class="site-nav__cta" data-en="Contact">צור
                     קשר</a>
             </div>
         </div>
@@ -63,25 +63,26 @@
         <section class="page-hero contact-hero">
             <div class="page-hero__content">
                 <p class="page-hero__eyebrow">CONTACT VEDICA</p>
-                <h1>צור קשר עם VEDICA</h1>
-                <p>אפשר להתחיל בהודעת וואטסאפ קצרה או להשאיר פרטים בטופס. נחזור אליך עם מענה אישי והכוונה לשלב הבא.</p>
+                <h1 data-en="Contact Inbal at VEDICA">צור קשר עם VEDICA</h1>
+                <p data-en="Ask about an English-speaking consultation, appointment availability, fees or what the two meetings include. Send a short WhatsApp message or leave your contact details below.">אפשר להתחיל בהודעת וואטסאפ קצרה או להשאיר פרטים בטופס. נחזור אליך עם מענה אישי והכוונה לשלב הבא.</p>
+                <a id="contact-language-switch" href="contact.html?lang=en&amp;service=english_consultation" lang="en" dir="ltr" class="inline-flex mt-4 font-bold underline underline-offset-4">English contact form</a>
             </div>
         </section>
         <div class="contact-shortcuts">
             <article class="contact-shortcut">
                 <h3>WhatsApp</h3>
-                <p>לשיחה מהירה לגבי התאמה וזמינות.</p>
-                <a id="wa-shortcut" href="https://wa.me/972545774407" target="_blank" rel="noopener noreferrer">פתיחת שיחה</a>
+                <p data-en="Ask about fit, fees and appointment availability.">לשיחה מהירה לגבי התאמה וזמינות.</p>
+                <a id="wa-shortcut" href="https://wa.me/972545774407" target="_blank" rel="noopener noreferrer" data-en="Message Inbal">פתיחת שיחה</a>
             </article>
             <article class="contact-shortcut">
-                <h3>אימייל</h3>
-                <p>מתאים לפנייה מפורטת יותר.</p>
+                <h3 data-en="Email">אימייל</h3>
+                <p data-en="Send an enquiry by email.">מתאים לפנייה מפורטת יותר.</p>
                 <a href="mailto:inbal.ph@gmail.com">inbal.ph@gmail.com</a>
             </article>
             <article class="contact-shortcut">
-                <h3>כתובת קליניקה</h3>
-                <p>קליניקת ״מרחבים״, ארלוזורוב 82 תל אביב.</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=ארלוזורוב+82+תל+אביב" target="_blank" rel="noopener noreferrer">פתיחה במפה</a>
+                <h3 data-en="Clinic address">כתובת קליניקה</h3>
+                <p data-en="Merhavim Clinic, Arlozorov 82, Tel Aviv.">קליניקת ״מרחבים״, ארלוזורוב 82 תל אביב.</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=ארלוזורוב+82+תל+אביב" target="_blank" rel="noopener noreferrer" data-en="Open Google Maps">פתיחה במפה</a>
             </article>
             <article class="contact-shortcut" lang="en" dir="ltr">
                 <h3>English clinic</h3>
@@ -90,68 +91,69 @@
             </article>
         </div>
         <div class="bg-white p-8 rounded-3xl shadow-xl border border-emerald-100">
-            <form id="contactForm" aria-label="טופס יצירת קשר" action="https://formspree.io/f/maqdvyae" method="POST" class="space-y-6">
+            <form id="contactForm" style="scroll-margin-top: 6rem;" aria-label="טופס יצירת קשר" action="https://formspree.io/f/maqdvyae" method="POST" class="space-y-6">
                 <!-- Redirect after success -->
                 <input type="hidden" name="_next" value="https://vedica-ayurveda.co.il/thank-you.html">
                 <!-- Subject line for emails -->
                 <input type="hidden" name="_subject" value="פנייה חדשה מאתר VEDICA">
+                <input type="hidden" name="preferred_language" value="Hebrew">
 
                 <div>
-                    <label for="contact-name" class="block text-sm font-bold mb-2">שם מלא</label>
+                    <label for="contact-name" class="block text-sm font-bold mb-2" data-en="Full name">שם מלא</label>
                     <input id="contact-name" type="text" name="name" placeholder="איך קוראים לך?" autocomplete="name"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
-                    <label for="contact-phone" class="block text-sm font-bold mb-2">טלפון</label>
+                    <label for="contact-phone" class="block text-sm font-bold mb-2" data-en="Phone">טלפון</label>
                     <input id="contact-phone" type="tel" name="phone" placeholder="050-0000000" inputmode="tel" autocomplete="tel" pattern="[+0-9\s\(\)\-]{7,20}" minlength="7" maxlength="20" dir="ltr" title="מספר טלפון הכולל 7–20 תווים: ספרות, רווחים, מקפים וקידומת מדינה"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
-                    <label for="contact-email" class="block text-sm font-bold mb-2">דואר אלקטרוני</label>
+                    <label for="contact-email" class="block text-sm font-bold mb-2" data-en="Email">דואר אלקטרוני</label>
                     <input id="contact-email" type="email" name="email" placeholder="name@example.com" autocomplete="email" dir="ltr"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
                 </div>
                 <div>
-                    <label for="contact-service" class="block text-sm font-bold mb-2">במה תרצו להתמקד?</label>
+                    <label for="contact-service" class="block text-sm font-bold mb-2" data-en="What would you like to discuss?">במה תרצו להתמקד?</label>
                     <select id="contact-service" name="service"
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none" required>
-                        <option value="">בחרו אפשרות</option>
-                        <option value="consultation">ייעוץ אישי בקליניקה (פוריות, פוריות הגבר ועיכול)</option>
-                        <option value="womens_health">איזון הורמונלי ובריאות האישה</option>
-                        <option value="nutrition">התאמת תזונה ואורח חיים</option>
+                        <option value="" data-en="Choose an option">בחרו אפשרות</option>
+                        <option value="consultation" data-en="Personal clinic consultation (fertility, male fertility or digestion)">ייעוץ אישי בקליניקה (פוריות, פוריות הגבר ועיכול)</option>
+                        <option value="womens_health" data-en="Menopause, cycle and women's health support">איזון הורמונלי ובריאות האישה</option>
+                        <option value="nutrition" data-en="Personal nutrition and daily routine">התאמת תזונה ואורח חיים</option>
                         <option value="english_consultation">English-speaking Ayurveda consultation</option>
-                        <option value="corporate_wellness">הרצאת וולנס או סדנה לארגון / קבוצה</option>
-                        <option value="nutrition_workshop">סדנאות תזונה ואורח חיים בריא - איורוודי</option>
-                        <option value="herb_tours">סיור אוכל בשוק לוינסקי לקבוצות</option>
-                        <option value="other">אחר</option>
+                        <option value="corporate_wellness" data-en="Wellness lecture or group workshop">הרצאת וולנס או סדנה לארגון / קבוצה</option>
+                        <option value="nutrition_workshop" data-en="Ayurvedic nutrition workshop">סדנאות תזונה ואורח חיים בריא - איורוודי</option>
+                        <option value="herb_tours" data-en="Levinsky Market food tour for groups">סיור אוכל בשוק לוינסקי לקבוצות</option>
+                        <option value="other" data-en="Other">אחר</option>
                     </select>
                 </div>
                 <div>
-                    <label for="contact-message" class="block text-sm font-bold mb-2">הודעה חופשית קצרה (אופציונלי)</label>
+                    <label for="contact-message" class="block text-sm font-bold mb-2" data-en="Short message (optional)">הודעה חופשית קצרה (אופציונלי)</label>
                     <textarea id="contact-message" name="message" rows="4" placeholder="כאן אפשר לכתוב קצת רקע או כל דבר אחר..."
                         class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none resize-none"></textarea>
                 </div>
                 <button type="submit"
-                    class="w-full bg-emerald-700 text-white py-4 rounded-xl text-xl font-bold hover:bg-emerald-800 transition shadow-lg flex items-center justify-center">שליחת
+                    class="w-full bg-emerald-700 text-white py-4 rounded-xl text-xl font-bold hover:bg-emerald-800 transition shadow-lg flex items-center justify-center" data-en="Send enquiry">שליחת
                     פנייה</button>
                 <div id="formMessage" role="status" aria-live="polite" aria-atomic="true" class="text-center text-sm hidden"></div>
             </form>
             <div class="mt-8 pt-8 border-t">
-                <h2 class="font-bold text-emerald-800 mb-2 text-center">איך מגיעים?</h2>
+                <h2 class="font-bold text-emerald-800 mb-2 text-center" data-en="Getting to the clinic">איך מגיעים?</h2>
                 <p class="text-slate-600 text-center text-sm mb-4">
-                    הפגישות מתקיימות ב<strong>קליניקת ״מרחבים״</strong>,
+                    <span data-en="Consultations take place at ">הפגישות מתקיימות ב</span><strong data-en="Merhavim Clinic">קליניקת ״מרחבים״</strong>,
                     <a href="https://www.google.com/maps/search/?api=1&query=ארלוזורוב+82+תל+אביב" target="_blank" rel="noopener noreferrer"
-                        class="text-emerald-800 underline underline-offset-2 decoration-emerald-700 hover:text-emerald-900">ארלוזורוב 82, תל אביב</a>
+                        class="text-emerald-800 underline underline-offset-2 decoration-emerald-700 hover:text-emerald-900" data-en="Arlozorov 82, Tel Aviv">ארלוזורוב 82, תל אביב</a>
                     <br>
-                    <strong>חניונים קרובים לקליניקה:</strong>
+                    <strong data-en="Nearby parking: ">חניונים קרובים לקליניקה:</strong>
                     <a href="https://www.google.com/maps/search/?api=1&query=חניון+גן+העיר+תל+אביב" target="_blank" rel="noopener noreferrer"
-                        class="text-emerald-800 underline underline-offset-2 decoration-emerald-700 hover:text-emerald-900">חניון גן העיר</a>
-                    או
+                        class="text-emerald-800 underline underline-offset-2 decoration-emerald-700 hover:text-emerald-900" data-en="Gan Ha'ir parking">חניון גן העיר</a>
+                    <span data-en=" or ">או</span>
                     <a href="https://www.google.com/maps/search/?api=1&query=חניון+מגדל+המאה+תל+אביב" target="_blank" rel="noopener noreferrer"
-                        class="text-emerald-800 underline underline-offset-2 decoration-emerald-700 hover:text-emerald-900">חניון מגדל המאה</a>.
+                        class="text-emerald-800 underline underline-offset-2 decoration-emerald-700 hover:text-emerald-900" data-en="Migdal Hame'a parking">חניון מגדל המאה</a>.
                 </p>
                 <div class="text-center">
-                    <p class="text-slate-500 mb-4">או פשוט שלחו לי הודעה ישירה:</p>
+                    <p class="text-slate-500 mb-4" data-en="Or send Inbal a WhatsApp message:">או פשוט שלחו לי הודעה ישירה:</p>
                     <a id="wa-contact" href="https://wa.me/972545774407" target="_blank" rel="noopener noreferrer"
                         class="bg-green-600 text-white px-8 py-3 rounded-full font-bold hover:bg-green-700 transition inline-flex items-center gap-2">
                         <span>WhatsApp</span>
@@ -166,34 +168,34 @@
             <div class="grid md:grid-cols-3 gap-12 mb-12 text-center">
                 <!-- Column 1: Services -->
                 <div class="flex flex-col items-center">
-                    <h3 class="text-lg font-bold mb-4 text-emerald-300">שירותים</h3>
+                    <h3 class="text-lg font-bold mb-4 text-emerald-300" data-en="Services">שירותים</h3>
                     <ul class="space-y-3 text-emerald-100">
-                        <li><a href="clinic.html" class="hover:text-white transition">קליניקת VEDICA</a></li>
-                        <li><a href="persian-medicine.html" class="hover:text-white transition">רפואה פרסית</a></li>
-                        <li><a href="workshops.html" class="hover:text-white transition">סדנאות תזונה ואורח חיים
+                        <li><a href="clinic.html" class="hover:text-white transition" data-en="English-speaking VEDICA clinic">קליניקת VEDICA</a></li>
+                        <li><a href="persian-medicine.html" class="hover:text-white transition" data-en="Persian medicine (Hebrew)">רפואה פרסית</a></li>
+                        <li><a href="workshops.html" class="hover:text-white transition" data-en="Nutrition workshops (Hebrew)">סדנאות תזונה ואורח חיים
                                 בריא</a></li>
-                        <li><a href="tours.html" class="hover:text-white transition">סיור אוכל בשוק לוינסקי</a></li>
-                        <li><a href="process.html" class="hover:text-white transition">תהליך הטיפול</a></li>
+                        <li><a href="tours.html" class="hover:text-white transition" data-en="Levinsky Market food tour">סיור אוכל בשוק לוינסקי</a></li>
+                        <li><a href="process.html" class="hover:text-white transition" data-en="Consultation process">תהליך הטיפול</a></li>
                     </ul>
                 </div>
                 <!-- Column 2: Content -->
                 <div class="flex flex-col items-center">
-                    <h3 class="text-lg font-bold mb-4 text-emerald-300">תוכן</h3>
+                    <h3 class="text-lg font-bold mb-4 text-emerald-300" data-en="More from VEDICA">תוכן</h3>
                     <ul class="space-y-3 text-emerald-100">
-                        <li><a href="blog.html" class="hover:text-white transition">בלוג</a></li>
-                        <li><a href="podcast.html" class="hover:text-white transition">פודקאסט - רפואה בצלחת</a></li>
-                        <li><a href="about.html" class="hover:text-white transition">אודות ענבל הנסב</a></li>
-                        <li><a href="https://inbalhanasab.co.il/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">ייפוי כוח מתמשך - אתר משפטי נפרד</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition" data-en="Blog (Hebrew)">בלוג</a></li>
+                        <li><a href="podcast.html" class="hover:text-white transition" data-en="Medicine on a Plate podcast (Hebrew)">פודקאסט - רפואה בצלחת</a></li>
+                        <li><a href="about.html" class="hover:text-white transition" data-en="About Inbal Hanasab (Hebrew)">אודות ענבל הנסב</a></li>
+                        <li><a href="https://inbalhanasab.co.il/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" data-en="Lasting power of attorney — separate legal website (Hebrew)">ייפוי כוח מתמשך - אתר משפטי נפרד</a></li>
                     </ul>
                 </div>
                 <!-- Column 3: Contact -->
                 <div class="flex flex-col items-center">
-                    <h3 class="text-lg font-bold mb-4 text-emerald-300">יצירת קשר</h3>
+                    <h3 class="text-lg font-bold mb-4 text-emerald-300" data-en="Contact">יצירת קשר</h3>
                     <ul class="space-y-3 text-emerald-100">
-                        <li>קליניקת ״מרחבים״, ארלוזורוב 82, תל אביב</li>
+                        <li data-en="Merhavim Clinic, Arlozorov 82, Tel Aviv">קליניקת ״מרחבים״, ארלוזורוב 82, תל אביב</li>
                         <li><a href="https://wa.me/972545774407" target="_blank" rel="noopener noreferrer" class="hover:text-white transition"> WhatsApp</a></li>
                         <li><a href="mailto:inbal.ph@gmail.com" class="hover:text-white transition"> inbal.ph@gmail.com</a></li>
-                        <li><a href="contact.html" class="hover:text-white transition"> טופס יצירת קשר</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition" data-en="Contact form"> טופס יצירת קשר</a></li>
                     </ul>
                     <div class="flex gap-4 mt-6 justify-center">
                         <a href="https://www.instagram.com/inbal_hanasab_vedica" target="_blank" rel="noopener noreferrer" class="bg-emerald-800 hover:bg-emerald-700 transition px-3 h-10 rounded-full inline-flex items-center justify-center text-xs font-semibold" aria-label="Instagram">Instagram</a>
@@ -203,39 +205,84 @@
             </div>
             <!-- Bottom bar -->
             <div class="border-t border-emerald-800 pt-8 text-center">
-                <p id="footer-name" class="font-bold mb-2">VEDICA - ענבל הנסב | תל אביב</p>
-                <p class="opacity-60 text-sm">© 2026 כל הזכויות שמורות</p>
+                <p id="footer-name" class="font-bold mb-2" data-en="VEDICA - Inbal Hanasab | Tel Aviv">VEDICA - ענבל הנסב | תל אביב</p>
+                <p class="opacity-60 text-sm" data-en="© 2026 All rights reserved">© 2026 כל הזכויות שמורות</p>
             </div>
         </div>
     </footer>
 
     <script>
+        const contactQuery = new URLSearchParams(window.location.search);
+        const isEnglishContact = contactQuery.get('lang') === 'en';
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        const serviceField = document.getElementById('contact-service');
+        const requestedService = contactQuery.get('service');
+
+        if (isEnglishContact) {
+            document.documentElement.lang = 'en';
+            document.documentElement.dir = 'ltr';
+            document.title = 'Contact Inbal | English-speaking Ayurveda Clinic Tel Aviv | VEDICA';
+            document.querySelectorAll('[data-en]').forEach(element => {
+                element.textContent = element.dataset.en;
+            });
+            document.querySelector('.site-nav__brand').href = 'english-speaking-ayurveda-clinic-tel-aviv.html';
+            document.querySelectorAll('.site-nav__menu .site-nav__link').forEach(link => {
+                if (!['index.html', 'about.html', 'clinic.html'].includes(link.getAttribute('href'))) link.remove();
+            });
+            document.querySelectorAll('a[href="clinic.html"], a[href="process.html"]').forEach(link => {
+                link.href = 'english-speaking-ayurveda-clinic-tel-aviv.html';
+            });
+            document.querySelectorAll('a[href="contact.html"]').forEach(link => {
+                link.href = 'contact.html?lang=en&service=english_consultation';
+            });
+            document.querySelectorAll('a[href="tours.html"]').forEach(link => {
+                link.href = 'levinsky-market-food-tour.html';
+                link.textContent = 'Levinsky Market food tour';
+            });
+            document.querySelector('meta[name="description"]').content = 'Contact Inbal Hanasab about an English-speaking Ayurveda consultation at Arlozorov 82, Tel Aviv. Ask about appointment availability, fees and the two-meeting process.';
+            document.getElementById('site-logo').alt = 'VEDICA - Ayurveda clinic in Tel Aviv';
+            document.getElementById('site-nav-toggle').setAttribute('aria-label', 'Open navigation menu');
+            contactForm.setAttribute('aria-label', 'Contact VEDICA');
+            document.getElementById('contact-name').placeholder = 'Your full name';
+            document.getElementById('contact-phone').title = 'Phone number: 7–20 characters using digits, spaces, hyphens and an optional country code';
+            document.getElementById('contact-message').placeholder = 'What would you like to ask about? No detailed medical history is needed here.';
+            contactForm.elements._next.value += '?lang=en';
+            contactForm.elements._subject.value = 'English consultation enquiry from VEDICA';
+            contactForm.elements.preferred_language.value = 'English';
+            serviceField.value = 'english_consultation';
+            const languageSwitch = document.getElementById('contact-language-switch');
+            languageSwitch.href = 'contact.html';
+            languageSwitch.lang = 'he';
+            languageSwitch.dir = 'rtl';
+            languageSwitch.textContent = 'טופס בעברית';
+        }
+
+        if ([...serviceField.options].some(option => option.value === requestedService)) {
+            serviceField.value = requestedService;
+        }
+
         function trackEvent(eventName, params = {}) {
             if (typeof gtag === 'function') {
                 gtag('event', eventName, params);
             }
         }
 
-        trackEvent('contact_page_view', {
-            event_category: 'engagement',
-            event_label: 'contact_page'
+        document.addEventListener('DOMContentLoaded', function () {
+            trackEvent('contact_page_view', {
+                event_category: 'engagement',
+                event_label: 'contact_page'
+            });
         });
 
         fetch('content.json')
             .then(res => res.json())
             .then(data => {
-                const waUrl = "https://wa.me/" + data.site.whatsapp;
+                const message = isEnglishContact ? '?text=' + encodeURIComponent('Hi Inbal, I would like to ask about an English-speaking Ayurveda consultation in Tel Aviv, appointment availability and fees.') : '';
+                const waUrl = "https://wa.me/" + data.site.whatsapp + message;
                 document.getElementById('wa-contact').href = waUrl;
                 document.getElementById('wa-shortcut').href = waUrl;
             });
-
-        const contactForm = document.getElementById('contactForm');
-        const formMessage = document.getElementById('formMessage');
-        const serviceField = document.getElementById('contact-service');
-        const requestedService = new URLSearchParams(window.location.search).get('service');
-        if ([...serviceField.options].some(option => option.value === requestedService)) {
-            serviceField.value = requestedService;
-        }
 
         function leadEventParams(eventLabel) {
             const params = {
@@ -244,7 +291,8 @@
                 lead_method: 'contact_form',
                 lead_service: serviceField.value || 'not_selected',
                 cta_location: 'contactForm',
-                lead_page: window.location.pathname
+                lead_page: window.location.pathname,
+                transport_type: 'beacon'
             };
 
             if (typeof window.vedicaLeadContext === 'function') {
@@ -262,7 +310,7 @@
             // שינוי הכפתור בזמן טעינה
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.innerText;
-            submitBtn.innerText = 'שולח...';
+            submitBtn.innerText = isEnglishContact ? 'Sending...' : 'שולח...';
             submitBtn.disabled = true;
 
             const formData = new FormData(contactForm);
@@ -278,16 +326,32 @@
 
                 if (response.ok) {
                     trackEvent('form_submit_success', leadEventParams('contact_form'));
-                    trackEvent('generate_lead', leadEventParams('contact_form'));
-                    // מעבר מוצלח לעמוד התודה מבלי להציג את עמוד הביניים של Formspree
-                    window.location.href = contactForm.querySelector('input[name="_next"]').value;
+                    let redirected = false;
+                    const redirect = () => {
+                        if (redirected) return;
+                        redirected = true;
+                        window.location.href = contactForm.elements._next.value;
+                    };
+                    formMessage.textContent = isEnglishContact ? 'Your enquiry has been sent. Opening the confirmation page...' : 'הפנייה נשלחה. מעבר לעמוד האישור...';
+                    formMessage.classList.remove('hidden', 'text-red-500');
+                    if (typeof gtag === 'function') {
+                        // Let analytics finish before navigating; still proceed if it is blocked.
+                        window.setTimeout(redirect, 1000);
+                        trackEvent('generate_lead', {
+                            ...leadEventParams('contact_form'),
+                            event_callback: redirect,
+                            event_timeout: 800
+                        });
+                    } else {
+                        redirect();
+                    }
                 } else {
                     trackEvent('form_submit_error', leadEventParams('contact_form_http_error'));
                     const data = await response.json();
                     if (Object.hasOwn(data, 'errors')) {
                         formMessage.innerText = data["errors"].map(error => error["message"]).join(", ");
                     } else {
-                        formMessage.innerText = "אופס! הייתה בעיה בשליחת הטופס.";
+                        formMessage.innerText = isEnglishContact ? 'Your enquiry could not be sent. Please try again or contact Inbal by WhatsApp or email above.' : "אופס! הייתה בעיה בשליחת הטופס.";
                     }
                     formMessage.classList.remove('hidden');
                     formMessage.classList.add('text-red-500');
@@ -296,7 +360,7 @@
                 }
             } catch (error) {
                 trackEvent('form_submit_error', leadEventParams('contact_form_network_error'));
-                formMessage.innerText = "אופס! הייתה תקלה נסה שוב מאוחר יותר.";
+                formMessage.innerText = isEnglishContact ? 'Unable to send your enquiry. Please try again or use WhatsApp or email above.' : "אופס! הייתה תקלה נסה שוב מאוחר יותר.";
                 formMessage.classList.remove('hidden');
                 formMessage.classList.add('text-red-500');
                 submitBtn.innerText = originalBtnText;
