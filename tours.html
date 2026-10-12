@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="סיור בדרך המשי של שוק לוינסקי עם ענבל, מדריכה מקומית: צמחים, איורוודה וסיפורים שמחברים בין המורשת הפרסית לתל אביב. כ־2–2.5 שעות בעברית או באנגלית, עם חליטה, טעימות והמלצות להמשך היום.">
-  <title>דרך המשי בשוק לוינסקי: צמחים ואיורוודה | VEDICA</title>
+    content="סיור טעימות בשוק לוינסקי עם ענבל: טעימות שוק, תבלינים, חליטה וסיפורים מהמורשת הפרסית. כ־2–2.5 שעות בעברית או באנגלית. אפשר להצטרף לסיור משותף או לתאם סיור פרטי.">
+  <title>סיור טעימות בשוק לוינסקי עם ענבל | VEDICA</title>
   <link rel="canonical" href="https://vedica-ayurveda.co.il/tours.html">
   <link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/tours.html">
   <link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html">
   <link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html">
   <link rel="alternate" type="text/plain" title="LLM Content" href="https://vedica-ayurveda.co.il/llms.txt">
   <!-- Open Graph Tags -->
-  <meta property="og:title" content="דרך המשי בשוק לוינסקי: צמחים ואיורוודה | VEDICA">
-  <meta property="og:description" content="סיור בדרך המשי של שוק לוינסקי עם ענבל, מדריכה מקומית: צמחים, איורוודה וסיפורים שמחברים בין המורשת הפרסית לתל אביב. כ־2–2.5 שעות בעברית או באנגלית, עם חליטה, טעימות והמלצות להמשך היום.">
+  <meta property="og:title" content="סיור טעימות בשוק לוינסקי עם ענבל | VEDICA">
+  <meta property="og:description" content="סיור טעימות בשוק לוינסקי עם ענבל: טעימות שוק, תבלינים, חליטה וסיפורים מהמורשת הפרסית. כ־2–2.5 שעות בעברית או באנגלית. אפשר להצטרף לסיור משותף או לתאם סיור פרטי.">
   <meta property="og:url" content="https://vedica-ayurveda.co.il/tours.html">
   <meta property="og:site_name" content="VEDICA">
   <meta property="og:image" content="https://vedica-ayurveda.co.il/assets/tour-1.webp">
@@ -24,8 +24,8 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="he_IL">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="דרך המשי בשוק לוינסקי: צמחים ואיורוודה | VEDICA">
-  <meta name="twitter:description" content="סיור בדרך המשי של שוק לוינסקי עם ענבל, מדריכה מקומית: צמחים, איורוודה וסיפורים שמחברים בין המורשת הפרסית לתל אביב. כ־2–2.5 שעות בעברית או באנגלית, עם חליטה, טעימות והמלצות להמשך היום.">
+  <meta name="twitter:title" content="סיור טעימות בשוק לוינסקי עם ענבל | VEDICA">
+  <meta name="twitter:description" content="סיור טעימות בשוק לוינסקי עם ענבל: טעימות שוק, תבלינים, חליטה וסיפורים מהמורשת הפרסית. כ־2–2.5 שעות בעברית או באנגלית. אפשר להצטרף לסיור משותף או לתאם סיור פרטי.">
   <meta name="twitter:image" content="https://vedica-ayurveda.co.il/assets/tour-1.webp">
   <meta name="twitter:image:alt" content="ענבל מדריכה סיור צמחים ותבלינים בשוק לוינסקי בתל אביב">
   <link rel="stylesheet" href="style.css">
@@ -97,21 +97,41 @@
       box-shadow: 0 10px 25px -24px rgba(6, 95, 70, 0.8);
     }
 
+    .tour-hero-actions {
+      display: grid;
+      gap: 0.75rem;
+      max-width: 48rem;
+      margin: 0 auto;
+    }
+
     .tour-mobile-cta {
       position: fixed;
       right: 0.75rem;
       bottom: 0.75rem;
       left: 0.75rem;
       z-index: 70;
-      display: block;
-      padding: 0.9rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+      padding: 0.6rem;
       border-radius: 1rem;
-      background: #065f46;
-      color: #ffffff;
+      background: #ffffff;
       text-align: center;
       font-weight: 800;
       text-decoration: none;
       box-shadow: 0 18px 40px -18px rgba(6, 78, 59, 0.9);
+    }
+
+    .tour-mobile-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      padding: 0.5rem;
+      border-radius: 0.65rem;
+      background: #065f46;
+      color: #ffffff;
+      text-decoration: none;
     }
 
     @media (max-width: 47.99rem) {
@@ -153,6 +173,10 @@
         grid-template-columns: repeat(4, minmax(0, 1fr));
       }
 
+      .tour-hero-actions {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
       .tour-mobile-cta {
         display: none;
       }
@@ -164,15 +188,16 @@
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": "דרך המשי בשוק לוינסקי: צמחים, איורוודה וסיפורים",
+      "name": "סיור טעימות בשוק לוינסקי עם ענבל",
       "alternateName": [
+        "סיור אוכל בשוק לוינסקי",
         "סיור צמחי מרפא בשוק לוינסקי",
         "סיור תבלינים בשוק לוינסקי",
         "סיור פרטי בשוק לוינסקי",
         "Levinsky Market Ayurveda tour"
       ],
-      "serviceType": "סיור צמחים, איורוודה וסיפורי תרבות; סיורים משותפים, פרטיים ומותאמים לקבוצות בעברית או באנגלית",
-      "description": "סיור בדרך המשי של שוק לוינסקי עם ענבל, מדריכה מקומית: צמחים, איורוודה וסיפורים שמחברים בין המורשת הפרסית לתל אביב. כ־2–2.5 שעות בעברית או באנגלית, עם חליטה, טעימות והמלצות להמשך היום.",
+      "serviceType": "סיור טעימות, תבלינים וסיפורי תרבות; סיורים משותפים, פרטיים ומותאמים לקבוצות בעברית או באנגלית",
+      "description": "סיור טעימות בשוק לוינסקי עם ענבל: טעימות שוק, תבלינים, חליטה וסיפורים מהמורשת הפרסית. כ־2–2.5 שעות בעברית או באנגלית. אפשר להצטרף לסיור משותף או לתאם סיור פרטי.",
       "provider": {
         "@type": "Person",
         "name": "ענבל הנסב",
@@ -184,7 +209,7 @@
       },
       "audience": {
         "@type": "Audience",
-        "audienceType": "קבוצות, צוותים, חברות, קבוצות הייטק, הגיל השלישי, ימי גיבוש, ימי כיף, השתלמויות, אורחים מחו\"ל וקבוצות בינלאומיות"
+        "audienceType": "יחידים, זוגות, חברים, קבוצות, צוותים, חברות, קבוצות הייטק, הגיל השלישי, ימי גיבוש, ימי כיף, השתלמויות, אורחים מחו\"ל וקבוצות בינלאומיות"
       },
       "availableLanguage": [
         "Hebrew",
@@ -228,7 +253,7 @@
         "name": "האם זה סיור אוכל בשוק לוינסקי או סיור צמחי מרפא?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "במרכז הסיור עומדים צמחים, איורוודה וסיפורי תרבות, עם טעימות וחליטה לאורך הדרך. ארוחת צהריים מלאה אינה כלולה. הידע המסורתי משותף כחוויה לימודית, ולא כייעוץ רפואי אישי."
+          "text": "זהו סיור טעימות עם היכרות עם תבלינים, צמחים וסיפורי תרבות, בהדרכת ענבל ובזווית של איורוודה והמורשת הפרסית. טעימות, נשנושים וחליטה כלולים; ארוחת צהריים מלאה אינה כלולה. התוכן לימודי ותרבותי ואינו ייעוץ רפואי אישי."
         }
       },
       {
@@ -321,18 +346,21 @@
         English tour page
       </a>
     </div>
-    <p class="mb-3 text-center text-sm font-bold tracking-widest text-emerald-700">סיורים משותפים ופרטיים, לקבוצות ולסקרנים בתל אביב</p>
-    <h1 class="tour-page-title text-3xl font-bold text-emerald-900 mb-6 text-center">דרך המשי בשוק לוינסקי: צמחים, איורוודה וסיפורים</h1>
-    <p class="tour-page-lead text-lg text-slate-600 leading-relaxed text-center max-w-3xl mx-auto mb-6">מריחים צמחים, מגלים תערובות תבלינים ומכירים את הגישה של איורוודה ומסורות פרסיות לחומרי גלם יומיומיים, לעונות השנה ולחליטות. עם ענבל, מדריכה מקומית, פוגשים סיפורים חמים וטיפים מעשיים לשימוש בתבלינים ולאחסון בבית. החוויה כוללת טעימות שוק, נשנושים, חליטה איורוודית וערכת היכרות עם צמחים ותבלינים. ארוחת צהריים בתשלום נפרד.</p>
-    <div class="flex flex-col justify-center gap-3 sm:flex-row">
-      <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%A1%D7%99%D7%95%D7%A8%20%D7%91%D7%A9%D7%95%D7%A7%20%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99.%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%AA%D7%AA%D7%A4%D7%99%D7%9D%3A%20___%20%7C%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9E%D7%95%D7%A2%D7%93%D7%A3%3A%20___%20%7C%20%D7%A9%D7%A4%D7%94%3A%20___%20%7C%20%D7%A8%D7%92%D7%99%D7%A9%D7%95%D7%99%D7%95%D7%AA%20%D7%9E%D7%96%D7%95%D7%9F%3A%20___%20%7C%20%D7%90%D7%A8%D7%95%D7%97%D7%AA%20%D7%A6%D7%94%D7%A8%D7%99%D7%99%D7%9D%2C%20%D7%98%D7%A2%D7%99%D7%9E%D7%95%D7%AA%20%D7%90%D7%95%20%D7%A4%D7%99%D7%A0%D7%95%D7%A7%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D%3A%20___"
-        class="inline-flex items-center justify-center rounded-xl bg-emerald-800 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-emerald-900">קבלת הצעה לקבוצה</a>
+    <p class="mb-3 text-center text-sm font-bold tracking-widest text-emerald-700">טעימות, תבלינים וסיפורים מהמורשת הפרסית</p>
+    <h1 class="tour-page-title text-3xl font-bold text-emerald-900 mb-6 text-center">סיור טעימות בשוק לוינסקי עם ענבל</h1>
+    <p class="tour-page-lead text-lg text-slate-600 leading-relaxed text-center max-w-3xl mx-auto mb-6">טועמים מהשוק, מריחים תבלינים ושומעים את סיפורי האנשים והמסורות של לוינסקי. ענבל, מדריכה מקומית עם ידע באיורוודה ומורשת פרסית־איראנית, מחברת בין הטעמים, הצמחים והסיפורים. אפשר להצטרף לבד, בזוג או עם חברים לסיור משותף, או לתאם סיור פרטי לקבוצה.</p>
+    <p class="mb-6 text-center text-slate-700">כ־2–2.5 שעות · טעימות, נשנושים, חליטה איורוודית וערכת צמחים ותבלינים כלולים · ארוחת צהריים בתשלום נפרד.</p>
+    <div class="tour-hero-actions" data-cta-location="tour-hero">
       <a href="https://www.getyourguide.com/tel-aviv-l487/tel-aviv-levinsky-market-ayurveda-spices-stories-t1512585/" target="_blank" rel="noopener noreferrer"
-        class="inline-flex items-center justify-center rounded-xl border-2 border-emerald-700 px-8 py-4 text-lg font-bold text-emerald-800 transition hover:bg-emerald-50">להזמנה ב־GetYourGuide</a>
+        class="inline-flex items-center justify-center rounded-xl bg-emerald-800 px-6 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-emerald-900">לתאריכים, מחירים והזמנה</a>
+      <a href="tel:+972545774407" aria-label="התקשרו לענבל לפרטים על הסיור"
+        class="inline-flex items-center justify-center rounded-xl border-2 border-emerald-700 px-6 py-4 text-lg font-bold text-emerald-800 transition hover:bg-emerald-50">לדבר עם ענבל</a>
+      <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%A1%D7%99%D7%95%D7%A8%20%D7%98%D7%A2%D7%99%D7%9E%D7%95%D7%AA%20%D7%91%D7%A9%D7%95%D7%A7%20%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99.%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9E%D7%95%D7%A2%D7%93%D7%A3%3A%20___%20%7C%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%AA%D7%AA%D7%A4%D7%99%D7%9D%3A%20___" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center justify-center rounded-xl border-2 border-emerald-700 px-6 py-4 text-lg font-bold text-emerald-800 transition hover:bg-emerald-50">לפרטים בוואטסאפ</a>
     </div>
     <div class="tour-hero-facts" aria-label="פרטים עיקריים על הסיור">
       <div class="tour-hero-fact">כ־2–2.5 שעות</div>
-      <div class="tour-hero-fact">צמחים, איורוודה וסיפורים</div>
+      <div class="tour-hero-fact">טעימות, תבלינים וחליטה</div>
       <div class="tour-hero-fact">סיור משותף או פרטי</div>
       <div class="tour-hero-fact">עברית או אנגלית</div>
     </div>
@@ -348,7 +376,7 @@
     </section>
 
     <section id="book-your-tour" class="mt-12 rounded-3xl border border-emerald-100 bg-emerald-50 p-8 md:p-10" aria-labelledby="tour-booking-title">
-      <h2 id="tour-booking-title" class="mb-4 text-center text-3xl font-bold text-emerald-900">למצוא את המקום שלכם בסיפור של השוק</h2>
+      <h2 id="tour-booking-title" class="mb-4 text-center text-3xl font-bold text-emerald-900">תאריכים, מחירים והזמנת הסיור</h2>
       <p class="mx-auto mb-6 max-w-3xl text-center leading-relaxed text-slate-700">ימים א׳–ו׳ בשעה 9:30, בהתאם לזמינות, עד 20 משתתפים. נפגשים בסמטת אלוף בצלות בתל אביב־יפו; הוראות המפגש המלאות יופיעו בהזמנה.</p>
       <div class="grid gap-4 md:grid-cols-2">
         <article class="rounded-2xl bg-white p-6">
@@ -543,7 +571,7 @@
           </div>
           <div>
             <h3 class="font-bold text-emerald-800">האם זה סיור אוכל בשוק לוינסקי או סיור צמחי מרפא?</h3>
-            <p class="mt-1 leading-relaxed">במרכז הסיור עומדים צמחים, איורוודה וסיפורי תרבות, עם טעימות וחליטה לאורך הדרך. ארוחת צהריים מלאה אינה כלולה. הידע המסורתי משותף כחוויה לימודית, ולא כייעוץ רפואי אישי.</p>
+            <p class="mt-1 leading-relaxed">זהו סיור טעימות עם היכרות עם תבלינים, צמחים וסיפורי תרבות, בהדרכת ענבל ובזווית של איורוודה והמורשת הפרסית. טעימות, נשנושים וחליטה כלולים; ארוחת צהריים מלאה אינה כלולה. התוכן לימודי ותרבותי ואינו ייעוץ רפואי אישי.</p>
           </div>
           <div>
             <h3 class="font-bold text-emerald-800">איך מתאמים סיור פרטי או קבוצתי?</h3>
@@ -649,8 +677,10 @@
     </div>
   </main>
 
-  <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%A1%D7%99%D7%95%D7%A8%20%D7%91%D7%A9%D7%95%D7%A7%20%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99.%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%AA%D7%AA%D7%A4%D7%99%D7%9D%3A%20___%20%7C%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9E%D7%95%D7%A2%D7%93%D7%A3%3A%20___%20%7C%20%D7%A9%D7%A4%D7%94%3A%20___%20%7C%20%D7%A8%D7%92%D7%99%D7%A9%D7%95%D7%99%D7%95%D7%AA%20%D7%9E%D7%96%D7%95%D7%9F%3A%20___%20%7C%20%D7%90%D7%A8%D7%95%D7%97%D7%AA%20%D7%A6%D7%94%D7%A8%D7%99%D7%99%D7%9D%2C%20%D7%98%D7%A2%D7%99%D7%9E%D7%95%D7%AA%20%D7%90%D7%95%20%D7%A4%D7%99%D7%A0%D7%95%D7%A7%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D%3A%20___"
-    class="tour-mobile-cta">קבלת הצעה לסיור בוואטסאפ</a>
+  <nav class="tour-mobile-cta" aria-label="יצירת קשר לגבי הסיור" data-cta-location="tour-mobile">
+    <a href="tel:+972545774407" aria-label="התקשרו לענבל לפרטים על הסיור">להתקשר לענבל</a>
+    <a href="https://wa.me/972545774407?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%A0%D7%91%D7%9C%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%A1%D7%99%D7%95%D7%A8%20%D7%98%D7%A2%D7%99%D7%9E%D7%95%D7%AA%20%D7%91%D7%A9%D7%95%D7%A7%20%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99.%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9E%D7%95%D7%A2%D7%93%D7%A3%3A%20___%20%7C%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%AA%D7%AA%D7%A4%D7%99%D7%9D%3A%20___" target="_blank" rel="noopener noreferrer">לפרטים בוואטסאפ</a>
+  </nav>
 
   <footer class="bg-emerald-900 text-white pt-16 pb-8">
     <div class="max-w-4xl mx-auto px-4">
@@ -681,6 +711,7 @@
           <ul class="space-y-3 text-emerald-100">
             <li>קליניקת ״מרחבים״, ארלוזורוב 82, תל אביב</li>
             <li><a href="https://wa.me/972545774407" target="_blank" rel="noopener noreferrer" class="hover:text-white transition"> WhatsApp</a></li>
+            <li><a href="tel:+972545774407" dir="ltr" class="hover:text-white transition">054-577-4407</a></li>
             <li><a href="mailto:inbal.ph@gmail.com" class="hover:text-white transition"> inbal.ph@gmail.com</a></li>
             <li><a href="contact.html" class="hover:text-white transition"> טופס יצירת קשר</a></li>
           </ul>
