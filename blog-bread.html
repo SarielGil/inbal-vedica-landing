@@ -42,13 +42,21 @@
     }
     </script>
   <script defer src="assets/analytics-loader.js"></script>
+    <meta property="og:image" content="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?q=80&amp;w=1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:alt" content="לחם מחמצת">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?q=80&amp;w=1200">
+    <meta name="twitter:image:alt" content="לחם מחמצת">
 </head>
 
 <body class="text-slate-800">
+    <a class="skip-link" href="#main-content">דילוג לתוכן הראשי</a>
     <nav class="site-nav sticky top-0 z-50">
         <div class="site-nav__inner">
             <a href="index.html" class="site-nav__brand">
-                <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA" class="site-nav__logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logo-transparent.png';">
+                <img id="site-logo" src="assets/logo-transparent.webp" alt="VEDICA" class="site-nav__logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logo-transparent.png';" width="1920" height="1920">
                 <span class="site-nav__name">VEDICA</span>
             </a>
             <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
@@ -69,6 +77,7 @@
         </div>
     </nav>
 
+    <main id="main-content" tabindex="-1">
     <article class="max-w-3xl mx-auto px-4 py-16">
         <header class="mb-12 text-center">
             <p class="mb-3 text-sm font-bold text-emerald-700">תזונה · מאת <a href="about.html" class="underline">ענבל הנסב</a> · פורסם 16.03.2026 · עודכן 14.07.2026</p>
@@ -76,8 +85,8 @@
             <p class="text-xl text-emerald-700 italic">מבט מקצועי על תסיסה, פרוביוטיקה והדרך לשלב מאפים חכמים יותר בתזונה שמותאמת לגוף</p>
         </header>
 
-        <img src="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?q=80&w=1200" alt="Sourdough Bread"
-            class="w-full h-96 object-cover rounded-3xl mb-12 shadow-xl" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?q=80&w=1200" alt="לחם מחמצת"
+            class="w-full h-96 object-cover rounded-3xl mb-12 shadow-xl" loading="lazy" width="1200" height="800">
 
         <div class="prose prose-emerald prose-lg mx-auto text-slate-700 leading-relaxed space-y-6">
             <p>
@@ -170,6 +179,7 @@
                 והרשמה לסדנה</a>
         </section>
     </article>
+    </main>
 
     <footer class="bg-emerald-900 text-white pt-16 pb-8">
         <div class="max-w-4xl mx-auto px-4">
