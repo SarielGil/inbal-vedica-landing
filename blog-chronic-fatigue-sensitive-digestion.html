@@ -21,6 +21,7 @@
   <meta property="og:locale" content="he_IL">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/modern-shared.css">
   <style>
     body { font-family: 'Assistant', Arial, sans-serif; background: #fdfbf7; }
     article p { line-height: 1.8; margin-bottom: 1.5rem; }
@@ -75,7 +76,8 @@
         <img src="assets/logo-transparent-160.png" alt="VEDICA קליניקת איורוודה בתל אביב" class="site-nav__logo" width="160" height="160" decoding="async">
         <span class="site-nav__name">VEDICA</span>
       </a>
-      <div class="site-nav__menu">
+      <button id="site-nav-toggle" class="site-nav__toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-expanded="false" aria-controls="site-nav-menu">☰</button>
+            <div id="site-nav-menu" class="site-nav__menu">
         <a href="index.html" class="site-nav__link">בית</a>
         <a href="about.html" class="site-nav__link">אודות</a>
         <a href="blog.html" class="site-nav__link site-nav__link--active">בלוג</a>
@@ -185,5 +187,6 @@
       <a href="https://wa.me/972545774407" class="inline-flex rounded-xl bg-white px-6 py-3 font-bold text-emerald-900">וואטסאפ לענבל</a>
     </section>
   </main>
+  <script src="assets/site-nav.js" defer></script>
 </body>
 </html>

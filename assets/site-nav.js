@@ -5,6 +5,7 @@ if (navToggle && navMenu) {
   const isEnglish = document.documentElement.lang.startsWith('en');
   const openLabel = isEnglish ? 'Open navigation menu' : 'פתיחת תפריט ניווט';
   const closeLabel = isEnglish ? 'Close navigation menu' : 'סגירת תפריט ניווט';
+  const isCompactMenu = () => getComputedStyle(navToggle).display !== 'none';
   const closeMenu = () => {
     navMenu.classList.remove('is-open');
     navToggle.setAttribute('aria-expanded', 'false');
@@ -35,7 +36,7 @@ if (navToggle && navMenu) {
   });
 
   document.addEventListener('click', (event) => {
-    if (window.innerWidth >= 1024) {
+    if (!isCompactMenu()) {
       return;
     }
     if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
@@ -44,7 +45,7 @@ if (navToggle && navMenu) {
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth >= 1024) {
+    if (!isCompactMenu()) {
       closeMenu();
     }
   });

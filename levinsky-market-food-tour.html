@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="description"
-    content="Explore Levinsky Market with Inbal, a local: herbs, Ayurveda and Silk Road stories connecting Persian traditions with Tel Aviv. English or Hebrew; private group quotes by request.">
-  <title>Levinsky Market: Silk Road Stories &amp; Ayurveda | VEDICA</title>
+    content="Join Inbal's Levinsky Market tasting and spice tour in Tel Aviv. Tastings, an infusion and a spice kit included. 2–2.5 hours; shared or private, English or Hebrew.">
+  <title>Levinsky Market Tasting &amp; Spice Tour with Inbal | VEDICA</title>
   <link rel="canonical" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html">
   <link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html">
   <link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/tours.html">
   <link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html">
   <link rel="alternate" type="text/plain" title="LLM Content" href="https://vedica-ayurveda.co.il/llms.txt">
-  <meta property="og:title" content="Levinsky Market: Silk Road Stories &amp; Ayurveda | VEDICA">
-  <meta property="og:description" content="Explore Levinsky Market with Inbal, a local: herbs, Ayurveda and Silk Road stories connecting Persian traditions with Tel Aviv. English or Hebrew; private group quotes by request.">
+  <meta property="og:title" content="Levinsky Market Tasting &amp; Spice Tour with Inbal | VEDICA">
+  <meta property="og:description" content="Join Inbal's Levinsky Market tasting and spice tour in Tel Aviv. Tastings, an infusion and a spice kit included. 2–2.5 hours; shared or private, English or Hebrew.">
   <meta property="og:url" content="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html">
   <meta property="og:site_name" content="VEDICA">
   <meta property="og:image" content="https://vedica-ayurveda.co.il/assets/tour-1.webp">
@@ -25,8 +25,8 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Levinsky Market: Silk Road Stories &amp; Ayurveda | VEDICA">
-  <meta name="twitter:description" content="Explore Levinsky Market with Inbal, a local: herbs, Ayurveda and Silk Road stories connecting Persian traditions with Tel Aviv. English or Hebrew; private group quotes by request.">
+  <meta name="twitter:title" content="Levinsky Market Tasting &amp; Spice Tour with Inbal | VEDICA">
+  <meta name="twitter:description" content="Join Inbal's Levinsky Market tasting and spice tour in Tel Aviv. Tastings, an infusion and a spice kit included. 2–2.5 hours; shared or private, English or Hebrew.">
   <meta name="twitter:image" content="https://vedica-ayurveda.co.il/assets/tour-1.webp">
   <meta name="twitter:image:alt" content="Inbal guiding a herb and spice tour in Levinsky Market, Tel Aviv">
   <link rel="stylesheet" href="style.css">
@@ -79,21 +79,67 @@
       padding: 1rem;
     }
 
+    .tour-hero-facts {
+      display: grid;
+      gap: 0.65rem;
+      margin: 1.5rem auto 0;
+      max-width: 48rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tour-hero-fact {
+      padding: 0.75rem;
+      border: 1px solid #d1fae5;
+      border-radius: 0.9rem;
+      background: #ffffff;
+      color: #065f46;
+      font-size: 0.92rem;
+      font-weight: 700;
+      box-shadow: 0 10px 25px -24px rgba(6, 95, 70, 0.8);
+    }
+
+    .tour-hero-actions {
+      display: grid;
+      gap: 0.75rem;
+      max-width: 48rem;
+      margin: 0 auto;
+    }
+
     .tour-mobile-cta {
       position: fixed;
       right: 0.75rem;
       bottom: 0.75rem;
       left: 0.75rem;
       z-index: 70;
-      display: block;
-      padding: 0.9rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+      padding: 0.6rem;
       border-radius: 1rem;
-      background: #065f46;
-      color: #ffffff;
+      background: #ffffff;
       text-align: center;
       font-weight: 800;
       text-decoration: none;
       box-shadow: 0 18px 40px -18px rgba(6, 78, 59, 0.9);
+    }
+
+    .tour-mobile-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      padding: 0.5rem;
+      border-radius: 0.65rem;
+      background: #065f46;
+      color: #ffffff;
+      font-size: 0.875rem;
+      text-decoration: none;
+    }
+
+    .tour-mobile-cta a + a {
+      border: 1px solid #065f46;
+      background: #ffffff;
+      color: #065f46;
     }
 
     @media (max-width: 47.99rem) {
@@ -104,7 +150,7 @@
 
     @media (min-width: 48rem) {
       .tour-page-title {
-        font-size: 3rem;
+        font-size: 2.25rem;
       }
 
       .tour-page-lead {
@@ -129,6 +175,14 @@
 
       .tour-audience-card {
         padding: 1.25rem;
+      }
+
+      .tour-hero-facts {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .tour-hero-actions {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
       .tour-mobile-cta {
@@ -189,8 +243,8 @@
       "@type": "WebPage",
       "@id": "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html#webpage",
       "url": "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html",
-      "name": "Silk Road Stories, Herbs and Ayurveda in Levinsky Market",
-      "description": "Explore Levinsky Market with Inbal, a local: herbs, Ayurveda and Silk Road stories connecting Persian traditions with Tel Aviv. English or Hebrew; private group quotes by request.",
+      "name": "Levinsky Market Tasting & Spice Tour with Inbal",
+      "description": "Join Inbal's Levinsky Market tasting and spice tour in Tel Aviv. Tastings, an infusion and a spice kit included. 2–2.5 hours; shared or private, English or Hebrew.",
       "isPartOf": {
         "@id": "https://vedica-ayurveda.co.il/#website"
       },
@@ -225,7 +279,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Levinsky Market Ayurveda and Spice Tour",
+          "name": "Levinsky Market Tasting & Spice Tour with Inbal",
           "item": "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html"
         }
       ]
@@ -234,15 +288,16 @@
       "@context": "https://schema.org",
       "@type": "Service",
       "@id": "https://vedica-ayurveda.co.il/levinsky-market-food-tour.html#service",
-      "name": "Levinsky Market Ayurveda, Spices and Stories Tour",
+      "name": "Levinsky Market Tasting & Spice Tour with Inbal",
       "alternateName": [
+        "Levinsky Market Ayurveda, Spices and Stories Tour",
         "Levinsky Market herb and spice tour",
         "Levinski Market Ayurveda tour",
         "Private Levinsky Market tour",
         "English Levinsky Market tour"
       ],
-      "serviceType": "Guided herbs, Ayurveda and cultural storytelling tour; shared, private and custom group tours in English or Hebrew",
-      "description": "Explore Levinsky Market with Inbal, a local: herbs, Ayurveda and Silk Road stories connecting Persian traditions with Tel Aviv. English or Hebrew; private group quotes by request.",
+      "serviceType": "Guided market tasting and spice tour with Ayurveda and Persian-Iranian cultural stories; shared, private and custom group tours in English or Hebrew",
+      "description": "Join Inbal's Levinsky Market tasting and spice tour in Tel Aviv. Tastings, an infusion and a spice kit included. 2–2.5 hours; shared or private, English or Hebrew.",
       "image": "https://vedica-ayurveda.co.il/assets/tour-1.webp",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -259,7 +314,7 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Ayurvedic infusion, snacks and starter herb and spice kit"
+              "name": "Market tastings, snacks, an Ayurvedic infusion and a starter herb and spice kit"
             }
           }
         ]
@@ -273,7 +328,7 @@
       },
       "audience": {
         "@type": "Audience",
-        "audienceType": "English-speaking visitors, private groups, senior groups, corporate teams and people curious about herbs, Ayurveda and cultural stories"
+        "audienceType": "Solo visitors, couples, friends, private groups, senior groups and corporate teams interested in market tastings, herbs and cultural stories, in English or Hebrew"
       },
       "availableLanguage": [
         "English",
@@ -283,7 +338,7 @@
       "potentialAction": {
         "@type": "ContactAction",
         "target": "https://wa.me/972545774407",
-        "name": "Request availability or a group quote"
+        "name": "Contact Inbal for tour dates and direct booking"
       }
     },
     {
@@ -328,7 +383,7 @@
           "name": "Is this a food tour or a herbal medicine tour?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The focus is herbs, Ayurveda and cultural storytelling, with tastings and an infusion along the way. A full lunch is not included. The tour shares traditional plant knowledge as an educational experience, rather than a personal medical consultation."
+            "text": "This is a market tasting tour with herbs, spices and cultural stories, guided by Inbal through Ayurveda and her Persian-Iranian heritage. Tastings, snacks and an infusion are included; a full lunch is not included. The tour is an educational experience and does not provide personal medical advice."
           }
         },
         {
@@ -336,7 +391,7 @@
           "name": "Who is the tour for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "English-speaking groups, private groups, senior groups, corporate teams, offsites, client hosting, international visitors and people curious about herbs, Ayurveda and cultural stories."
+            "text": "Solo visitors, couples and friends can join a shared tour. Private and custom group tours suit senior groups, corporate teams, offsites and international guests. Guidance is available in English or Hebrew."
           }
         },
         {
@@ -424,14 +479,14 @@
     </div>
   </nav>
 
-  <main class="max-w-4xl mx-auto px-4 py-16">
+  <main class="max-w-4xl mx-auto px-4 py-16 tour-layout">
     <nav aria-label="Breadcrumb" class="mb-6 text-sm text-slate-600">
       <ol class="flex flex-wrap items-center justify-center gap-2">
         <li><a href="index.html" class="font-semibold text-emerald-800 hover:underline">Home</a></li>
         <li aria-hidden="true">/</li>
         <li><a href="tours.html" class="font-semibold text-emerald-800 hover:underline">Tours</a></li>
         <li aria-hidden="true">/</li>
-        <li aria-current="page">Levinsky Market Ayurveda and spice tour</li>
+        <li aria-current="page">Levinsky Market tasting and spice tour</li>
       </ol>
     </nav>
 
@@ -442,20 +497,28 @@
       </a>
     </div>
 
-    <section class="text-center">
-      <p class="mb-4 text-sm font-bold uppercase tracking-widest text-emerald-700">Shared tours, private groups and curious travelers</p>
-      <h1 class="tour-page-title text-3xl font-bold text-emerald-900 mb-6">Silk Road Stories, Herbs and Ayurveda in Levinsky Market</h1>
-      <p class="tour-page-lead text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto mb-10">
-        Smell herbs, explore spice blends and discover how Ayurveda and Persian traditions approach everyday ingredients, seasons and infusions. Join Inbal, a local, for warm storytelling and practical tips for using and storing spices at home. Enjoy market tastings, snacks, an Ayurvedic infusion and a starter herb and spice kit. Lunch is purchased separately.
+    <section class="text-center" aria-labelledby="tour-title">
+      <p class="mb-3 text-sm font-bold uppercase tracking-widest text-emerald-700">Tastings, spices and stories from Persian heritage</p>
+      <h1 id="tour-title" class="tour-page-title text-3xl font-bold text-emerald-900 mb-6">Levinsky Market Tasting &amp; Spice Tour with Inbal</h1>
+      <p class="tour-page-lead text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto mb-6">
+        Explore Levinsky Market's tastings, spices and Persian-Iranian stories with Inbal. Join a shared or private tour.
       </p>
-      <div class="flex flex-col gap-4 justify-center sm:flex-row">
-        <a href="https://wa.me/972545774407?text=Hi%20Inbal%2C%20I%20would%20like%20a%20quote%20for%20a%20Levinsky%20Market%20tour.%20Group%20size%3A%20___%20%7C%20Preferred%20date%3A%20___%20%7C%20Language%3A%20___%20%7C%20Dietary%20needs%3A%20___%20%7C%20Optional%20lunch%2C%20additional%20tastings%20or%20other%20treats%3A%20___"
-          class="inline-flex items-center justify-center rounded-xl bg-emerald-800 px-8 py-4 text-lg font-bold text-white shadow-lg shadow-emerald-700/20 transition hover:bg-emerald-900">Check dates &amp; get a quote</a>
-        <a href="https://www.getyourguide.com/tel-aviv-l487/tel-aviv-levinsky-market-ayurveda-spices-stories-t1512585/" target="_blank" rel="noopener noreferrer"
-          class="inline-flex items-center justify-center rounded-xl border-2 border-emerald-700 px-8 py-4 text-lg font-bold text-emerald-800 transition hover:bg-emerald-50">Book on GetYourGuide</a>
+      <p class="mb-6 text-slate-700">About 2–2.5 hours · Market tastings, snacks, an Ayurvedic infusion and a herb and spice kit included · Lunch purchased separately.</p>
+      <div class="tour-hero-actions" data-cta-location="tour-hero">
+<a href="https://wa.me/972545774407?text=Hi%20Inbal%2C%20I%20would%20like%20details%20about%20the%20Levinsky%20Market%20tasting%20tour.%20Preferred%20date%3A%20___%20%7C%20Number%20of%20participants%3A%20___" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center justify-center rounded-xl bg-emerald-800 px-6 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-emerald-900">Message Inbal about dates</a>
+<a href="tel:+972545774407" aria-label="Call Inbal about the tour"
+          class="inline-flex items-center justify-center rounded-xl border-2 border-emerald-700 px-6 py-4 text-lg font-bold text-emerald-800 transition hover:bg-emerald-50">Call Inbal</a>
+<a href="https://www.getyourguide.com/tel-aviv-l487/tel-aviv-levinsky-market-ayurveda-spices-stories-t1512585/" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center justify-center rounded-xl border-2 border-emerald-700 px-6 py-4 text-lg font-bold text-emerald-800 transition hover:bg-emerald-50">Book on GetYourGuide</a>
+</div>
+      <p class="mt-2 text-sm leading-relaxed text-slate-600">For dates and direct booking, message Inbal with your group size and preferred language. You can also book shared or private places on GetYourGuide.</p>
+      <div class="tour-hero-facts" aria-label="Tour highlights">
+        <div class="tour-hero-fact">About 2–2.5 hours</div>
+        <div class="tour-hero-fact">Tastings, spices &amp; infusion</div>
+        <div class="tour-hero-fact">Shared or private tour</div>
+        <div class="tour-hero-fact">English or Hebrew</div>
       </div>
-      <p class="mt-5 font-bold text-emerald-800">Shared and private tours · 2–2.5 hours · Herbs, Ayurveda and stories · English or Hebrew · Lunch separate</p>
-      <p class="mt-2 text-sm leading-relaxed text-slate-600">Join a shared tour or book privately on GetYourGuide. For a custom group visit, send your group size, date, language and dietary needs by WhatsApp.</p>
     </section>
 
     <section class="mt-14 rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm md:p-10" aria-labelledby="tour-cultural-bridge">
@@ -469,7 +532,7 @@
     </section>
 
     <section id="book-your-tour" class="mt-12 rounded-3xl border border-emerald-100 bg-emerald-50 p-8 md:p-10" aria-labelledby="tour-booking-title">
-      <h2 id="tour-booking-title" class="mb-4 text-center text-3xl font-bold text-emerald-900">Find your place in the market story</h2>
+      <h2 id="tour-booking-title" class="mb-4 text-center text-3xl font-bold text-emerald-900">Tour dates, prices and booking</h2>
       <p class="mx-auto mb-6 max-w-3xl text-center leading-relaxed text-slate-700">Sunday–Friday at 9:30 AM, subject to availability. Up to 20 guests. Meet at Aluf Batslut Alley (סמטת אלוף בצלות), Tel Aviv-Yafo; full meeting instructions are provided with your booking.</p>
       <div class="grid gap-4 md:grid-cols-2">
         <article class="rounded-2xl bg-white p-6">
@@ -480,7 +543,7 @@
         <article class="rounded-2xl bg-white p-6">
           <h3 class="mb-3 text-xl font-bold text-emerald-800">Make it a private visit</h3>
           <p class="mb-5 leading-relaxed text-slate-700">Choose the private option on GetYourGuide, or contact Inbal for a custom group quote. Alternative start times and separately priced additions can be arranged in advance, subject to availability.</p>
-          <a href="#booking-process" class="font-bold text-emerald-800 underline">Plan a custom group tour</a>
+          <a href="#group-tour-quote" class="font-bold text-emerald-800 underline">Plan a custom group tour</a>
         </article>
       </div>
     </section>
@@ -489,12 +552,12 @@
       <p class="mb-3 text-center text-sm font-bold uppercase tracking-widest text-emerald-700">Quick answer</p>
       <h2 id="tour-at-a-glance" class="mb-6 text-center text-3xl font-bold text-emerald-900">What can you expect on the Levinsky Market tour?</h2>
       <p class="mx-auto mb-6 max-w-3xl text-center text-lg leading-relaxed text-slate-700">
-        A guided walk through herbs, Ayurveda and the stories of Levinsky Market, Tel Aviv. Inbal connects Persian-Iranian traditions with the market's immigrant communities, with tastings and an infusion along the way. The 2–2.5-hour experience is available in English or Hebrew. Levinski Market is another spelling of the same market.
+        A guided tasting and spice tour of Levinsky Market, Tel Aviv, with market tastings, snacks, an Ayurvedic infusion and a starter herb and spice kit. Inbal connects Ayurveda and her Persian-Iranian heritage with the market's immigrant stories. Join a shared tour or book privately, in English or Hebrew, for about 2–2.5 hours. Levinski Market is another spelling of the same market.
       </p>
       <dl class="grid gap-4 text-slate-700 md:grid-cols-2">
         <div class="rounded-2xl bg-emerald-50 p-5">
           <dt class="mb-2 font-bold text-emerald-800">Best for</dt>
-          <dd class="text-sm leading-relaxed">English-speaking visitors, native English-speaking groups, corporate teams, private groups, senior groups and international guests.</dd>
+          <dd class="text-sm leading-relaxed">Solo visitors, couples and friends joining a shared tour, plus private groups, corporate teams, senior groups and international guests.</dd>
         </div>
         <div class="rounded-2xl bg-emerald-50 p-5">
           <dt class="mb-2 font-bold text-emerald-800">Included</dt>
@@ -527,7 +590,7 @@
       </dl>
     </section>
 
-    <section class="tour-feature-panel mt-14 rounded-3xl bg-emerald-900 p-6 text-white shadow-xl">
+    <section id="group-tour-quote" class="tour-feature-panel mt-14 rounded-3xl bg-emerald-900 p-6 text-white shadow-xl">
       <div class="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
         <div>
           <p class="mb-3 text-sm font-bold tracking-widest text-emerald-200">For groups and teams</p>
@@ -718,65 +781,28 @@
 
     <section class="mt-14 rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm">
       <h2 class="mb-6 text-center text-3xl font-bold text-emerald-900">FAQ</h2>
-      <div class="space-y-5 text-slate-700">
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">Can I join the tour on my own?</h3>
-          <p class="mt-2 leading-relaxed">Yes. Book an individual place on the shared tour through GetYourGuide, or choose the private option for your group. Current availability, prices and offers appear there after you select a date. Contact Inbal on WhatsApp for a custom group quote.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">What makes this Levinsky Market tour different?</h3>
-          <p class="mt-2 leading-relaxed">Inbal, a local, brings Ayurveda and her Persian-Iranian heritage together as a cultural bridge. Explore herbs, spices and migration stories in Levinsky Market, with tastings, an Ayurvedic infusion and a starter herb and spice kit to continue exploring at home.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">Can I book a private Levinsky Market Ayurveda and spice tour for a corporate team?</h3>
-          <p class="mt-2 leading-relaxed">Yes. The tour can be planned as a private or corporate Levinsky Market Ayurveda and spice tour for teams, offsites, client hosting and international groups. The route is adapted to the date, group size, preferred language, dietary needs and requested experience.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">Is the Levinsky Market tour available in English?</h3>
-          <p class="mt-2 leading-relaxed">Yes. The tour can be held in English or Hebrew and is suitable for English-speaking groups, native English-speaking visitors, international guests, corporate teams, private groups and visitors to Tel Aviv.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">Is Levinski Market the same place as Levinsky Market?</h3>
-          <p class="mt-2 leading-relaxed">Yes. Levinsky Market is sometimes searched online as Levinski Market. This tour explores the same spice market area through herbs, Ayurveda and cultural stories, with language and route adapted to the group.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">Is this a food tour or a herbal medicine tour?</h3>
-          <p class="mt-2 leading-relaxed">The focus is herbs, Ayurveda and cultural storytelling, with tastings and an infusion along the way. A full lunch is not included. The tour shares traditional plant knowledge as an educational experience, rather than a personal medical consultation.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">Who is the tour for?</h3>
-          <p class="mt-2 leading-relaxed">English-speaking groups, private groups, senior groups, corporate teams, offsites, client hosting, international visitors and people curious about herbs, Ayurveda and cultural stories.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">Can dietary needs be considered?</h3>
-          <p class="mt-2 leading-relaxed">Yes. Share food sensitivities, allergies, kosher needs or other dietary considerations before booking so the route and tastings can be planned responsibly where possible.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">What is included in the Levinsky Market tour?</h3>
-          <p class="mt-2 leading-relaxed">The experience includes English or Hebrew guidance through Levinsky Market, an Ayurvedic infusion, snacks, market tastings and a starter herb and spice kit. Additional stops and tastings vary with the group, season, route and vendor availability.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">How are private and group tours planned?</h3>
-          <p class="mt-2 leading-relaxed">Each tour is planned individually according to the preferred date, group details, language and dietary needs. Optional lunch, additional tastings and other treats can be discussed and included in the tailored proposal.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">How long is the tour and where does it start?</h3>
-          <p class="mt-2 leading-relaxed">The tour usually takes about 2–2.5 hours and starts at 9:30 AM, Sunday–Friday, subject to availability. Meet at Aluf Batslut Alley (סמטת אלוף בצלות), Tel Aviv-Yafo. Alternative private start times can be arranged in advance, subject to availability.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">Can Inbal help us explore after the tour?</h3>
-          <p class="mt-2 leading-relaxed">Yes. Before you say goodbye, Inbal can suggest places to find lunch and help you get your bearings for exploring the shops and neighborhood at your own pace. Lunch and any purchases after the tour are paid separately.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-emerald-800">Is the tour medical advice?</h3>
-          <p class="mt-2 leading-relaxed">No. The tour is an educational experience focused on herbs, Ayurveda and culture. It discusses traditional uses of herbs, spices and infusions in a grounded way, but it does not replace personal medical advice, diagnosis or treatment.</p>
-        </div>
+      <div class="service-faq">
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">Can I join the tour on my own?</h3></summary><p class="mt-2 leading-relaxed">Yes. Book an individual place on the shared tour through GetYourGuide, or choose the private option for your group. Current availability, prices and offers appear there after you select a date. Contact Inbal on WhatsApp for a custom group quote.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">What makes this Levinsky Market tour different?</h3></summary><p class="mt-2 leading-relaxed">Inbal, a local, brings Ayurveda and her Persian-Iranian heritage together as a cultural bridge. Explore herbs, spices and migration stories in Levinsky Market, with tastings, an Ayurvedic infusion and a starter herb and spice kit to continue exploring at home.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">Can I book a private Levinsky Market Ayurveda and spice tour for a corporate team?</h3></summary><p class="mt-2 leading-relaxed">Yes. The tour can be planned as a private or corporate Levinsky Market Ayurveda and spice tour for teams, offsites, client hosting and international groups. The route is adapted to the date, group size, preferred language, dietary needs and requested experience.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">Is the Levinsky Market tour available in English?</h3></summary><p class="mt-2 leading-relaxed">Yes. The tour can be held in English or Hebrew and is suitable for English-speaking groups, native English-speaking visitors, international guests, corporate teams, private groups and visitors to Tel Aviv.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">Is Levinski Market the same place as Levinsky Market?</h3></summary><p class="mt-2 leading-relaxed">Yes. Levinsky Market is sometimes searched online as Levinski Market. This tour explores the same spice market area through herbs, Ayurveda and cultural stories, with language and route adapted to the group.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">Is this a food tour or a herbal medicine tour?</h3></summary><p class="mt-2 leading-relaxed">This is a market tasting tour with herbs, spices and cultural stories, guided by Inbal through Ayurveda and her Persian-Iranian heritage. Tastings, snacks and an infusion are included; a full lunch is not included. The tour is an educational experience and does not provide personal medical advice.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">Who is the tour for?</h3></summary><p class="mt-2 leading-relaxed">Solo visitors, couples and friends can join a shared tour. Private and custom group tours suit senior groups, corporate teams, offsites and international guests. Guidance is available in English or Hebrew.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">Can dietary needs be considered?</h3></summary><p class="mt-2 leading-relaxed">Yes. Share food sensitivities, allergies, kosher needs or other dietary considerations before booking so the route and tastings can be planned responsibly where possible.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">What is included in the Levinsky Market tour?</h3></summary><p class="mt-2 leading-relaxed">The experience includes English or Hebrew guidance through Levinsky Market, an Ayurvedic infusion, snacks, market tastings and a starter herb and spice kit. Additional stops and tastings vary with the group, season, route and vendor availability.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">How are private and group tours planned?</h3></summary><p class="mt-2 leading-relaxed">Each tour is planned individually according to the preferred date, group details, language and dietary needs. Optional lunch, additional tastings and other treats can be discussed and included in the tailored proposal.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">How long is the tour and where does it start?</h3></summary><p class="mt-2 leading-relaxed">The tour usually takes about 2–2.5 hours and starts at 9:30 AM, Sunday–Friday, subject to availability. Meet at Aluf Batslut Alley (סמטת אלוף בצלות), Tel Aviv-Yafo. Alternative private start times can be arranged in advance, subject to availability.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">Can Inbal help us explore after the tour?</h3></summary><p class="mt-2 leading-relaxed">Yes. Before you say goodbye, Inbal can suggest places to find lunch and help you get your bearings for exploring the shops and neighborhood at your own pace. Lunch and any purchases after the tour are paid separately.</p></details>
+        <details><summary><h3 class="text-xl font-bold text-emerald-800">Is the tour medical advice?</h3></summary><p class="mt-2 leading-relaxed">No. The tour is an educational experience focused on herbs, Ayurveda and culture. It discusses traditional uses of herbs, spices and infusions in a grounded way, but it does not replace personal medical advice, diagnosis or treatment.</p></details>
       </div>
     </section>
   </main>
 
-  <a href="https://wa.me/972545774407?text=Hi%20Inbal%2C%20I%20would%20like%20a%20quote%20for%20a%20Levinsky%20Market%20tour.%20Group%20size%3A%20___%20%7C%20Preferred%20date%3A%20___%20%7C%20Language%3A%20___%20%7C%20Dietary%20needs%3A%20___%20%7C%20Optional%20lunch%2C%20additional%20tastings%20or%20other%20treats%3A%20___"
-    class="tour-mobile-cta">Get a tour quote on WhatsApp</a>
+  <nav class="tour-mobile-cta" aria-label="Book or ask about the tour" data-cta-location="tour-mobile">
+<a href="https://wa.me/972545774407?text=Hi%20Inbal%2C%20I%20would%20like%20details%20about%20the%20Levinsky%20Market%20tasting%20tour.%20Preferred%20date%3A%20___%20%7C%20Number%20of%20participants%3A%20___" target="_blank" rel="noopener noreferrer">WhatsApp Inbal</a>
+<a href="tel:+972545774407" aria-label="Call Inbal about the tour">Call Inbal</a>
+</nav>
 
   <footer class="bg-emerald-900 text-white pt-16 pb-8">
     <div class="max-w-4xl mx-auto px-4">
@@ -787,7 +813,7 @@
             <li><a href="english-speaking-ayurveda-clinic-tel-aviv.html" class="hover:text-white transition">English-speaking Clinic</a></li>
             <li><a href="persian-medicine.html" class="hover:text-white transition">Persian Medicine</a></li>
             <li><a href="workshops.html" class="hover:text-white transition">Workshops</a></li>
-            <li><a href="tours.html" class="hover:text-white transition">Tours</a></li>
+            <li><a href="levinsky-market-food-tour.html" class="hover:text-white transition">Tours</a></li>
             <li><a href="process.html" class="hover:text-white transition">Treatment Process</a></li>
           </ul>
         </div>
