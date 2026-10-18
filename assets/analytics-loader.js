@@ -150,12 +150,31 @@
     }
   }
 
+  function getLeadService(link) {
+    // The selected form service takes precedence over the page that led here.
+    if (window.location.pathname === "/contact.html") {
+      var field = document.getElementById("contact-service");
+      if (field && field.value) return cleanText(field.value);
+    }
+
+    var container = link.closest("[data-lead-service]");
+    if (container) return cleanText(container.getAttribute("data-lead-service"));
+
+    if (window.location.pathname === "/contact.html") {
+      var context = readLeadContext();
+      if (context && context.lead_service) return cleanText(context.lead_service);
+    }
+
+    return "";
+  }
+
   function rememberLeadContext(link) {
     try {
       window.sessionStorage.setItem(LEAD_CONTEXT_KEY, JSON.stringify({
         lead_origin_page: window.location.pathname || "/",
         lead_origin_cta: getCtaLocation(link),
         lead_origin_text: cleanText(link.textContent),
+        lead_service: getLeadService(link),
         created_at: Date.now()
       }));
     } catch (e) {
@@ -189,6 +208,8 @@
   function trackLead(method, link) {
     var params = baseClickParams(link, "lead");
     params.lead_method = method;
+    var service = getLeadService(link);
+    if (service) params.lead_service = service;
 
     if (window.location.pathname === "/contact.html") {
       var leadContext = window.vedicaLeadContext();
