@@ -491,6 +491,22 @@ main [id], main[id] { scroll-margin-top: 6rem; }
 .article-next-step__links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
 .article-next-step a { display: inline-flex; align-items: center; min-height: 2.75rem; color: #0b6757; font-weight: 700; text-decoration: underline; text-underline-offset: 0.2em; }
 
+/* The biography shares a reading rhythm in Hebrew and English. */
+.about-layout .about-hero { --hero-image: url('/assets/inbal-clinic.webp'); }
+.about-facts { margin-bottom: 2.5rem; }
+.about-facts h2.page-meta-card__label { font-size: 1rem; }
+.bio-story { max-width: 44rem; margin-inline: auto; }
+.bio-story > section { margin-block: 2.5rem; }
+.bio-story h2, .home-story h2 { color: var(--ink-strong); font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.4; margin: 0 0 1rem; }
+.bio-story p, .home-story p { font-size: 1.1rem; line-height: 1.9; margin: 0 0 1rem; }
+.bio-story a, .home-story > a { color: #0b6757; text-decoration: underline; text-underline-offset: 0.2em; }
+.bio-quote { margin: 2.5rem 0; padding: 1.5rem; border-inline-start: 3px solid #7a9772; background: #eaf1e8; border-radius: 0.8rem; }
+.bio-quote p { margin: 0; color: var(--ink-strong); font-size: 1.25rem; }
+.home-story { max-width: 70rem; margin: 2.5rem auto 0; padding: 1.5rem 1.25rem; border-block: 1px solid var(--line-soft); }
+.home-story > p:not(.page-hero__eyebrow) { max-width: 52rem; }
+.home-story .page-hero__eyebrow { color: #32665a; font-size: 0.85rem; }
+.home-story > a { display: inline-flex; align-items: center; min-height: 2.75rem; font-weight: 700; }
+
 .home-page .hero-modern { min-height: 0; background: #eaf1e8; border-bottom: 1px solid var(--line-soft); }
 .home-page .hero-modern::before, .home-page .hero-modern::after { display: none; }
 .home-page .hero-modern__grid { min-height: 0; padding: 2rem 1.25rem; gap: 2.5rem; }
