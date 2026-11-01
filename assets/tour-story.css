@@ -1,0 +1,58 @@
+.tour-story {
+  margin-block: 3rem;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border: 1px solid #e1e7da;
+  border-radius: 1.5rem;
+  background: #f6f1e7;
+  color: #33453d;
+}
+
+.tour-story__eyebrow {
+  margin: 0 0 0.65rem;
+  color: #8a5330;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.tour-story h2 {
+  margin: 0 0 1rem;
+  color: #064e3b;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  line-height: 1.25;
+}
+
+.tour-story__copy { max-width: 46rem; margin-inline: auto; }
+.tour-story__copy p { margin: 0 0 1rem; font-size: 1.0625rem; line-height: 1.8; }
+
+.tour-story__photos {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1fr;
+  gap: 0.8rem;
+  margin: 1.75rem 0;
+}
+
+.tour-story__photos figure { margin: 0; overflow: hidden; border-radius: 1rem; background: #fffdf8; }
+.tour-story__photos img { display: block; width: 100%; height: 16rem; object-fit: cover; }
+.tour-story__photos figure:first-child img { object-position: center 30%; }
+.tour-story__photos figcaption { padding: 0.8rem; color: #365346; font-size: 0.85rem; font-weight: 700; }
+
+.tour-story__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tour-story__cards--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tour-story__cards article { padding: 1.25rem; border: 1px solid #e1e7da; border-radius: 1rem; background: #fffdf8; }
+.tour-story__cards h3 { margin: 0 0 0.6rem; color: #065f46; font-size: 1.1rem; font-weight: 700; line-height: 1.4; }
+.tour-story__cards p { margin: 0; font-size: 1rem; line-height: 1.75; }
+.tour-story__note { margin: 1.25rem 0 0; color: #53665a; font-size: 0.875rem; line-height: 1.7; }
+
+@media (max-width: 47.99rem) {
+  .tour-story__photos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tour-story__photos figure:first-child { grid-column: 1 / -1; }
+  .tour-story__photos figure:first-child img { height: 17rem; object-position: center 35%; }
+  .tour-story__photos img { height: 11rem; }
+  .tour-story__cards { grid-template-columns: 1fr; }
+}
