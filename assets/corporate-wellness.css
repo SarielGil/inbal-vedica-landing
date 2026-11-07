@@ -1,0 +1,198 @@
+body {
+      background: #fdfbf7;
+    }
+
+    .lecture-hero {
+      --hero-image: url('/assets/corporate-ayurveda-infusions.webp');
+      background: #203c32;
+    }
+
+    .lecture-section {
+      max-width: 64rem;
+      margin: 3rem auto 0;
+      padding: 0 1rem;
+    }
+
+    .lecture-heading {
+      max-width: 46rem;
+      margin: 0 auto 1.5rem;
+      text-align: center;
+    }
+
+    .lecture-heading h2 {
+      margin: 0;
+      color: #174a40;
+      font-size: 2rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .lecture-heading p {
+      margin: 0.75rem 0 0;
+      color: #566d67;
+      line-height: 1.7;
+    }
+
+    .lecture-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .lecture-card {
+      border: 1px solid #d7e3de;
+      border-radius: 0.5rem;
+      background: #ffffff;
+      padding: 1.4rem;
+      box-shadow: 0 18px 38px -34px rgba(8, 38, 34, 0.55);
+    }
+
+    .lecture-card h3 {
+      margin: 0;
+      color: #176354;
+      font-size: 1.25rem;
+      letter-spacing: 0;
+    }
+
+    .lecture-card p,
+    .lecture-card li {
+      color: #536b64;
+      line-height: 1.65;
+    }
+
+    .lecture-card ul {
+      display: grid;
+      gap: 0.45rem;
+      margin: 0.85rem 0 0;
+      padding-inline-start: 1.15rem;
+    }
+
+    .lecture-cta {
+      max-width: 60rem;
+      margin: 3.5rem auto;
+      border-radius: 0.75rem;
+      background: #0f4f43;
+      padding: 2rem 1.25rem;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .lecture-cta h2 {
+      margin: 0;
+      color: #ffffff;
+      font-size: 2rem;
+      letter-spacing: 0;
+    }
+
+    .lecture-cta p {
+      max-width: 42rem;
+      margin: 0.75rem auto 0;
+      color: #e3f4ee;
+      line-height: 1.7;
+    }
+
+    .lecture-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+
+    .lecture-button,
+    .lecture-button--ghost {
+      display: inline-flex;
+      min-height: 2.9rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+      padding: 0.7rem 1.15rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .lecture-button {
+      background: #ffffff;
+      color: #0f4f43;
+    }
+
+    .lecture-button--ghost {
+      border: 1px solid #9bd6c5;
+      color: #ffffff;
+    }
+
+    @media (min-width: 760px) {
+      .lecture-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .service-layout .lecture-hero::before { display: none; }
+    .service-layout .lecture-hero { align-items: center; gap: 2rem; }
+    .stall-hero-photo { margin: 0; min-width: 0; }
+    .stall-hero-photo img { width: 100%; height: clamp(20rem, 35vw, 30rem); object-fit: cover; object-position: center 48%; border-radius: 1rem; }
+    .stall-hero-photo figcaption { margin-top: .65rem; color: #436254; font-size: .85rem; line-height: 1.5; }
+    .stall-kicker { color: #89602a; font-weight: 700; margin: 0 0 .65rem; }
+    .stall-feature > p, .stall-step p { color: #425f53; line-height: 1.8; }
+    .stall-feature h2 { color: #174a40; font-size: clamp(1.65rem, 3vw, 2.15rem); line-height: 1.35; margin: 0 0 .8rem; }
+    .stall-steps { display: grid; gap: 1.25rem; margin: 1.5rem 0; }
+    .stall-step { border-top: 1px solid #bdcfb6; padding-top: 1rem; }
+    .stall-step span { color: #89602a; font-size: .85rem; font-weight: 700; }
+    .stall-step h3 { margin: .35rem 0; color: #174a40; font-size: 1.25rem; }
+    .stall-step p { margin: 0; }
+    .corporate-story .lecture-button { background: #0b6757; color: white; }
+    .stall-facts { display: grid; gap: 1rem; margin: 1.5rem 0 0; }
+    .stall-facts div { border-inline-start: 3px solid #c49b55; padding-inline-start: 1rem; }
+    .stall-facts dt { font-weight: 800; color: #174a40; }
+    .stall-facts dd { margin: .3rem 0 0; color: #425f53; line-height: 1.65; }
+    .stall-gallery { display: grid; gap: 1rem; }
+    .stall-gallery figure { margin: 0; min-width: 0; }
+    .stall-gallery img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: .75rem; }
+    .stall-gallery figcaption { margin: .65rem 0 0; color: #536b64; line-height: 1.5; font-size: .95rem; }
+    .stall-gallery-note { color: #536b64; line-height: 1.7; text-align: center; font-size: .95rem; }
+    .stall-faq { display: grid; gap: .75rem; }
+    .stall-faq details { background: #fff; border: 1px solid #d7e3de; border-radius: .65rem; padding: 1.1rem 1.25rem; }
+    .stall-faq summary { color: #174a40; font-weight: 800; cursor: pointer; line-height: 1.6; }
+    .stall-faq details p { color: #536b64; line-height: 1.8; margin: .75rem 0 0; }
+    .lecture-card h2 { color: #174a40; font-size: 1.5rem; line-height: 1.4; margin: 0; }
+    .lecture-section a:not([class]), .lecture-card > a { text-decoration: underline; text-underline-offset: .2em; color: #176354; }
+    .lecture-cta { margin-inline: 1rem; }
+    @media (min-width: 760px) {
+      .stall-steps, .stall-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .stall-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .lecture-cta { margin-inline: auto; }
+    }
+    @media (max-width: 759px) {
+      .stall-hero-photo { margin-top: 1.25rem; }
+      .stall-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stall-gallery figure:last-child { grid-column: 1 / -1; }
+      .stall-gallery figure:last-child img { aspect-ratio: 4 / 3; object-position: center 62%; }
+      .lecture-heading h2, .lecture-cta h2 { font-size: 1.7rem; }
+    }
+
+.corporate-language { display: flex; justify-content: center; margin: 0 0 1rem; }
+.corporate-language a { display: inline-flex; min-height: 2.75rem; align-items: center; border: 1px solid #d7e3de; border-radius: 999px; background: #fffdf8; color: #176354; padding: .5rem 1.25rem; font-weight: 700; text-decoration: none; }
+.corporate-story.tour-story { margin-block: 0; }
+.corporate-story .stall-step { border-top: 0; padding: 1.25rem; }
+.corporate-story .stall-step h3 { margin-block: .4rem .65rem; }
+.corporate-story .stall-step span { color: #8a5330; }
+.corporate-host { display: grid; gap: 1.5rem; align-items: center; }
+.corporate-host figure { margin: 0; }
+.corporate-host img { width: 100%; max-height: 24rem; object-fit: cover; object-position: center 35%; border-radius: 1rem; }
+.corporate-host h2 { margin-bottom: 1rem; }
+.corporate-host p { line-height: 1.8; }
+.corporate-host figcaption { color: #53665a; font-size: .85rem; margin-top: .6rem; }
+.corporate-host a { font-weight: 700; }
+.corporate-mobile-cta { display: none; }
+@media (min-width: 760px) {
+  .corporate-host { grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); gap: 2rem; }
+}
+@media (min-width: 900px) {
+  .corporate-facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 759px) {
+  .corporate-page { padding-bottom: calc(5.75rem + env(safe-area-inset-bottom)); }
+  .corporate-mobile-cta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; position: fixed; inset-inline: .65rem; bottom: .65rem; z-index: 70; margin: 0; padding: .6rem .6rem calc(.6rem + env(safe-area-inset-bottom)); background: #fffdf8; border: 1px solid #d7e3de; border-radius: 1rem; box-shadow: 0 10px 30px #17393126; }
+  .corporate-mobile-cta a { display: flex; justify-content: center; align-items: center; min-height: 2.9rem; padding: .5rem; border: 1px solid #0b6757; border-radius: .6rem; background: #0b6757; color: white; font-size: .95rem; font-weight: 700; text-align: center; text-decoration: none; line-height: 1.3; }
+  .corporate-mobile-cta a + a { background: #fffdf8; color: #0b6757; }
+  .corporate-page [id] { scroll-margin-top: 6rem; }
+}

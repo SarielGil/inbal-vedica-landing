@@ -122,6 +122,7 @@
                         <option value="womens_health" data-en="Menopause, cycle and women's health support">איזון הורמונלי ובריאות האישה</option>
                         <option value="nutrition" data-en="Personal nutrition and daily routine">התאמת תזונה ואורח חיים</option>
                         <option value="english_consultation">English-speaking Ayurveda consultation</option>
+                        <option value="corporate_stall" data-en="Ayurveda tasting stand for an organization in Tel Aviv">דוכן איורוודה וטעימות לארגון בתל אביב</option>
                         <option value="corporate_wellness" data-en="Wellness lecture or group workshop">הרצאת וולנס או סדנה לארגון / קבוצה</option>
                         <option value="nutrition_workshop" data-en="Ayurvedic nutrition workshop">סדנאות תזונה ואורח חיים בריא - איורוודי</option>
                         <option value="herb_tours" data-en="Levinsky Market Ayurveda and spice tour for groups">סיור צמחים ואיורוודה בשוק לוינסקי לקבוצות</option>
@@ -218,6 +219,7 @@
         const formMessage = document.getElementById('formMessage');
         const serviceField = document.getElementById('contact-service');
         const requestedService = contactQuery.get('service');
+        const isCorporateContact = ['corporate_stall', 'corporate_wellness'].includes(requestedService);
 
         if (isEnglishContact) {
             document.documentElement.lang = 'en';
@@ -262,6 +264,35 @@
             serviceField.value = requestedService;
         }
 
+        if (isCorporateContact) {
+            document.title = isEnglishContact
+                ? 'Request a corporate wellness quote | VEDICA'
+                : 'בקשת הצעה לפעילות איורוודה בארגון | VEDICA';
+            const corporateIntro = isEnglishContact
+                ? 'Planning a wellness day in Tel Aviv? Send your organization, preferred date and estimated number of employees. Ask about an Ayurveda tasting stand, a talk or a workshop.'
+                : 'מתכננים יום בריאות בתל אביב? שלחו שם ארגון, תאריך רצוי ומספר עובדים משוער, ונבנה יחד הצעה לדוכן איורוודה, הרצאה או סדנה.';
+            document.querySelector('.contact-hero h1').textContent = isEnglishContact
+                ? 'Plan a wellness experience for your team'
+                : 'מתכננים חוויית וולנס לארגון';
+            document.querySelector('.contact-hero .page-hero__content > p:not(.page-hero__eyebrow)').textContent = corporateIntro;
+            document.querySelector('meta[name="description"]').content = corporateIntro;
+            document.getElementById('contact-message').placeholder = isEnglishContact
+                ? 'Estimated number of participants, company location (city / address), company name and preferred date'
+                : 'מספר משתתפים משוער, מיקום החברה (עיר / כתובת), שם החברה ותאריך רצוי';
+            document.getElementById('contact-language-switch').href = isEnglishContact
+                ? 'contact.html?service=' + requestedService + '#contactForm'
+                : 'contact.html?lang=en&service=' + requestedService + '#contactForm';
+            contactForm.elements._subject.value = (requestedService === 'corporate_stall'
+                ? 'Corporate Ayurveda tasting stand enquiry'
+                : 'Corporate wellness talk or workshop enquiry') + (isEnglishContact ? ' (English)' : ' (Hebrew)');
+            if (isEnglishContact) {
+                document.querySelectorAll('a[href="contact.html?lang=en&service=english_consultation"]').forEach(link => {
+                    link.href = 'contact.html?lang=en&service=' + requestedService + '#contactForm';
+                });
+                document.querySelector('#wa-shortcut').previousElementSibling.textContent = 'Ask about your event, format and quote.';
+            }
+        }
+
         function trackEvent(eventName, params = {}) {
             if (typeof gtag === 'function') {
                 gtag('event', eventName, params);
@@ -278,7 +309,30 @@
         fetch('content.json')
             .then(res => res.json())
             .then(data => {
-                const message = isEnglishContact ? '?text=' + encodeURIComponent('Hi Inbal, I would like to ask about an English-speaking Ayurveda consultation in Tel Aviv, appointment availability and fees.') : '';
+                const enquiry = isCorporateContact
+                    ? (isEnglishContact
+                        ? [
+                            requestedService === 'corporate_stall'
+                                ? 'Hi Inbal, I would like a quote for an Ayurveda tasting stand at our company.'
+                                : 'Hi Inbal, I would like a quote for a corporate Ayurveda talk or workshop.',
+                            'Estimated number of participants: ___',
+                            'Company location (city / address): ___',
+                            'Company name: ___',
+                            'Preferred date: ___',
+                            'Preferred language: English'
+                        ].join('\n')
+                        : [
+                            requestedService === 'corporate_stall'
+                                ? 'היי ענבל, אשמח לקבל הצעה לדוכן איורוודה אצלנו בחברה.'
+                                : 'היי ענבל, אשמח לקבל הצעה להרצאה או סדנת איורוודה אצלנו בחברה.',
+                            'מספר משתתפים משוער: ___',
+                            'איפה החברה ממוקמת (עיר / כתובת): ___',
+                            'שם החברה: ___',
+                            'תאריך רצוי: ___',
+                            'שפה מועדפת: ___'
+                        ].join('\n'))
+                    : (isEnglishContact ? 'Hi Inbal, I would like to ask about an English-speaking Ayurveda consultation in Tel Aviv, appointment availability and fees.' : '');
+                const message = enquiry ? '?text=' + encodeURIComponent(enquiry) : '';
                 const waUrl = "https://wa.me/" + data.site.whatsapp + message;
                 document.getElementById('wa-contact').href = waUrl;
                 document.getElementById('wa-shortcut').href = waUrl;
