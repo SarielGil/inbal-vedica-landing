@@ -122,7 +122,7 @@
                         <option value="womens_health" data-en="Menopause, cycle and women's health support">איזון הורמונלי ובריאות האישה</option>
                         <option value="nutrition" data-en="Personal nutrition and daily routine">התאמת תזונה ואורח חיים</option>
                         <option value="english_consultation">English-speaking Ayurveda consultation</option>
-                        <option value="corporate_stall" data-en="Ayurveda tasting stand for an organization in Tel Aviv">דוכן איורוודה וטעימות לארגון בתל אביב</option>
+                        <option value="corporate_stall" data-en="Silk Road longevity and Ayurveda stand for an event or organization">דוכן לונג׳ביטי על דרך המשי לאירוע או לארגון</option>
                         <option value="corporate_wellness" data-en="Wellness lecture or group workshop">הרצאת וולנס או סדנה לארגון / קבוצה</option>
                         <option value="nutrition_workshop" data-en="Ayurvedic nutrition workshop">סדנאות תזונה ואורח חיים בריא - איורוודי</option>
                         <option value="herb_tours" data-en="Levinsky Market Ayurveda and spice tour for groups">סיור צמחים ואיורוודה בשוק לוינסקי לקבוצות</option>
@@ -220,6 +220,26 @@
         const serviceField = document.getElementById('contact-service');
         const requestedService = contactQuery.get('service');
         const isCorporateContact = ['corporate_stall', 'corporate_wellness'].includes(requestedService);
+        const isProductionContact = isCorporateContact && contactQuery.get('audience') === 'production';
+        const productionBrief = isEnglishContact
+            ? [
+                'Hi Inbal, we would like a quote for a Silk Road longevity stand with Ayurveda and Persian traditions for a client event.',
+                'Production company: ___',
+                'Client organization: ___',
+                'Event type, date and location: ___',
+                'Estimated participants: ___',
+                'Requested activity hours: ___',
+                'Language, available space and special requirements: ___'
+            ].join('\n')
+            : [
+                'היי ענבל, נשמח להצעה לדוכן לונג׳ביטי על דרך המשי, עם איורוודה ורפואה פרסית, לאירוע של לקוח.',
+                'שם חברת ההפקה: ___',
+                'שם הארגון / הלקוח: ___',
+                'סוג האירוע, תאריך ומיקום: ___',
+                'מספר משתתפים משוער: ___',
+                'שעות פעילות מבוקשות: ___',
+                'שפה, שטח זמין וצרכים מיוחדים: ___'
+            ].join('\n');
 
         if (isEnglishContact) {
             document.documentElement.lang = 'en';
@@ -269,8 +289,8 @@
                 ? 'Request a corporate wellness quote | VEDICA'
                 : 'בקשת הצעה לפעילות איורוודה בארגון | VEDICA';
             const corporateIntro = isEnglishContact
-                ? 'Planning a wellness day in Tel Aviv? Send your organization, preferred date and estimated number of employees. Ask about an Ayurveda tasting stand, a talk or a workshop.'
-                : 'מתכננים יום בריאות בתל אביב? שלחו שם ארגון, תאריך רצוי ומספר עובדים משוער, ונבנה יחד הצעה לדוכן איורוודה, הרצאה או סדנה.';
+                ? 'Planning an event or company wellness day? Send your organization, event location, preferred date and estimated attendance. Ask about a longevity-themed Ayurveda stand, talk or workshop.'
+                : 'מתכננים אירוע, יום הפעלה או יום בריאות? שלחו שם ארגון, מיקום, תאריך רצוי ומספר משתתפים משוער, ונבנה יחד הצעה לדוכן לונג׳ביטי ואיורוודה, הרצאה או סדנה.';
             document.querySelector('.contact-hero h1').textContent = isEnglishContact
                 ? 'Plan a wellness experience for your team'
                 : 'מתכננים חוויית וולנס לארגון';
@@ -291,6 +311,23 @@
                 });
                 document.querySelector('#wa-shortcut').previousElementSibling.textContent = 'Ask about your event, format and quote.';
             }
+            if (isProductionContact) {
+                document.title = isEnglishContact
+                    ? 'Event production quote: longevity and Ayurveda stands | VEDICA'
+                    : 'הצעה לחברות הפקה: דוכני לונג׳ביטי לאירועים | VEDICA';
+                document.querySelector('.contact-hero h1').textContent = isEnglishContact
+                    ? 'Plan a stand for your client’s event'
+                    : 'מתאמים דוכן לאירוע של הלקוח שלכם';
+                const productionIntro = isEnglishContact
+                    ? 'For event production companies: share your client brief, event date and location, estimated attendance and activity hours. We will coordinate the content, setup and quote with your production team.'
+                    : 'לחברות הפקה ומפיקי אירועים: שלחו את פרטי האירוע והלקוח, תאריך, מיקום, מספר משתתפים ושעות פעילות. נתאם מולכם את התוכן, ההקמה וההצעה.';
+                document.querySelector('.contact-hero .page-hero__content > p:not(.page-hero__eyebrow)').textContent = productionIntro;
+                document.querySelector('meta[name="description"]').content = productionIntro;
+                document.getElementById('contact-message').value = productionBrief;
+                document.getElementById('contact-message').rows = 9;
+                contactForm.elements._subject.value = 'Event production company — longevity and Ayurveda stand' + (isEnglishContact ? ' (English)' : ' (Hebrew)');
+                document.getElementById('contact-language-switch').href = 'contact.html?service=' + requestedService + '&audience=production' + (isEnglishContact ? '' : '&lang=en') + '#contactForm';
+            }
         }
 
         function trackEvent(eventName, params = {}) {
@@ -309,7 +346,7 @@
         fetch('content.json')
             .then(res => res.json())
             .then(data => {
-                const enquiry = isCorporateContact
+                const enquiry = isProductionContact ? productionBrief : isCorporateContact
                     ? (isEnglishContact
                         ? [
                             requestedService === 'corporate_stall'
@@ -344,7 +381,7 @@
                 event_label: eventLabel,
                 lead_method: 'contact_form',
                 lead_service: serviceField.value || 'not_selected',
-                cta_location: 'contactForm',
+                cta_location: isProductionContact ? 'production-contact-form' : 'contactForm',
                 lead_page: window.location.pathname,
                 transport_type: 'beacon'
             };

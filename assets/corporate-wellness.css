@@ -183,8 +183,31 @@ body {
 .corporate-host figcaption { color: #53665a; font-size: .85rem; margin-top: .6rem; }
 .corporate-host a { font-weight: 700; }
 .corporate-mobile-cta { display: none; }
+.production-panel { display: grid; gap: 1.5rem; padding: clamp(1.35rem, 4vw, 2.5rem); border-radius: 1rem; background: #174a40; color: #fffdf8; }
+.production-panel__copy, .production-panel__brief { min-width: 0; }
+.production-panel__eyebrow { margin: 0 0 .75rem; color: #f0d3a2; font-size: .9rem; font-weight: 800; }
+.production-panel h2 { margin: 0 0 1rem; color: #fffdf8; font-size: clamp(1.65rem, 3vw, 2.1rem); line-height: 1.3; }
+.production-panel__copy > p:not(.production-panel__eyebrow) { color: #e4eee6; line-height: 1.85; }
+.production-panel .lecture-actions { justify-content: flex-start; }
+.production-panel__brief { padding: 1.4rem; border: 1px solid #bdd0bd; border-radius: .8rem; background: #f8f5eb; color: #26483d; }
+.production-panel__brief h3 { margin: 0; color: #174a40; font-size: 1.2rem; line-height: 1.5; }
+.production-panel__brief ul { display: grid; gap: .65rem; margin: 1rem 0; padding-inline-start: 1.2rem; list-style: disc; line-height: 1.7; }
+.production-panel__brief p { margin: 0; color: #425f53; font-size: .95rem; line-height: 1.7; }
+.stall-event-gallery { grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+.stall-event-gallery img { height: 21rem; object-position: center 65%; }
+.stall-event-gallery figure:last-child img { object-position: center 75%; }
+.timora-event-gallery figure:first-child img { object-position: center 43%; }
+.stall-hero-photo--timora img { object-position: center 20%; }
+.timora-event-gallery figure:last-child img { object-position: center 62%; }
+.timora-event-gallery + .stall-gallery-note + .lecture-actions .lecture-button { background: #0b6757; color: #fff; }
+.production-panel a:focus-visible { outline: 3px solid #f0d3a2; outline-offset: 4px; }
 @media (min-width: 760px) {
   .corporate-host { grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); gap: 2rem; }
+  .production-panel { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; }
+}
+@media (max-width: 759px) {
+  .stall-event-gallery figure:first-child { grid-column: auto; }
+  .stall-event-gallery figure:first-child img, .stall-event-gallery img { height: 20rem; }
 }
 @media (min-width: 900px) {
   .corporate-facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
