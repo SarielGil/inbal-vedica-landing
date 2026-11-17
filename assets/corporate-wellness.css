@@ -196,6 +196,7 @@ body {
 .stall-event-gallery { grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
 .stall-event-gallery img { height: 21rem; object-position: center 65%; }
 .stall-event-gallery figure:last-child img { object-position: center 75%; }
+.stall-event-gallery img.stall-embassy-portrait { object-fit: contain; object-position: center; }
 .timora-event-gallery figure:first-child img { object-position: center 43%; }
 .stall-hero-photo--timora img { object-position: center 20%; }
 .timora-event-gallery figure:last-child img { object-position: center 62%; }
