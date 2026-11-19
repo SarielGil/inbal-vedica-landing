@@ -7,7 +7,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>https://vedica-ayurveda.co.il/</loc>
-        <lastmod>2026-11-17</lastmod>
+        <lastmod>2026-11-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -134,7 +134,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/what-is-ayurvedic-medicine.html"/>
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/blog-what-is-ayurveda.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/what-is-ayurvedic-medicine.html"/>
-        <lastmod>2026-10-17</lastmod>
+        <lastmod>2026-11-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.82</priority>
     </url>
