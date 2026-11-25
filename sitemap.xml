@@ -7,7 +7,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>https://vedica-ayurveda.co.il/</loc>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -34,7 +34,7 @@
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/clinic.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/english-speaking-ayurveda-clinic-tel-aviv.html"/>
-        <lastmod>2026-11-23</lastmod>
+        <lastmod>2026-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.95</priority>
     </url>
@@ -76,7 +76,7 @@
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/corporate-wellness-lectures.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/corporate-ayurveda-wellness-tel-aviv.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/corporate-ayurveda-wellness-tel-aviv.html"/>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.78</priority>
     </url>
@@ -94,7 +94,7 @@
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/tours.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html"/>
-        <lastmod>2026-11-23</lastmod>
+        <lastmod>2026-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -104,6 +104,12 @@
         <xhtml:link rel="alternate" hreflang="he-IL" href="https://vedica-ayurveda.co.il/tours.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://vedica-ayurveda.co.il/levinsky-market-food-tour.html"/>
         <lastmod>2026-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.78</priority>
+    </url>
+    <url>
+        <loc>https://vedica-ayurveda.co.il/levinsky-market-team-building.html</loc>
+        <lastmod>2026-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.78</priority>
     </url>
@@ -176,7 +182,7 @@
     </url>
     <url>
         <loc>https://vedica-ayurveda.co.il/blog-dosha-diagnosis-tel-aviv.html</loc>
-        <lastmod>2026-11-12</lastmod>
+        <lastmod>2026-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.86</priority>
     </url>
